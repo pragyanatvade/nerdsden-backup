@@ -1,33 +1,104 @@
 
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>Nerd's Den</title>
+
     <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="assets/built/screen.css?v=fe2f470e2c">
+    <meta name="description" content="Memoirs Of A Skeptic Nerd">
 
-    <meta name="description" content="Thoughts, stories and ideas.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Nerd's Den">
+    <meta name="twitter:description" content="Memoirs Of A Skeptic Nerd">
+
+    <meta property="og:url" content="http://localhost:2368">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Nerd's Den">
+    <meta property="og:description" content="Memoirs Of A Skeptic Nerd">
+    <meta property="og:site_name" content="Nerd's Den">
+
+    <meta itemprop="name" content="Nerd's Den">
+    <meta itemprop="description" content="Memoirs Of A Skeptic Nerd">
+
+    <meta name="twitter:site" content="@yourblogtwitter">
+
+<meta name="twitter:creator" content="@yourtwitter">
+
+<meta property="article:author" content="https://www.facebook.com/yourprofile">
+
+<meta property="article:publisher" content="https://www.facebook.com/yourblogprofile">
+
+<meta property="fb:admins" content="">
+
+<meta name="google-site-verification" content="">
+
+<link rel="author" href="https://plus.google.com/yourprofile">
+
+<meta name="theme-color" content="">
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic%7COpen+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.min.css?v=3fc64a730b">
+
+    <script type="text/javascript">
+      var ga_ua = 'UA-XXXXX-X';
+
+var disqus_shortname = 'example';
+
+var enable_pjax = true;
+
+      // Pace Options
+      // ==============
+      window.paceOptions = {
+        catchupTime: 100,
+        minTime: 100,
+        elements: false,
+        restartOnRequestAfter: 500,
+        startOnPageLoad: false
+      }
+
+      // Ghostium Globals
+      // ==============
+      window.GHOSTIUM = {};
+      GHOSTIUM.haveGA = typeof ga_ua !== 'undefined' && ga_ua !== 'UA-XXXXX-X';
+      GHOSTIUM.haveDisqus = typeof disqus_shortname !== 'undefined' && disqus_shortname !== 'example';
+      GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
+    </script>
+
+    <script src="assets/js/head-scripts.min.js?v=3fc64a730b"></script>
+
+    <meta name="description" content="Memoirs Of A Skeptic Nerd">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="page/2/index.html">
     
     <meta property="og:site_name" content="Nerd's Den">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nerd's Den">
-    <meta property="og:description" content="Thoughts, stories and ideas.">
+    <meta property="og:description" content="Memoirs Of A Skeptic Nerd">
     <meta property="og:url" content="http://localhost:2368/">
     <meta property="og:image" content="https://static.ghost.org/v1.0.0/images/blog-cover.jpg">
-    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta property="article:publisher" content="https://www.facebook.com/nerdsden2019">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nerd's Den">
-    <meta name="twitter:description" content="Thoughts, stories and ideas.">
+    <meta name="twitter:description" content="Memoirs Of A Skeptic Nerd">
     <meta name="twitter:url" content="http://localhost:2368/">
     <meta name="twitter:image" content="https://static.ghost.org/v1.0.0/images/blog-cover.jpg">
-    <meta name="twitter:site" content="tryghost">
+    <meta name="twitter:site" content="@nerdsden">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="666">
     
     <script type="application/ld+json">
 {
@@ -39,16 +110,21 @@
         "logo": "https://static.ghost.org/v1.0.0/images/ghost-logo.svg"
     },
     "url": "http://localhost:2368/",
-    "image": "https://static.ghost.org/v1.0.0/images/blog-cover.jpg",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.ghost.org/v1.0.0/images/blog-cover.jpg",
+        "width": 2000,
+        "height": 666
+    },
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
     },
-    "description": "Thoughts, stories and ideas."
+    "description": "Memoirs Of A Skeptic Nerd"
 }
     </script>
 
-    <script src="public/ghost-sdk.js?v=fe2f470e2c"></script>
+    <script src="public/ghost-sdk.js?v=3fc64a730b"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -57,334 +133,253 @@ ghost.init({
 </script>
     <meta name="generator" content="Ghost 2.6">
     <link rel="alternate" type="application/rss+xml" title="Nerd's Den" href="rss/index.html">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55436366-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-</head>
-<body class="home-template">
+  gtag('config', 'UA-55436366-2');
+</script>
+  </head>
+  <body class="home-template">
 
-    <div class="site-wrapper">
-
-        
-<header class="site-header outer " style="background-image: url(https://static.ghost.org/v1.0.0/images/blog-cover.jpg)">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                    <img class="site-logo" src="https://static.ghost.org/v1.0.0/images/ghost-logo.svg" alt="Nerd's Den">
-            </h1>
-            <h2 class="site-description">Thoughts, stories and ideas.</h2>
-        </div>
-        <nav class="site-nav">
-    <div class="site-nav-left">
-            <ul class="nav" role="menu">
-    <li class="nav-home nav-current" role="menuitem"><a href="index.html">Home</a></li>
-    <li class="nav-tag" role="menuitem"><a href="tag/getting-started/">Tag</a></li>
-    <li class="nav-author" role="menuitem"><a href="author/ghost/">Author</a></li>
-    <li class="nav-help" role="menuitem"><a href="https://help.ghost.org">Help</a></li>
-</ul>
-
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-                <a class="social-link social-link-fb" href="https://www.facebook.com/ghost" title="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-</a>
-                <a class="social-link social-link-tw" href="https://twitter.com/tryghost" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-</a>
-        </div>
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/" title="RSS" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg>
-</a>
-    </div>
+    <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
+<nav tabindex="-1" class="drawer">
+  <div class="drawer-container">
+    <!--.drawer-search(role="search")-->
+    <ul role="navigation" class="drawer-list">
+      
+<li class="drawer-list-item">
+  <a href="index.html" data-pjax>
+    <i class="fa fa-home"></i>Home
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="rss/index.rss">
+    <i class="fa fa-rss"></i>Subscribe to Feed
+  </a>
+</li>
+<li class="drawer-list-divider">
+<li class="drawer-list-item drawer-list-title">
+  Follow me
+</li>
+<li class="drawer-list-item">
+  <a href="http://twitter.com" target="_blank">
+    <i class="fa fa-twitter"></i>Twitter
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://github.com" target="_blank">
+    <i class="fa fa-github"></i>Github
+  </a>
+</li>
+    </ul>
+  </div>
 </nav>
-    </div>
-</header>
 
-<main id="site-main" class="site-main outer">
-    <div class="inner">
+    <div class="drawer-overlay"></div>
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+            
+<aside role="banner" class="cover">
+  <div data-load-image="https://static.ghost.org/v1.0.0/images/blog-cover.jpg" class="cover-image"></div>
+  <div class="cover-container">
+      <a href="index.html" class="cover-logo" data-pjax>
+        <img src="https://static.ghost.org/v1.0.0/images/ghost-logo.svg" alt="Blog Logo">
+      </a>
+    <h1 class="cover-title">Nerd's Den</h1>
+    <p class="cover-description">Memoirs Of A Skeptic Nerd</p>
+  </div>
+</aside>
 
-        <div class="post-feed">
-
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="welcome/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="welcome/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Welcome to Ghost</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Welcome, it's great to have you here. We know that first impressions are important, so we've populated your new site with some initial getting started posts that will help you get familiar with everything in no time.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">1 min read</span>
-
-        </footer>
-    </div>
+<section class="wrapper" tabindex="0">
+  <div class="wrapper-container">
+    
+    <section class="post-list">
+        <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post-item post tag-getting-started">
+  <header class="post-item-header">
+    <h2 itemprop="name" class="post-item-title">
+      <a href="welcome/" itemprop="url" data-pjax title="Welcome to Ghost">
+        Welcome to Ghost
+      </a>
+    </h2>
+  </header>
+  <section itemprop="description" class="post-item-excerpt">
+    <p>Welcome, it's great to have you here. We know that first impressions are important, so we've populated your new site with some initial getting started posts that will help you get familiar with everything in no time.…</p>
+  </section>
+  <footer class="post-item-footer">
+    <ul class="post-item-meta-list">
+      <li class="post-item-meta-item">
+        <time datetime="2018-11-14" itemprop="datePublished">
+          2 hours ago
+        </time>
+      </li>
+        <li class="post-item-meta-item">
+            <a itemprop="articleSection" href="tag/getting-started/" data-pjax>Getting Started</a> 
+        </li>
+      <li class="post-item-meta-item">
+        <a href="welcome/index.html#disqus_thread" data-pjax data-disqus-identifier="5beba7cf2db226330bfc7765">Comments</a>
+      </li>
+    </ul>
+  </footer>
 </article>
-
-
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="the-editor/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/writing-posts-with-ghost.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="the-editor/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Writing posts with Ghost ✍️</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Getting started with the editor is simple, with familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">1 min read</span>
-
-        </footer>
-    </div>
+        <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post-item post tag-getting-started">
+  <header class="post-item-header">
+    <h2 itemprop="name" class="post-item-title">
+      <a href="the-editor/" itemprop="url" data-pjax title="Writing posts with Ghost ✍️">
+        Writing posts with Ghost ✍️
+      </a>
+    </h2>
+  </header>
+  <section itemprop="description" class="post-item-excerpt">
+    <p>Getting started with the editor is simple, with familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.…</p>
+  </section>
+  <footer class="post-item-footer">
+    <ul class="post-item-meta-list">
+      <li class="post-item-meta-item">
+        <time datetime="2018-11-14" itemprop="datePublished">
+          2 hours ago
+        </time>
+      </li>
+        <li class="post-item-meta-item">
+            <a itemprop="articleSection" href="tag/getting-started/" data-pjax>Getting Started</a> 
+        </li>
+      <li class="post-item-meta-item">
+        <a href="the-editor/index.html#disqus_thread" data-pjax data-disqus-identifier="5beba7cf2db226330bfc7763">Comments</a>
+      </li>
+    </ul>
+  </footer>
 </article>
-
-
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="publishing-options/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/publishing-options.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="publishing-options/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Publishing options</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>The Ghost editor has everything you need to fully optimise your content. This is where you can add tags and authors, feature a post, or turn a post into a page.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">2 min read</span>
-
-        </footer>
-    </div>
+        <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post-item post tag-getting-started">
+  <header class="post-item-header">
+    <h2 itemprop="name" class="post-item-title">
+      <a href="publishing-options/" itemprop="url" data-pjax title="Publishing options">
+        Publishing options
+      </a>
+    </h2>
+  </header>
+  <section itemprop="description" class="post-item-excerpt">
+    <p>The Ghost editor has everything you need to fully optimise your content. This is where you can add tags and authors, feature a post, or turn a post into a page.…</p>
+  </section>
+  <footer class="post-item-footer">
+    <ul class="post-item-meta-list">
+      <li class="post-item-meta-item">
+        <time datetime="2018-11-14" itemprop="datePublished">
+          2 hours ago
+        </time>
+      </li>
+        <li class="post-item-meta-item">
+            <a itemprop="articleSection" href="tag/getting-started/" data-pjax>Getting Started</a> 
+        </li>
+      <li class="post-item-meta-item">
+        <a href="publishing-options/index.html#disqus_thread" data-pjax data-disqus-identifier="5beba7cf2db226330bfc7761">Comments</a>
+      </li>
+    </ul>
+  </footer>
 </article>
-
-
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="admin-settings/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/admin-settings.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="admin-settings/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Managing admin settings</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>There are a couple of things to do next while you're getting set up: making your site private and inviting your team.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">2 min read</span>
-
-        </footer>
-    </div>
+        <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post-item post tag-getting-started">
+  <header class="post-item-header">
+    <h2 itemprop="name" class="post-item-title">
+      <a href="admin-settings/" itemprop="url" data-pjax title="Managing admin settings">
+        Managing admin settings
+      </a>
+    </h2>
+  </header>
+  <section itemprop="description" class="post-item-excerpt">
+    <p>There are a couple of things to do next while you're getting set up: making your site private and inviting your team.…</p>
+  </section>
+  <footer class="post-item-footer">
+    <ul class="post-item-meta-list">
+      <li class="post-item-meta-item">
+        <time datetime="2018-11-14" itemprop="datePublished">
+          2 hours ago
+        </time>
+      </li>
+        <li class="post-item-meta-item">
+            <a itemprop="articleSection" href="tag/getting-started/" data-pjax>Getting Started</a> 
+        </li>
+      <li class="post-item-meta-item">
+        <a href="admin-settings/index.html#disqus_thread" data-pjax data-disqus-identifier="5beba7cf2db226330bfc775f">Comments</a>
+      </li>
+    </ul>
+  </footer>
 </article>
-
-
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="organising-content/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/organising-your-content.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="organising-content/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Organising your content</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Ghost has a flexible organisational taxonomy called tags which can be used to configure your site structure using dynamic routing.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">2 min read</span>
-
-        </footer>
-    </div>
+        <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post-item post tag-getting-started">
+  <header class="post-item-header">
+    <h2 itemprop="name" class="post-item-title">
+      <a href="organising-content/" itemprop="url" data-pjax title="Organising your content">
+        Organising your content
+      </a>
+    </h2>
+  </header>
+  <section itemprop="description" class="post-item-excerpt">
+    <p>Ghost has a flexible organisational taxonomy called tags which can be used to configure your site structure using dynamic routing.…</p>
+  </section>
+  <footer class="post-item-footer">
+    <ul class="post-item-meta-list">
+      <li class="post-item-meta-item">
+        <time datetime="2018-11-14" itemprop="datePublished">
+          2 hours ago
+        </time>
+      </li>
+        <li class="post-item-meta-item">
+            <a itemprop="articleSection" href="tag/getting-started/" data-pjax>Getting Started</a> 
+        </li>
+      <li class="post-item-meta-item">
+        <a href="organising-content/index.html#disqus_thread" data-pjax data-disqus-identifier="5beba7cf2db226330bfc775d">Comments</a>
+      </li>
+    </ul>
+  </footer>
 </article>
+    </section>
+
+      <nav role="pagination" class="post-list-pagination">
+  <span class="post-list-pagination-item post-list-pagination-item-current">Page 1 of 2</span>
+    <a href="page/2/" class="post-list-pagination-item post-list-pagination-item-next" data-pjax>
+      Older <i class="fa fa-angle-double-right"></i>
+    </a>
+</nav>
 
 
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="apps-integrations/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/app-integrations.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="apps-integrations/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Apps &amp; integrations</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>There are three primary ways to work with third-party services in Ghost: using Zapier, editing your theme, or using the Ghost API.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
+    <footer role="contentinfo" class="footer">
+  <p><small>© 2018. All Rights Reserved.</small></p>
+  <p><small><a href="http://ghostium.oswaldoacauan.com/" target="_blank">Ghostium Theme</a> by <a href="http://twitter.com/oswaldoacauan" target="_blank">@oswaldoacauan</a></small></p>
+  <p><small>Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a></small></p>
+</footer>
+  </div>
+</section>
 
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">1 min read</span>
-
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="themes/">
-            <div class="post-card-image" style="background-image: url(https://static.ghost.org/v2.0.0/images/creating-a-custom-theme.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="themes/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Creating a custom theme</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="author/ghost/" class="static-avatar"><img class="author-profile-image" src="https://static.ghost.org/v2.0.0/images/ghost.png" alt="Ghost"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">1 min read</span>
-
-        </footer>
-    </div>
-</article>
-
+          </div>
         </div>
-
-    </div>
-</main>
-
-
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="index.html">Nerd's Den</a> © 2018</section>
-                <nav class="site-footer-nav">
-                    <a href="index.html">Latest Posts</a>
-                    <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/tryghost" target="_blank" rel="noopener">Twitter</a>
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                </nav>
-            </div>
-        </footer>
-
-    </div>
-
-
-    <script>
-        var images = document.querySelectorAll('.kg-gallery-image img');
-        images.forEach(function (image) {
-            var container = image.closest('.kg-gallery-image');
-            var width = image.attributes.width.value;
-            var height = image.attributes.height.value;
-            var ratio = width / height;
-            container.style.flex = ratio + ' 1 0%';
-        })
-    </script>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="assets/built/jquery.fitvids.js?v=fe2f470e2c"></script>
-
-    <script>
-        // maxPages is a global variable that is needed to determine
-        // if we need to load more pages for the infinitescroll, or if
-        // we reached the last page already.
-        var maxPages = parseInt('1');
-    </script>
-    <script src="assets/built/infinitescroll.js?v=fe2f470e2c"></script>
+      </div>
+    </main>
 
     
 
-    
+    <script src="assets/js/foot-scripts.min.js?v=3fc64a730b"></script>
 
-</body>
+    <script type="text/javascript">
+
+      if(GHOSTIUM.haveGA) {
+        (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+        function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+        t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+        t.src='//www.google-analytics.com/analytics.js';
+        z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+        ga('create',ga_ua);ga('send','pageview');
+      }
+
+      if(GHOSTIUM.haveDisqus) {
+        (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+      }
+    </script>
+  </body>
