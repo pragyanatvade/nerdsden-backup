@@ -1,5 +1,5 @@
 {
-  "name": "Ghostium",
+  "name": "ghostium",
   "version": "2.3.2",
   "description": "A Ghost theme focused on content based on Medium design/ux",
   "url": "http://ghostium.oswaldoacauan.com/",
@@ -21,20 +21,22 @@
     "ghost",
     "blog",
     "theme",
-    "medium"
+    "medium",
+    "ghost-theme"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  },
   "devDependencies": {
     "bower": "^1.8.2",
-    "grunt": "~1.0.1",
+    "grunt": "^1.0.3",
     "grunt-autoprefixer": "~3.0.4",
-    "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "~1.1.0",
     "grunt-contrib-concat": "~1.0.1",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-csslint": "~2.0.0",
     "grunt-contrib-cssmin": "~2.2.0",
-    "grunt-contrib-imagemin": "~2.0.1",
+    "grunt-contrib-imagemin": "^3.1.0",
     "grunt-contrib-jshint": "~1.1.0",
     "grunt-contrib-sass": "~1.0.0",
     "grunt-contrib-uglify": "~3.3.0",
