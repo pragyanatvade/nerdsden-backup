@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="{{asset 'css/main.min.css'}}">
 
-    <script type="text/javascript">
+    <script type="text/javascript" async>
       {{> custom/config}}
       // Pace Options
       // ==============
@@ -40,7 +40,7 @@
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="{{asset 'js/head-scripts.min.js'}}"></script>
+    <script src="{{asset 'js/head-scripts.min.js'}}" async></script>
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
