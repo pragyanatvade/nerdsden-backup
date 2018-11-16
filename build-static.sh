@@ -22,6 +22,8 @@ find static/* -name "*.html" -type f -exec sed -i '' 's#href="http://localhost:2
 find static/* -name "*.html" -type f -exec sed -i '' 's#href="http://127.0.0.1:2368#href="https://nerds-den.com#g' {} \;
 find static/* -name "*.html" -type f -exec sed -i '' 's#src="http://localhost:2368#src="https://nerds-den.com#g' {} \;
 find static/* -name "*.html" -type f -exec sed -i '' 's#link>http://localhost:2368#link>https://nerds-den.com#g' {} \;
+find static/* -name "*.html" -type f -exec sed -i '' 's#http://localhost:2368#https://nerds-den.com#g' {} \;
+
 sed -i '' '1s/^/<!DOCTYPE html><html lang="en"> /' static/index.html
 echo "</html>" >> static/index.html
 
