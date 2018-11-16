@@ -13,8 +13,9 @@ wget --convert-links --page-requisites --no-parent --directory-prefix static --n
 
 # Replace urls that were missed by buster
 find static/* -name robots.txt -type f -exec sed -i '' 's#http://localhost:2368#http://nerds-den.com#g' {} \;
-find static/* -name *.xsl -type f -exec sed -i '' 's#http://localhost:2368#http://nerds-den.com#g' {} \;
-find static/* -name *.xml -type f -exec sed -i '' 's#loc>http://localhost:2368#loc>http://nerds-den.com#g' {} \;
+find static/* -name *.xsl  -type f -exec sed -i '' 's#http://localhost:2368#http://nerds-den.com#g' {} \;
+find static/* -name *.xml  -type f -exec sed -i '' 's#href="//localhost:2368#href="//nerds-den.com#g' {} \;
+find static/* -name *.xml  -type f -exec sed -i '' 's#loc>http://localhost:2368#loc>http://nerds-den.com#g' {} \;
 find static/* -name *.html -type f -exec sed -i '' 's#u=http://localhost:2368#u=http://nerds-den.com#g' {} \;
 find static/* -name *.html -type f -exec sed -i '' 's#url=http://localhost:2368#url=http://nerds-den.com#g' {} \;
 find static/* -name *.html -type f -exec sed -i '' 's#href="http://localhost:2368#href="http://nerds-den.com#g' {} \;
