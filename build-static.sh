@@ -1,15 +1,15 @@
 #!/bin/zsh
 
-# Generate static files with buster
+# Generate docs files with buster
 buster generate --domain=http://127.0.0.1:2368 --dir docs
 
 # Copy sitemap files
-wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name=unix http://127.0.0.1:2368/sitemap.xsl
-wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name=unix http://127.0.0.1:2368/sitemap.xml
-wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-pages.xml
-wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-posts.xml
-wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-authors.xml
-wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-tags.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix docs --no-host-directories --restrict-file-name=unix http://127.0.0.1:2368/sitemap.xsl
+wget --convert-links --page-requisites --no-parent --directory-prefix docs --no-host-directories --restrict-file-name=unix http://127.0.0.1:2368/sitemap.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix docs --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-pages.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix docs --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-posts.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix docs --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-authors.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix docs --no-host-directories --restrict-file-name=unix http://localhost:2368/sitemap-tags.xml
 
 # Replace urls that were missed by buster
 find docs/* -name "robots.txt" -type f -exec sed -i '' 's#http://localhost:2368#https://nerds-den.com#g' {} \;
