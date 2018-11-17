@@ -31,3 +31,4 @@ buster add-domain nerds-den.com
 # Copy files that were missed by buster
 #cp humans.txt static/humans.txt
 cp -R content/images static/content
+rsync -a --delete static/ docs/
