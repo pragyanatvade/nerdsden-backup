@@ -46,6 +46,19 @@
           <div itemprop="articleBody" class="post-body">
             {{content}}
           </div>
+          {{#if @labs.subscribers}}
+            <section class="gh-subscribe">
+              <p><i>If you are into software development and wish to get better at it, signup for the Nerd’s Den Email List and we’ll send you the articles right when they come out.</i></p>
+              {{
+                subscribe_form
+                form_class="gh-signin"
+                input_class="gh-input"
+                button_class="btn btn-blue btn-block"
+                placeholder="Your email address"
+                autofocus="true"
+              }}
+            </section>
+          {{/if}}
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
               {{#if primary_author.profile_image}}
