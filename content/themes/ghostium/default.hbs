@@ -19,9 +19,11 @@
     <link href="https://fonts.googleapis.com/" rel="dns-prefetch">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="preload" rel="stylesheet" href="{{asset 'css/main.min.css'}}" media="all" as="style">
+    <link rel="preload" type="text/css" href="{{asset 'css/main.min.css'}}" media="all" as="style">
 
     <script src="{{asset 'js/head-scripts.min.js'}}" async></script>
+    <link rel="stylesheet" type="text/css" href="{{asset 'css/main.min.css'}}">
+
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
