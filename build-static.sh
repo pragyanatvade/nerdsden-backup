@@ -17,6 +17,8 @@ find static/* -name "*.xsl"  -type f -exec sed -i '' 's#http://localhost:2368#ht
 find static/* -name "*.xml"  -type f -exec sed -i '' 's#href="//localhost:2368#href="//nerds-den.com#g' {} \;
 find static/* -name "*.xml"  -type f -exec sed -i '' 's#loc>http://localhost:2368#loc>https://nerds-den.com#g' {} \;
 find static/* -name "*.html" -type f -exec sed -i '' 's#http://localhost:2368#https://nerds-den.com#g' {} \;
+find static/* -name "*.html" -type f -exec sed -i '' 's#http://127.0.0.1:2368#https://nerds-den.com#g' {} \;
+find static/* -name "*.html" -type f -exec sed -i '' 's#.png#.webp#g' {} \;
 
 sed -i '' '1s/^/<!DOCTYPE html><html lang="en"> /' static/index.html
 echo "</html>" >> static/index.html
@@ -28,3 +30,4 @@ buster add-domain nerds-den.com
 #cp humans.txt static/humans.txt
 cp -R content/images static/content
 rsync -a --delete static/ docs/
+for file in docs/content/images/2018/11/*.png; do cwebp "$file" -o "${file%.*}.webp"; done
