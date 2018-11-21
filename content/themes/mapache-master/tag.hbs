@@ -1,0 +1,34 @@
+{{!< default}}
+
+{{#tag}}
+
+{{!-- custom Styles For tag <body> --}}
+{{#contentFor "mapache_class_body"}}is-tag {{^is "paged"}}is-pagination{{/is}} {{#if feature_image}}has-cover is-transparency{{/if}}{{/contentFor}}
+
+<section class="tag u-relative u-textAlignCenter u-flexCenter u-flexColumn u-paddingBottom30 u-paddingTop30 {{#if feature_image}}u-marginBottom30 u-textColorWhite has--image u-boxShadowBottom has-cover-padding{{/if}}">
+
+    {{!-- Cover Background --}}
+    {{#if feature_image}}
+    <div class="u-absolute0 u-backgroundDark"></div>
+    <div class="cover-opacity cover-lazy u-absolute0 u-backgroundSizeCover zindex2 u-block" data-original="{{feature_image}}"></div>
+    {{/if}}
+
+    <div class="u-maxWidth1040 u-container zindex2">
+        <h1 class="tag-title animated bounceIn u-contentTitle u-fontSize36 u-md-fontSizeBase">{{name}}</h1>
+        {{#if description}}<p class="tag-description u-fontSizeSmall u-marginTop30">{{description}}</p>{{/if}}
+    </div>
+
+</section>
+{{/tag}}
+
+{{!-- Ad --}}
+{{> "ad/ad-author-tag-top"}}
+
+{{!-- Post Grid --}}
+<section class="extreme-container">
+    {{!-- lates post --}}
+    {{> "loop"}}
+</section>
+
+{{!-- Ad --}}
+{{> "ad/ad-author-tag-footer"}}

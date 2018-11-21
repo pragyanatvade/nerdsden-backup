@@ -1,0 +1,18 @@
+{{!< default}}
+
+{{!-- custom Styles For tag <body> --}}
+{{#contentFor "mapache_class_body"}}is-frontpage {{^is "paged"}}is-pagination has-cover is-transparency{{/is}}{{/contentFor}}
+
+{{^is "paged"}}
+    {{> "home/home-personal-cover"}}
+{{/is}}
+
+{{!-- Ad --}}
+{{> "ad/ad-home-top"}}
+
+<section id="main-content" class="extreme-container u-marginTop20">
+    {{> "loop"}}
+</section>
+
+{{!-- Ad --}}
+{{> "ad/ad-home-footer"}}
