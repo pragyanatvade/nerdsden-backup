@@ -21,9 +21,10 @@
     <link href="https://fonts.googleapis.com/" rel="dns-prefetch">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset 'css/main.min.css'}}">
+    <link rel="preload" href="{{asset 'css/main.min.css'}}" as="style"/>
+		<link rel="stylesheet" type="text/css" href="{{asset 'css/main.min.css'}}" async/>
 
-    <script src="{{asset 'js/head-scripts.min.js'}}"></script>
+    <script src=/assets/js/head-scripts.min.js defer></script>
 
     {{ghost_head}}
   </head>
@@ -44,7 +45,7 @@
 
     {{ghost_foot}}
 
-    <script src="{{asset 'js/foot-scripts.min.js'}}"></script>
+    <script src=/assets/js/foot-scripts.min.js defer></script>
 
     <script type="text/javascript">
     {{> custom/config}}
