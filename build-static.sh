@@ -31,3 +31,4 @@ buster add-domain nerds-den.com
 cp -R content/images static/content
 rsync -a --delete static/ docs/
 for file in docs/content/images/2018/11/*.png; do cwebp "$file" -o "${file%.*}.webp"; done
+cwebp docs/favicon.png -o docs/favicon.webp
