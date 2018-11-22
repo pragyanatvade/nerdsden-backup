@@ -8,7 +8,7 @@
                 {{#if @blog.facebook}}<a class="mapache-tracking i-facebook" data-event-category="Header" data-event-action="Follow Me" data-event-label="Facebook" data-event-non-interaction="1" title="Facebook {{@blog.facebook}}" href="{{facebook_url}}" target="_blank" rel="noopener noreferrer"></a>{{/if}}
                 {{#if @blog.twitter}}<a class="mapache-tracking i-twitter" data-event-category="Header" data-event-action="Follow Me" data-event-label="Twitter" data-event-non-interaction="1" title="Twitter {{@blog.twitter}}" href="{{twitter_url}}" target="_blank" rel="noopener noreferrer"></a>{{/if}}
                 {{!-- Subscribe BTN for modal newsletter --}}
-                {{#if @labs.subscribers}}<a href="#" class="subscribe-toggle modal-toggle u-relative i-email u-floatRight"></a>{{/if}}
+                {{#if @labs.subscribers}}<a href="#" class="subscribe-toggle modal-toggle u-relative i-email u-floatRight" aria-hidden="true"></a>{{/if}}
             </aside>
 
             {{!-- Footer Menu --}}
