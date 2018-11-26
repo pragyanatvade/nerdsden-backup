@@ -1,34 +1,36 @@
-version: '3.1'
-volumes:
-  mysql-volume:
-  ghost-volume:
-
+version: '2'
 services:
-  mysql:
-    image: mysql:5.7
-    container_name: mysql
-    volumes:
-      - mysql-volume:/var/lib/mysql
+  mariadb:
+    image: 'bitnami/mariadb:latest'
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db
-      MYSQL_USER: blog-user
-      MYSQL_PASSWORD: supersecret
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=bn_ghost
+      - MARIADB_DATABASE=bitnami_ghost
+    volumes:
+      - 'mariadb_data:/bitnami'
   ghost:
-    build: ./ghost
-    container_name: ghost
-    volumes:
-      - ghost-volume:/var/lib/ghost
-    restart: always
-    ports:
-      - 2368:2368
+    image: 'bitnami/ghost:latest'
+    labels:
+      kompose.service.type: nodeport
     environment:
-      database__client: mysql
-      database__connection__host: mysql
-      database__connection__user: blog-user
-      database__connection__password: supersecret
-      database__connection__database: db
+      - MARIADB_HOST=mariadb
+      - MARIADB_PORT_NUMBER=3306
+      - GHOST_DATABASE_USER=bn_ghost
+      - GHOST_DATABASE_NAME=bitnami_ghost
+      - ALLOW_EMPTY_PASSWORD=yes
+      - GHOST_HOST=localhost
+      - GHOST_USERNAME=pragyan
+      - GHOST_EMAIL=pragyan@vadelabs.com
+      - GHOST_PASSWORD=nerdsden2019
+      - BLOG_TITLE="Nerd's Den"
+    ports:
+      - '2368:2368'
+    volumes:
+      - 'ghost_data:/bitnami'
     depends_on:
-      - mysql
-    entrypoint: ["wait-for-it.sh", "mysql", "--", "docker-entrypoint.sh"]
-    command: ["node", "current/index.js"]
+      - mariadb
+volumes:
+  mariadb_data:
+    driver: local
+  ghost_data:
+    driver: local
