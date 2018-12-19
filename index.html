@@ -1,196 +1,56 @@
-<!DOCTYPE html><html lang="en"> 
-  <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Nerd's Den</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="https://nerds-den.com/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
-
-    <link href="https://fonts.googleapis.com/" rel="dns-prefetch">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic%7COpen+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/main.min.css?v=87d9c5fa70">
-
-    <script type="text/javascript" async>
-      var ga_ua = 'UA-55436366-2';
-
-var disqus_shortname = 'nerds-den';
-
-var enable_pjax = true;
-      // Pace Options
-      // ==============
-      window.paceOptions = {
-        catchupTime: 100,
-        minTime: 100,
-        elements: false,
-        restartOnRequestAfter: 500,
-        startOnPageLoad: false
-      }
-      // Ghostium Globals
-      // ==============
-      window.GHOSTIUM = {};
-      GHOSTIUM.haveGA = typeof ga_ua !== 'undefined' && ga_ua !== 'UA-XXXXX-X';
-      GHOSTIUM.haveDisqus = typeof disqus_shortname !== 'undefined' && disqus_shortname !== 'example';
-      GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
-    </script>
-
-    <script src="assets/js/head-scripts.min.js?v=87d9c5fa70" async></script>
-
-    <meta name="description" content="Memoirs Of A Skeptic Nerd">
-    <link rel="shortcut icon" href="favicon.ico" type="image/png">
-    <link rel="canonical" href="https://nerds-den.com/">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    
-    <meta property="og:site_name" content="Nerd's Den">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Nerd's Den">
-    <meta property="og:description" content="Memoirs Of A Skeptic Nerd">
-    <meta property="og:url" content="https://nerds-den.com/">
-    <meta property="article:publisher" content="https://www.facebook.com/nerdsden2019">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nerd's Den">
-    <meta name="twitter:description" content="Memoirs Of A Skeptic Nerd">
-    <meta name="twitter:url" content="https://nerds-den.com/">
-    <meta name="twitter:site" content="@nerdsden">
-    
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Nerd&#x27;s Den",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://nerds-den.com/content/images/2018/11/nerdsden-avatar-1.png",
-            "width": 60,
-            "height": 60
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-pages-index-jsx.cc482af8d18fae31ec7a.css">*{box-sizing:border-box}html{height:100%}body{margin:0;padding:20px}</style><meta name="generator" content="Gatsby 2.0.40"/><title data-react-helmet="true">Nerd&#x27;s Den</title><meta data-react-helmet="true" name="description" content="Memoirs Of A Skeptic Nerd"/><meta data-react-helmet="true" name="image" content="https://nerds-den.com//logos/logo-1024.png"/><meta data-react-helmet="true" property="og:url" content="https://nerds-den.com/"/><meta data-react-helmet="true" property="og:title" content="Nerd&#x27;s Den"/><meta data-react-helmet="true" property="og:description" content="Memoirs Of A Skeptic Nerd"/><meta data-react-helmet="true" property="og:image" content="https://nerds-den.com//logos/logo-1024.png"/><meta data-react-helmet="true" property="fb:app_id" content="1825356251115265"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="pntripathi9417"/><meta data-react-helmet="true" name="twitter:title" content="Nerd&#x27;s Den"/><meta data-react-helmet="true" name="twitter:description" content="Memoirs Of A Skeptic Nerd"/><meta data-react-helmet="true" name="twitter:image" content="https://nerds-den.com//logos/logo-1024.png"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","url":"https://nerds-den.com/","name":"Nerd's Den","alternateName":"Tutorials On Building Reliable, Scalable, and Flexible Software Application"}]</script><style type="text/css">
+    .anchor {
+      float: left;
+      padding-right: 4px;
+      margin-left: -20px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var offset = element.offsetTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
         }
-    },
-    "url": "https://nerds-den.com/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://nerds-den.com/"
-    },
-    "description": "Memoirs Of A Skeptic Nerd"
-}
-    </script>
-
-    <script src="public/ghost-sdk.js?v=87d9c5fa70"></script>
-<script>
-ghost.init({
-	clientId: "ghost-frontend",
-	clientSecret: "5849b43205d2"
-});
-</script>
-    <meta name="generator" content="Ghost 2.6">
-    <link rel="alternate" type="application/rss+xml" title="Nerd's Den" href="https://nerds-den.com/rss/">
-
-  </head>
-  <body class="home-template">
-
-    <button aria-label="drawer-button" data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
-<nav tabindex="-1" class="drawer">
-  <div class="drawer-container">
-    <!--.drawer-search(role="search")-->
-    <ul role="navigation" class="drawer-list">
+      }
+    })
+  </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#c62828"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link as="script" rel="preload" href="/component---src-pages-index-jsx-b8d48903b4239d995a80.js"/><link as="script" rel="preload" href="/0-424a2fb7b4db604f7798.js"/><link as="script" rel="preload" href="/app-d2b2e81005449adb7e53.js"/><link as="script" rel="preload" href="/webpack-runtime-7c3a09b483325c13919c.js"/><link rel="preload" href="/static/d/771/path---index-6a9-ttGD39w0E7jrRg6VFvnzz1LS7sM.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div class="index-container"><div><a href="/the-butterfly-of-the-edge"><h1>The Butterfly of the Edge</h1></a><a href="/the-fairys-witches"><h1>The Fairy&#x27;s Witches</h1></a><a href="/random-project-4-with-super-long-title-phase-one"><h1>Random project 4 With Super Long Title Phase One</h1></a><a href="/angels-of-mist"><h1>Angels of Mist</h1></a><a href="/birch-in-the-roses"><h1>Birch in the Roses</h1></a><a href="/big-sample-test"><h1>Big Test</h1></a><a href="/the-fallen-time"><h1>The Fallen Time</h1></a><a href="/bold-mage"><h1>Bold Mage</h1></a></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-47311644-5', 'auto', {});
       
-<li class="drawer-list-item">
-  <a href="index.html" data-pjax>
-    <i class="fa fa-home"></i>Home
-  </a>
-</li>
-<li class="drawer-list-item">
-  <a href="https://nerds-den.com/rss/">
-    <i class="fa fa-rss"></i>Subscribe to Feed
-  </a>
-</li>
-<li class="drawer-list-divider">
-<li class="drawer-list-item drawer-list-title">
-  Follow me
-</li>
-<li class="drawer-list-item">
-  <a href="https://twitter.com/nerdsden" target="_blank" rel="noopener">
-    <i class="fa fa-twitter"></i>Twitter
-  </a>
-</li>
-<li class="drawer-list-item">
-  <a href="https://github.com/vadelabs/nerdsden" target="_blank" rel="noopener">
-    <i class="fa fa-github"></i>Github
-  </a>
-</li>
-    </ul>
-  </div>
-</nav>
-
-    <div class="drawer-overlay"></div>
-    <main id="container" role="main" class="container">
-      <div class="surface">
-        <div class="surface-container">
-          <div data-pjax-container class="content">
-            
-<aside role="banner" class="cover">
-  <div class="cover-image"></div>
-  <div class="cover-container">
-      <a href="https://nerds-den.com" class="cover-logo" data-pjax>
-        <img src="content/images/2018/11/nerdsden-avatar-1.png" alt="Blog Logo">
-      </a>
-    <h1 class="cover-title">Nerd's Den</h1>
-    <p class="cover-description">Memoirs Of A Skeptic Nerd</p>
-  </div>
-</aside>
-<section class="wrapper" tabindex="0">
-  <div class="wrapper-container">
-    
-    <section class="post-list">
-    </section>
-
-      <nav role="navigation" class="post-list-pagination">
-  <span class="post-list-pagination-item post-list-pagination-item-current">Page 1 of 1</span>
-</nav>
-
-
-    <footer role="contentinfo" class="footer">
-  <p><small>© 2018 Vadelabs. All Rights Reserved.</small></p>
-</footer>
-  </div>
-</section>
-
-          </div>
-        </div>
-      </div>
-    </main>
-
-    
-
-    <script src="assets/js/foot-scripts.min.js?v=87d9c5fa70"></script>
-
-    <script type="text/javascript">
-
-      if(GHOSTIUM.haveGA) {
-        (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
-        function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
-        t=h.createElement(o);z=h.getElementsByTagName(o)[0];
-        t.src='//www.google-analytics.com/analytics.js';
-        z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
-        ga('create',ga_ua);ga('send','pageview');
       }
-
-      if(GHOSTIUM.haveDisqus) {
-        (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-      }
-    </script>
-  </body>
-</html>
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-pages-index-jsx","jsonName":"index","path":"/"};window.dataPath="771/path---index-6a9-ttGD39w0E7jrRg6VFvnzz1LS7sM";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-d2b2e81005449adb7e53.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-27b63877e1d0a43985bd.js"],"component---src-templates-post-jsx":["/component---src-templates-post-jsx.5dbfb3985781c7ac2310.css","/component---src-templates-post-jsx-0822da2fb866ca478e2a.js"],"component---src-templates-tag-jsx":["/component---src-templates-tag-jsx.cc482af8d18fae31ec7a.css","/component---src-templates-tag-jsx-50e9fd0efd6d95913513.js"],"component---src-templates-category-jsx":["/component---src-templates-category-jsx.cc482af8d18fae31ec7a.css","/component---src-templates-category-jsx-d840b2d342d364b8ff4b.js"],"component---src-pages-about-jsx":["/component---src-pages-about-jsx.654d3b6e93e57036102e.css","/component---src-pages-about-jsx-b3cf1bd647e72cc8d26d.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx.cc482af8d18fae31ec7a.css","/component---src-pages-index-jsx-b8d48903b4239d995a80.js"]};/*]]>*/</script><script src="/webpack-runtime-7c3a09b483325c13919c.js" async=""></script><script src="/app-d2b2e81005449adb7e53.js" async=""></script><script src="/0-424a2fb7b4db604f7798.js" async=""></script><script src="/component---src-pages-index-jsx-b8d48903b4239d995a80.js" async=""></script></body></html>
