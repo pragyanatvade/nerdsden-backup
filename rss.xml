@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:24:03 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:29:18 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -573,7 +573,39 @@ These kinds of situations enhance fears about system state and code predictabili
 &lt;h3&gt;2. Leverage Business Rule Engines&lt;/h3&gt;
 &lt;p&gt;Have you ever spent sleepless nights debugging code when you modified one of those “if” statements and found that it distorted the next if statement?
 Business rule engines are a great way to collect complex decision-making logic and work with the data too large for humans to effectively use.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./business-rule-engines.webp&quot; alt=&quot;Advantages Of Business Rule Engines&quot; title=&quot;Advantages Of Business Rule Engines&quot;&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6fe552cf2dc4675bff21d26fd8f0e55a/c2a5e/business-rule-engines.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 396.125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRu4CAABXRUJQVlA4IOICAABQDwCdASoUAE8APm0ukEYkIqGhLNv8AIANiWoArDMqwQ/DfjNhZ2gn8Hfg/u/qA5lPob8x/6x+v/ZR3/gr3f7T4Nn4L/3ZamOq1JoXlAlScykn1ZUKhzZUAImg6gk5OzcAb/hSdJ1J3+HsUr2JO0i5q23yFcWJ0pNN4zP59aVfYz/8AAD+i98cgVZz/C/sZ5IQYFxyvy+jV/VfYlkC5YG+k7hBMAyf+rhfrRc/9yzaMtUNYvJDn/8cFiHGC4wM7psXOu//1S3h7f/k343+z9Z7Zo3s4gO3oVGL4Vk6yez1BXfUIt/vluA2bnfSpUeuzWb/Ajw/v2qWWzw+1fSRIvFR99JAgQWuaeBFSI2j3n/O86IhlLP9b15tdOcKlErOKUU6JywKM3dg1BcDlwYbtoOUIh6pebuEbcQrsne2ThZMJ2C1KNa154FZ4YOkUGPcivzOw2r1AdtC4evxXwbemxehWZNBjI1IrGoFaXXDvfb+BDOjzImcEaZqeXi0utj+ZMx0sCNvxfyExLBzIorlhtTzWT/UmvQGl+V3AxPdqdZJ1Lwlyfpvzx/5wY+3LR70nwsj5DIJ2H+YMf6r2Lxx407aRFHZEz324StfqAPCTc3bDN7gyiE9QC2wV8XCSM/sQfkhQBnuCajx6AsRg8s6jmImZQGiolXsEhhTK5zrEV7bKbx/BhU1Ydl4p26rs1Ht60pLFpSTelA1sGXCu0GIh6jJj1J2htfJBGBkRMyaSsRKXkEgPSnSXTyXSjOLFHrWp7GfUGLZTx7t5c0LtKY7euGumb7D+MHTXg9SEdHkYQQ4OTPB5ZVWeGpmsV7qcDNsYOLZ5aGWQ07zGRSpanFC3hP9lEBMwFQcNGXVQcrVzai0cq26doXQIRip+0wRpohM36FKiRwD95W0biLEy7w30NgXrmrLsa1tXXuaIUPReEDdLMyh4oDvV7l1XG9MTC1qG+3kXB1BlUnH5+0hJKHbU4wAAAA=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Advantages Of Business Rule Engines&quot;
+        title=&quot;Advantages Of Business Rule Engines&quot;
+        src=&quot;/static/6fe552cf2dc4675bff21d26fd8f0e55a/c2a5e/business-rule-engines.webp&quot;
+        srcset=&quot;/static/6fe552cf2dc4675bff21d26fd8f0e55a/8cf60/business-rule-engines.webp 200w,
+/static/6fe552cf2dc4675bff21d26fd8f0e55a/81fb9/business-rule-engines.webp 400w,
+/static/6fe552cf2dc4675bff21d26fd8f0e55a/c2a5e/business-rule-engines.webp 800w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;h3&gt;3. Always Be Composing&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The essence of software development is composition.&lt;/p&gt;
@@ -904,9 +936,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;p&gt;If you’re interested, I specialize in topics like software architecture, databases, and web application development.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Before I go, I would like to invite you to join my email list community. By signing up (its free), you’ll get access to our latest articles right when they come out.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Also thanks for being here. I genuinely appreciate it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Success]]></title><description><![CDATA[Thank you.  
-I will answer to your message as soon as possible.]]></description><link>https://nerds-den.com//success/</link><guid isPermaLink="false">https://nerds-den.com//success/</guid><content:encoded>&lt;p&gt;Thank you. &lt;br /&gt;
-I will answer to your message as soon as possible.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Privacy]]></title><description><![CDATA[The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect…]]></description><link>https://nerds-den.com//privacy/</link><guid isPermaLink="false">https://nerds-den.com//privacy/</guid><content:encoded>&lt;p&gt;The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect your personal information. Below is everything you need to know about how this site operates.&lt;/p&gt;
+&lt;p&gt;Also thanks for being here. I genuinely appreciate it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Privacy]]></title><description><![CDATA[The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect…]]></description><link>https://nerds-den.com//privacy/</link><guid isPermaLink="false">https://nerds-den.com//privacy/</guid><content:encoded>&lt;p&gt;The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect your personal information. Below is everything you need to know about how this site operates.&lt;/p&gt;
 &lt;h2&gt;What information is collected?&lt;/h2&gt;
 &lt;p&gt;While using this site, you may be asked to provide a name, email, or other personally identifiable information that can be used to contact or identify you.&lt;/p&gt;
 &lt;h2&gt;Log Data&lt;/h2&gt;
@@ -922,7 +952,9 @@ I will answer to your message as soon as possible.&lt;/p&gt;</content:encoded></
 &lt;p&gt;This Privacy Policy is effective as of January 01, 2019 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.&lt;/p&gt;
 &lt;p&gt;We reserve the right to update or change this Privacy Policy at any time without notice, and you should check this Privacy Policy periodically. Your continued use of this website after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.&lt;/p&gt;
 &lt;h2&gt;Contact&lt;/h2&gt;
-&lt;p&gt;If you have any questions about this Privacy Policy, please contact us at nerdsden@vadelabs.com.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Terms Of Use]]></title><description><![CDATA[Terms By accessing the website at  https://nerds-den.com , you are agreeing to be bound by these terms of service, all applicable laws and…]]></description><link>https://nerds-den.com//terms-of-use/</link><guid isPermaLink="false">https://nerds-den.com//terms-of-use/</guid><content:encoded>&lt;h2&gt;Terms&lt;/h2&gt;
+&lt;p&gt;If you have any questions about this Privacy Policy, please contact us at nerdsden@vadelabs.com.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Success]]></title><description><![CDATA[Thank you.  
+I will answer to your message as soon as possible.]]></description><link>https://nerds-den.com//success/</link><guid isPermaLink="false">https://nerds-den.com//success/</guid><content:encoded>&lt;p&gt;Thank you. &lt;br /&gt;
+I will answer to your message as soon as possible.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Terms Of Use]]></title><description><![CDATA[Terms By accessing the website at  https://nerds-den.com , you are agreeing to be bound by these terms of service, all applicable laws and…]]></description><link>https://nerds-den.com//terms-of-use/</link><guid isPermaLink="false">https://nerds-den.com//terms-of-use/</guid><content:encoded>&lt;h2&gt;Terms&lt;/h2&gt;
 &lt;p&gt;By accessing the website at &lt;a href=&quot;https://nerds-den.com&quot;&gt;https://nerds-den.com&lt;/a&gt;, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.&lt;/p&gt;
 &lt;h2&gt;Use License&lt;/h2&gt;
 &lt;ol&gt;
