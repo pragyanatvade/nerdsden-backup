@@ -26,17 +26,41 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9f5498d71633e487555a.js"
+    "url": "webpack-runtime-a474c8e2c636e4b2b351.js"
   },
   {
-    "url": "app-48e99e202e1f67624bd5.js"
+    "url": "app.8b1cc9920e75fff049f7.css"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-27b63877e1d0a43985bd.js"
+    "url": "app-8b6161c0548f4db11fcd.js"
+  },
+  {
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-b6c9adcda9555bec68c8.js"
+  },
+  {
+    "url": "index.html",
+    "revision": "054b7e3d2a3d99e40a43db8c7280c271"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "07479dd73cc6d13d91abceb74cff7780"
+    "revision": "882af8a5e9783b3f3c24c2558d25bed5"
+  },
+  {
+    "url": "component---src-pages-index-js-dcbae25e761b7a22707a.js"
+  },
+  {
+    "url": "0-867574beca3601b67b3f.js"
+  },
+  {
+    "url": "static/d/445/path---index-6a9-McZa9OkhumcURuvTldnlD30XNCw.json",
+    "revision": "c8c7eb692763f6f141f6f2b37e090de2"
+  },
+  {
+    "url": "component---src-pages-404-js-3122e0735534d84070b3.js"
+  },
+  {
+    "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
+    "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
   },
   {
     "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -44,19 +68,19 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "37b6dd2235ee137a15f6839e58a25420"
+    "revision": "14c0bc7bd1ee546beeb7949b9c84865f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
-  whitelist: [/^([^.?]*|[^?]*\.([^.?]{5,}|html))(\?.*)?$/],
+  whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
 
 workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:/, workbox.strategies.networkFirst(), 'GET');
+workbox.routing.registerRoute(/^https:/, workbox.strategies.networkFirst(), 'GET');
 "use strict";
 
 /* global workbox */
@@ -68,19 +92,10 @@ self.addEventListener("message", function (event) {
     var cacheName = workbox.core.cacheNames.runtime;
     event.waitUntil(caches.open(cacheName).then(function (cache) {
       return Promise.all(resources.map(function (resource) {
-        var request; // Some external resources don't allow
-        // CORS so get an opaque response
-
-        if (resource.match(/^https?:/)) {
-          request = fetch(resource, {
-            mode: "no-cors"
-          });
-        } else {
-          request = fetch(resource);
-        }
-
-        return request.then(function (response) {
-          return cache.put(resource, response);
+        return cache.add(resource).catch(function (e) {
+          // ignore TypeErrors - these are usually due to
+          // external resources which don't allow CORS
+          if (!(e instanceof TypeError)) throw e;
         });
       }));
     }));
