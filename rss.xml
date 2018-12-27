@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:50:25 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:53:44 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/92f56/programmer-dream.png&quot;
+    href=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/fd37b/programmer-dream.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -18,26 +18,26 @@
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/856a9/programmer-dream.webp 200w,
-/static/6f4dfc7a500e762d5026e392b2fb92d6/c2ee6/programmer-dream.webp 400w,
-/static/6f4dfc7a500e762d5026e392b2fb92d6/ee276/programmer-dream.webp 759w&quot;
+          srcset=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/1f238/programmer-dream.webp 200w,
+/static/6f4dfc7a500e762d5026e392b2fb92d6/8403e/programmer-dream.webp 400w,
+/static/6f4dfc7a500e762d5026e392b2fb92d6/07fc5/programmer-dream.webp 759w&quot;
           sizes=&quot;(max-width: 759px) 100vw, 759px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/5c1a7/programmer-dream.png 200w,
-/static/6f4dfc7a500e762d5026e392b2fb92d6/97d85/programmer-dream.png 400w,
-/static/6f4dfc7a500e762d5026e392b2fb92d6/92f56/programmer-dream.png 759w&quot;
+          srcset=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/6f77f/programmer-dream.png 200w,
+/static/6f4dfc7a500e762d5026e392b2fb92d6/a9788/programmer-dream.png 400w,
+/static/6f4dfc7a500e762d5026e392b2fb92d6/fd37b/programmer-dream.png 759w&quot;
           sizes=&quot;(max-width: 759px) 100vw, 759px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/92f56/programmer-dream.png&quot;
+          src=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/fd37b/programmer-dream.png&quot;
           alt=&quot;Every Programmers&apos; Dream&quot;
           title=&quot;Every Programmers&apos; Dream&quot;
-          src=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/92f56/programmer-dream.png&quot;
+          src=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/fd37b/programmer-dream.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -57,7 +57,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/aca7f/software-reliability-not-accident.jpeg&quot;
+    href=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/26646/software-reliability-not-accident.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -73,24 +73,24 @@ With a deep sigh, you check your phone:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/4747d/software-reliability-not-accident.webp 200w,
-/static/b9b51fc62a3d6a11d1890ef2432ce60c/d8e1c/software-reliability-not-accident.webp 236w&quot;
+          srcset=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/ae11d/software-reliability-not-accident.webp 200w,
+/static/b9b51fc62a3d6a11d1890ef2432ce60c/06b3e/software-reliability-not-accident.webp 236w&quot;
           sizes=&quot;(max-width: 236px) 100vw, 236px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/85080/software-reliability-not-accident.jpeg 200w,
-/static/b9b51fc62a3d6a11d1890ef2432ce60c/aca7f/software-reliability-not-accident.jpeg 236w&quot;
+          srcset=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/706e3/software-reliability-not-accident.jpeg 200w,
+/static/b9b51fc62a3d6a11d1890ef2432ce60c/26646/software-reliability-not-accident.jpeg 236w&quot;
           sizes=&quot;(max-width: 236px) 100vw, 236px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/aca7f/software-reliability-not-accident.jpeg&quot;
+          src=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/26646/software-reliability-not-accident.jpeg&quot;
           alt=&quot;Software Reliability Is Not An Accident&quot;
           title=&quot;Software Reliability Is Not An Accident&quot;
-          src=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/aca7f/software-reliability-not-accident.jpeg&quot;
+          src=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/26646/software-reliability-not-accident.jpeg&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -106,7 +106,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1ab782cf088cd0009338f512487c6e1b/5706a/dark-side-software-development.png&quot;
+    href=&quot;/static/1ab782cf088cd0009338f512487c6e1b/0b7c8/dark-side-software-development.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -122,26 +122,26 @@ With a deep sigh, you check your phone:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/1ab782cf088cd0009338f512487c6e1b/df648/dark-side-software-development.webp 200w,
-/static/1ab782cf088cd0009338f512487c6e1b/f7c8e/dark-side-software-development.webp 400w,
-/static/1ab782cf088cd0009338f512487c6e1b/0fa18/dark-side-software-development.webp 800w&quot;
+          srcset=&quot;/static/1ab782cf088cd0009338f512487c6e1b/1092c/dark-side-software-development.webp 200w,
+/static/1ab782cf088cd0009338f512487c6e1b/dea5f/dark-side-software-development.webp 400w,
+/static/1ab782cf088cd0009338f512487c6e1b/19531/dark-side-software-development.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/1ab782cf088cd0009338f512487c6e1b/7a8ab/dark-side-software-development.png 200w,
-/static/1ab782cf088cd0009338f512487c6e1b/80860/dark-side-software-development.png 400w,
-/static/1ab782cf088cd0009338f512487c6e1b/5706a/dark-side-software-development.png 800w&quot;
+          srcset=&quot;/static/1ab782cf088cd0009338f512487c6e1b/d9ac9/dark-side-software-development.png 200w,
+/static/1ab782cf088cd0009338f512487c6e1b/43775/dark-side-software-development.png 400w,
+/static/1ab782cf088cd0009338f512487c6e1b/0b7c8/dark-side-software-development.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/1ab782cf088cd0009338f512487c6e1b/5706a/dark-side-software-development.png&quot;
+          src=&quot;/static/1ab782cf088cd0009338f512487c6e1b/0b7c8/dark-side-software-development.png&quot;
           alt=&quot;Dark Side Of Software Development&quot;
           title=&quot;Dark Side Of Software Development&quot;
-          src=&quot;/static/1ab782cf088cd0009338f512487c6e1b/5706a/dark-side-software-development.png&quot;
+          src=&quot;/static/1ab782cf088cd0009338f512487c6e1b/0b7c8/dark-side-software-development.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -160,7 +160,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ba76448d44800e9211ebd6d26130b945/5706a/software-programming-mess.png&quot;
+    href=&quot;/static/ba76448d44800e9211ebd6d26130b945/0b7c8/software-programming-mess.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -176,26 +176,26 @@ With a deep sigh, you check your phone:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/ba76448d44800e9211ebd6d26130b945/df648/software-programming-mess.webp 200w,
-/static/ba76448d44800e9211ebd6d26130b945/f7c8e/software-programming-mess.webp 400w,
-/static/ba76448d44800e9211ebd6d26130b945/0fa18/software-programming-mess.webp 800w&quot;
+          srcset=&quot;/static/ba76448d44800e9211ebd6d26130b945/1092c/software-programming-mess.webp 200w,
+/static/ba76448d44800e9211ebd6d26130b945/dea5f/software-programming-mess.webp 400w,
+/static/ba76448d44800e9211ebd6d26130b945/19531/software-programming-mess.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/ba76448d44800e9211ebd6d26130b945/7a8ab/software-programming-mess.png 200w,
-/static/ba76448d44800e9211ebd6d26130b945/80860/software-programming-mess.png 400w,
-/static/ba76448d44800e9211ebd6d26130b945/5706a/software-programming-mess.png 800w&quot;
+          srcset=&quot;/static/ba76448d44800e9211ebd6d26130b945/d9ac9/software-programming-mess.png 200w,
+/static/ba76448d44800e9211ebd6d26130b945/43775/software-programming-mess.png 400w,
+/static/ba76448d44800e9211ebd6d26130b945/0b7c8/software-programming-mess.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/ba76448d44800e9211ebd6d26130b945/5706a/software-programming-mess.png&quot;
+          src=&quot;/static/ba76448d44800e9211ebd6d26130b945/0b7c8/software-programming-mess.png&quot;
           alt=&quot;Software Programming Is A Mess&quot;
           title=&quot;Software Programming Is A Mess&quot;
-          src=&quot;/static/ba76448d44800e9211ebd6d26130b945/5706a/software-programming-mess.png&quot;
+          src=&quot;/static/ba76448d44800e9211ebd6d26130b945/0b7c8/software-programming-mess.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -209,7 +209,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/5706a/complexity-software-application.png&quot;
+    href=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/0b7c8/complexity-software-application.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -225,26 +225,26 @@ With a deep sigh, you check your phone:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/df648/complexity-software-application.webp 200w,
-/static/a7594f5b04eec9641cd7cdd389eda722/f7c8e/complexity-software-application.webp 400w,
-/static/a7594f5b04eec9641cd7cdd389eda722/0fa18/complexity-software-application.webp 800w&quot;
+          srcset=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/1092c/complexity-software-application.webp 200w,
+/static/a7594f5b04eec9641cd7cdd389eda722/dea5f/complexity-software-application.webp 400w,
+/static/a7594f5b04eec9641cd7cdd389eda722/19531/complexity-software-application.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/7a8ab/complexity-software-application.png 200w,
-/static/a7594f5b04eec9641cd7cdd389eda722/80860/complexity-software-application.png 400w,
-/static/a7594f5b04eec9641cd7cdd389eda722/5706a/complexity-software-application.png 800w&quot;
+          srcset=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/d9ac9/complexity-software-application.png 200w,
+/static/a7594f5b04eec9641cd7cdd389eda722/43775/complexity-software-application.png 400w,
+/static/a7594f5b04eec9641cd7cdd389eda722/0b7c8/complexity-software-application.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/5706a/complexity-software-application.png&quot;
+          src=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/0b7c8/complexity-software-application.png&quot;
           alt=&quot;Complexity Of A Software Application&quot;
           title=&quot;Complexity Of A Software Application&quot;
-          src=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/5706a/complexity-software-application.png&quot;
+          src=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/0b7c8/complexity-software-application.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -261,7 +261,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/914e2cf67981464cb40be9e608051370/62ce4/programmers-dilemma.png&quot;
+    href=&quot;/static/914e2cf67981464cb40be9e608051370/f5fe2/programmers-dilemma.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -277,26 +277,26 @@ With a deep sigh, you check your phone:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/914e2cf67981464cb40be9e608051370/b5dcf/programmers-dilemma.webp 200w,
-/static/914e2cf67981464cb40be9e608051370/c51ae/programmers-dilemma.webp 400w,
-/static/914e2cf67981464cb40be9e608051370/2c47f/programmers-dilemma.webp 740w&quot;
+          srcset=&quot;/static/914e2cf67981464cb40be9e608051370/0c823/programmers-dilemma.webp 200w,
+/static/914e2cf67981464cb40be9e608051370/825ef/programmers-dilemma.webp 400w,
+/static/914e2cf67981464cb40be9e608051370/4e301/programmers-dilemma.webp 740w&quot;
           sizes=&quot;(max-width: 740px) 100vw, 740px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/914e2cf67981464cb40be9e608051370/a81a7/programmers-dilemma.png 200w,
-/static/914e2cf67981464cb40be9e608051370/88bf4/programmers-dilemma.png 400w,
-/static/914e2cf67981464cb40be9e608051370/62ce4/programmers-dilemma.png 740w&quot;
+          srcset=&quot;/static/914e2cf67981464cb40be9e608051370/d2cc1/programmers-dilemma.png 200w,
+/static/914e2cf67981464cb40be9e608051370/ad4f4/programmers-dilemma.png 400w,
+/static/914e2cf67981464cb40be9e608051370/f5fe2/programmers-dilemma.png 740w&quot;
           sizes=&quot;(max-width: 740px) 100vw, 740px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/914e2cf67981464cb40be9e608051370/62ce4/programmers-dilemma.png&quot;
+          src=&quot;/static/914e2cf67981464cb40be9e608051370/f5fe2/programmers-dilemma.png&quot;
           alt=&quot;Programmer&apos;s Dilemma&quot;
           title=&quot;Programmer&apos;s Dilemma&quot;
-          src=&quot;/static/914e2cf67981464cb40be9e608051370/62ce4/programmers-dilemma.png&quot;
+          src=&quot;/static/914e2cf67981464cb40be9e608051370/f5fe2/programmers-dilemma.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -338,7 +338,7 @@ Whereas for developer software quality corresponds to the quality of the source 
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/06802/qualities-of-good-software-system.png&quot;
+    href=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/b362f/qualities-of-good-software-system.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -354,26 +354,26 @@ Whereas for developer software quality corresponds to the quality of the source 
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/633b3/qualities-of-good-software-system.webp 200w,
-/static/f66174e203468c76d5a6319e5d5cb1e2/5d1f0/qualities-of-good-software-system.webp 400w,
-/static/f66174e203468c76d5a6319e5d5cb1e2/09c20/qualities-of-good-software-system.webp 490w&quot;
+          srcset=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/427d3/qualities-of-good-software-system.webp 200w,
+/static/f66174e203468c76d5a6319e5d5cb1e2/99a6d/qualities-of-good-software-system.webp 400w,
+/static/f66174e203468c76d5a6319e5d5cb1e2/8487a/qualities-of-good-software-system.webp 490w&quot;
           sizes=&quot;(max-width: 490px) 100vw, 490px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/197c7/qualities-of-good-software-system.png 200w,
-/static/f66174e203468c76d5a6319e5d5cb1e2/1bd2a/qualities-of-good-software-system.png 400w,
-/static/f66174e203468c76d5a6319e5d5cb1e2/06802/qualities-of-good-software-system.png 490w&quot;
+          srcset=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/9ad1a/qualities-of-good-software-system.png 200w,
+/static/f66174e203468c76d5a6319e5d5cb1e2/a3a65/qualities-of-good-software-system.png 400w,
+/static/f66174e203468c76d5a6319e5d5cb1e2/b362f/qualities-of-good-software-system.png 490w&quot;
           sizes=&quot;(max-width: 490px) 100vw, 490px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/06802/qualities-of-good-software-system.png&quot;
+          src=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/b362f/qualities-of-good-software-system.png&quot;
           alt=&quot;Qualities Of A Good Software System&quot;
           title=&quot;Qualities Of A Good Software System&quot;
-          src=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/06802/qualities-of-good-software-system.png&quot;
+          src=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/b362f/qualities-of-good-software-system.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -393,7 +393,7 @@ Whereas for developer software quality corresponds to the quality of the source 
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/e189e/connected-software-universe.png&quot;
+    href=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/3a644/connected-software-universe.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -409,26 +409,26 @@ Whereas for developer software quality corresponds to the quality of the source 
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/6b32a/connected-software-universe.webp 200w,
-/static/49464ccb0a8f29772d1ff0aa1828f410/ca00b/connected-software-universe.webp 400w,
-/static/49464ccb0a8f29772d1ff0aa1828f410/759c4/connected-software-universe.webp 776w&quot;
+          srcset=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/00a99/connected-software-universe.webp 200w,
+/static/49464ccb0a8f29772d1ff0aa1828f410/97b4a/connected-software-universe.webp 400w,
+/static/49464ccb0a8f29772d1ff0aa1828f410/07aa2/connected-software-universe.webp 776w&quot;
           sizes=&quot;(max-width: 776px) 100vw, 776px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/fc453/connected-software-universe.png 200w,
-/static/49464ccb0a8f29772d1ff0aa1828f410/fa902/connected-software-universe.png 400w,
-/static/49464ccb0a8f29772d1ff0aa1828f410/e189e/connected-software-universe.png 776w&quot;
+          srcset=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/5cc8c/connected-software-universe.png 200w,
+/static/49464ccb0a8f29772d1ff0aa1828f410/2abef/connected-software-universe.png 400w,
+/static/49464ccb0a8f29772d1ff0aa1828f410/3a644/connected-software-universe.png 776w&quot;
           sizes=&quot;(max-width: 776px) 100vw, 776px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/e189e/connected-software-universe.png&quot;
+          src=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/3a644/connected-software-universe.png&quot;
           alt=&quot;Connected Software Universe&quot;
           title=&quot;Connected Software Universe&quot;
-          src=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/e189e/connected-software-universe.png&quot;
+          src=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/3a644/connected-software-universe.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -477,7 +477,7 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/601d6/unit-testing.jpeg&quot;
+    href=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/fa47f/unit-testing.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -493,26 +493,26 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/e6a7f/unit-testing.webp 200w,
-/static/a36ba0c30e3d1e0507463b7667745ea4/2da9e/unit-testing.webp 400w,
-/static/a36ba0c30e3d1e0507463b7667745ea4/00071/unit-testing.webp 550w&quot;
+          srcset=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/9716b/unit-testing.webp 200w,
+/static/a36ba0c30e3d1e0507463b7667745ea4/7683e/unit-testing.webp 400w,
+/static/a36ba0c30e3d1e0507463b7667745ea4/b5b78/unit-testing.webp 550w&quot;
           sizes=&quot;(max-width: 550px) 100vw, 550px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/771a9/unit-testing.jpeg 200w,
-/static/a36ba0c30e3d1e0507463b7667745ea4/78e38/unit-testing.jpeg 400w,
-/static/a36ba0c30e3d1e0507463b7667745ea4/601d6/unit-testing.jpeg 550w&quot;
+          srcset=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/a6c6a/unit-testing.jpeg 200w,
+/static/a36ba0c30e3d1e0507463b7667745ea4/d40c3/unit-testing.jpeg 400w,
+/static/a36ba0c30e3d1e0507463b7667745ea4/fa47f/unit-testing.jpeg 550w&quot;
           sizes=&quot;(max-width: 550px) 100vw, 550px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/601d6/unit-testing.jpeg&quot;
+          src=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/fa47f/unit-testing.jpeg&quot;
           alt=&quot;Chronicles Of Unit Testing&quot;
           title=&quot;Chronicles Of Unit Testing&quot;
-          src=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/601d6/unit-testing.jpeg&quot;
+          src=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/fa47f/unit-testing.jpeg&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -528,7 +528,7 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/5706a/object-oriented-programmer.png&quot;
+    href=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/0b7c8/object-oriented-programmer.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -544,26 +544,26 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/df648/object-oriented-programmer.webp 200w,
-/static/0f543b0ab764e1f72ecdd902546cf4d2/f7c8e/object-oriented-programmer.webp 400w,
-/static/0f543b0ab764e1f72ecdd902546cf4d2/0fa18/object-oriented-programmer.webp 800w&quot;
+          srcset=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/1092c/object-oriented-programmer.webp 200w,
+/static/0f543b0ab764e1f72ecdd902546cf4d2/dea5f/object-oriented-programmer.webp 400w,
+/static/0f543b0ab764e1f72ecdd902546cf4d2/19531/object-oriented-programmer.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/7a8ab/object-oriented-programmer.png 200w,
-/static/0f543b0ab764e1f72ecdd902546cf4d2/80860/object-oriented-programmer.png 400w,
-/static/0f543b0ab764e1f72ecdd902546cf4d2/5706a/object-oriented-programmer.png 800w&quot;
+          srcset=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/d9ac9/object-oriented-programmer.png 200w,
+/static/0f543b0ab764e1f72ecdd902546cf4d2/43775/object-oriented-programmer.png 400w,
+/static/0f543b0ab764e1f72ecdd902546cf4d2/0b7c8/object-oriented-programmer.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/5706a/object-oriented-programmer.png&quot;
+          src=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/0b7c8/object-oriented-programmer.png&quot;
           alt=&quot;World View Of An Object Oriented Programmer&quot;
           title=&quot;World View Of An Object Oriented Programmer&quot;
-          src=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/5706a/object-oriented-programmer.png&quot;
+          src=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/0b7c8/object-oriented-programmer.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -578,7 +578,7 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/19e9e/programming-errors.jpeg&quot;
+    href=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/e1f51/programming-errors.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -594,24 +594,24 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/d2e9b/programming-errors.webp 200w,
-/static/79d157e8a269457aa84e39f9afc2aa6d/8d396/programming-errors.webp 400w&quot;
+          srcset=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/245ce/programming-errors.webp 200w,
+/static/79d157e8a269457aa84e39f9afc2aa6d/5d676/programming-errors.webp 400w&quot;
           sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/cef9c/programming-errors.jpeg 200w,
-/static/79d157e8a269457aa84e39f9afc2aa6d/19e9e/programming-errors.jpeg 400w&quot;
+          srcset=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/58834/programming-errors.jpeg 200w,
+/static/79d157e8a269457aa84e39f9afc2aa6d/e1f51/programming-errors.jpeg 400w&quot;
           sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/19e9e/programming-errors.jpeg&quot;
+          src=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/e1f51/programming-errors.jpeg&quot;
           alt=&quot;Programming Errors&quot;
           title=&quot;Programming Errors&quot;
-          src=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/19e9e/programming-errors.jpeg&quot;
+          src=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/e1f51/programming-errors.jpeg&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -629,7 +629,7 @@ It will start with 1,000 compile errors. Another developer might cast X back to 
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/5706a/mutation.png&quot;
+    href=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/0b7c8/mutation.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -645,26 +645,26 @@ It will start with 1,000 compile errors. Another developer might cast X back to 
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/df648/mutation.webp 200w,
-/static/9455ffa92024851e2e87ca1d4e9a7707/f7c8e/mutation.webp 400w,
-/static/9455ffa92024851e2e87ca1d4e9a7707/0fa18/mutation.webp 800w&quot;
+          srcset=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/1092c/mutation.webp 200w,
+/static/9455ffa92024851e2e87ca1d4e9a7707/dea5f/mutation.webp 400w,
+/static/9455ffa92024851e2e87ca1d4e9a7707/19531/mutation.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/7a8ab/mutation.png 200w,
-/static/9455ffa92024851e2e87ca1d4e9a7707/80860/mutation.png 400w,
-/static/9455ffa92024851e2e87ca1d4e9a7707/5706a/mutation.png 800w&quot;
+          srcset=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/d9ac9/mutation.png 200w,
+/static/9455ffa92024851e2e87ca1d4e9a7707/43775/mutation.png 400w,
+/static/9455ffa92024851e2e87ca1d4e9a7707/0b7c8/mutation.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/5706a/mutation.png&quot;
+          src=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/0b7c8/mutation.png&quot;
           alt=&quot;Mutation&quot;
           title=&quot;Mutation&quot;
-          src=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/5706a/mutation.png&quot;
+          src=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/0b7c8/mutation.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -730,7 +730,7 @@ Business rule engines are a great way to collect complex decision-making logic a
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5f79a83d618d3545a1abe989f5c352de/8efd2/business-rule-engines.jpeg&quot;
+    href=&quot;/static/5f79a83d618d3545a1abe989f5c352de/ab9a6/business-rule-engines.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -746,26 +746,26 @@ Business rule engines are a great way to collect complex decision-making logic a
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/5f79a83d618d3545a1abe989f5c352de/ea302/business-rule-engines.webp 200w,
-/static/5f79a83d618d3545a1abe989f5c352de/ac892/business-rule-engines.webp 400w,
-/static/5f79a83d618d3545a1abe989f5c352de/ea28a/business-rule-engines.webp 800w&quot;
+          srcset=&quot;/static/5f79a83d618d3545a1abe989f5c352de/8ee75/business-rule-engines.webp 200w,
+/static/5f79a83d618d3545a1abe989f5c352de/60143/business-rule-engines.webp 400w,
+/static/5f79a83d618d3545a1abe989f5c352de/66895/business-rule-engines.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/5f79a83d618d3545a1abe989f5c352de/0fe0b/business-rule-engines.jpeg 200w,
-/static/5f79a83d618d3545a1abe989f5c352de/369cf/business-rule-engines.jpeg 400w,
-/static/5f79a83d618d3545a1abe989f5c352de/8efd2/business-rule-engines.jpeg 800w&quot;
+          srcset=&quot;/static/5f79a83d618d3545a1abe989f5c352de/ad5d5/business-rule-engines.jpeg 200w,
+/static/5f79a83d618d3545a1abe989f5c352de/39b42/business-rule-engines.jpeg 400w,
+/static/5f79a83d618d3545a1abe989f5c352de/ab9a6/business-rule-engines.jpeg 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/5f79a83d618d3545a1abe989f5c352de/8efd2/business-rule-engines.jpeg&quot;
+          src=&quot;/static/5f79a83d618d3545a1abe989f5c352de/ab9a6/business-rule-engines.jpeg&quot;
           alt=&quot;Advantages Of Business Rule Engines&quot;
           title=&quot;Advantages Of Business Rule Engines&quot;
-          src=&quot;/static/5f79a83d618d3545a1abe989f5c352de/8efd2/business-rule-engines.jpeg&quot;
+          src=&quot;/static/5f79a83d618d3545a1abe989f5c352de/ab9a6/business-rule-engines.jpeg&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -781,7 +781,7 @@ Business rule engines are a great way to collect complex decision-making logic a
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/5706a/inheritance-vs-composition.png&quot;
+    href=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/0b7c8/inheritance-vs-composition.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -797,26 +797,26 @@ Business rule engines are a great way to collect complex decision-making logic a
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/df648/inheritance-vs-composition.webp 200w,
-/static/af17f5d68e11eca6b815b94e3f64ca37/f7c8e/inheritance-vs-composition.webp 400w,
-/static/af17f5d68e11eca6b815b94e3f64ca37/0fa18/inheritance-vs-composition.webp 800w&quot;
+          srcset=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/1092c/inheritance-vs-composition.webp 200w,
+/static/af17f5d68e11eca6b815b94e3f64ca37/dea5f/inheritance-vs-composition.webp 400w,
+/static/af17f5d68e11eca6b815b94e3f64ca37/19531/inheritance-vs-composition.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/7a8ab/inheritance-vs-composition.png 200w,
-/static/af17f5d68e11eca6b815b94e3f64ca37/80860/inheritance-vs-composition.png 400w,
-/static/af17f5d68e11eca6b815b94e3f64ca37/5706a/inheritance-vs-composition.png 800w&quot;
+          srcset=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/d9ac9/inheritance-vs-composition.png 200w,
+/static/af17f5d68e11eca6b815b94e3f64ca37/43775/inheritance-vs-composition.png 400w,
+/static/af17f5d68e11eca6b815b94e3f64ca37/0b7c8/inheritance-vs-composition.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/5706a/inheritance-vs-composition.png&quot;
+          src=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/0b7c8/inheritance-vs-composition.png&quot;
           alt=&quot;Inheritance V/S Composition&quot;
           title=&quot;Inheritance V/S Composition&quot;
-          src=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/5706a/inheritance-vs-composition.png&quot;
+          src=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/0b7c8/inheritance-vs-composition.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -833,7 +833,7 @@ Business rule engines are a great way to collect complex decision-making logic a
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/54fec28e254bf6b9eb45926001e672d8/5706a/software-development-progress.png&quot;
+    href=&quot;/static/54fec28e254bf6b9eb45926001e672d8/0b7c8/software-development-progress.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -849,26 +849,26 @@ Business rule engines are a great way to collect complex decision-making logic a
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/54fec28e254bf6b9eb45926001e672d8/df648/software-development-progress.webp 200w,
-/static/54fec28e254bf6b9eb45926001e672d8/f7c8e/software-development-progress.webp 400w,
-/static/54fec28e254bf6b9eb45926001e672d8/0fa18/software-development-progress.webp 800w&quot;
+          srcset=&quot;/static/54fec28e254bf6b9eb45926001e672d8/1092c/software-development-progress.webp 200w,
+/static/54fec28e254bf6b9eb45926001e672d8/dea5f/software-development-progress.webp 400w,
+/static/54fec28e254bf6b9eb45926001e672d8/19531/software-development-progress.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/54fec28e254bf6b9eb45926001e672d8/7a8ab/software-development-progress.png 200w,
-/static/54fec28e254bf6b9eb45926001e672d8/80860/software-development-progress.png 400w,
-/static/54fec28e254bf6b9eb45926001e672d8/5706a/software-development-progress.png 800w&quot;
+          srcset=&quot;/static/54fec28e254bf6b9eb45926001e672d8/d9ac9/software-development-progress.png 200w,
+/static/54fec28e254bf6b9eb45926001e672d8/43775/software-development-progress.png 400w,
+/static/54fec28e254bf6b9eb45926001e672d8/0b7c8/software-development-progress.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/54fec28e254bf6b9eb45926001e672d8/5706a/software-development-progress.png&quot;
+          src=&quot;/static/54fec28e254bf6b9eb45926001e672d8/0b7c8/software-development-progress.png&quot;
           alt=&quot;Progress In Software Development&quot;
           title=&quot;Progress In Software Development&quot;
-          src=&quot;/static/54fec28e254bf6b9eb45926001e672d8/5706a/software-development-progress.png&quot;
+          src=&quot;/static/54fec28e254bf6b9eb45926001e672d8/0b7c8/software-development-progress.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -897,7 +897,7 @@ Business rule engines are a great way to collect complex decision-making logic a
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9821d4c1b3a8a6555e7015c661971223/5706a/vadelabs-software-design-process.png&quot;
+    href=&quot;/static/9821d4c1b3a8a6555e7015c661971223/0b7c8/vadelabs-software-design-process.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -913,26 +913,26 @@ Business rule engines are a great way to collect complex decision-making logic a
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/9821d4c1b3a8a6555e7015c661971223/df648/vadelabs-software-design-process.webp 200w,
-/static/9821d4c1b3a8a6555e7015c661971223/f7c8e/vadelabs-software-design-process.webp 400w,
-/static/9821d4c1b3a8a6555e7015c661971223/0fa18/vadelabs-software-design-process.webp 800w&quot;
+          srcset=&quot;/static/9821d4c1b3a8a6555e7015c661971223/1092c/vadelabs-software-design-process.webp 200w,
+/static/9821d4c1b3a8a6555e7015c661971223/dea5f/vadelabs-software-design-process.webp 400w,
+/static/9821d4c1b3a8a6555e7015c661971223/19531/vadelabs-software-design-process.webp 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/9821d4c1b3a8a6555e7015c661971223/7a8ab/vadelabs-software-design-process.png 200w,
-/static/9821d4c1b3a8a6555e7015c661971223/80860/vadelabs-software-design-process.png 400w,
-/static/9821d4c1b3a8a6555e7015c661971223/5706a/vadelabs-software-design-process.png 800w&quot;
+          srcset=&quot;/static/9821d4c1b3a8a6555e7015c661971223/d9ac9/vadelabs-software-design-process.png 200w,
+/static/9821d4c1b3a8a6555e7015c661971223/43775/vadelabs-software-design-process.png 400w,
+/static/9821d4c1b3a8a6555e7015c661971223/0b7c8/vadelabs-software-design-process.png 800w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/9821d4c1b3a8a6555e7015c661971223/5706a/vadelabs-software-design-process.png&quot;
+          src=&quot;/static/9821d4c1b3a8a6555e7015c661971223/0b7c8/vadelabs-software-design-process.png&quot;
           alt=&quot;Software Design Process At Vadelabs&quot;
           title=&quot;Software Design Process At Vadelabs&quot;
-          src=&quot;/static/9821d4c1b3a8a6555e7015c661971223/5706a/vadelabs-software-design-process.png&quot;
+          src=&quot;/static/9821d4c1b3a8a6555e7015c661971223/0b7c8/vadelabs-software-design-process.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -1002,7 +1002,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/81fbd/chaos-software-development.jpeg&quot;
+    href=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/01472/chaos-software-development.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1018,26 +1018,26 @@ There are three customer segments for the engineering team:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/eded0/chaos-software-development.webp 200w,
-/static/66f0e918e2675330d6eb7918ed2d89db/909f4/chaos-software-development.webp 400w,
-/static/66f0e918e2675330d6eb7918ed2d89db/4154d/chaos-software-development.webp 540w&quot;
+          srcset=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/e8349/chaos-software-development.webp 200w,
+/static/66f0e918e2675330d6eb7918ed2d89db/4a902/chaos-software-development.webp 400w,
+/static/66f0e918e2675330d6eb7918ed2d89db/19621/chaos-software-development.webp 540w&quot;
           sizes=&quot;(max-width: 540px) 100vw, 540px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/0c52c/chaos-software-development.jpeg 200w,
-/static/66f0e918e2675330d6eb7918ed2d89db/e8643/chaos-software-development.jpeg 400w,
-/static/66f0e918e2675330d6eb7918ed2d89db/81fbd/chaos-software-development.jpeg 540w&quot;
+          srcset=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/05722/chaos-software-development.jpeg 200w,
+/static/66f0e918e2675330d6eb7918ed2d89db/9204c/chaos-software-development.jpeg 400w,
+/static/66f0e918e2675330d6eb7918ed2d89db/01472/chaos-software-development.jpeg 540w&quot;
           sizes=&quot;(max-width: 540px) 100vw, 540px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/81fbd/chaos-software-development.jpeg&quot;
+          src=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/01472/chaos-software-development.jpeg&quot;
           alt=&quot;Chaos In Software Development&quot;
           title=&quot;Chaos In Software Development&quot;
-          src=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/81fbd/chaos-software-development.jpeg&quot;
+          src=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/01472/chaos-software-development.jpeg&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -1065,7 +1065,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/e1860/frustrated-programmer.png&quot;
+    href=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/22b7e/frustrated-programmer.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1081,26 +1081,26 @@ There are three customer segments for the engineering team:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/e2e0d/frustrated-programmer.webp 200w,
-/static/ed6fd4267b879eb87eb5cafe535ffb7b/2fff1/frustrated-programmer.webp 400w,
-/static/ed6fd4267b879eb87eb5cafe535ffb7b/d8ad6/frustrated-programmer.webp 656w&quot;
+          srcset=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/6af3d/frustrated-programmer.webp 200w,
+/static/ed6fd4267b879eb87eb5cafe535ffb7b/091e7/frustrated-programmer.webp 400w,
+/static/ed6fd4267b879eb87eb5cafe535ffb7b/f33be/frustrated-programmer.webp 656w&quot;
           sizes=&quot;(max-width: 656px) 100vw, 656px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/f3280/frustrated-programmer.png 200w,
-/static/ed6fd4267b879eb87eb5cafe535ffb7b/657b7/frustrated-programmer.png 400w,
-/static/ed6fd4267b879eb87eb5cafe535ffb7b/e1860/frustrated-programmer.png 656w&quot;
+          srcset=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/8c4d3/frustrated-programmer.png 200w,
+/static/ed6fd4267b879eb87eb5cafe535ffb7b/a7fa5/frustrated-programmer.png 400w,
+/static/ed6fd4267b879eb87eb5cafe535ffb7b/22b7e/frustrated-programmer.png 656w&quot;
           sizes=&quot;(max-width: 656px) 100vw, 656px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/e1860/frustrated-programmer.png&quot;
+          src=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/22b7e/frustrated-programmer.png&quot;
           alt=&quot;Frustrated Programmer&quot;
           title=&quot;Frusrated Programmer&quot;
-          src=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/e1860/frustrated-programmer.png&quot;
+          src=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/22b7e/frustrated-programmer.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
@@ -1133,7 +1133,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/ba7ae/pragyan.png&quot;
+    href=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/62892/pragyan.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1149,28 +1149,28 @@ There are three customer segments for the engineering team:&lt;/p&gt;
     &gt;
       &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/df648/pragyan.webp 200w,
-/static/606d969c1cbb9a9e42e74269b44f862e/f7c8e/pragyan.webp 400w,
-/static/606d969c1cbb9a9e42e74269b44f862e/0fa18/pragyan.webp 800w,
-/static/606d969c1cbb9a9e42e74269b44f862e/c2fce/pragyan.webp 810w&quot;
+          srcset=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/1092c/pragyan.webp 200w,
+/static/606d969c1cbb9a9e42e74269b44f862e/dea5f/pragyan.webp 400w,
+/static/606d969c1cbb9a9e42e74269b44f862e/19531/pragyan.webp 800w,
+/static/606d969c1cbb9a9e42e74269b44f862e/ce507/pragyan.webp 810w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/7a8ab/pragyan.png 200w,
-/static/606d969c1cbb9a9e42e74269b44f862e/80860/pragyan.png 400w,
-/static/606d969c1cbb9a9e42e74269b44f862e/5706a/pragyan.png 800w,
-/static/606d969c1cbb9a9e42e74269b44f862e/ba7ae/pragyan.png 810w&quot;
+          srcset=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/d9ac9/pragyan.png 200w,
+/static/606d969c1cbb9a9e42e74269b44f862e/43775/pragyan.png 400w,
+/static/606d969c1cbb9a9e42e74269b44f862e/0b7c8/pragyan.png 800w,
+/static/606d969c1cbb9a9e42e74269b44f862e/62892/pragyan.png 810w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-          src=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/5706a/pragyan.png&quot;
+          src=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/0b7c8/pragyan.png&quot;
           alt=&quot;Pragyan Tripathi&quot;
           title=&quot;Pragyan Tripathi&quot;
-          src=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/5706a/pragyan.png&quot;
+          src=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/0b7c8/pragyan.png&quot;
         /&gt;
       &lt;/picture&gt;
       &lt;/span&gt;
