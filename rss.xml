@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:16:03 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:24:03 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -41,7 +41,38 @@ With a deep sigh, you check your phone:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Why is it so hard to build a reliable software application?&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;./software-reliability-not-accident.webp&quot; alt=&quot;Software Reliability Is Not An Accident&quot; title=&quot;Software Reliability Is Not An Accident&quot;&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1fc77df03d50f5c275b70b39a3363132/9f73d/software-reliability-not-accident.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 236px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 147.8813559322034%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAABQBQCdASoUAB4APm0wk0ckIqGhKAqogA2JaQAD42M4FEVVstikzYf0Sbwc4uWKYoLbNBQA/vz4gF8W2Ab774y2ZZVCC+q2nn7uJMRKlA1+YNPJ1nDXYQx9mBANt9LTsvbLAYChinSkvOTlVPLeN9z8yhSnhsCLchgcge9Dm1/JoWufdgyiIeFytUefSm43Lgu/n9Yak54Xts0ROvJ2O8HX/s+jxpmLTb/ucNRtT+Hx5X6tdzRJFyntB0v4Riv9oZjN8w8WwAb4e7LJBgrvQAwlsAO+HtsshhxjMyn0Ph5KGfyef8RyxgAA&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Software Reliability Is Not An Accident&quot;
+        title=&quot;Software Reliability Is Not An Accident&quot;
+        src=&quot;/static/1fc77df03d50f5c275b70b39a3363132/9f73d/software-reliability-not-accident.webp&quot;
+        srcset=&quot;/static/1fc77df03d50f5c275b70b39a3363132/3caad/software-reliability-not-accident.webp 200w,
+/static/1fc77df03d50f5c275b70b39a3363132/9f73d/software-reliability-not-accident.webp 236w&quot;
+        sizes=&quot;(max-width: 236px) 100vw, 236px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;The next morning nothing feels right to you. Everything feels bland and incoherent. You don’t want to continue writing buggy software anymore. Instead, you want to build something which could be revered by your peers. It could pass the test of time and can evolve in something bigger than you ever imagined.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;So, what can you do about it?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;There are two ways you can solve the problem:&lt;/p&gt;
@@ -340,7 +371,39 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
 &lt;li&gt;&lt;em&gt;The best way is not to expose any member at all. Instead, manipulations of properties must happen inside the class. It helps in achieving full isolation of implementation and creates only one place to change.&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;3. Write Lots Of Unit Tests&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;./unit-testing.webp&quot; alt=&quot;Chronicles Of Unit Testing&quot; title=&quot;Chronicles Of Unit Testing&quot;&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dde2ce3e16c3a4e2ef86f4c5a9750eea/a35a6/unit-testing.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 550px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 153.0909090909091%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRqIBAABXRUJQVlA4IJYBAAAQBwCdASoUAB8APm0qkUWkIqGYBABABsSzgF2QTWSzGdAemPm5VBuk8N9tmlX08eWRo0ghMk01njhguiyFm24xAAD+/C7V/fVxdBY1JTnMLzjIwbEOS7EMcAOOH92BjLSL8eNqaPZN8h/RDeToZeDhw/7Yig1yCMPZ9sutyx4p1YTQEMIvQHj3QXPP9ZEU658LSPDW5Xv3CLCvLm0/rNUkQDHtTzLeG3O5Jq2IRRx5GeI51idLxaP97f+Rp8arf4hP/vBT40mAOfeKwV1/iuB99EdaH72T5ikRfvSL/+nZNNuI+ns+RuPnTY5KLM57of/h/pjsckIaegb/bNsYZVEbn86eWDetvijQhLu2/wvqpEVemu+yAs21jzgmzIrQe/b+HtvxYDv6Vbj5nEOC2VDjRUy5QsWZcTVtSj/lq+WCPl/+SOSRnqZzVUBK00WEwciEqoQnsnlxAKxeIBeo/zboDZsoAHfzuS7PCgvv+Tb8ufApCWrCWK57/e153yb6STEq+Dr/5FE4yCZhDVeFvGOJTsFRgAAA&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Chronicles Of Unit Testing&quot;
+        title=&quot;Chronicles Of Unit Testing&quot;
+        src=&quot;/static/dde2ce3e16c3a4e2ef86f4c5a9750eea/a35a6/unit-testing.webp&quot;
+        srcset=&quot;/static/dde2ce3e16c3a4e2ef86f4c5a9750eea/f5a2f/unit-testing.webp 200w,
+/static/dde2ce3e16c3a4e2ef86f4c5a9750eea/5fcf0/unit-testing.webp 400w,
+/static/dde2ce3e16c3a4e2ef86f4c5a9750eea/a35a6/unit-testing.webp 550w&quot;
+        sizes=&quot;(max-width: 550px) 100vw, 550px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Imagine you have three modules, A, B, and C. You wrote an extensive unit test suite for each component. Later on, you decide to change the implementation so that A and C can split B’s functionality among themselves. You now have two new modules with different interfaces. All the unit tests you wrote are of no use anymore. You may use some of the older test code, but now you need to re-write the entire test suite.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -383,7 +446,38 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
 &lt;p&gt;Encapsulate them using setters and getters.&lt;/p&gt;
 &lt;p&gt;Use setters to modify the values with an &lt;strong&gt;update-in-place model&lt;/strong&gt;. Moreover, restrict their direct access using getters. It will enable people around you to deal with unnecessary data abstraction that you have kept in place. It will automatically make their code order of magnitude larger.&lt;/p&gt;
 &lt;h3&gt;5. Throw Non-Descriptive Errors&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;./programming-errors.webp&quot; alt=&quot;Programming Errors&quot; title=&quot;Programming Errors&quot;&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f0fd568fac5a05bb006e359848964026/70922/programming-errors.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 400px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADQBACdASoUABQAPm0wlUakIyIhKAqogA2JaQAD5Jj//NmS90BXbr+E5hnll2UAAAD+/jJbncKSvYt14jQ/193q8EftWU9A8+gkZQ+B+oi+nbpiG00bhGl3u6v5KMAkrCzANd/ca9K69h51+2XXV9smynnt5IN6QcgUOF7MYG2IO1CWKEp2UmhiYtcy06rCGIFH0+xqlGFqFwFSTHODAIpz1NAgEAAA&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Programming Errors&quot;
+        title=&quot;Programming Errors&quot;
+        src=&quot;/static/f0fd568fac5a05bb006e359848964026/70922/programming-errors.webp&quot;
+        srcset=&quot;/static/f0fd568fac5a05bb006e359848964026/ffbbb/programming-errors.webp 200w,
+/static/f0fd568fac5a05bb006e359848964026/70922/programming-errors.webp 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;h3&gt;6. Use Static Types&lt;/h3&gt;
 &lt;p&gt;Imagine there is a popular method getX() you wrote.
 It has around 1,000 calls in a software application. Each call assumes that the X is an integer, but now someone else needs to change the return type to long.&lt;/p&gt;
@@ -667,7 +761,39 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Either you abandon the product early, or you stick with it long enough to see it become complex.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;./chaos-software-development.webp&quot; alt=&quot;Chaos In Software Development&quot; title=&quot;Chaos In Software Development&quot;&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/10992a223b68dbadfc06df0b8fa69456/13df6/chaos-software-development.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 540px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 76.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRiQBAABXRUJQVlA4IBgBAAAwBwCdASoUAA8APm0qkkWkIqGYBABABsS2AE6ZQjubwC3DtBGgMMB57emAc9v+wHwjkqq8dKBsK2q3Vs/HIIgSi0gA/vgopQPdkm3m+HPqvjCgcaVc2RoMYdSXdTXgLTMh1N8mG7kSmIofKdslN2sb0QfwB/DPq9P1YS4pjR0LtReMsZRg0RRc9+B4wCFw3ff2Oqf+6NBmoelJ9J1n/wskGfed9/VFfDb/7YOgLi53CSP21pXq6v+xgqIEJt46YCbQJtu2LmGM/6od9YrYw+1L+cRmZs9G2U/VF4CTBG55iInFTOSSa5ttiMYrpHQ359Q1b1jCS0NF4f9ctPDCmcMLrJzrNn+at88W9An/PZ46Vg1mL6DZAAAA&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Chaos In Software Development&quot;
+        title=&quot;Chaos In Software Development&quot;
+        src=&quot;/static/10992a223b68dbadfc06df0b8fa69456/13df6/chaos-software-development.webp&quot;
+        srcset=&quot;/static/10992a223b68dbadfc06df0b8fa69456/5aef1/chaos-software-development.webp 200w,
+/static/10992a223b68dbadfc06df0b8fa69456/25460/chaos-software-development.webp 400w,
+/static/10992a223b68dbadfc06df0b8fa69456/13df6/chaos-software-development.webp 540w&quot;
+        sizes=&quot;(max-width: 540px) 100vw, 540px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;Any useful software program either evolves with time, or it becomes obsolete. By its nature, the evolution of software is inevitably complicated. It’s a common misconception among people concerned with software that the majority of software development is programming. &lt;strong&gt;&lt;em&gt;It is a combination of interaction, design, and implementation.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In this article, I have presented ways to mitigate complexity for as long as possible in a product development cycle.&lt;/p&gt;
 &lt;p&gt;Building simple and efficient software is an iterative and collaborative process. At &lt;a href=&quot;https://nerds-den.com&quot;&gt;Nerd’s Den&lt;/a&gt;, we aim to catalog our development cycle of building simpler software systems performing complex endeavors. Therefore, I welcome you to embark with us on the journey of designing software that you could be proud of.&lt;/p&gt;
@@ -778,7 +904,9 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;p&gt;If you’re interested, I specialize in topics like software architecture, databases, and web application development.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Before I go, I would like to invite you to join my email list community. By signing up (its free), you’ll get access to our latest articles right when they come out.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Also thanks for being here. I genuinely appreciate it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Privacy]]></title><description><![CDATA[The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect…]]></description><link>https://nerds-den.com//privacy/</link><guid isPermaLink="false">https://nerds-den.com//privacy/</guid><content:encoded>&lt;p&gt;The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect your personal information. Below is everything you need to know about how this site operates.&lt;/p&gt;
+&lt;p&gt;Also thanks for being here. I genuinely appreciate it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Success]]></title><description><![CDATA[Thank you.  
+I will answer to your message as soon as possible.]]></description><link>https://nerds-den.com//success/</link><guid isPermaLink="false">https://nerds-den.com//success/</guid><content:encoded>&lt;p&gt;Thank you. &lt;br /&gt;
+I will answer to your message as soon as possible.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Privacy]]></title><description><![CDATA[The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect…]]></description><link>https://nerds-den.com//privacy/</link><guid isPermaLink="false">https://nerds-den.com//privacy/</guid><content:encoded>&lt;p&gt;The internet isn’t the safest place, and as an ethical business owner and fellow internet user, I understand how important it is to protect your personal information. Below is everything you need to know about how this site operates.&lt;/p&gt;
 &lt;h2&gt;What information is collected?&lt;/h2&gt;
 &lt;p&gt;While using this site, you may be asked to provide a name, email, or other personally identifiable information that can be used to contact or identify you.&lt;/p&gt;
 &lt;h2&gt;Log Data&lt;/h2&gt;
@@ -826,6 +954,4 @@ There are three customer segments for the engineering team:&lt;/p&gt;
 &lt;h2&gt;Modifications&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://nerds-den.com&quot;&gt;Nerd’s Den&lt;/a&gt; may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.&lt;/p&gt;
 &lt;h2&gt;Governing Law&lt;/h2&gt;
-&lt;p&gt;These Terms of Service and any separate agreements whereby we provide shall be governed by and construed in accordance with the laws of India and jurisdiction of Bengaluru, Karnataka.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Success]]></title><description><![CDATA[Thank you.  
-I will answer to your message as soon as possible.]]></description><link>https://nerds-den.com//success/</link><guid isPermaLink="false">https://nerds-den.com//success/</guid><content:encoded>&lt;p&gt;Thank you. &lt;br /&gt;
-I will answer to your message as soon as possible.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;These Terms of Service and any separate agreements whereby we provide shall be governed by and construed in accordance with the laws of India and jurisdiction of Bengaluru, Karnataka.&lt;/p&gt;</content:encoded></item></channel></rss>
