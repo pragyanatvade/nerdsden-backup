@@ -2,7 +2,7 @@ module.exports = {
   /* Website */
   siteTitle: `Nerd's Den - Memoirs Of A Skeptic Nerd`,
   shortSiteTitle: `Nerd's Den`,
-  siteDescription: `Design Reliable, Scalable, and Flexible Softwares - The Right Way`,
+  siteDescription: `Design Reliable, Scalable, and Flexible Softwares The Right Way`,
   siteUrl: `https://nerds-den.com`,
   pathPrefix: ``,
   siteImage: ``,
