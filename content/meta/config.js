@@ -4,7 +4,7 @@ module.exports = {
   shortSiteTitle: `Nerd's Den`,
   siteDescription: `Design Reliable, Scalable, and Flexible Softwares The Right Way`,
   siteUrl: `https://nerds-den.com`,
-  pathPrefix: ``,
+  pathPrefix: `/`,
   siteImage: ``,
   siteLanguage: `en`,
 
@@ -31,7 +31,7 @@ module.exports = {
 
   /* Analytics */
   google: {
-    appId: process.env.GOOGLE_ANALYTICS_ID || `UA-55436366-2`,
+    trackingId: process.env.GOOGLE_ANALYTICS_ID || `UA-55436366-2`,
   },
   facebook: {
     appId: process.env.FB_APP_ID || `2232544823425455`,
