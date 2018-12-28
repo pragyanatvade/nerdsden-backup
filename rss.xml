@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Dec 2018 13:53:44 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nerd's Den]]></title><description><![CDATA[Memoirs Of A Skeptic Nerd]]></description><link>https://nerds-den.com/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 28 Dec 2018 00:53:53 GMT</lastBuildDate><item><title><![CDATA[How To Design Software That You Can Be Proud Of?]]></title><description><![CDATA[It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the…]]></description><link>https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</link><guid isPermaLink="false">https://nerds-den.com//how-to-design-software-that-you-can-be-proud-of/</guid><content:encoded>&lt;p&gt;It’s 2 o’clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -32,7 +32,7 @@
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/6f4dfc7a500e762d5026e392b2fb92d6/fd37b/programmer-dream.png&quot;
           alt=&quot;Every Programmers&apos; Dream&quot;
@@ -85,7 +85,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/b9b51fc62a3d6a11d1890ef2432ce60c/26646/software-reliability-not-accident.jpeg&quot;
           alt=&quot;Software Reliability Is Not An Accident&quot;
@@ -136,7 +136,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/1ab782cf088cd0009338f512487c6e1b/0b7c8/dark-side-software-development.png&quot;
           alt=&quot;Dark Side Of Software Development&quot;
@@ -190,7 +190,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/ba76448d44800e9211ebd6d26130b945/0b7c8/software-programming-mess.png&quot;
           alt=&quot;Software Programming Is A Mess&quot;
@@ -239,7 +239,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/a7594f5b04eec9641cd7cdd389eda722/0b7c8/complexity-software-application.png&quot;
           alt=&quot;Complexity Of A Software Application&quot;
@@ -291,7 +291,7 @@ With a deep sigh, you check your phone:&lt;/p&gt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/914e2cf67981464cb40be9e608051370/f5fe2/programmers-dilemma.png&quot;
           alt=&quot;Programmer&apos;s Dilemma&quot;
@@ -368,7 +368,7 @@ Whereas for developer software quality corresponds to the quality of the source 
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/f66174e203468c76d5a6319e5d5cb1e2/b362f/qualities-of-good-software-system.png&quot;
           alt=&quot;Qualities Of A Good Software System&quot;
@@ -423,7 +423,7 @@ Whereas for developer software quality corresponds to the quality of the source 
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/49464ccb0a8f29772d1ff0aa1828f410/3a644/connected-software-universe.png&quot;
           alt=&quot;Connected Software Universe&quot;
@@ -507,7 +507,7 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/a36ba0c30e3d1e0507463b7667745ea4/fa47f/unit-testing.jpeg&quot;
           alt=&quot;Chronicles Of Unit Testing&quot;
@@ -558,7 +558,7 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/0f543b0ab764e1f72ecdd902546cf4d2/0b7c8/object-oriented-programmer.png&quot;
           alt=&quot;World View Of An Object Oriented Programmer&quot;
@@ -606,7 +606,7 @@ AccountTracker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/79d157e8a269457aa84e39f9afc2aa6d/e1f51/programming-errors.jpeg&quot;
           alt=&quot;Programming Errors&quot;
@@ -659,7 +659,7 @@ It will start with 1,000 compile errors. Another developer might cast X back to 
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/9455ffa92024851e2e87ca1d4e9a7707/0b7c8/mutation.png&quot;
           alt=&quot;Mutation&quot;
@@ -760,7 +760,7 @@ Business rule engines are a great way to collect complex decision-making logic a
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/5f79a83d618d3545a1abe989f5c352de/ab9a6/business-rule-engines.jpeg&quot;
           alt=&quot;Advantages Of Business Rule Engines&quot;
@@ -811,7 +811,7 @@ Business rule engines are a great way to collect complex decision-making logic a
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/af17f5d68e11eca6b815b94e3f64ca37/0b7c8/inheritance-vs-composition.png&quot;
           alt=&quot;Inheritance V/S Composition&quot;
@@ -863,7 +863,7 @@ Business rule engines are a great way to collect complex decision-making logic a
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/54fec28e254bf6b9eb45926001e672d8/0b7c8/software-development-progress.png&quot;
           alt=&quot;Progress In Software Development&quot;
@@ -927,7 +927,7 @@ Business rule engines are a great way to collect complex decision-making logic a
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/9821d4c1b3a8a6555e7015c661971223/0b7c8/vadelabs-software-design-process.png&quot;
           alt=&quot;Software Design Process At Vadelabs&quot;
@@ -1032,7 +1032,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/66f0e918e2675330d6eb7918ed2d89db/01472/chaos-software-development.jpeg&quot;
           alt=&quot;Chaos In Software Development&quot;
@@ -1095,7 +1095,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/ed6fd4267b879eb87eb5cafe535ffb7b/22b7e/frustrated-programmer.png&quot;
           alt=&quot;Frustrated Programmer&quot;
@@ -1165,7 +1165,7 @@ There are three customer segments for the engineering team:&lt;/p&gt;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
+          class=&quot;gatsby-resp-image-image lazyload&quot;
           style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
           src=&quot;/static/606d969c1cbb9a9e42e74269b44f862e/0b7c8/pragyan.png&quot;
           alt=&quot;Pragyan Tripathi&quot;
