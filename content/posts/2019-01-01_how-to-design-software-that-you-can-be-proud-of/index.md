@@ -1,8 +1,12 @@
 ---
 title: How To Design Software That You Can Be Proud Of?
-category: software-development
+tags: software-development,software-design,best-practices
 cover: programmer-dream.png
 author: Pragyan Tripathi
+slug: how-to-design-software-that-you-can-be-proud-of
+summary: Hello World
+published: 2019-01-01
+modified: 2019-01-01
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
@@ -18,7 +22,7 @@ You decide to put on your cape, switch on your PC, silent your slack notificatio
 
 > **Why is it so hard to build a reliable software application?**
 
-![Software Reliability Is Not An Accident](./software-reliability-not-accident.jpeg "Software Reliability Is Not An Accident")
+![Software Reliability Is Not An Accident](./software-reliability-not-accident.jpeg 'Software Reliability Is Not An Accident')
 
 The next morning nothing feels right to you. Everything feels bland and incoherent. You don't want to continue writing buggy software anymore. Instead, you want to build something which could be revered by your peers. It could pass the test of time and can evolve in something bigger than you ever imagined.
 
@@ -30,7 +34,7 @@ The **_first_** one might have already crossed your mind. **_Run away!_** Book y
 
 If you are even remotely considering it, there is no need to go further. Trust me; you might get pulled to the darker side.
 
-![Dark Side Of Software Development](./dark-side-software-development.png "Dark Side Of Software Development")
+![Dark Side Of Software Development](./dark-side-software-development.png 'Dark Side Of Software Development')
 
 The **_second one_**, however, is the one we are going to talk about in this article. **_Writing efficient and simple programs._**
 
@@ -44,7 +48,7 @@ There are two kinds of software complexities: **_Essential Complexity_** and **_
 
 > One way to summarize, the flow of complexity is increasing requirements for coordination.
 
-![Software Programming Is A Mess](./software-programming-mess.png "Software Programming Is A Mess")
+![Software Programming Is A Mess](./software-programming-mess.png 'Software Programming Is A Mess')
 
 ### Essential Complexity
 
@@ -52,7 +56,7 @@ It is inherent to the software development. The primary source of this kind of c
 
 Increase in the number of product features along with environmental complexities (CPU, Memory, Network, etc.) increases the number of states a software system can be in, exponentially. It makes understanding, visualizing, describing and testing software even harder.
 
-![Complexity Of A Software Application](./complexity-software-application.png "Complexity Of A Software Application")
+![Complexity Of A Software Application](./complexity-software-application.png 'Complexity Of A Software Application')
 
 Scaling a software system is not merely a repetition of the same elements in larger sizes. In most cases, software components need to interact with each other in some non-linear fashion and complexity of the system increases more than linearly.
 
@@ -109,7 +113,7 @@ Whereas for developer software quality corresponds to the quality of the source 
 
 The table below summarizes the expectations of all the stakeholders (users, operators, and developers) into six characteristics which a useful software must have.
 
-![Qualities Of A Good Software System](./qualities-of-good-software-system.png "Qualities Of A Good Software System")
+![Qualities Of A Good Software System](./qualities-of-good-software-system.png 'Qualities Of A Good Software System')
 
 Designing such software is like playing chess. Rules of playing chess are pretty simple, but it takes years of practice and dedication to be a grandmaster. Even though these software qualities seem simple to achieve, it involves the combination of knowledge, creative vision, and technique. The implementation technique must be flawless to deliver bug-free software with optimal performance and reliability. It takes a lot of practice, iterations and, collaboration to build a good software system.
 
@@ -125,7 +129,7 @@ Yes, we are. But to understand simplicity, we must start appreciating the subtle
 
 However, we are not going to discuss naturally induced complexity, which your peers will spot in a snap. We will follow industry practices and stay buzzword compliant with the latest trends, while quietly spreading complexity throughout the systems.
 
-![Connected Software Universe](./connected-software-universe.png "Connected Software Universe")
+![Connected Software Universe](./connected-software-universe.png 'Connected Software Universe')
 
 A software system can be assumed to be a connected universe, and your program is a dot in that universe. Your goal is to write the code in a way that complexity flows for people upstream or downstream of your application.
 
@@ -185,7 +189,7 @@ There are few ways to mitigate such tragedies. You must stay away from any of th
 
 ### 3. Write Lots Of Unit Tests
 
-![Chronicles Of Unit Testing](./unit-testing.jpeg "Chronicles Of Unit Testing")
+![Chronicles Of Unit Testing](./unit-testing.jpeg 'Chronicles Of Unit Testing')
 
 > Imagine you have three modules, A, B, and C. You wrote an extensive unit test suite for each component. Later on, you decide to change the implementation so that A and C can split B's functionality among themselves. You now have two new modules with different interfaces. All the unit tests you wrote are of no use anymore. You may use some of the older test code, but now you need to re-write the entire test suite.
 
@@ -193,7 +197,7 @@ Every unit test you write is not production code solving someone's problem. Ther
 
 ### 4. Abstract Information With Objects
 
-![World View Of An Object Oriented Programmer](./object-oriented-programmer.png "World View Of An Object Oriented Programmer")
+![World View Of An Object Oriented Programmer](./object-oriented-programmer.png 'World View Of An Object Oriented Programmer')
 
 Information is a simple construct; it comes in few shapes (characters, booleans, numbers, scalars, sequences, arrays, maps, sets, etc.) You must abstract them with objects (Profile, Order, Product, etc.)
 
@@ -203,7 +207,7 @@ Use setters to modify the values with an **update-in-place model**. Moreover, re
 
 ### 5. Throw Non-Descriptive Errors
 
-![Programming Errors](./programming-errors.jpeg "Programming Errors")
+![Programming Errors](./programming-errors.jpeg 'Programming Errors')
 
 ### 6. Use Static Types
 
@@ -217,7 +221,7 @@ To increase software complexity, you want effects of change ripple out into the 
 
 ### 7. Update Information In Place
 
-![Mutation](./mutation.png "Mutation")
+![Mutation](./mutation.png 'Mutation')
 
 Mutable data-structures don't provide any guarantee that something will remain unchanged. Problems occur when we use the same structure in separate parts of the application, then any change in one module might create a bug in another. This kind of bug is generally hard to track.
 
@@ -274,7 +278,7 @@ Object-Oriented Programming facilitates method calls on objects - presumes t
 Have you ever spent sleepless nights debugging code when you modified one of those "if" statements and found that it distorted the next if statement?
 Business rule engines are a great way to collect complex decision-making logic and work with the data too large for humans to effectively use.
 
-![Advantages Of Business Rule Engines](./business-rule-engines.jpeg "Advantages Of Business Rule Engines")
+![Advantages Of Business Rule Engines](./business-rule-engines.jpeg 'Advantages Of Business Rule Engines')
 
 ### 3. Always Be Composing
 
@@ -282,7 +286,7 @@ Business rule engines are a great way to collect complex decision-making logic a
 
 It's better to compose functionality of a module out of smaller building blocks instead of inheriting for code re-use.
 
-![Inheritance V/S Composition](./inheritance-vs-composition.png "Inheritance V/S Composition")
+![Inheritance V/S Composition](./inheritance-vs-composition.png 'Inheritance V/S Composition')
 
 ---
 
@@ -292,7 +296,7 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 Also, you cannot excel at something you do not measure. So if you want to be good at software design, it's a mandate to measure your progress. Thankfully, we have few frameworks at our disposal we can use to measure the degree of complexity in software.
 
-![Progress In Software Development](./software-development-progress.png "Progress In Software Development")
+![Progress In Software Development](./software-development-progress.png 'Progress In Software Development')
 
 While understanding source code, programmer builds a mental model of the software which involves an understanding of Control Flow and Data Flow in the program. We would use the following metrics for measuring software complexity:
 
@@ -310,7 +314,7 @@ While understanding source code, programmer builds a mental model of the softwar
 
 The image below represents the software design process we follow while designing software.
 
-![Software Design Process At Vadelabs](./vadelabs-software-design-process.png "Software Design Process At Vadelabs")
+![Software Design Process At Vadelabs](./vadelabs-software-design-process.png 'Software Design Process At Vadelabs')
 
 We follow this process because it gives us the necessary flexibility to iterate and adapt faster.
 
@@ -394,7 +398,7 @@ The last step is to demo the product. We usually create a video showcasing the p
 
 > Either you abandon the product early, or you stick with it long enough to see it become complex.
 
-![Chaos In Software Development](./chaos-software-development.jpeg "Chaos In Software Development")
+![Chaos In Software Development](./chaos-software-development.jpeg 'Chaos In Software Development')
 
 Any useful software program either evolves with time, or it becomes obsolete. By its nature, the evolution of software is inevitably complicated. It's a common misconception among people concerned with software that the majority of software development is programming. **_It is a combination of interaction, design, and implementation._**
 

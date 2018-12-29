@@ -38,4 +38,8 @@ module.exports = {
   },
 
   /* Search */
+
+  /* Feed */
+  postsPerHomePage: 10,
+  postsPerPage: 10,
 }
