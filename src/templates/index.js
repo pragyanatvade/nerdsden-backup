@@ -1,16 +1,15 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
 
 const Index = ({ data, pageContext }) => {
-  const posts = data.posts.edges
-  const featuredPost = posts[0].node
-  const { currentPage } = pageContext
-  const isFirstPage = currentPage === 1
+  const posts = data.posts.edges;
+  const featuredPost = posts[0].node;
+  const { currentPage } = pageContext;
+  const isFirstPage = currentPage === 1;
 
-  console.log('posts', posts)
-
-  return <div>Hello World </div>
-}
+  return <Layout />;
+};
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
@@ -35,6 +34,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Index
+export default Index;
