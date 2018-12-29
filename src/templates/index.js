@@ -1,14 +1,28 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import React from "react";
+import { graphql } from "gatsby";
+
+import Layout from "../components/Layout";
+import Container from "../components/Container";
+import CardList from "../components/CardList";
+import Card from "../components/Card";
 
 const Index = ({ data, pageContext }) => {
   const posts = data.posts.edges;
   const featuredPost = posts[0].node;
-  const { currentPage } = pageContext;
-  const isFirstPage = currentPage === 1;
+  // const { currentPage } = pageContext;
+  // const isFirstPage = currentPage === 1;
 
-  return <Layout />;
+  console.log("posts", featuredPost);
+
+  return (
+    <Layout>
+      <Container>
+        <CardList>
+          <Card {...featuredPost} featured />
+        </CardList>
+      </Container>
+    </Layout>
+  );
 };
 
 export const query = graphql`

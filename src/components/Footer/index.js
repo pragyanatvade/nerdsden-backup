@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.footer`
   display: flex;
@@ -45,7 +45,7 @@ const Footer = () => (
   <Wrapper>
     <List>
       <Item>
-        Copyright © 2019 -{' '}
+        Copyright © 2019 -{" "}
         <a href="https://www.vadelabs.com/" rel="nofollow noopener noreferrer" target="_blank">
           Vadelabs
         </a>
@@ -54,10 +54,10 @@ const Footer = () => (
       <Item>
         <a href="https://nerds-den.com/privacy/" target="_blank" rel="noopener noreferrer">
           Privacy
-        </a>{' '}
+        </a>{" "}
         <a href="https://nerds-den.com/terms-of-use/" target="_blank" rel="noopener noreferrer">
           Terms Of Use
-        </a>{' '}
+        </a>{" "}
         <a href="https://nerds-den.com/contact/" target="_blank" rel="noopener noreferrer">
           Contact
         </a>

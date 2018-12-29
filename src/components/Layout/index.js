@@ -1,12 +1,12 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import { ThemeProvider } from "styled-components";
 
-import Head from '../Head';
-import Menu from '../Menu';
-import Footer from '../Footer';
+import Head from "../Head";
+import Menu from "../Menu";
+import Footer from "../Footer";
 
-import theme from '../../styles/theme';
-import GlobalStyle from '../../styles/global';
+import theme from "../../styles/theme";
+import GlobalStyle from "../../styles/global";
 
 const Layout = ({ children }) => (
   <div className="siteRoot">
@@ -15,6 +15,7 @@ const Layout = ({ children }) => (
       <>
         <div className="siteContent">
           <Menu />
+          {children}
         </div>
         <Footer />
       </>

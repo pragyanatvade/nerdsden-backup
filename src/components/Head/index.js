@@ -1,8 +1,8 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from "react";
+import Helmet from "react-helmet";
 
-import favicon from '../../../static/favicon.ico';
-import config from '../../../content/meta/config';
+import favicon from "../../../static/favicon.ico";
+import config from "../../../content/meta/config";
 
 const Head = () => (
   <Helmet>
