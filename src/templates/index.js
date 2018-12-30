@@ -11,11 +11,7 @@ const Index = ({ data, pageContext }) => {
   const {
     node: { id, excerpt, fields, frontmatter }
   } = posts[0];
-
-  // const { currentPage } = pageContext;
-  // const isFirstPage = currentPage === 1;
   const featuredPost = { id, ...fields, ...frontmatter, excerpt };
-  // console.log("posts", featuredPost);
 
   return (
     <Layout>
