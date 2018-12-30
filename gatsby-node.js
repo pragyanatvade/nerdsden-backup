@@ -1,64 +1,64 @@
-const _ = require('lodash')
-const path = require('path')
-const config = require('./content/meta/config')
-const { createFilePath } = require('gatsby-source-filesystem')
+const _ = require("lodash");
+const path = require("path");
+const config = require("./content/meta/config");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const fileNode = getNode(node.parent)
-    const source = fileNode.sourceInstanceName
-    const path = createFilePath({ node, getNode })
+    const fileNode = getNode(node.parent);
+    const source = fileNode.sourceInstanceName;
+    const path = createFilePath({ node, getNode });
     const {
-      frontmatter: { tags },
-    } = node
+      frontmatter: { tags }
+    } = node;
     if (tags) {
-      const tagsArray = _.split(tags, ',')
+      const tagsArray = _.split(tags, ",");
       createNodeField({
         node,
         name: `tags`,
-        value: tagsArray,
-      })
+        value: tagsArray
+      });
     }
 
-    if (source === 'posts') {
-      const [date, slug] = _.map(_.split(path, '_'), p => _.trim(p, '/'))
+    if (source === "posts") {
+      const [date, slug] = _.map(_.split(path, "_"), p => _.trim(p, "/"));
       createNodeField({
         node,
         name: `slug`,
-        value: slug,
-      })
+        value: slug
+      });
       createNodeField({
         node,
         name: `date`,
-        value: date,
-      })
+        value: date
+      });
       createNodeField({
         node,
         name: `source`,
-        value: source,
-      })
+        value: source
+      });
     }
 
-    if (source === 'pages') {
-      let [number, slug] = _.map(_.split(path, '_'), p => _.trim(p, '/'))
-      if (!slug) slug = number
+    if (source === "pages") {
+      let [number, slug] = _.map(_.split(path, "_"), p => _.trim(p, "/"));
+      if (!slug) slug = number;
       createNodeField({
         node,
         name: `slug`,
-        value: slug,
-      })
+        value: slug
+      });
       createNodeField({
         node,
         name: `source`,
-        value: source,
-      })
+        value: source
+      });
     }
   }
-}
+};
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   const loadPosts = new Promise((resolve, reject) => {
     graphql(`
       {
@@ -86,12 +86,10 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
-      if (result.errors) reject(result.errors)
-      const posts = result.data.allMarkdownRemark.edges
-      const { postsPerHomePage, postsPerPage } = config
-      const numPages = Math.ceil(
-        posts.slice(postsPerHomePage).length / postsPerPage
-      )
+      if (result.errors) reject(result.errors);
+      const posts = result.data.allMarkdownRemark.edges;
+      const { postsPerHomePage, postsPerPage } = config;
+      const numPages = Math.ceil(posts.slice(postsPerHomePage).length / postsPerPage);
       // Create main home page
       createPage({
         path: `/`,
@@ -100,18 +98,18 @@ exports.createPages = ({ graphql, actions }) => {
           limit: postsPerHomePage,
           skip: 0,
           numPages: numPages + 1,
-          currentPage: 1,
-        },
-      })
-      resolve()
-    })
-  })
+          currentPage: 1
+        }
+      });
+      resolve();
+    });
+  });
   const loadTags = new Promise((resolve, reject) => {
-    resolve()
-  })
+    resolve();
+  });
 
   const loadPages = new Promise((resolve, reject) => {
-    resolve()
-  })
-  return Promise.all([loadPosts, loadTags, loadPages])
-}
+    resolve();
+  });
+  return Promise.all([loadPosts, loadTags, loadPages]);
+};

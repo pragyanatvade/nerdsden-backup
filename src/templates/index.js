@@ -8,11 +8,14 @@ import Card from "../components/Card";
 
 const Index = ({ data, pageContext }) => {
   const posts = data.posts.edges;
-  const featuredPost = posts[0].node;
+  const {
+    node: { id, excerpt, fields, frontmatter }
+  } = posts[0];
+
   // const { currentPage } = pageContext;
   // const isFirstPage = currentPage === 1;
-
-  console.log("posts", featuredPost);
+  const featuredPost = { id, ...fields, ...frontmatter, excerpt };
+  // console.log("posts", featuredPost);
 
   return (
     <Layout>
@@ -35,6 +38,8 @@ export const query = graphql`
     ) {
       edges {
         node {
+          id
+          excerpt
           fields {
             slug
             date(formatString: "MMMM DD, YYYY")
@@ -42,7 +47,17 @@ export const query = graphql`
           }
           frontmatter {
             title
-            tags
+            author
+            summary
+            cover {
+              children {
+                ... on ImageSharp {
+                  fluid(maxWidth: 800, maxHeight: 360) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
           }
         }
       }

@@ -49,23 +49,26 @@ const Date = styled.h3`
   color: gray;
 `;
 
-const Excerpt = styled.p`
+const Summary = styled.p`
   margin: 0 1rem 1rem 1rem;
   line-height: 1.6;
 `;
 
-const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
+const Card = ({ slug, cover, title, date, summary, excerpt, ...props }) => {
+  const {
+    children: [{ fluid }]
+  } = cover;
   return (
     <Post featured={props.featured}>
       <Link to={`/${slug}/`}>
-        {/* <Img fluid={heroImage.fluid} backgroundColor={"#eeeeee"} /> */}
+        <Img fluid={fluid} backgroundColor={"#eeeeee"} />
         <Title>{title}</Title>
-        <Date>{publishDate}</Date>
-        {/* <Excerpt
+        <Date>{date}</Date>
+        <Summary
           dangerouslySetInnerHTML={{
-            __html: body.childMarkdownRemark.excerpt
+            __html: summary || excerpt
           }}
-        /> */}
+        />
       </Link>
     </Post>
   );

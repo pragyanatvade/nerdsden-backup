@@ -4,7 +4,6 @@ tags: software-development,software-design,best-practices
 cover: programmer-dream.png
 author: Pragyan Tripathi
 slug: how-to-design-software-that-you-can-be-proud-of
-summary: Hello World
 published: 2019-01-01
 modified: 2019-01-01
 ---
