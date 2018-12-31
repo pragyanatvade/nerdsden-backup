@@ -151,6 +151,7 @@ class ContactForm extends React.Component {
       email: '',
       message: '',
       showModal: false,
+      modalMessage: '',
     }
   }
 
@@ -166,12 +167,26 @@ class ContactForm extends React.Component {
   handleSubmit = event => {
     const { email, name, message } = this.state
     console.log('email', this.state)
-    addToMailChimp(email, { FNAME: name, message }).then(this.handleResponse)
+    addToMailChimp(email, { FNAME: name, LNAME: message }).then(
+      this.handleResponse
+    )
     event.preventDefault()
   }
 
   handleResponse = resp => {
-    console.log('resp', resp)
+    const { name } = this.state
+    if (resp.result === 'success') {
+      this.setState({
+        showModal: true,
+        modalMessage: `Thanks ${name}!\nWe appreciate that you’ve taken the time to write us. We’ll get back to you very soon. Please come back and see us often.`,
+      })
+    } else {
+      this.setState({
+        showModal: true,
+        modalMessage: `I am really sorry ${name}. \nNerd's Den is in very early stage of development.
+        This may cause you face certain issues while contacting me. Please mail me at <a href="mailto:nerdsden@vadelabs.com?Subject=Contact Form Issue" target="_top">nerdsden@vadelabs.com</a>, I will respond to you promptly.`,
+      })
+    }
   }
 
   closeModal = () => {
@@ -215,10 +230,7 @@ class ContactForm extends React.Component {
         <Submit name="submit" type="submit" value="Send" />
 
         <Modal visible={this.state.showModal}>
-          <p>
-            Thank you for reaching out. I will get back to you as soon as
-            possible.
-          </p>
+          <p>{this.state.modalMessage}</p>
           <Button onClick={this.closeModal}>Okay</Button>
         </Modal>
       </Form>
