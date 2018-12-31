@@ -1,25 +1,21 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
 import Container from "../components/Container";
-import PageTitle from "../components/PageTitle";
+import Hero from "../components/Hero";
 import PageBody from "../components/PageBody";
 import PostDate from "../components/PostDate";
-
-import { shortSiteTitle } from "../../content/meta/config";
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
     post: { id, html, fields, frontmatter }
   } = data;
   const post = { id, html, ...fields, ...frontmatter };
+
   return (
-    <Layout>
-      <Helmet>
-        <title>{`${post.title} - ${shortSiteTitle}`}</title>
-      </Helmet>
+    <Layout post={post}>
+      <Hero title={post.title} image={post.cover} />
       <Container>
         <PostDate date={post.date} />
         <PageBody html={post.html} />
@@ -42,9 +38,11 @@ export const query = graphql`
         title
         author
         cover {
-          childImageSharp {
-            resize(width: 300) {
-              src
+          children {
+            ... on ImageSharp {
+              fluid(maxWidth: 800, maxHeight: 360) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
             }
           }
         }

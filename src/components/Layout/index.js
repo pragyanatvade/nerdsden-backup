@@ -8,9 +8,9 @@ import Footer from "../Footer";
 import theme from "../../styles/theme";
 import GlobalStyle from "../../styles/global";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, post, page }) => (
   <div className="siteRoot">
-    <Head />
+    <Head post={post} page={page} />
     <ThemeProvider theme={theme}>
       <>
         <div className="siteContent">
