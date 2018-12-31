@@ -1,16 +1,16 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/Layout";
-import Container from "../components/Container";
-import PageTitle from "../components/PageTitle";
-import PageBody from "../components/PageBody";
+import Layout from '../components/Layout'
+import Container from '../components/Container'
+import PageTitle from '../components/PageTitle'
+import PageBody from '../components/PageBody'
 
 const Page = ({ data, pageContext }) => {
   const {
-    page: { id, html, fields, frontmatter }
-  } = data;
-  const page = { id, html, ...fields, ...frontmatter };
+    page: { id, html, fields, frontmatter },
+  } = data
+  const page = { id, html, ...fields, ...frontmatter }
 
   return (
     <Layout page={page}>
@@ -19,8 +19,8 @@ const Page = ({ data, pageContext }) => {
         <PageBody html={page.html} />
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($slug: String!) {
@@ -30,7 +30,6 @@ export const query = graphql`
       fields {
         slug
         date
-        tags
       }
       frontmatter {
         title
@@ -47,6 +46,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default Page;
+export default Page

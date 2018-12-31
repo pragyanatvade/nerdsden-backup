@@ -1,28 +1,30 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/Layout";
-import Container from "../components/Container";
-import Hero from "../components/Hero";
-import PageBody from "../components/PageBody";
-import PostDate from "../components/PostDate";
+import Layout from '../components/Layout'
+import Container from '../components/Container'
+import Hero from '../components/Hero'
+import PageBody from '../components/PageBody'
+import PostDate from '../components/PostDate'
+import TagList from '../components/TagList'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
-    post: { id, html, fields, frontmatter }
-  } = data;
-  const post = { id, html, ...fields, ...frontmatter };
+    post: { id, html, fields, frontmatter },
+  } = data
+  const post = { id, html, ...fields, ...frontmatter }
 
   return (
     <Layout post={post}>
       <Hero title={post.title} image={post.cover} />
       <Container>
+        {post.tags && <TagList tags={post.tags} />}
         <PostDate date={post.date} />
         <PageBody html={post.html} />
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($slug: String!) {
@@ -32,7 +34,11 @@ export const query = graphql`
       fields {
         slug
         date
-        tags
+        tags {
+          id
+          slug
+          title
+        }
       }
       frontmatter {
         title
@@ -49,6 +55,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default PostTemplate;
+export default PostTemplate
