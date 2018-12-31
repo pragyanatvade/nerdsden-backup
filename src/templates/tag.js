@@ -65,18 +65,4 @@ export const query = graphql`
   }
 `
 
-// export const query = graphql`
-//   query {
-//     data: allMarkdownRemark(
-//       filter: { fields: { source: { eq: "posts" }, slug: { ne: null } } }
-//       sort: { fields: [fields___date], order: DESC }
-//     ) {
-//       group(field: fields____tags) {
-//         fieldValue
-//         totalCount
-//       }
-//     }
-//   }
-// `
-
 export default Tag
