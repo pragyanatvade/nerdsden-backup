@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
@@ -41,7 +41,7 @@ const Nav = styled.nav`
 `;
 
 const activeLinkStyle = {
-  color: 'white',
+  color: "white"
 };
 
 const Menu = () => (
@@ -58,11 +58,11 @@ const Menu = () => (
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/contact/" activeStyle={activeLinkStyle}>
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </Nav>
   </Header>

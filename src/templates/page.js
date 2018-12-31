@@ -4,45 +4,42 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Container from "../components/Container";
 import PageTitle from "../components/PageTitle";
+import PageBody from "../components/PageBody";
 
-const Page = ({ data }) => {
+const Page = ({ data, pageContext }) => {
+  const {
+    page: { id, html, fields, frontmatter }
+  } = data;
+  const page = { id, html, ...fields, ...frontmatter };
+
   return (
-    <Layout>
+    <Layout page={page}>
       <Container>
-        <PageTitle>Page Test</PageTitle>
+        <PageTitle>{page.title}</PageTitle>
+        <PageBody html={page.html} />
       </Container>
     </Layout>
   );
 };
 
 export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
-    posts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*_/" } }
-      sort: { fields: [fields___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          id
-          excerpt
-          fields {
-            slug
-            date(formatString: "MMMM DD, YYYY")
-            tags
-          }
-          frontmatter {
-            title
-            author
-            summary
-            cover {
-              children {
-                ... on ImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 360) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
+  query($slug: String!) {
+    page: markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      html
+      fields {
+        slug
+        date
+        tags
+      }
+      frontmatter {
+        title
+        author
+        cover {
+          children {
+            ... on ImageSharp {
+              fluid(maxWidth: 800, maxHeight: 360) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -51,4 +48,5 @@ export const query = graphql`
     }
   }
 `;
+
 export default Page;

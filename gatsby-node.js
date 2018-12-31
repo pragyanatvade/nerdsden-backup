@@ -116,7 +116,6 @@ exports.createPages = ({ graphql, actions }) => {
             slug
           }
         });
-        console.log("edge", slug);
       });
       resolve();
     });
@@ -126,7 +125,51 @@ exports.createPages = ({ graphql, actions }) => {
   });
 
   const loadPages = new Promise((resolve, reject) => {
-    resolve();
+    graphql(`
+      {
+        allMarkdownRemark(
+          filter: { fields: { source: { eq: "pages" }, slug: { ne: null } } }
+          sort: { fields: [fields___date], order: DESC }
+          limit: 100
+        ) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+                source
+                date
+              }
+              frontmatter {
+                title
+                published
+                summary
+                tags
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      if (result.errors) reject(result.errors);
+      const pages = result.data.allMarkdownRemark.edges;
+      _.forEach(pages, (edge, i) => {
+        const {
+          node: {
+            fields: { slug }
+          }
+        } = edge;
+
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/page.js`),
+          context: {
+            slug
+          }
+        });
+      });
+      resolve();
+    });
   });
   return Promise.all([loadPosts, loadTags, loadPages]);
 };
