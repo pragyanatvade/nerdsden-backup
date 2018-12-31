@@ -166,13 +166,13 @@ class ContactForm extends React.Component {
   handleSubmit = event => {
     const { email, name, message } = this.state
     console.log('email', this.state)
-    addToMailChimp(email, { FNAME: name, message }).then(resp =>
-      this.handleSuccess(resp)
-    )
+    addToMailChimp(email, { FNAME: name, message }).then(this.handleResponse)
     event.preventDefault()
   }
 
-  handleSuccess = () => {}
+  handleResponse = resp => {
+    console.log('resp', resp)
+  }
 
   closeModal = () => {
     this.setState({ showModal: false })
