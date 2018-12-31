@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import addToMailChimp from 'gatsby-plugin-mailchimp'
 
 const Form = styled.form`
   max-width: ${props => props.theme.sizes.maxWidthCentered};
@@ -163,24 +164,15 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit = event => {
-    fetch('/?no-cache=1', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
-    })
-      .then(this.handleSuccess)
-      .catch(error => alert(error))
+    const { email, name, message } = this.state
+    console.log('email', this.state)
+    addToMailChimp(email, { FNAME: name, message }).then(resp =>
+      this.handleSuccess(resp)
+    )
     event.preventDefault()
   }
 
-  handleSuccess = () => {
-    this.setState({
-      name: '',
-      email: '',
-      message: '',
-      showModal: true,
-    })
-  }
+  handleSuccess = () => {}
 
   closeModal = () => {
     this.setState({ showModal: false })
@@ -191,18 +183,10 @@ class ContactForm extends React.Component {
       <Form
         name="contact"
         onSubmit={this.handleSubmit}
-        data-netlify="true"
-        data-netlify-honeypot="bot"
         overlay={this.state.showModal}
         onClick={this.closeModal}
       >
         <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>
-            Don’t fill this out:{' '}
-            <input name="bot" onChange={this.handleInputChange} />
-          </label>
-        </p>
 
         <Name
           name="name"
