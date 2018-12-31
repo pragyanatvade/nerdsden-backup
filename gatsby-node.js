@@ -101,6 +101,23 @@ exports.createPages = ({ graphql, actions }) => {
           currentPage: 1
         }
       });
+
+      // Create Each Individual Post
+      _.forEach(posts, (edge, i) => {
+        const {
+          node: {
+            fields: { slug }
+          }
+        } = edge;
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/post.js`),
+          context: {
+            slug
+          }
+        });
+        console.log("edge", slug);
+      });
       resolve();
     });
   });
