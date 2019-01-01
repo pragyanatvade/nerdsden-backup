@@ -13,6 +13,7 @@ import {
   siteUrl,
   author,
   publisher,
+  authorTwitterHandle,
 } from '../../../content/meta/config'
 
 const Head = ({ post = {}, page = {} }) => {
@@ -33,7 +34,7 @@ const Head = ({ post = {}, page = {} }) => {
 
   if (Object.keys(post).length > 0) {
     const prefix = post.metaTitle || post.title
-    title = `${prefix} - ${shortSiteTitle}`
+    title = `${prefix} | ${shortSiteTitle}`
     description = post.metaDescription || post.summary || post.excerpt
     path = `${siteUrl}/${post.slug}`
     // image = {
@@ -71,18 +72,9 @@ const Head = ({ post = {}, page = {} }) => {
         name: title,
         alternateName: siteTitle || '',
         headline: title,
-        image: {
-          '@type': 'ImageObject',
-          ...image,
-        },
-        author: {
-          '@type': 'Person',
-          ...author,
-        },
-        publisher: {
-          '@type': 'Organization',
-          ...publisher,
-        },
+        image,
+        author,
+        publisher,
         datePublished: post.date,
         dateModified: post.modified || post.date,
         mainEntityOfPage: path,
@@ -91,7 +83,7 @@ const Head = ({ post = {}, page = {} }) => {
   }
   if (Object.keys(page).length > 0) {
     const prefix = page.metaTitle || page.title
-    title = `${prefix} - ${shortSiteTitle}`
+    title = `${prefix} | ${shortSiteTitle}`
     description = page.metaDescription || page.summary || page.excerpt
     path = `${siteUrl}/${post.slug}`
     // image = {
@@ -128,6 +120,20 @@ const Head = ({ post = {}, page = {} }) => {
       </script>
 
       {/* OpenGraph tags */}
+      <meta property="og:title" content={title} />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content={path} />
+      <meta property="og:image" itemProp="image" content={image.url} />
+      <meta property="og:image:width" content={image.width} />
+      <meta property="og:image:height" content={image.height} />
+      <meta property="og:description" content={description} />
+
+      {/* Twitter Card Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={authorTwitterHandle || ''} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:image" content={image.url} />
+      <meta name="twitter:description" content={description} />
     </Helmet>
   )
 }
