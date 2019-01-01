@@ -1,16 +1,23 @@
-import React from "react";
-import FacebookProvider, { Comments as FBComments } from "react-facebook";
+import React from 'react'
+import styled from 'styled-components'
 
-const Comments = ({ facebook, slug, siteUrl }) => {
-  console.log("facebook", facebook, slug, siteUrl);
-
+import { FacebookProvider, Comments as FBComments } from 'react-facebook'
+const Wrapper = styled.div`
+  margin: 0 auto;
+  max-width: ${props => props.theme.sizes.maxWidthCentered};
+`
+const Comments = ({ facebook, slug, siteUrl, ...props }) => {
   return (
-    <div id="post-comments" className="comments">
-      {/* <FacebookProvider appId={facebook.appId}>
-        <FBComments href={`${siteUrl}/${slug}`} width="100%" colorscheme="light" />
-      </FacebookProvider> */}
-    </div>
-  );
-};
+    <Wrapper>
+      <FacebookProvider appId={facebook.appId}>
+        <FBComments
+          href={`${siteUrl}/${slug}`}
+          width="100%"
+          colorscheme="light"
+        />
+      </FacebookProvider>
+    </Wrapper>
+  )
+}
 
-export default Comments;
+export default Comments
