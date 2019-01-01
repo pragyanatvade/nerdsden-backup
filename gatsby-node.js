@@ -13,6 +13,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       frontmatter: { tags }
     } = node;
     if (tags) {
+      // HACK FOR AGGREGATE
+      createNodeField({
+        node,
+        name: `_tags`,
+        value: _.map(_.split(tags, ","), tag => _.trim(tag))
+      });
+
       const tagsArray = _.map(_.split(tags, ","), tag => {
         const title = _.trim(tag);
         const id = _.kebabCase(title);
