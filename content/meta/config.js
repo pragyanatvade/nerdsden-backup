@@ -2,11 +2,11 @@ module.exports = {
   /* Website */
   siteTitle: `Nerd's Den - Memoirs Of A Skeptic Nerd`,
   shortSiteTitle: `Nerd's Den`,
-  siteDescription: `Design Reliable, Scalable, and Flexible Softwares The Right Way`,
+  siteDescription: `Official blog for Vadelabs. It discusses about software design and building scalable, reliable, and flexible applications the right way. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.`,
   siteUrl: `https://nerds-den.com`,
   pathPrefix: `/`,
   siteImage: {
-    src: `/logos/nerds-den.png`,
+    url: `https://nerds-den.com/logos/nerds-den.png`,
     width: 820,
     height: 312
   },
@@ -15,11 +15,23 @@ module.exports = {
   /* Website Info */
   headerTitle: `Nerd's Den`,
   headerSubTitle: `Memoirs Of A Skeptic Nerd`,
-  publisher: `Vadelabs, Inc.`,
+  publisher: {
+    name: `Vadelabs, Inc.`,
+    url: 'https://vadelabs.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: `https://nerds-den.com/logos/nerds-den.png`,
+    }
+  },
 
   /* Author */
+  author: {
+    name: `Pragyan Tripathi`,
+    url: `https://nerds-den.com/about/`
+  },
   authorName: `Pragyan Tripathi`,
   authorTwitterHandle: `pntripathi9417`,
+  authorUrl: 'https://nerds-den.com/about/',
   authorSocialLinks: [
     { name: 'github', url: 'https://github.com/pntripathi9417' },
     { name: 'twitter', url: 'https://twitter.com/pntripathi9417' },

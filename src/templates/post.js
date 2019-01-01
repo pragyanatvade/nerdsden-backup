@@ -10,7 +10,6 @@ import TagList from '../components/TagList'
 import Comments from '../components/Comments'
 
 const PostTemplate = ({ data, pageContext }) => {
-  console.log('data', data)
   const {
     post: { id, html, fields, frontmatter },
     site: {
