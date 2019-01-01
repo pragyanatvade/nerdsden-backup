@@ -5,12 +5,17 @@ module.exports = {
   siteDescription: `Design Reliable, Scalable, and Flexible Softwares The Right Way`,
   siteUrl: `https://nerds-den.com`,
   pathPrefix: `/`,
-  siteImage: ``,
+  siteImage: {
+    src: `logos/nerds-den.png`,
+    width: 820,
+    height: 312
+  },
   siteLanguage: `en`,
 
   /* Website Info */
   headerTitle: `Nerd's Den`,
   headerSubTitle: `Memoirs Of A Skeptic Nerd`,
+  publisher: `Vadelabs, Inc.`,
 
   /* Author */
   authorName: `Pragyan Tripathi`,
