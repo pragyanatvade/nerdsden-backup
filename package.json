@@ -54,6 +54,7 @@
   "devDependencies": {
     "eslint": "^5.10.0",
     "eslint-config-gatsby-standard": "^2.1.1",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.15.3",
     "stylelint": "9.9.0",
     "stylelint-config-prettier": "^4.0.0",
