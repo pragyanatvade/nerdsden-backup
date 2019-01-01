@@ -1,33 +1,33 @@
-import React from 'react'
+import React from "react";
+import { graphql } from "gatsby";
+import Container from "../components/Container";
+import PageTitle from "../components/PageTitle";
+import Layout from "../components/Layout";
 
-import Container from '../components/Container'
-import PageTitle from '../components/PageTitle'
-import Layout from '../components/Layout'
-
-const Contact = ({ data }) => {
+const Tags = ({ data }) => {
   const {
-    data: { edges: posts },
-  } = data
-  const tags = {}
+    data: { edges: posts }
+  } = data;
+  const tags = {};
   posts.forEach(edge => {
     const {
-      node: { id, excerpt, fields, frontmatter },
-    } = edge
-    const post = { id, ...fields, ...frontmatter, excerpt }
+      node: { id, excerpt, fields, frontmatter }
+    } = edge;
+    const post = { id, ...fields, ...frontmatter, excerpt };
     const item = {
       id,
       title: post.title,
-      slug: post.slug,
-    }
+      slug: post.slug
+    };
     post.tags.forEach(tag => {
-      const { title } = tag
+      const { title } = tag;
       if (tags[id]) {
-        tags[title].push(item)
+        tags[title].push(item);
       } else {
-        tags[title] = [item]
+        tags[title] = [item];
       }
-    })
-  })
+    });
+  });
 
   return (
     <Layout>
@@ -35,8 +35,8 @@ const Contact = ({ data }) => {
         <PageTitle>Tags</PageTitle>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -63,6 +63,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Contact
+export default Tags;
