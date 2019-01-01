@@ -36,7 +36,7 @@ module.exports = {
   authorSocialLinks: [
     { name: 'github', url: 'https://github.com/pntripathi9417' },
     { name: 'twitter', url: 'https://twitter.com/pntripathi9417' },
-    { name: 'facebook', url: 'http://facebook.com/pntripathi9417' },
+    { name: 'facebook', url: 'https://facebook.com/pntripathi9417' },
   ],
 
   /* manifest.json */

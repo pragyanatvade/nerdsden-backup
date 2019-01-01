@@ -24,7 +24,7 @@ const Head = ({ post = {}, page = {} }) => {
 
   const schemaOrgJSONLD = [
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "WebSite",
       url: siteUrl,
       name: shortSiteTitle,
@@ -44,7 +44,7 @@ const Head = ({ post = {}, page = {} }) => {
     // }
     schemaOrgJSONLD.push(
       {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
           {
@@ -66,7 +66,7 @@ const Head = ({ post = {}, page = {} }) => {
         ]
       },
       {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "BlogPosting",
         url: path,
         name: title,
@@ -92,7 +92,7 @@ const Head = ({ post = {}, page = {} }) => {
     //   height: '',
     // }
     schemaOrgJSONLD.push({
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "WebPage",
       url: path,
       name: title
@@ -103,7 +103,7 @@ const Head = ({ post = {}, page = {} }) => {
     <Helmet
       htmlAttributes={{
         lang: siteLanguage,
-        prefix: "og: http://ogp.me/ns#"
+        prefix: "og: https://ogp.me/ns#"
       }}
     >
       {/* General Tags */}
