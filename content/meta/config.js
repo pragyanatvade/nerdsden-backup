@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: `https://nerds-den.com`,
   pathPrefix: `/`,
   siteImage: {
-    src: `logos/nerds-den.png`,
+    src: `/logos/nerds-den.png`,
     width: 820,
     height: 312
   },
