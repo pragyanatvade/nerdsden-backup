@@ -1,7 +1,7 @@
 ---
 title: How To Design Software That You Can Be Proud Of?
 tags: Software Development,Software Deign, Good Practices
-cover: programmer-dream.png
+cover: cover.png
 author: Pragyan Tripathi
 summary: Summary Of The Most
 slug: how-to-design-software-that-you-can-be-proud-of
