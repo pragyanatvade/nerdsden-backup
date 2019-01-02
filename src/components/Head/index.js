@@ -111,7 +111,7 @@ const Head = ({ post = {}, page = {} }) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href={favicon} />
-      <link rel="canonical" href={page} />
+      <link rel="canonical" href={path} />
 
       <title>{title}</title>
       <meta name="image" content={image.src} />
