@@ -49,19 +49,18 @@ Further, in the article, we are going to understand what it means for software t
 6. [Our Software Design Process](#our-software-design-process)
 7. [Conclusion](#conclusion)
 
-
+<a name="what-makes-software-development-complex"></a>
 ---
 
-<a name="what-makes-software-development-complex"></a>
 ## What Makes Software Development Complex?
 
 There are two kinds of software complexities: **_Essential Complexity_** and **_Accidental Complexity_**.
 
 > One way to summarize, the flow of complexity is increasing requirements for coordination.
 
-![Software Programming Is A Mess](./software-programming-mess.png 'Software Programming Is A Mess')
+![Software Programming Is A Mess](./software-programming-mess.png 'Software Programming Is A Mess')<a name="what-makes-software-development-complex_essential-complexity"></a>
 
-<a name="what-makes-software-development-complex_essential-complexity"></a>
+
 ### Essential Complexity
 
 It is inherent to the software development. The primary source of this kind of complexity is the product specifications itself. If your program needs to do ten tasks to attain business objectives, you can't get rid of any to make your application simpler.
@@ -76,9 +75,8 @@ This non-linear interaction among software components makes it difficult to comm
 
 The difficulty of estimating and understanding the possible states of a program is the primary cause of the software system being unreliable. It makes it hard to handle and control all the edge cases.
 
-This level of complexity is almost impossible for a single human brain even to comprehend. It becomes even harder when individual components are intertwined because we cannot reason about them in isolation.
+This level of complexity is almost impossible for a single human brain even to comprehend. It becomes even harder when individual components are intertwined because we cannot reason about them in isolation. <a name="what-makes-software-development-complex_accidental-complexity"></a>
 
-<a name="what-makes-software-development-complex_accidental-complexity"></a>
 ### Accidental Complexity
 
 It occurs because developers don't tend to be good at their jobs. They unintentionally make their lives hell as a result of trying to solve a problem.
@@ -90,10 +88,10 @@ The biggest driver of accidental complexity is developers sticking with their fi
 The clean code looks like it was easy to write, when in fact it usually involves several drafts. We write the best way that comes in our head first, notice the complexity introduced, then "look for a better way" and refactor to remove those complexities. Then we keep on "looking for a better move" until we are unable to find one.
 
 It's not just individual developers makes their lives miserable. Organizations help them in that too. When any project is nearing completion, there is always a mad rush to get new features added. The rush is mad indeed because it leads into a trap of added complexities. They tend to focus on how quickly they can write something, how easy is it to replace one developer with another. Considering just the familiarity with the tools used, not the simplicity or complexity of the code the new developer needs to handle.
+<a name="qualities-of-a-good-software-design"></a>
 
 ---
 
-<a name="qualities-of-a-good-software-design"></a>
 ## Qualities Of A Good Software Design
 
 Our goal in this article is to learn how to design and develop good software systems. However, what exactly does "good software" mean?
@@ -122,6 +120,7 @@ The people responsible for deploying and maintaining the software are concerned 
 - _It should use computing resources effectively and shouldn't be responsible for bringing other services down within the infrastructure._
 
 <a name="qualities-of-a-good-software-design_developers"></a>
+
 ### Developers
 Whereas for developer software quality corresponds to the quality of the source code and how individual components are linked together.
 
@@ -134,8 +133,9 @@ The table below summarizes the expectations of all the stakeholders (users, oper
 
 Designing such software is like playing chess. Rules of playing chess are pretty simple, but it takes years of practice and dedication to be a grandmaster. Even though these software qualities seem simple to achieve, it involves the combination of knowledge, creative vision, and technique. The implementation technique must be flawless to deliver bug-free software with optimal performance and reliability. It takes a lot of practice, iterations and, collaboration to build a good software system.
 
----
 <a name="step-by-step-guide-to-complex-software-design"></a>
+---
+
 ## Step By Step Guide To Complex Software Design
 
 Wait! What? Weren't we supposed to learn how to create simple and efficient software?
@@ -264,8 +264,10 @@ Everything about writing software is difficult with transient data types.
 
 > If you follow these ideas and combine a bunch of them together, the symptoms will show up not in your program, but in another program that uses your code, directly or indirectly. Everyone around you will think you are an excellent developer. You will be a hero as you lead more significant and larger teams burning the midnight oil to keep systems alive.
 
----
 <a name="how-to-mitigate-complexity-in-software-design"></a>
+
+---
+
 ## How To Mitigate Complexity In Software Design?
 
 > Simplicity is the absence of complexity.
@@ -305,8 +307,10 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 ![Inheritance V/S Composition](./inheritance-vs-composition.png 'Inheritance V/S Composition')
 
----
 <a name="how-to-measure-your-software-development-progress"></a>
+
+---
+
 ## How To Measure Your Software Development Progress?
 
 > You cannot manage what you do not measure. - Bill Hewlett
@@ -323,8 +327,10 @@ While understanding source code, programmer builds a mental model of the softwar
 
 3.  [_**Maintainability Index:**_]() _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
 
----
 <a name="our-software-design-process"></a>
+
+---
+
 ## Our Software Design Process
 
 > The crux of attaining simplicity is how fast can we adapt to the necessary requirements in a reliable way.
@@ -409,8 +415,10 @@ Now we start implementing the interfaces to pass the property-based tests we wro
 
 The last step is to demo the product. We usually create a video showcasing the product or library. Write articles about it and publish it at [Nerd's Den](https://nerds-den.com).
 
----
 <a name="conclusion"></a>
+
+---
+
 ## Conclusion
 
 > Either you abandon the product early, or you stick with it long enough to see it become complex.
