@@ -1,13 +1,18 @@
 ---
-title: 'About'
+title: About
 menuTitle: About
+summary: This is an official blog for Vadelabs. It discusses about software design and building scalable, reliable, and flexible applications the right way. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
+cover: cover.png
+author: Pragyan Tripathi
+published: 2019-01-01
+modified: 2019-01-01
 ---
 
 Since you have landed here something tells me you are someone who finds happiness in building something useful out of nothing — someone who is curious and passionate about technology.
 
 However, if there is one word to describe your current state of mind, it would be: **frustrated**.
 
-![Frustrated Programmer](./frustrated-programmer.png "Frusrated Programmer")
+![Frustrated Programmer](./frustrated-programmer.png "Frustrated Programmer")
 
 Frustrated by the [mess we are in](https://www.youtube.com/watch?v=lKXe3HUG2l4) as software developers. Frustrated by how hard and slow it is to build reliable software. Frustrated by unknowingly inducing bugs while improving the system. Infuriated by developing or maintaining the crappy software systems because your boss thinks it is fast and cheap.
 

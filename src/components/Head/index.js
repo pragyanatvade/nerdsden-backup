@@ -1,9 +1,9 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react";
+import Helmet from "react-helmet";
 
 // import SEO from '../components/SEO'
 
-import favicon from '../../../static/favicon.ico'
+import favicon from "../../../static/favicon.ico";
 import {
   siteTitle,
   shortSiteTitle,
@@ -13,30 +13,30 @@ import {
   siteUrl,
   author,
   publisher,
-  authorTwitterHandle,
-} from '../../../content/meta/config'
+  authorTwitterHandle
+} from "../../../content/meta/config";
 
 const Head = ({ post = {}, page = {} }) => {
-  let title = siteTitle
-  let description = siteDescription
-  let image = siteImage
-  let path = siteUrl
+  let title = siteTitle;
+  let description = siteDescription;
+  let image = siteImage;
+  let path = siteUrl;
 
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      "@context": "https://schema.org",
+      "@type": "WebSite",
       url: siteUrl,
       name: shortSiteTitle,
-      alternateName: siteTitle,
-    },
-  ]
+      alternateName: siteTitle
+    }
+  ];
 
   if (Object.keys(post).length > 0) {
-    const prefix = post.metaTitle || post.title
-    title = `${prefix} | ${shortSiteTitle}`
-    description = post.metaDescription || post.summary || post.excerpt
-    path = `${siteUrl}/${post.slug}`
+    const prefix = post.metaTitle || post.title;
+    title = `${prefix} | ${shortSiteTitle}`;
+    description = post.metaDescription || post.summary || post.excerpt;
+    path = `${siteUrl}/${post.slug}`;
     // image = {
     //   url: '',
     //   width: '',
@@ -44,66 +44,66 @@ const Head = ({ post = {}, page = {} }) => {
     // }
     schemaOrgJSONLD.push(
       {
-        '@context': 'http://schema.org',
-        '@type': 'BreadcrumbList',
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
         itemListElement: [
           {
-            '@type': 'ListItem',
+            "@type": "ListItem",
             position: 1,
             item: {
-              '@id': siteUrl,
-              name: siteTitle,
-            },
+              "@id": siteUrl,
+              name: siteTitle
+            }
           },
           {
-            '@type': 'ListItem',
+            "@type": "ListItem",
             position: 2,
             item: {
-              '@id': path,
-              name: title,
-            },
-          },
-        ],
+              "@id": path,
+              name: title
+            }
+          }
+        ]
       },
       {
-        '@context': 'http://schema.org',
-        '@type': 'BlogPosting',
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
         url: path,
         name: title,
-        alternateName: siteTitle || '',
+        alternateName: siteTitle || "",
         headline: title,
         image,
         author,
         publisher,
         datePublished: post.date,
         dateModified: post.modified || post.date,
-        mainEntityOfPage: path,
+        mainEntityOfPage: path
       }
-    )
+    );
   }
   if (Object.keys(page).length > 0) {
-    const prefix = page.metaTitle || page.title
-    title = `${prefix} | ${shortSiteTitle}`
-    description = page.metaDescription || page.summary || page.excerpt
-    path = `${siteUrl}/${post.slug}`
+    const prefix = page.metaTitle || page.title;
+    title = `${prefix} | ${shortSiteTitle}`;
+    description = page.metaDescription || page.summary || page.excerpt;
+    path = `${siteUrl}/${post.slug}`;
     // image = {
     //   url: '',
     //   width: '',
     //   height: '',
     // }
     schemaOrgJSONLD.push({
-      '@context': 'http://schema.org',
-      '@type': 'WebPage',
+      "@context": "https://schema.org",
+      "@type": "WebPage",
       url: path,
-      name: title,
-    })
+      name: title
+    });
   }
 
   return (
     <Helmet
       htmlAttributes={{
         lang: siteLanguage,
-        prefix: 'og: http://ogp.me/ns#',
+        prefix: "og: https://ogp.me/ns#"
       }}
     >
       {/* General Tags */}
@@ -113,11 +113,9 @@ const Head = ({ post = {}, page = {} }) => {
       <title>{title}</title>
       <meta name="image" content={image.src} />
       <meta name="description" content={description} />
-
+      <link rel="preconnect" href="https://m.facebook.com">
       {/* Schema.org tags */}
-      <script type="application/ld+json">
-        {JSON.stringify(schemaOrgJSONLD)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
       {/* OpenGraph tags */}
       <meta property="og:title" content={title} />
@@ -130,12 +128,12 @@ const Head = ({ post = {}, page = {} }) => {
 
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={authorTwitterHandle || ''} />
+      <meta name="twitter:creator" content={authorTwitterHandle || ""} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:image" content={image.url} />
       <meta name="twitter:description" content={description} />
     </Helmet>
-  )
-}
+  );
+};
 
-export default Head
+export default Head;
