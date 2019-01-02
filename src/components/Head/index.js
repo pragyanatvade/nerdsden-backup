@@ -116,6 +116,9 @@ const Head = ({ post = {}, page = {} }) => {
       <meta name="image" content={image.src} />
       <meta name="description" content={description} />
       <link rel="preconnect" href="https://m.facebook.com" />
+      <link rel="preconnect" href="https://staticxx.facebook.com" />
+      <link rel="preconnect" href="https://connect.facebook.net" />
+
       {/* Schema.org tags */}
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}
