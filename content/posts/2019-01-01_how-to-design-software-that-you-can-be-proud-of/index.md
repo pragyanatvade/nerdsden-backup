@@ -300,11 +300,11 @@ Also, you cannot excel at something you do not measure. So if you want to be goo
 
 While understanding source code, programmer builds a mental model of the software which involves an understanding of Control Flow and Data Flow in the program. We would use the following metrics for measuring software complexity:
 
-1.  [_**Cyclomatic complexity:**_](http://www.projectcodemeter.com/cost_estimation/help/GL_cyclomatic.htm) _It measures how much control flow exists in an application. Operations like `IF, ELSE, FOR LOOP, etc.` represent control flow. A program with more conditional logic is more difficult to understand, this metric gives us an assessment of that._
+1.  [_**Cyclomatic complexity:**_]() _It measures how much control flow exists in an application. Operations like `IF, ELSE, FOR LOOP, etc.` represent control flow. A program with more conditional logic is more difficult to understand, this metric gives us an assessment of that._
 
-2.  [_**Halstead volume:**_](http://www.projectcodemeter.com/cost_estimation/help/GL_halstead.htm) _It is a measurement of how much information exist in the source code. It looks at the number of variables, functions, operations, and frequency of their usage across the source code. A programmer must get himself familiar with this information as they all affect data flow within the running program._
+2.  [_**Halstead volume:**_]() _It is a measurement of how much information exist in the source code. It looks at the number of variables, functions, operations, and frequency of their usage across the source code. A programmer must get himself familiar with this information as they all affect data flow within the running program._
 
-3.  [_**Maintainability Index:**_](http://www.projectcodemeter.com/cost_estimation/help/GL_maintainability.htm) _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
+3.  [_**Maintainability Index:**_]() _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
 
 ---
 
