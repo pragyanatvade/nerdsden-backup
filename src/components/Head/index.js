@@ -14,7 +14,10 @@ import {
   author,
   publisher,
   authorTwitterHandle,
+  facebook,
 } from '../../../content/meta/config'
+
+const { appId } = facebook
 
 const Head = ({ post = {}, page = {} }) => {
   let title = siteTitle
@@ -36,7 +39,7 @@ const Head = ({ post = {}, page = {} }) => {
     const prefix = post.metaTitle || post.title
     title = `${prefix} | ${shortSiteTitle}`
     description = post.metaDescription || post.summary || post.excerpt
-    path = `${siteUrl}${post.slug}/`
+    path = `${siteUrl}${post.slug}`
 
     // image = {
     //   url: '',
@@ -86,7 +89,7 @@ const Head = ({ post = {}, page = {} }) => {
     const prefix = page.metaTitle || page.title
     title = `${prefix} | ${shortSiteTitle}`
     description = page.metaDescription || page.summary || page.excerpt
-    path = `${siteUrl}${page.slug}/`
+    path = `${siteUrl}${page.slug}`
     // image = {
     //   url: '',
     //   width: '',
@@ -126,6 +129,7 @@ const Head = ({ post = {}, page = {} }) => {
       </script>
 
       {/* OpenGraph tags */}
+
       <meta property="og:title" content={title} />
       <meta property="og:type" content="article" />
       <meta property="og:url" content={path} />
@@ -133,7 +137,7 @@ const Head = ({ post = {}, page = {} }) => {
       <meta property="og:image:width" content={image.width} />
       <meta property="og:image:height" content={image.height} />
       <meta property="og:description" content={description} />
-
+      <meta property="fb:app_id" content={appId} />
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={authorTwitterHandle || ''} />
