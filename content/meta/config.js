@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: `Nerd's Den | Memoirs Of A Skeptic Nerd`,
   shortSiteTitle: `Nerd's Den`,
   siteDescription: `Official blog for Vadelabs. It discusses about software design and building scalable, reliable, and flexible applications the right way. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.`,
-  siteUrl: `https://nerds-den.com/`,
+  siteUrl: `https://nerds-den.com`,
   pathPrefix: `/`,
   siteImage: {
     '@type': 'ImageObject',
