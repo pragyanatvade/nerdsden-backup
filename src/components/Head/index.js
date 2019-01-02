@@ -36,7 +36,8 @@ const Head = ({ post = {}, page = {} }) => {
     const prefix = post.metaTitle || post.title
     title = `${prefix} | ${shortSiteTitle}`
     description = post.metaDescription || post.summary || post.excerpt
-    path = `${siteUrl}/${post.slug}`
+    path = `${siteUrl}${post.slug}`
+
     // image = {
     //   url: '',
     //   width: '',
@@ -85,7 +86,7 @@ const Head = ({ post = {}, page = {} }) => {
     const prefix = page.metaTitle || page.title
     title = `${prefix} | ${shortSiteTitle}`
     description = page.metaDescription || page.summary || page.excerpt
-    path = `${siteUrl}/${post.slug}`
+    path = `${siteUrl}${page.slug}`
     // image = {
     //   url: '',
     //   width: '',
