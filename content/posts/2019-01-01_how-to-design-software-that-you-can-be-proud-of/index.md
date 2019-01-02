@@ -40,9 +40,19 @@ The **_second one_**, however, is the one we are going to talk about in this art
 
 Further, in the article, we are going to understand what it means for software to be complicated. What can you do to avoid it in your upcoming project?
 
+## Table Of Contents
+1. [What Makes Software Development Complex](#what-makes-software-development-complex)
+2. [Qualities Of A Good Software Design](#qualities-of-a-good-software-design)
+3. [Step By Step Guide To Complex Software Design](#step-by-step-guide-to-complex-software-design)
+4. [How To Mitigate Complexity In Software Design?](#how-to-mitigate-complexity-in-software-design)
+5. [How to Measure Your Software Development Progress?](#how-to-measure-your-software-development-progress)
+6. [Our Software Design Process](#our-software-design-process)
+7. [Conclusion](#conclusion)
+
+
 ---
 
-## What Makes Software Development Complex?
+## What Makes Software Development Complex? <a name="what-makes-software-development-complex"></a>
 
 There are two kinds of software complexities: **_Essential Complexity_** and **_Accidental Complexity_**.
 
@@ -50,7 +60,7 @@ There are two kinds of software complexities: **_Essential Complexity_** and **_
 
 ![Software Programming Is A Mess](./software-programming-mess.png 'Software Programming Is A Mess')
 
-### Essential Complexity
+### Essential Complexity <a name="what-makes-software-development-complex_essential-complexity"></a>
 
 It is inherent to the software development. The primary source of this kind of complexity is the product specifications itself. If your program needs to do ten tasks to attain business objectives, you can't get rid of any to make your application simpler.
 
@@ -66,7 +76,7 @@ The difficulty of estimating and understanding the possible states of a program 
 
 This level of complexity is almost impossible for a single human brain even to comprehend. It becomes even harder when individual components are intertwined because we cannot reason about them in isolation.
 
-### Accidental Complexity
+### Accidental Complexity <a name="what-makes-software-development-complex_accidental-complexity"></a>
 
 It occurs because developers don't tend to be good at their jobs. They unintentionally make their lives hell as a result of trying to solve a problem.
 
@@ -80,13 +90,13 @@ It's not just individual developers makes their lives miserable. Organizations h
 
 ---
 
-## Qualities Of A Good Software Design
+## Qualities Of A Good Software Design <a name="qualities-of-a-good-software-design"></a>
 
 Our goal in this article is to learn how to design and develop good software systems. However, what exactly does "good software" mean?
 
 Different stakeholders differ in their requirements for a good software system.
 
-### Users
+### Users <a name="qualities-of-a-good-software-design_users"></a>
 
 Questions which a prospective user might ask for qualifying a software as good can be:
 
@@ -98,14 +108,14 @@ Questions which a prospective user might ask for qualifying a software as good c
 - _Can we rely on it?_
 - _Does it work well with other software I am currently using?_
 
-### Operators
+### Operators <a name="qualities-of-a-good-software-design_operators"></a>
 
 The people responsible for deploying and maintaining the software are concerned with other sets of issues.
 
 - _Software should be secure from malicious attacks intended to compromise other components of IT infrastructure._
 - _It should use computing resources effectively and shouldn't be responsible for bringing other services down within the infrastructure._
 
-Developers
+### Developers <a name="qualities-of-a-good-software-design_developers"></a>
 Whereas for developer software quality corresponds to the quality of the source code and how individual components are linked together.
 
 - _It should be simple to modify the software to adapt it to changing requirements._
@@ -119,7 +129,7 @@ Designing such software is like playing chess. Rules of playing chess are pretty
 
 ---
 
-## Step By Step Guide To Complex Software Design
+## Step By Step Guide To Complex Software Design <a name="step-by-step-guide-to-complex-software-design"></a>
 
 Wait! What? Weren't we supposed to learn how to create simple and efficient software?
 
@@ -249,7 +259,7 @@ Everything about writing software is difficult with transient data types.
 
 ---
 
-## How To Mitigate Complexity In Software Design?
+## How To Mitigate Complexity In Software Design?<a name="how-to-mitigate-complexity-in-software-design"></a>
 
 > Simplicity is the absence of complexity.
 
@@ -290,7 +300,7 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 ---
 
-## How To Measure Your Software Development Progress?
+## How To Measure Your Software Development Progress?<a name="how-to-measure-your-software-development-progress"></a>
 
 > You cannot manage what you do not measure. - Bill Hewlett
 
@@ -308,7 +318,7 @@ While understanding source code, programmer builds a mental model of the softwar
 
 ---
 
-## Our Software Design Process
+## Our Software Design Process<a name="our-software-design-process"></a>
 
 > The crux of attaining simplicity is how fast can we adapt to the necessary requirements in a reliable way.
 
@@ -394,7 +404,7 @@ The last step is to demo the product. We usually create a video showcasing the p
 
 ---
 
-## Conclusion
+## Conclusion<a name="conclusion"></a>
 
 > Either you abandon the product early, or you stick with it long enough to see it become complex.
 
