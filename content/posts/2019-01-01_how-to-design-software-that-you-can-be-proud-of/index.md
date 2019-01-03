@@ -40,7 +40,7 @@ The **_second one_**, however, is the one we are going to talk about in this art
 
 Further, in the article, we are going to understand what it means for software to be complicated. What can you do to avoid it in your upcoming project?
 
-## Table Of Contents
+# Table Of Contents
 1. [What Makes Software Development Complex](#what-makes-software-development-complex)
 2. [Qualities Of A Good Software Design](#qualities-of-a-good-software-design)
 3. [Step By Step Guide To Complex Software Design](#step-by-step-guide-to-complex-software-design)
@@ -52,7 +52,7 @@ Further, in the article, we are going to understand what it means for software t
 <a name="what-makes-software-development-complex"></a>
 ---
 
-## What Makes Software Development Complex?
+# What Makes Software Development Complex?
 
 There are two kinds of software complexities: **_Essential Complexity_** and **_Accidental Complexity_**.
 
@@ -61,7 +61,7 @@ There are two kinds of software complexities: **_Essential Complexity_** and **_
 ![Software Programming Is A Mess](./software-programming-mess.png 'Software Programming Is A Mess')<a name="what-makes-software-development-complex_essential-complexity"></a>
 
 
-### Essential Complexity
+## Essential Complexity
 
 It is inherent to the software development. The primary source of this kind of complexity is the product specifications itself. If your program needs to do ten tasks to attain business objectives, you can't get rid of any to make your application simpler.
 
@@ -77,7 +77,7 @@ The difficulty of estimating and understanding the possible states of a program 
 
 This level of complexity is almost impossible for a single human brain even to comprehend. It becomes even harder when individual components are intertwined because we cannot reason about them in isolation. <a name="what-makes-software-development-complex_accidental-complexity"></a>
 
-### Accidental Complexity
+## Accidental Complexity
 
 It occurs because developers don't tend to be good at their jobs. They unintentionally make their lives hell as a result of trying to solve a problem.
 
@@ -92,14 +92,14 @@ It's not just individual developers makes their lives miserable. Organizations h
 
 ---
 
-## Qualities Of A Good Software Design
+# Qualities Of A Good Software Design
 
 Our goal in this article is to learn how to design and develop good software systems. However, what exactly does "good software" mean?
 
 Different stakeholders differ in their requirements for a good software system.
 
 <a name="qualities-of-a-good-software-design_users"></a>
-### Users
+## Users
 
 Questions which a prospective user might ask for qualifying a software as good can be:
 
@@ -112,7 +112,7 @@ Questions which a prospective user might ask for qualifying a software as good c
 - _Does it work well with other software I am currently using?_
 
 <a name="qualities-of-a-good-software-design_operators"></a>
-### Operators
+## Operators
 
 The people responsible for deploying and maintaining the software are concerned with other sets of issues.
 
@@ -121,7 +121,7 @@ The people responsible for deploying and maintaining the software are concerned 
 
 <a name="qualities-of-a-good-software-design_developers"></a>
 
-### Developers
+## Developers
 Whereas for developer software quality corresponds to the quality of the source code and how individual components are linked together.
 
 - _It should be simple to modify the software to adapt it to changing requirements._
@@ -136,7 +136,7 @@ Designing such software is like playing chess. Rules of playing chess are pretty
 <a name="step-by-step-guide-to-complex-software-design"></a>
 ---
 
-## Step By Step Guide To Complex Software Design
+# Step By Step Guide To Complex Software Design
 
 Wait! What? Weren't we supposed to learn how to create simple and efficient software?
 
@@ -150,7 +150,7 @@ However, we are not going to discuss naturally induced complexity, which your pe
 
 A software system can be assumed to be a connected universe, and your program is a dot in that universe. Your goal is to write the code in a way that complexity flows for people upstream or downstream of your application.
 
-### 1. Use Deep Inheritance
+## 1. Use Deep Inheritance
 
 Inheritance advocates code re-use. You should make it your religion. Whenever a new feature request comes along, other developers might try re-using your code.
 They will think, "All I got to do is simply grab this Class from the project and use it."
@@ -161,7 +161,7 @@ Deep level inheritance helps polluting many higher-level classes with methods an
 
 So, wait and watch as the software grows.
 
-### 2. Embrace Setters And Getters
+## 2. Embrace Setters And Getters
 
 Let me start with an anecdote.
 
@@ -204,7 +204,7 @@ There are few ways to mitigate such tragedies. You must stay away from any of th
 2.  _Have immutable properties_
 3.  _The best way is not to expose any member at all. Instead, manipulations of properties must happen inside the class. It helps in achieving full isolation of implementation and creates only one place to change._
 
-### 3. Write Lots Of Unit Tests
+## 3. Write Lots Of Unit Tests
 
 ![Chronicles Of Unit Testing](./unit-testing.jpeg 'Chronicles Of Unit Testing')
 
@@ -212,7 +212,7 @@ There are few ways to mitigate such tragedies. You must stay away from any of th
 
 Every unit test you write is not production code solving someone's problem. Therefore, you should make unit-testing your religion. You should handcraft a lot of different inputs. They should replace the need for documentation and code reviews in your program.
 
-### 4. Abstract Information With Objects
+## 4. Abstract Information With Objects
 
 ![World View Of An Object Oriented Programmer](./object-oriented-programmer.png 'World View Of An Object Oriented Programmer')
 
@@ -222,11 +222,11 @@ Encapsulate them using setters and getters.
 
 Use setters to modify the values with an **update-in-place model**. Moreover, restrict their direct access using getters. It will enable people around you to deal with unnecessary data abstraction that you have kept in place. It will automatically make their code order of magnitude larger.
 
-### 5. Throw Non-Descriptive Errors
+## 5. Throw Non-Descriptive Errors
 
 ![Programming Errors](./programming-errors.jpeg 'Programming Errors')
 
-### 6. Use Static Types
+## 6. Use Static Types
 
 Imagine there is a popular method getX() you wrote.
 It has around 1,000 calls in a software application. Each call assumes that the X is an integer, but now someone else needs to change the return type to long.
@@ -236,7 +236,7 @@ It will start with 1,000 compile errors. Another developer might cast X back to 
 
 To increase software complexity, you want effects of change ripple out into the entire program.
 
-### 7. Update Information In Place
+## 7. Update Information In Place
 
 ![Mutation](./mutation.png 'Mutation')
 
@@ -268,7 +268,7 @@ Everything about writing software is difficult with transient data types.
 
 ---
 
-## How To Mitigate Complexity In Software Design?
+# How To Mitigate Complexity In Software Design?
 
 > Simplicity is the absence of complexity.
 
@@ -276,7 +276,7 @@ So you need to avoid everything you read in the above section at all costs.
 
 In this section, we will talk about a few more ideas you must adapt to build scalable and flexible software systems.
 
-### 1. Enqueue
+## 1. Enqueue
 
 Object-Oriented Programming facilitates method calls on objects - presumes that objects are available and close. Since that's not always true, queues can come to your rescue.
 
@@ -292,14 +292,14 @@ Object-Oriented Programming facilitates method calls on objects - presumes t
 5.  _**Resiliency:** When some services in your application breaks, it shouldn't take the whole system down with it. Message queue gives you the ability to accept the request and re-try them later when the service is back up and running._
 6.  _**Asynchronous Processing:** Many times you need to defer data processing for later. It allows you to schedule jobs for future execution._
 
-### 2. Leverage Business Rule Engines
+## 2. Leverage Business Rule Engines
 
 Have you ever spent sleepless nights debugging code when you modified one of those "if" statements and found that it distorted the next if statement?
 Business rule engines are a great way to collect complex decision-making logic and work with the data too large for humans to effectively use.
 
 ![Advantages Of Business Rule Engines](./business-rule-engines.jpeg 'Advantages Of Business Rule Engines')
 
-### 3. Always Be Composing
+## 3. Always Be Composing
 
 > The essence of software development is composition.
 
@@ -311,7 +311,7 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 ---
 
-## How To Measure Your Software Development Progress?
+# How To Measure Your Software Development Progress?
 
 > You cannot manage what you do not measure. - Bill Hewlett
 
@@ -331,7 +331,7 @@ While understanding source code, programmer builds a mental model of the softwar
 
 ---
 
-## Our Software Design Process
+# Our Software Design Process
 
 > The crux of attaining simplicity is how fast can we adapt to the necessary requirements in a reliable way.
 
@@ -341,7 +341,7 @@ The image below represents the software design process we follow while designing
 
 We follow this process because it gives us the necessary flexibility to iterate and adapt faster.
 
-### What's The Big Idea?
+## What's The Big Idea?
 
 Our design process starts with a birds-eye view of an idea. We briefly try to answer the following set of questions in this step:
 
@@ -352,13 +352,13 @@ Our design process starts with a birds-eye view of an idea. We briefly try to an
 
 Just writing it down ends up influencing our further decisions and keeps us on a consistent path.
 
-### Narrate The User Experience
+## Narrate The User Experience
 
 The target of this step is to tell the story from a user's perspective. We decide to get into our user's shoes, and build a story around an ideal user experience we hope to achieve.
 
 Softwares are for people, not the other way around. Therefore, discovering how people are going to use the software effectively is the key driving factor for building an efficient user experience. This step allows anecdotally showcasing our ideas and research.
 
-### Business Objectives
+## Business Objectives
 
 Once we narrate the stories about our vision and users experiences, defining business objectives helps us to crystallize a vague idea into concrete and clear goals we should focus. Template for writing this section is we need to answer the following three questions:
 
@@ -372,11 +372,11 @@ To shape our problems and maintain the laser focus we enforce the following cons
 2.  _Every business objective must be achievable within 30 days of time along with 15 days release or feedback cycle._
 3.  _In an ideal situation, this would be achievable. But we don't live in a perfect world. Therefore we keep one month spare to cover up our tracks in case we fucked up._
 
-### Map Business Objectives With Tech Objectives
+## Map Business Objectives With Tech Objectives
 
 For every business goals defined, we list down our engineering goals.
 
-### Tech Objectives
+## Tech Objectives
 
 I am a big advocate of being a lazy but efficient developer. Whenever any new feature request comes to our engineering team, there has to be an excellent reason for that.
 
@@ -384,7 +384,7 @@ Therefore, we further scrutinize and prioritize our engineering goals.
 
 After finalizing our technical objectives, we get on to discussing and writing about overall architecture.
 
-### Define Interfaces And Document Them
+## Define Interfaces And Document Them
 
 We start defining interfaces for every segment of customers we need to cater.
 There are three customer segments for the engineering team:
@@ -393,7 +393,7 @@ There are three customer segments for the engineering team:
 2.  _**Business Operators** are the mediators between developers and users. They are responsible for understanding the requirements of users, align them with our business goals and help developers to understand the problem we need to solve._
 3.  _**Users** are the people who will use the product._
 
-### Define Specifications And Constraints
+## Define Specifications And Constraints
 
 After documenting the requirements and writing related interfaces, we write specifications for each of our interfaces.
 
@@ -407,11 +407,11 @@ To be more productive and come up with efficient solutions we constrain ourselve
 
 Before diving into writing code these specifications and constraints are communicated to all the stakeholders.
 
-### Show Me The Code
+## Show Me The Code
 
 Now we start implementing the interfaces to pass the property-based tests we wrote while declaring product specifications.
 
-### Demo Day
+## Demo Day
 
 The last step is to demo the product. We usually create a video showcasing the product or library. Write articles about it and publish it at [Nerd's Den](https://nerds-den.com).
 
@@ -419,7 +419,7 @@ The last step is to demo the product. We usually create a video showcasing the p
 
 ---
 
-## Conclusion
+# Conclusion
 
 > Either you abandon the product early, or you stick with it long enough to see it become complex.
 
@@ -433,11 +433,11 @@ Building simple and efficient software is an iterative and collaborative process
 
 Also, if you have any war stories about dealing with complexity in software development? Share with us in comments!
 
-## We 💚 your feedback
+# We 💚 your feedback
 
 Software development is a broad topic for a single blog post. So feel free to comment about what you liked, loved or hated about the article. You can also share your feedback through [Github](https://github.com/vadelabs/nerdsden/issues) or [Slack]()
 
-## References and Further Reading
+# References and Further Reading
 
 1.  [Book: Getting Real](https://amzn.to/2PkiNUe)
 2.  [Book: Clean Code](https://amzn.to/2BRBUlo)
