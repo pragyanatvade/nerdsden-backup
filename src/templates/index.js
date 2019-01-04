@@ -1,17 +1,18 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/Layout";
-import Container from "../components/Container";
-import CardList from "../components/CardList";
-import Card from "../components/Card";
+import Layout from '../components/Layout'
+import Container from '../components/Container'
+import CardList from '../components/CardList'
+import Card from '../components/Card'
 
 const Index = ({ data, pageContext }) => {
-  const posts = data.posts.edges;
+  console.log('posts', data)
+  const posts = data.posts.edges
   const {
-    node: { id, excerpt, fields, frontmatter }
-  } = posts[0];
-  const featuredPost = { id, ...fields, ...frontmatter, excerpt };
+    node: { id, excerpt, fields, frontmatter },
+  } = posts[0]
+  const featuredPost = { id, ...fields, ...frontmatter, excerpt }
 
   return (
     <Layout>
@@ -21,8 +22,8 @@ const Index = ({ data, pageContext }) => {
         </CardList>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
@@ -60,6 +61,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default Index;
+export default Index

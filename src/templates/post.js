@@ -1,22 +1,22 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/Layout";
-import Container from "../components/Container";
-import Hero from "../components/Hero";
-import PageBody from "../components/PageBody";
-import PostDate from "../components/PostDate";
-import TagList from "../components/TagList";
-import Comments from "../components/Comments";
+import Layout from '../components/Layout'
+import Container from '../components/Container'
+import Hero from '../components/Hero'
+import PageBody from '../components/PageBody'
+import PostDate from '../components/PostDate'
+import TagList from '../components/TagList'
+import Comments from '../components/Comments'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
     post: { id, html, fields, frontmatter },
     site: {
-      siteMetadata: { siteUrl, facebook }
-    }
-  } = data;
-  const post = { id, html, ...fields, ...frontmatter };
+      siteMetadata: { siteUrl, facebook },
+    },
+  } = data
+  const post = { id, html, ...fields, ...frontmatter }
 
   return (
     <Layout post={post}>
@@ -30,8 +30,8 @@ const PostTemplate = ({ data, pageContext }) => {
         </footer>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($slug: String!) {
@@ -60,6 +60,7 @@ export const query = graphql`
         title
         author
         summary
+        metaDescription
         cover {
           children {
             ... on ImageSharp {
@@ -72,6 +73,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default PostTemplate;
+export default PostTemplate
