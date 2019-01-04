@@ -1,5 +1,5 @@
 ---
-title: 9 Lessons In Software Design While Working In A Startup
+title: 9 Software Design Lessons I Learnt In A Startup
 tags: Software Development,Software Design,Good Practices
 cover: cover.png
 author: Pragyan Tripathi
@@ -8,6 +8,7 @@ summary: Ever wondered why software development is so difficult? In this article
 slug: how-to-design-software-that-you-can-be-proud-of
 published: 2019-01-06
 modified: 2019-01-06
+draft: true
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
