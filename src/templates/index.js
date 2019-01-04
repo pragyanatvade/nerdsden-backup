@@ -7,7 +7,6 @@ import CardList from '../components/CardList'
 import Card from '../components/Card'
 
 const Index = ({ data, pageContext }) => {
-  console.log('posts', data)
   const posts = data.posts.edges
   const {
     node: { id, excerpt, fields, frontmatter },
