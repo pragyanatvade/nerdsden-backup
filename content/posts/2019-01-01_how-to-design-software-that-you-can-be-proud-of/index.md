@@ -1,6 +1,6 @@
 ---
 title: How To Design Software That You Can Be Proud Of?
-tags: Software Development,Software Design,Good Practices
+tags: Software Development,Software Design,Best Practices
 cover: cover.png
 author: Pragyan Tripathi
 metaDescription: Ever wondered why software development is so difficult? Why salaries for people who work in software design, and architecture are so high? Click Now To Know Why!

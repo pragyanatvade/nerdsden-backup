@@ -1,6 +1,6 @@
 ---
-title: 9 Software Design Lessons I Learnt In A Startup
-tags: Software Development,Software Design,Good Practices
+title: 9 Software Design Lessons I Learnt While Scaling A Startup
+tags: Softwares Design,Best Practices,Startup,Software Developer
 cover: cover.png
 author: Pragyan Tripathi
 metaDescription: Ever wondered why software development is so difficult? Why salaries for people who work in software design, and architecture are so high? Click Now To Know Why!
