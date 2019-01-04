@@ -1,1 +1,3 @@
+Sitemap: https://nerds-den.com/sitemap.xml
 User-agent: *
+Disallow:
