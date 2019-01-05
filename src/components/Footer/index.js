@@ -47,7 +47,7 @@ const Footer = () => (
       <Item>
         Copyright © 2019 -{' '}
         <a
-          href="https://www.vadelabs.com/"
+          href="https://vadelabs.com/"
           rel="nofollow noopener noreferrer"
           target="_blank"
         >
