@@ -424,7 +424,7 @@ The last step is to demo the product. We usually create a video showcasing the p
 
 > Either you abandon the product early, or you stick with it long enough to see it become complex.
 
-![Chaos In Software Development](./chaos-software-development.jpeg 'Chaos In Software Development')
+![Production Level Code Quality](./production-level-code-quality.png 'Production Level Code Quality')
 
 Any useful software program either evolves with time, or it becomes obsolete. By its nature, the evolution of software is inevitably complicated. It's a common misconception among people concerned with software that the majority of software development is programming. **_It is a combination of interaction, design, and implementation._**
 
