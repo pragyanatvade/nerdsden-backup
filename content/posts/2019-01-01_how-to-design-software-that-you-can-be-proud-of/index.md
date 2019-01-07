@@ -4,10 +4,10 @@ tags: Software Development,Software Design,Best Practices
 cover: cover.png
 author: Pragyan Tripathi
 metaDescription: Ever wondered why software development is so difficult? Why salaries for people who work in software design, and architecture are so high? Click Now To Know Why!
-summary: Ever wondered why software development is so difficult? In this article, I talk about the reasons and practices developers follow which leads to the un-manageable and crapy software designs. We will also learn how to mitigate those complexities to build scalable, reliable, and flexible software applications.
+summary: Ever wondered why software development is so difficult? In this article we will learn about software development practices that leads to un-manageable and crapy software designs. Also, what can you do to avoid it in your upcoming project.
 slug: how-to-design-software-that-you-can-be-proud-of
 published: 2019-01-01
-modified: 2019-01-06
+modified: 2019-01-07
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
