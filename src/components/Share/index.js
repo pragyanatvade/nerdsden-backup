@@ -1,10 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import { siteUrl, pathPrefix } from '../../content/meta/config'
+import { siteUrl, pathPrefix } from '../../../content/meta/config'
 
 const Share = props => {
-  return <div>Share Button</div>
+  return <div />
 }
 
 export default Share

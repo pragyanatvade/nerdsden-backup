@@ -18,6 +18,14 @@ const Index = ({ data, pageContext }) => {
       <Container>
         <CardList>
           <Card {...featuredPost} featured />
+          {posts.slice(1).map(post => {
+            const {
+              node: { id, excerpt, fields, frontmatter },
+            } = post
+            const item = { id, excerpt, ...fields, ...frontmatter }
+            return <Card key={id} {...item} />
+          })}
+          ;
         </CardList>
       </Container>
     </Layout>
