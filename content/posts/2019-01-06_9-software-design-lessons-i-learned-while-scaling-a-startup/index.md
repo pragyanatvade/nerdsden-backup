@@ -1,10 +1,10 @@
 ---
 title: 9 Software Design Lessons I Learned While Scaling A Startup
-tags: Software Design,Startup,Software Development,Best Practices,Software Testing
+tags: Software Design,Startup,Software Development,Best Practices
 cover: cover.png
 author: Pragyan Tripathi
-metaDescription: Ever wondered why software development is so difficult? Why salaries for people who work in software design, and architecture are so high? Click Now To Know Why!
-summary: Ever wondered why software development is so difficult? In this article, I talk about the reasons and practices developers follow which leads to the un-manageable and crapy software designs. We will also learn how to mitigate those complexities to build scalable, reliable, and flexible software applications.
+metaDescription: Are you a software developer in an early stage startup? In this article I write about how you can build reliable software applications. Start being great at software design now!
+summary: Nine mantras for software developers to survive uncertainity and dynamism of a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
 modified: 2019-01-06
