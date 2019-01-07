@@ -1,7 +1,7 @@
 ---
 title: 9 Software Design Lessons I Learned While Scaling A Startup
 tags: Software Design,Startup,Software Development,Best Practices
-cover: cover.png
+cover: cover.jpg
 author: Pragyan Tripathi
 metaDescription: Are you a software developer in an early stage startup? In this article you will learn how can you build reliable software applications single handedly. Start being great at software design now!
 summary: Nine mantras for software developers to survive uncertainity and dynamism of a startup without losing their sleep over it.
