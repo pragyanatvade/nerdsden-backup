@@ -2,7 +2,7 @@ module.exports = {
   /* Website */
   siteTitle: `Nerd's Den | Memoirs Of A Skeptic Nerd`,
   shortSiteTitle: `Nerd's Den`,
-  siteDescription: `Official blog for vadelabs. It discusses extensively about software design, software architecture, web application development, and software developer practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.`,
+  siteDescription: `Official blog for vadelabs. It discusses about software design, software architecture, web application development, and software developer practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.`,
   siteUrl: `https://nerds-den.com`,
   pathPrefix: `/`,
   siteImage: {
