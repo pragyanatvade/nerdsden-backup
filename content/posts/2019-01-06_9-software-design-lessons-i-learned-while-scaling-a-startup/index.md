@@ -125,3 +125,4 @@ Following this step gave me a clear understanding of business requirements and t
 In this post I shared the lessons I learnt while working for a early stage startup. If it helps you in any way please let me know in comments. You can also share your feedback through [Github](https://github.com/vadelabs/nerdsden/issues) or [Slack]()
 
 ## References and Further Reading
+1. [MongoDB Data Modeling](https://amzn.to/2AyCQKk)
