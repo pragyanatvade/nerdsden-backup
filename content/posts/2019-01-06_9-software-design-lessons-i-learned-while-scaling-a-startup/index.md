@@ -65,11 +65,37 @@ Following this step gave me a clear understanding of business requirements and t
 
 ## 2. Separate Your Concerns
 
+When I started backend development in [Elanic](https://elanic.in), the problem we were trying to solve seemed easy. It's a social community engaged in buying and selling of lifestyle items. 
+
+It took me seven continuous sleepless nights to keep the servers running during our growth phase to understand that it is not. Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of reads and writes operations. 
+
+Next month went into a rewrite of the critical sections using proper abstractions - separating read and write operations.
+
+Abstractions are the solutions to general problems. The + function is a solution to add in general. It is quite useless without arguments to apply it to. The application of abstraction to particular arguments is a solution to a particular problem.
+
+We often think of a piece of software as the solution to a problem, as in accounting software is the solution to the problem of accounting. But this is a bit like saying the kitchen is the solution to cooking. It doesn't tell the whole story. If you open the cabinet, you see that cooking is terribly complicated. It's made of a lot of smaller problems, like cutting and applying heat. Our software is the same. It's thousands of solutions to lots of subproblems.
+
+When we develop a new system, our task is about as complicated as inventing cuisine. Our medium is much more malleable than steel, so we can iterate faster, but we still need to fill those drawers with tools and develop processes to select the right tool and apply it in the right way.
+
 <a name="leverage-rule-engines"></a>
 
 ---
 
 ## 3. Levarage Rule Engines
+
+Once we decided to introduce voucher support in buy-flow of our application. To do it faster I hardcoded the coupon code and validation logic within the codebase. 
+
+From the next day, the marketing team kept asking to change the coupon almost every day, and we kept re-writing the same block of code instead of moving forward and focus on other features.
+
+Later on, similar kind of changes got introduced in deciding commission, delivery charges, pickup charges etc. Thankfully, my mentor introduced me to rule engines to solve such problems gracefully.
+
+If you are not familiar with rules engines, you may be wondering why you would want to use one. In most applications, complex rule processing often takes the form of nested if-else blocks of code which can be very difficult to decipher and to maintain. If rules change, a developer must work with a business user to define the new rules. The developer must then read through the existing logic to understand what is happening and make the necessary modifications. The changes must then be recompiled, tested, and redeployed. A rules engine provides a means to separate the rules or logic of an application from the remaining code. Separating these rules provides several distinct advantages.
+
+1. _A rule engine allows for a more declarative style of programming where the rules define what is happening, without describing how it is happening. This makes it much easier to read than nested 'if-else' blocks of code. It's also easier to make changes without introducing bugs in your code._
+
+2. _The rules are written in a language that is easier for non-developers to understand. This makes it easier for business users to validate and even modify the rules without having to involve developers._
+
+3. _A rule engine allows for changes to be made to the rules without requiring that you recompile your application. If your code must pass through a strict deployment workflow, this can be a huge time saver and can also save a significant amount of money._
 
 <a name="design-for-testability"></a>
 
