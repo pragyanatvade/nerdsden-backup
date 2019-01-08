@@ -3,11 +3,11 @@ title: How To Design Software That You Can Be Proud Of?
 tags: Software Development,Software Design,Best Practices
 cover: cover.png
 author: Pragyan Tripathi
-metaDescription: Ever wondered why software development is so difficult? Why salaries for people who work in software design, and architecture are so high? Click Now To Know Why!
+metaDescription: Ever wondered why software development is so difficult? Let me tell you the ways you can make your life easier as a software developer. Click Now To Know How!
 summary: Ever wondered why software development is so difficult? In this article we will learn about software development practices that leads to un-manageable and crapy software designs. Also, what can you do to avoid it in your upcoming project.
 slug: how-to-design-software-that-you-can-be-proud-of
 published: 2019-01-01
-modified: 2019-01-07
+modified: 2019-01-08
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
