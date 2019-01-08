@@ -39,6 +39,25 @@ No other experience could have taught me what I know today. In this article, I s
 ---
 
 ## 1. Start With The Data Model
+Business people care about data and concentrate on how this data can be transformed, combined and separated to meet business requirements. Whereas software developers tend to care about the classes, functions, and processes they are writing.
+
+This mismatch in the thinking process leads to further misunderstanding among business and engineering teams.
+
+To understand the gravity of the problem let's draw a typical feature request timeline I went through:
+
+[IMAGE]
+
+Six months into my job as a backend developer, I realized I need to understand business requirements and design system flexible enough to adapt frequently.
+
+Hence I decided to understand Data Modelling.
+
+The aim of data modeling is to define:
+
+* _**The data contained in the database** (e.g., entities: devices, profiles, products, carts, orders, wallets etc.)_
+* _**The relationships among data items** (e.g., profiles can create products, products can be bought by profiles etc.)_
+* _**The constraints on data** (e.g., at max only 30 products can be bought together, wallet credit should not be used if wallet balance becomes less than zero etc.)_
+
+Following this step gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.
 
 <a name="separate-your-concerns"></a>
 
