@@ -49,7 +49,7 @@ To understand the gravity of the problem let's draw a typical feature request ti
 
 Six months into my job as a backend developer, I realized I need to understand business requirements and design system flexible enough to adapt frequently.
 
-Hence I decided to understand Data Modelling.
+Hence, _**Data Modelling.**_
 
 The aim of data modeling is to define:
 
