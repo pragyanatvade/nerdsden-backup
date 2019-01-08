@@ -47,7 +47,7 @@ To understand the gravity of the problem let's draw a typical feature request ti
 
 [IMAGE]
 
-Six months into my job as a backend developer, I realized I need to understand business requirements and design system flexible enough to adapt frequently.
+Six months into my job as a backend developer, I realized I need to better understand business requirements and design system flexible enough to adapt frequently.
 
 Hence, _**Data Modelling.**_
 
