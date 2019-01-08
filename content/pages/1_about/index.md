@@ -1,7 +1,7 @@
 ---
 title: About
 menuTitle: About
-summary: Official blog for vadelabs. It discusses extensively about software design, software architecture, web application development, and software developer practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
+summary: Official blog for vadelabs. It discusses about software design, software architecture, web application development, and software developer practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
 cover: cover.png
 author: Pragyan Tripathi
 published: 2019-01-01
