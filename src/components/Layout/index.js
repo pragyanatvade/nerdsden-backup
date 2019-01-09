@@ -1,16 +1,16 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
 
-import Head from "../Head";
-import Menu from "../Menu";
-import Footer from "../Footer";
+import Head from '../Head'
+import Menu from '../Menu'
+import Footer from '../Footer'
 
-import theme from "../../styles/theme";
-import GlobalStyle from "../../styles/global";
+import theme from '../../styles/theme'
+import GlobalStyle from '../../styles/global'
 
-const Layout = ({ children, post, page }) => (
+const Layout = ({ children, post, page, index }) => (
   <div className="siteRoot">
-    <Head post={post} page={page} />
+    <Head post={post} page={page} index />
     <ThemeProvider theme={theme}>
       <>
         <div className="siteContent">
@@ -22,6 +22,6 @@ const Layout = ({ children, post, page }) => (
     </ThemeProvider>
     <GlobalStyle />
   </div>
-);
+)
 
-export default Layout;
+export default Layout
