@@ -150,12 +150,28 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     {
-      resolve: 'gatsby-plugin-html2amp',
+      resolve: `gatsby-plugin-amp`,
       options: {
-        files: ['**/*.html'],
-        dist: 'public/amp',
-        publicPath: 'public',
-        gaConfigPath: '../gaConfig.json',
+        analytics: {
+          type: 'gtag',
+          dataCredentials: 'include',
+          config: {
+            vars: {
+              gtag_id: config.google.trackingId,
+              config: {
+                [config.google.trackingId]: {
+                  page_location: '{{pathname}}',
+                },
+              },
+            },
+          },
+        },
+        canonicalBaseUrl: 'https://nerds-den.com/',
+        components: ['amp-form'],
+        excludedPaths: ['/404*', '/'],
+        pathIdentifier: '/amp/',
+        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        useAmpClientIdApi: true,
       },
     },
   ],
