@@ -146,7 +146,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
         createPage({
-          path: `${slug}/amp/`,
+          path: `${slug}amp/`,
           component: path.resolve(`./src/templates/amp/post.js`),
           context: {
             slug,
@@ -260,7 +260,7 @@ exports.createPages = ({ graphql, actions }) => {
           },
         })
         createPage({
-          path: `${slug}/amp/`,
+          path: `${slug}amp/`,
           component: path.resolve(`./src/templates/amp/page.js`),
           context: {
             slug,

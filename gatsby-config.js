@@ -169,7 +169,7 @@ module.exports = {
         canonicalBaseUrl: 'https://nerds-den.com/',
         components: ['amp-form'],
         excludedPaths: ['/404*', '/'],
-        pathIdentifier: '/amp/',
+        pathIdentifier: 'amp/',
         relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
         useAmpClientIdApi: true,
       },
