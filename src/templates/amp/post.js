@@ -1,14 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Container from '../components/Container'
-import Hero from '../components/Hero'
-import PageBody from '../components/PageBody'
-import PostDate from '../components/PostDate'
-import TagList from '../components/TagList'
-import Comments from '../components/Comments'
-import Share from '../components/Share'
+import Layout from '../../components/Layout'
+import Container from '../../components/Container'
+import Hero from '../../components/Hero'
+import PageBody from '../../components/PageBody'
+import PostDate from '../../components/PostDate'
+import TagList from '../../components/TagList'
+import Comments from '../../components/Comments'
+import Share from '../../components/Share'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {

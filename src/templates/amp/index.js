@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Container from '../components/Container'
-import CardList from '../components/CardList'
-import Card from '../components/Card'
+import Layout from '../../components/Layout'
+import Container from '../../components/Container'
+import CardList from '../../components/CardList'
+import Card from '../../components/Card'
 
 const Index = ({ data, pageContext }) => {
   const posts = data.posts.edges
