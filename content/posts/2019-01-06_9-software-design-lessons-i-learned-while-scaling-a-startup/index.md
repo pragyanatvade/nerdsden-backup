@@ -131,9 +131,18 @@ Disappointment is the degree of mismatch between our expectations and reality.
 
 Our expectations of software quality are profoundly unrealistic. 
 
-The only reliable, widely used way to ensure impeccable software quality is to write less software that does less stuff, and then spend eons honing that tiny lot. Such an approach, however, is very rarely compatible with commercial success or even programmer motivations (despite what many may claim).
-Bugs are an inevitable byproduct of writing software. Sure, there are all sorts of techniques and potions that promise to decrease how many of the damn critters runabout, but only the comically hyperbole pretends that complete eradication is possible.
-Once we accept that simple fact that software = bugs, we can progress to understand why fixing them may not even be that important a lot of the time. The absence of bugs is simply one parameter of success in software, but not even close to the most important one (with some exception for life-critical systems).
+The only reliable, widely used way to ensure impeccable software quality is to write less software that does less stuff, and then spend eons honing that tiny lot.
+
+Such an approach, however, is very rarely compatible with commercial success or even programmer motivations (despite what many may claim).
+
+Bugs are an inevitable byproduct of writing software.
+
+Sure, there are all sorts of techniques and potions that promise to decrease how many of the damn critters runabout, but only the comically hyperbole pretends that complete eradication is possible.
+
+Once we accept that simple fact that software = bugs, we can progress to understand why fixing them may not even be that important a lot of the time.
+
+The absence of bugs is simply one parameter of success in software, but not even close to the most important one (with some exception for life-critical systems).
+
 Useless software can be entirely bug-free, yet remain entirely useless. Useful software can be ridden with bugs, yet remain highly valuable. Or, the value of software depends far more upon the problem it solves than the quality by which it does so.
 
 <a name="things-will-break"></a>
