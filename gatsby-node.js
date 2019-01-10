@@ -119,6 +119,16 @@ exports.createPages = ({ graphql, actions }) => {
           currentPage: 1,
         },
       })
+      createPage({
+        path: `/amp/`,
+        component: path.resolve(`./src/templates/amp/index.js`),
+        context: {
+          limit: postsPerHomePage,
+          skip: 0,
+          numPages: numPages + 1,
+          currentPage: 1,
+        },
+      })
 
       // Create Each Individual Post
       _.forEach(posts, (edge, i) => {
@@ -130,6 +140,14 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: slug,
           component: path.resolve(`./src/templates/post.js`),
+          context: {
+            slug,
+          },
+        })
+
+        createPage({
+          path: `${slug}amp/`,
+          component: path.resolve(`./src/templates/amp/post.js`),
           context: {
             slug,
           },
@@ -186,6 +204,13 @@ exports.createPages = ({ graphql, actions }) => {
             tag,
           },
         })
+        createPage({
+          path: `/tags/${_.kebabCase(tag)}/amp/`,
+          component: path.resolve(`./src/templates/amp/tag.js`),
+          context: {
+            tag,
+          },
+        })
       })
       resolve()
     })
@@ -230,6 +255,13 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: slug,
           component: path.resolve(`./src/templates/page.js`),
+          context: {
+            slug,
+          },
+        })
+        createPage({
+          path: `${slug}amp/`,
+          component: path.resolve(`./src/templates/amp/page.js`),
           context: {
             slug,
           },

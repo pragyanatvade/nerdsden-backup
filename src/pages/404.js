@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import PageTitle from '../components/PageTitle'
 import Container from '../components/Container'
@@ -15,6 +16,11 @@ const Text = styled.p`
 
 const NotFoundPage = () => (
   <Layout>
+    <Helmet>
+      <title>404 - Page Not Found</title>
+      <meta name="description" content="Page not found" />
+    </Helmet>
+
     <Container>
       <PageTitle>Page Not Found</PageTitle>
       <Text>

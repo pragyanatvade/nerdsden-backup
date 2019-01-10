@@ -1,4 +1,4 @@
-const config = require("./content/meta/config");
+const config = require('./content/meta/config')
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -8,7 +8,7 @@ module.exports = {
     siteUrl: config.siteUrl,
     author: config.authorName,
     google: config.google,
-    facebook: config.facebook
+    facebook: config.facebook,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,36 +17,36 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/content/images/`
-      }
+        path: `${__dirname}/content/images/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/content/posts/`
-      }
+        path: `${__dirname}/content/posts/`,
+      },
     },
     {
       resolve: `gatsby-plugin-mailchimp`,
       options: {
         endpoint:
-          "https://nerds-den.us19.list-manage.com/subscribe/post?u=20591f017c7229e1afe463e36&amp;id=ad00ad1e38"
-      }
+          'https://nerds-den.us19.list-manage.com/subscribe/post?u=20591f017c7229e1afe463e36&amp;id=ad00ad1e38',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/content/pages/`
-      }
+        path: `${__dirname}/content/pages/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `parts`,
-        path: `${__dirname}/content/parts/`
-      }
+        path: `${__dirname}/content/parts/`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -58,40 +58,40 @@ module.exports = {
             options: {
               maxWidth: 800,
               withWebp: true,
-              backgroundColor: "transparent"
-            }
+              backgroundColor: 'transparent',
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 2em`
-            }
+              wrapperStyle: `margin-bottom: 2em`,
+            },
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           {
-            resolve: "gatsby-remark-emojis",
+            resolve: 'gatsby-remark-emojis',
             options: {
               // Deactivate the plugin globally (default: true)
               active: true,
               // Add a custom css class
-              class: "emoji-icon",
+              class: 'emoji-icon',
               // Select the size (available size: 16, 24, 32, 64)
               size: 64,
               // Add custom styles
               styles: {
-                display: "inline",
-                margin: "0",
-                "margin-top": "1px",
-                position: "relative",
-                top: "5px",
-                width: "25px"
-              }
-            }
-          }
-        ]
-      }
+                display: 'inline',
+                margin: '0',
+                'margin-top': '1px',
+                position: 'relative',
+                top: '5px',
+                width: '25px',
+              },
+            },
+          },
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -106,73 +106,73 @@ module.exports = {
         display: config.manifestDisplay,
         icons: [
           {
-            src: "/icons/icon-48x48.png",
-            sizes: "48x48",
-            type: "image/png"
+            src: '/icons/icon-48x48.png',
+            sizes: '48x48',
+            type: 'image/png',
           },
           {
-            src: "/icons/icon-96x96.png",
-            sizes: "96x96",
-            type: "image/png"
+            src: '/icons/icon-96x96.png',
+            sizes: '96x96',
+            type: 'image/png',
           },
           {
-            src: "/icons/icon-144x144.png",
-            sizes: "144x144",
-            type: "image/png"
+            src: '/icons/icon-144x144.png',
+            sizes: '144x144',
+            type: 'image/png',
           },
           {
-            src: "/icons/icon-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
+            src: '/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: "/icons/icon-256x256.png",
-            sizes: "256x256",
-            type: "image/png"
+            src: '/icons/icon-256x256.png',
+            sizes: '256x256',
+            type: 'image/png',
           },
           {
-            src: "/icons/icon-384x384.png",
-            sizes: "384x384",
-            type: "image/png"
+            src: '/icons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png',
           },
           {
-            src: "/icons/icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
+            src: '/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
     },
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options: config.google
+      options: config.google,
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-amp`,
       options: {
         analytics: {
-          type: `gtag`,
-          dataCredentials: `include`,
-          canonicalBaseUrl: config.siteUrl,
+          type: 'gtag',
+          dataCredentials: 'include',
           config: {
             vars: {
               gtag_id: config.google.trackingId,
               config: {
                 [config.google.trackingId]: {
-                  page_location: `{{pathname}}`
-                }
-              }
-            }
+                  page_location: '{{pathname}}',
+                },
+              },
+            },
           },
-          components: ["amp-form"],
-          excludedPaths: ["/404*", "/"],
-          pathIdentifier: "/amp/",
-          relAmpHtmlPattern: "{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}",
-          useAmpClientIdApi: true
-        }
-      }
-    }
-  ]
-};
+        },
+        canonicalBaseUrl: 'https://nerds-den.com/',
+        components: ['amp-form'],
+        excludedPaths: ['/404*', '/'],
+        pathIdentifier: 'amp/',
+        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        useAmpClientIdApi: true,
+      },
+    },
+  ],
+}
