@@ -1,6 +1,6 @@
 ---
 title: How To Design Software That You Can Be Proud Of?
-tags: Software Development,Software Design,Best Practices
+tags: Software Development,Software Design,Best Practices,Gyan
 cover: cover.png
 author: Pragyan Tripathi
 metaDescription: Ever wondered why software development is so difficult? Let me tell you the ways you can make your life easier as a software developer. Click Now To Know How!
