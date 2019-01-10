@@ -3,7 +3,7 @@ title: 9 Software Design Lessons I Learned While Scaling A Startup
 tags: Software Design,Startup,Software Development,Best Practices,Software Architecture,Gyan
 cover: cover.jpg
 author: Pragyan Tripathi
-metaDescription: Are you a software developer in an early stage startup? Want to learn key lessons in software engineering to design reliable software architecture? Click to find out more!
+metaDescription: Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!
 summary: Nine mantras for software developers to survive uncertainity and high frequency changes in a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
@@ -25,7 +25,7 @@ No other experience could have taught me what I know today. In this article, I s
 1. [Start With The Data Model](#start-with-the-data-model)
 2. [Separate Your Concerns](#separate-your-concerns)
 3. [Leverage Rule Engines](#leverage-rule-engines)
-4. [Design For Testability](#design-for-testability)
+4. [Prioritize Software Testing](#prioritize-software-testing)
 5. [There Are No Coincidences](#there-are-no-coincidences)
 6. [Things Will Break](#things-will-break)
 7. [Setup Logging And Error Handling Early](#setup-logging-and-error-handling-early)
@@ -97,17 +97,44 @@ If you are not familiar with rules engines, you may be wondering why you would w
 
 3. _A rule engine allows for changes to be made to the rules without requiring that you recompile your application. If your code must pass through a strict deployment workflow, this can be a huge time saver and can also save a significant amount of money._
 
-<a name="design-for-testability"></a>
+<a name="prioritize-software-testing"></a>
 
 ---
 
-## 4. Design For Testability
+## 4. Prioritize Software Testing
+
+In an early stage startup, feature requests tend to change so often that writing automated tests takes a backfoot over manual testing and direct deployments. 
+
+It's not until too late that you realize that the trade-off has been quite expensive. 
+
+I won't suggest you write tests from the start but at-least write testable code.
+
+Some code is written in such a way that it is hard, or even impossible, to write a good unit test for it. So, what makes code hard to test? Let's review some anti-patterns, code smells, and bad practices that we should avoid when writing testable code.
+
+Uncontrolled non-determinism and side effects are similar in their destructive effects on the codebase. When used carelessly, they lead to deceptive, hard to understand and maintain, tightly coupled, non-reusable, and untestable code.
+
+On the other hand, methods that are both deterministic and side-effect-free are much easier to test, reason about, and reuse to build larger programs.
+
+In terms of functional programming, such methods are called pure functions. We'll rarely have a problem unit testing a pure function; all we have to do is to pass some arguments and check the result for correctness.
+
+What really makes code untestable is hard-coded, impure factors that cannot be replaced, overridden, or abstracted away in some other way.
+
+Impurity is toxic: if method Foo() depends on non-deterministic or side-effecting method Bar(), then Foo() becomes non-deterministic or side-effecting as well. Eventually, we may end up poisoning the entire codebase. Multiply all these problems by the size of a complex real-life application, and we'll find ourselves encumbered with a hard to maintain codebase full of smells, anti-patterns, secret dependencies, and all sorts of ugly and unpleasant things.
 
 <a name="there-are-no-coincidences"></a>
-
 ---
 
-## 5. There Are No Coincidences
+## 5. There Will Always Be Bugs
+If you are like me, who cares about his code quality and doesn't like bugs in his program, you will relate to the disappointment you had after the product launch. 
+
+Disappointment is the degree of mismatch between our expectations and reality.
+
+Our expectations of software quality are profoundly unrealistic. 
+
+The only reliable, widely used way to ensure impeccable software quality is to write less software that does less stuff, and then spend eons honing that tiny lot. Such an approach, however, is very rarely compatible with commercial success or even programmer motivations (despite what many may claim).
+Bugs are an inevitable byproduct of writing software. Sure, there are all sorts of techniques and potions that promise to decrease how many of the damn critters runabout, but only the comically hyperbole pretends that complete eradication is possible.
+Once we accept that simple fact that software = bugs, we can progress to understand why fixing them may not even be that important a lot of the time. The absence of bugs is simply one parameter of success in software, but not even close to the most important one (with some exception for life-critical systems).
+Useless software can be entirely bug-free, yet remain entirely useless. Useful software can be ridden with bugs, yet remain highly valuable. Or, the value of software depends far more upon the problem it solves than the quality by which it does so.
 
 <a name="things-will-break"></a>
 
@@ -132,7 +159,7 @@ If you are not familiar with rules engines, you may be wondering why you would w
 
 ---
 
-## 9. There Will Always Be Bugs
+## 9. There Are No Coincidences
 
 <a name="bonus-use-message-queues"></a>
 
