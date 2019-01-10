@@ -1,11 +1,11 @@
 ---
 title: About
 menuTitle: About
-summary: Official blog for vadelabs. It discusses about software design, software architecture, web application development, and software developer practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
+summary: Software engineering blog for. It discusses about software design, software architecture, web application development, and software developer practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
 cover: cover.png
 author: Pragyan Tripathi
 published: 2019-01-01
-modified: 2019-01-08
+modified: 2019-01-10
 ---
 
 Since you have landed here something tells me you are someone who finds happiness in building something useful out of nothing — someone who is curious and passionate about technology.
