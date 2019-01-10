@@ -3,11 +3,11 @@ title: 9 Software Design Lessons I Learned While Scaling A Startup
 tags: Software Design,Startup,Software Development,Best Practices
 cover: cover.jpg
 author: Pragyan Tripathi
-metaDescription: Are you a software developer in an early stage startup? In this article you will learn how can you build reliable software applications single handedly. Start being great at software design now!
-summary: Nine mantras for software developers to survive uncertainity and dynamism of a startup without losing their sleep over it.
+metaDescription: Are you a software developer in an early stage startup? Want to learn key lessons in software engineering to design reliable software architecture? Click to find out more!
+summary: Nine mantras for software developers to survive uncertainity and high frequency changes in a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
-modified: 2019-01-09
+modified: 2019-01-10
 ---
 Over three years, I worked as a Backend Team Lead at [Elanic](https://elanic.in) _(India's Biggest Community For Buying and Selling)_. I learned a lot about software development during these _"firey"_ years of scaling Elanic from thirty users in August 2015 to three million users in August 2018.
 
@@ -85,7 +85,7 @@ When we develop a new system, our task is about as complicated as inventing cuis
 
 Once we decided to introduce voucher support in buy-flow of our application. To do it faster I hardcoded the coupon code and validation logic within the codebase. 
 
-From the next day, the marketing team kept asking to change the coupon almost every day, and we kept re-writing the same block of code instead of moving forward and focus on other features.
+Next day onwards, the marketing team kept asking to change the coupon almost every day, and we kept re-writing the same block of code instead of moving forward and focus on other features.
 
 Later on, similar kind of changes got introduced in deciding commission, delivery charges, pickup charges etc. Thankfully, my mentor introduced me to rule engines to solve such problems gracefully.
 
