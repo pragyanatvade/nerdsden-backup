@@ -147,7 +147,7 @@ Yes, we are. But to understand simplicity, we must start appreciating the subtle
 
 However, we are not going to discuss naturally induced complexity, which your peers will spot in a snap. We will follow industry practices and stay buzzword compliant with the latest trends, while quietly spreading complexity throughout the systems.
 
-![Connected Software Universe](./connected-software-universe.png 'Connected Software Universe')
+![Software Development Connected Universe](./software-development-connected-universe.png 'Software Development Connected Universe')
 
 A software system can be assumed to be a connected universe, and your program is a dot in that universe. Your goal is to write the code in a way that complexity flows for people upstream or downstream of your application.
 
