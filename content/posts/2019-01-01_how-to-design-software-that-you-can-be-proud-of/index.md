@@ -7,7 +7,7 @@ metaDescription: Ever wondered why software development is so difficult? Let me 
 summary: Ever wondered why software development is so difficult? In this article we will learn about software development practices that leads to un-manageable and crapy software designs. Also, what can you do to avoid it in your upcoming project.
 slug: how-to-design-software-that-you-can-be-proud-of
 published: 2019-01-01
-modified: 2019-01-08
+modified: 2019-01-12
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
@@ -35,7 +35,7 @@ The **_first_** one might have already crossed your mind. **_Run away!_** Book y
 
 If you are even remotely considering it, there is no need to go further. Trust me; you might get pulled to the darker side.
 
-![Dark Side Of Software Development](./dark-side-software-development.png 'Dark Side Of Software Development')
+![Welcome To The Dark Side Of Software Development](./welcome-to-the-dark-side-of-software-development.png 'Welcome To The Dark Side Of Software Development')
 
 The **_second one_**, however, is the one we are going to talk about in this article. **_Writing efficient and simple programs._**
 
