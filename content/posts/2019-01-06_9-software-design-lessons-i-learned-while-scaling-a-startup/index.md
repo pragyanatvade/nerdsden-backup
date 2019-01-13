@@ -7,23 +7,21 @@ metaDescription: Are you a software developer in an early stage startup? Wish to
 summary: Nine mantras for software developers to survive uncertainity and high frequency changes in a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
-modified: 2019-01-10
+modified: 2019-01-13
 ---
-Over three years, I worked as a Backend Team Lead at [Elanic](https://elanic.in) _(India's Biggest Community For Buying and Selling)_. I learned a lot about software development during these _"firey"_ years of scaling Elanic from thirty users in August 2015 to three million users in August 2018.
+Over three years, I worked as a Backend Team Lead at [Elanic](https://elanic.in) (India's Biggest Community For Buying and Selling). I learned a lot about software development during these "firey" years of scaling [Elanic](https://elanic.in) from 3 users in August 2015 to 3 million users in August 2018.
 
-[IMAGE]
+![Software Development - Expectations vs Reality](./software-development-expectations-vs-reality.png "Software Development Expectations Vs Reality")
 
-I started with no prior experience in building a production-grade software system. I thought I had a good foundation of programming concepts. How hard could it be? Little that I knew, I am in for lots of sleepless nights and burning myself out in the quest of stabilizing Elanic's backend system. 
+I started with no prior experience in building a production-grade software system. I thought I had a good foundation of programming concepts. How hard could it be? Little that I knew, I am in for lots of sleepless nights and burning myself out in the quest of stabilizing [Elanic's](https://elanic.in) backend system.
 
-[IMAGE]
+>Trying to create new, challenging things is good for society, good for the industry and good for my own life. ~Sachio Semmoto
 
-> Trying to create new, challenging things is good for society, good for the industry and good for my own life. ~Sachio Semmoto
-
-No other experience could have taught me what I know today. In this article, I share the software design lessons I learned the hard way.
+No other experience could have taught me what I know today. In this article, I share my experiences and the software design lessons I learned the hard way.
 
 ## Table Of Contents
 1. [Start With The Data Model](#start-with-the-data-model)
-2. [Separate Your Concerns](#separate-your-concerns)
+2. [Separate Your Concerns - Flexible Abstractions](#separate-your-concerns)
 3. [Leverage Rule Engines](#leverage-rule-engines)
 4. [Prioritize Software Testing](#prioritize-software-testing)
 5. [There Are No Coincidences](#there-are-no-coincidences)
@@ -39,43 +37,57 @@ No other experience could have taught me what I know today. In this article, I s
 ---
 
 ## 1. Start With The Data Model
-Business people care about data and concentrate on how this data can be transformed, combined and separated to meet business requirements. Whereas software developers tend to care about the classes, functions, and processes they are writing.
+Business people often care about data and concentrate on how this data can be transformed, combined and separated to meet business requirements.
+
+Whereas software developers tend to care about the classes, functions, and processes they are writing.
 
 This mismatch in the thinking process leads to further misunderstanding among business and engineering teams.
 
-To understand the gravity of the problem let's draw a typical feature request timeline I went through:
+To understand the gravity of the problem let's draw a typical feature request timeline, I went through:
 
-[IMAGE]
+![Early Stage Startup Feature Request Pipeline](./early-stage-startup-feature-request-pipeline.png "Early Stage Startup Feature Request Pipeline")
 
-Six months into my job as a backend developer, I realized I need to better understand business requirements and design system flexible enough to adapt frequently.
+Six months into my job as a backend developer, I realized I need to understand better business requirements and design system flexible enough to adapt that frequency of change.
 
-Hence, _**Data Modelling.**_
+Hence, **Data Modelling.**
 
-The aim of data modeling is to define:
+Data modeling aims to define:
 
-* _**The data contained in the database** (e.g., entities: devices, profiles, products, carts, orders, wallets etc.)_
-* _**The relationships among data items** (e.g., profiles can create products, products can be bought by profiles etc.)_
-* _**The constraints on data** (e.g., at max only 30 products can be bought together, wallet credit should not be used if wallet balance becomes less than zero etc.)_
+* **_The data contained in the database_** (e.g., entities: devices, profiles, products, carts, orders, wallets, etc.)
 
-Following this step gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.
+* **_The relationships among data items_** (e.g., users can create products, profiles can add these products to their cart, etc.)
+
+* **_The constraints on data_** (e.g., at max only 30 products can be bought together, wallet credit should not be used if wallet balance becomes less than zero, etc.)
+
+Following data modelling guidelines gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.
 
 <a name="separate-your-concerns"></a>
 
 ---
 
-## 2. Separate Your Concerns
+## 2. Separate Your Concerns - Flexible Abstractions
 
-When I started backend development in [Elanic](https://elanic.in), the problem we were trying to solve seemed easy. It's a social community engaged in buying and selling of lifestyle items. 
+![Separation Of Concerns](./separation-of-concerns.jpg "Separation Of Concerns")
 
-It took me seven continuous sleepless nights to keep the servers running during our growth phase to understand that it is not. Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of reads and writes operations. 
+When I started backend development in [Elanic](https://elanic.in), the problem we were trying to solve seemed natural. _It's a social community engaged in buying and selling of lifestyle items._
+
+It took me seven consecutive sleepless nights to keep the servers running during our growth phase to understand there is nothing natural or straightforward about it.
+
+Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of reads and writes operations.
 
 Next month went into a rewrite of the critical sections using proper abstractions - separating read and write operations.
 
-Abstractions are the solutions to general problems. The + function is a solution to add in general. It is quite useless without arguments to apply it to. The application of abstraction to particular arguments is a solution to a particular problem.
+Abstractions are the solutions to general problems. Consider `+` function. It is a solution to adding numbers in general. Without input arguments, it is quite useless.
+ 
+Applying these abstractions to a particular set of arguments is a solution to a specific problem.
 
-We often think of a piece of software as the solution to a problem, as in accounting software is the solution to the problem of accounting. But this is a bit like saying the kitchen is the solution to cooking. It doesn't tell the whole story. If you open the cabinet, you see that cooking is terribly complicated. It's made of a lot of smaller problems, like cutting and applying heat. Our software is the same. It's thousands of solutions to lots of subproblems.
+We often think of software as the solution to a particular issue, like accounting software is the solution to the problem of accounting. An e-commerce website is a solution to selling online.
 
-When we develop a new system, our task is about as complicated as inventing cuisine. Our medium is much more malleable than steel, so we can iterate faster, but we still need to fill those drawers with tools and develop processes to select the right tool and apply it in the right way.
+But, it is a bit like kitchen being a solution to cooking. It doesn't tell the whole story. If you open the cabinet, you realize that preparing food is an extremely complicated process.
+
+It involves solving a lot of smaller problems, like cutting, heating, mixing ingredients, etc. Our software is the same. It's hundreds of solutions to lots of subproblems.
+
+As a software developer, when we develop a new system, our task is as involved as inventing a cuisine. Our tools are much more malleable than steel so that we can iterate faster, but we still need to fill those drawers with tools and develop techniques to select the right one and apply it in the right way.
 
 <a name="leverage-rule-engines"></a>
 
@@ -83,19 +95,20 @@ When we develop a new system, our task is about as complicated as inventing cuis
 
 ## 3. Levarage Rule Engines
 
-Once we decided to introduce voucher support in buy-flow of our application. To do it faster I hardcoded the coupon code and validation logic within the codebase. 
+Once we decided to introduce voucher support in buy-flow of our application. To do it faster I hardcoded the coupon code and validation logic within the codebase.
+Next day onwards, the marketing team kept asking to change the coupon almost every day, and we kept re-writing the same block of code instead of moving forward and focusing on other features. We couldn't properly test these deployments and ended up providing lousy user experiences.
+Later on, similar kind of changes got introduced in deciding commission, delivery charges, pickup charges, etc. Thankfully, my mentor, Abhishek Chauhan introduced me to rule engines right before I was reaching the limit of my patience.
 
-Next day onwards, the marketing team kept asking to change the coupon almost every day, and we kept re-writing the same block of code instead of moving forward and focus on other features.
+If you are not familiar with business rule engines, you may be wondering why you would want to use one. In most software applications, complex rule processing often takes the form of nested if-else blocks of code which can be very difficult to interpret and to maintain. 
+If rules change (they always do),  a developer must work with a business person to define the new rule sets. The developer must then understand the existing implementation and realize what's happening to make the required modifications. These changes must then be recompiled, tested, and redeployed.
 
-Later on, similar kind of changes got introduced in deciding commission, delivery charges, pickup charges etc. Thankfully, my mentor introduced me to rule engines to solve such problems gracefully.
+A business rules engine provides a means to separate the rules or logic of an application from the remaining codebase. Separating these rules offers enormous benefits.
 
-If you are not familiar with rules engines, you may be wondering why you would want to use one. In most applications, complex rule processing often takes the form of nested if-else blocks of code which can be very difficult to decipher and to maintain. If rules change, a developer must work with a business user to define the new rules. The developer must then read through the existing logic to understand what is happening and make the necessary modifications. The changes must then be recompiled, tested, and redeployed. A rules engine provides a means to separate the rules or logic of an application from the remaining code. Separating these rules provides several distinct advantages.
+* _Business rule engines allow the declarative style of programming. Rules define what should happen, without describing how should it be happening. This makes codebase much easier to read. Also, it becomes easier to make changes without introducing bugs._
 
-1. _A rule engine allows for a more declarative style of programming where the rules define what is happening, without describing how it is happening. This makes it much easier to read than nested 'if-else' blocks of code. It's also easier to make changes without introducing bugs in your code._
+* _These rules can be described in easy-to-understand language for business people. This enables business people to validate and even modify rules without involving software developers._
 
-2. _The rules are written in a language that is easier for non-developers to understand. This makes it easier for business users to validate and even modify the rules without having to involve developers._
-
-3. _A rule engine allows for changes to be made to the rules without requiring that you recompile your application. If your code must pass through a strict deployment workflow, this can be a huge time saver and can also save a significant amount of money._
+* _Also, you don't need to go through. If your deployment process requires passing each line of code through a strict workflow of recompilation and testing, leveraging rule engines can be a huge time saver._
 
 <a name="prioritize-software-testing"></a>
 
