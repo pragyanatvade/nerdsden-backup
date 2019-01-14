@@ -5,7 +5,7 @@ summary: Software engineering blog for vadelabs. It discusses about software des
 cover: cover.png
 author: Pragyan Tripathi
 published: 2019-01-01
-modified: 2019-01-10
+modified: 2019-01-14
 ---
 
 Since you have landed here something tells me you are someone who finds happiness in building something useful out of nothing — someone who is curious and passionate about technology.
@@ -14,7 +14,7 @@ However, if there is one word to describe your current state of mind, it would b
 
 ![Frustrated Programmer](./frustrated-programmer.png "Frustrated Programmer")
 
-Frustrated by the [mess we are in](https://www.youtube.com/watch?v=lKXe3HUG2l4) as software developers. Frustrated by how hard and slow it is to build reliable software. Frustrated by unknowingly inducing bugs while improving the system. Infuriated by developing or maintaining the crappy software systems because your boss thinks it is fast and cheap.
+Frustrated by the [mess we are in](https://www.youtube.com/watch?v=lKXe3HUG2l4) as software developers. Frustrated by how hard and slow it is to build reliable software. Frustrated by unknowingly inducing bugs while improving the system. Infuriated by developing or maintaining the crappy software systems because your boss thinks it is fast and cheap. You feel you don't seem to be achieving your potential.
 
 **Still, you are full of hope, a positive mindset and damn good ideas.**
 
@@ -22,9 +22,9 @@ However, maybe you:
 
 - Have no clue how to start building something and bring your idea to life.
 - Want to learn skills to be a better problem solver without losing your sleep over it.
-- Wish to know how to build scalable, reliable and adaptable systems from the start.
+- Wish to know how to build scalable, reliable and adaptable software systems from the start.
 
-No matter where you are currently in your journey, you want to have a **significant** impact. You want to use your intellect and creative ideas towards something that matters, both to you and the world.
+No matter where you are currently in your journey, you want to have a **significant** impact. You want to use your intellect and creative ideas towards something that matters, both to you and the world. You want to become more effective and productive problem solver.
 
 You are ready to take your skills to the next level.
 
