@@ -169,35 +169,84 @@ Useless software can be entirely bug-free, yet remain entirely useless. Useful s
 ---
 
 ## 7. Setup Logging And Error Handling Early
+When developing a new software system, one of the first things you must do is add logging and error handling, because both are useful from the very beginning.
+
+For all software systems that are bigger than a handful of lines of code, you need some way of knowing what happens in the program.
+
+Perhaps not when it is working as expected, but as soon as it doesn't, you must be able to see what's happening. 
+
+The same goes for error handling - errors and exceptions happen in the beginning too, so the sooner you systematically handle them, the better.
 
 <a name="it-will-take-longer-than-you-think"></a>
 
 ---
 
 ## 8. It Will Take Longer Than You Think
+Have you ever made a wrong estimate? 
 
+According to Daniel Kahneman's research in the book [_**Thinking Fast and Slow**_](https://amzn.to/2RqN9dG) there is a fair chance you would say yes.
+
+We are all bad at estimating. The reason why we are worse in estimating is that we don't seem to understand what estimates are.
+
+We don't know what they are supposed to be. We don't see why we do them. We don't know how to do them.
+
+The problem with estimates is that they _breed mistrust._ Once you give an estimated deadline, it immediately transforms into a contract and commitment. Then you miss it!
+ 
+Have you ever missed an estimate? 
+
+When you miss an estimate, the stakeholders assume that it was a commitment of some kind and you are not trustworthy. 
+
+Let me show how wrong I have been in estimating:
+
+The early backend system of Elanic was written using PHP and MySQL. When I had a discussion with founders, they painted a beautiful picture of the scale we would be handling.
+
+There is going to be a multitude of social interactions, buying & selling of items, logistics tracking, feeds engagements, etc. We need to build a system which could handle such features and the scale of millions of users.
+
+My job was to migrate it to a new stack using NodeJS, MongoDB, and Elasticsearch along with maintaining the current system. I brainstormed the new software architecture design and presented it.
+ 
+My boss asked how long is it going to take? Well, it is a few API calls to write. Four weeks and we would be ready to launch.
+ 
+We launched the new backend twelve months later. That was 12X of what was estimated. 
+
+The problem seemed straightforward in the start. But there was no way I could have known the issues without actually going and trying to solve them.
+
+I learned it is effortless to give an estimate for a project deadline. But it is extremely hard to hit it precisely.
+
+Even as of today most of my projects take three times longer than the time I forecast.
+
+There are so many external factors involved, communicating the requirements effectively, a simple merge turns out to be the cause of a catastrophic bug, or an API call doesn't work as promised, etc. It is quite common to run into unexpected problems.
 
 <a name="there-will-always-be-bugs"></a>
 
 ---
 
 ## 9. There Are No Coincidences
+Startups are really good at creating what I call "Fake Urgencies." People will come to you and say something like _"if we don't do this by tomorrow, we are doomed."_
 
-<a name="bonus-use-message-queues"></a>
+As programmers, we're under constant pressure to deliver code quickly. The most important lesson I learned in the last three years is "haste always makes waste."
 
----
+You should always take time to think about risks involved throughout the whole process.
 
-## 10. Bonus: Use Message Queues
+Good software design is not an accident, it is the result of meticulous planning and leveraging exceptional programming skills.
+
+Never believe in coincidences, when you are developing a new feature, or fixing bugs. You added a new feature, and an independent feature becomes unavailable? Not an accident.
+
+Ignoring such occurrences, and not spending time investigating the issue may bring the whole system down. In some cases even kill people.
 
 <a name="conclusion"></a>
 
 ---
 
 ## Conclusion
+If you made it till this section, _**CONGRATULATIONS!**_. I really thank you for your commitment.
+
+If I would like you to take in one lesson from my experiences in the post it's going to be:
+
+_Software development is hard work. A clear codebase and flexible software architecture is no accident. Very few programs come out right the first time or even the third time. Remember this in moments of despair. If you find that building reliable, scalable, and flexible software application is hard, it's because it is hard._
 
 ## We 💚 your feedback
 
-In this post I shared the lessons I learnt while working for a early stage startup. If it helps you in any way please let me know in comments. You can also share your feedback through [Github](https://github.com/vadelabs/nerdsden/issues) or [Slack]()
+In this post I shared the lessons I learned while working for an early stage startup. If it helps you in any way please let me know in comments. You can also share your feedback through [Github](https://github.com/vadelabs/nerdsden/issues) or [Slack]()
 
 ## References and Further Reading
 1. [MongoDB Data Modeling](https://amzn.to/2AyCQKk)
