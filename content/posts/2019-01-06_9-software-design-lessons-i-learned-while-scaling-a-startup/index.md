@@ -21,7 +21,7 @@ No other experience could have taught me what I know today. In this article, I s
 
 ## Table Of Contents
 1. [Start With The Data Model](#start-with-the-data-model)
-2. [Separate Your Concerns - Flexible Abstractions](#separate-your-concerns)
+2. [Separate Your Concerns](#separate-your-concerns)
 3. [Leverage Rule Engines](#leverage-rule-engines)
 4. [Prioritize Software Testing](#prioritize-software-testing)
 5. [There Are No Coincidences](#there-are-no-coincidences)
@@ -64,7 +64,7 @@ Following data modelling guidelines gave me a clear understanding of business re
 
 ---
 
-## 2. Separate Your Concerns - Flexible Abstractions
+## 2. Separate Your Concerns
 
 ![Separation Of Concerns](./separation-of-concerns.jpg "Separation Of Concerns")
 
