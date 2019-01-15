@@ -29,8 +29,7 @@ No other experience could have taught me what I know today. In this article, I s
 7. [Setup Logging And Error Handling Early](#setup-logging-and-error-handling-early)
 8. [It Will Take Longer Than You Think](#it-will-take-longer-than-you-think)
 9. [There Will Always Be Bugs](#there-will-always-be-bugs)
-10. [Bonus: Use Message Queues](#bonus-use-message-queues)
-11. [Conclusion](#conclusion)
+10. [Conclusion](#conclusion)
 
 <a name="start-with-the-data-model"></a>
 
@@ -173,7 +172,7 @@ When developing a new software system, one of the first things you must do is ad
 
 For all software systems that are bigger than a handful of lines of code, you need some way of knowing what happens in the program.
 
-Perhaps not when it is working as expected, but as soon as it doesn't, you must be able to see what's happening. 
+Perhaps not when it is working as expected, but as soon as it doesn't, you must be able to see what's happening.
 
 The same goes for error handling - errors and exceptions happen in the beginning too, so the sooner you systematically handle them, the better.
 
