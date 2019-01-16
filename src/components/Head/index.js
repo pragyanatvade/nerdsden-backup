@@ -37,7 +37,7 @@ const Head = ({ post = {}, page = {} }) => {
 
   if (Object.keys(post).length > 0) {
     const prefix = post.metaTitle || post.title
-    title = `${prefix} | ${shortSiteTitle}`
+    title = prefix.length > 60 ? prefix : `${prefix} | ${shortSiteTitle}`
     description = post.metaDescription || post.summary || post.excerpt
     path = `${siteUrl}/${post.slug}`
     if (post.tags) post.tags.forEach(tag => (tags += `${tag.title},`))
