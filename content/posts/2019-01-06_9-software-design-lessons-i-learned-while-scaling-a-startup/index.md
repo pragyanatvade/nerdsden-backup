@@ -9,24 +9,18 @@ slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
 modified: 2019-01-13
 ---
-### 9 Software Design Lessons I Learnt While Scaling A Startup
 
-Over three years, I worked as a Backend Team Lead at [Elanic](https://elanic.in)
-*(India’s Biggest Community For Buying and Selling).* I learned a lot about
-software development during these “firey” years of scaling
-[Elanic](https://elanic.in) from 3 users in August 2015 to 3 million users in
-August 2018.
 
-I started with no prior experience in building a production-grade software
-system. I thought I had a good foundation of programming concepts. How hard
-could it be? Little that I knew, I am in for lots of sleepless nights and
-burning myself out in the quest of stabilizing Elanic’s backend system.
+Over three years, I worked as a Backend Team Lead at [Elanic](https://elanic.in) *(India’s Biggest Community For Buying and Selling).* I learned a lot about software development during these “firey” years of scaling
+[Elanic](https://elanic.in) from 3 users in August 2015 to 3 million users in August 2018.
 
-> Trying to create new, challenging things is good for society, good for the
-> industry and good for my own life. ~Sachio Semmoto
+I started with no prior experience in building a production-grade software system. I thought I had a good foundation of programming concepts. How hard could it be? Little that I knew, I am in for lots of sleepless nights and burning myself out in the quest of stabilizing Elanic’s backend system.
 
-No other experience could have taught me what I know today. In this article, I
-share my experiences and the software design lessons I learned the hard way.
+> Trying to create new, challenging things is good for society, good for the industry and good for my own life. ~Sachio Semmoto
+
+No other experience could have taught me what I know today. In this article, I share my experiences and the software design lessons I learned the hard way.
+
+---
 
 ### Table Of Contents
 
@@ -47,37 +41,25 @@ share my experiences and the software design lessons I learned the hard way.
 
 ### 1. Start With The Data Model
 
-Business people often care about data and concentrate on how this data can be
-transformed, combined and separated to meet business requirements.
+Business people often care about data and concentrate on how this data can be transformed, combined and separated to meet business requirements.
 
-Whereas software developers tend to care about the classes, functions, and
-processes they are writing.
+Whereas software developers tend to care about the classes, functions, and processes they are writing.
 
-This mismatch in the thinking process leads to further misunderstanding among
-business and engineering teams.
+This mismatch in the thinking process leads to further misunderstanding among business and engineering teams.
 
-To understand the gravity of the problem let’s draw a typical feature request
-timeline, I went through:
+To understand the gravity of the problem let’s draw a typical feature request timeline, I went through:
 
-Six months into my job as a backend developer, I realized I need to understand
-better business requirements and design system flexible enough to adapt that
-frequency of change.
+Six months into my job as a backend developer, I realized I need to understand better business requirements and design system flexible enough to adapt that frequency of change.
 
 Hence, **Data Modelling**.
 
 Data modeling aims to define:
 
-* **The data contained in the database** (e.g., entities: devices, profiles,
-products, carts, orders, wallets, etc.)
-* **The relationships among data items** (e.g., users can create products,
-profiles can add these products to their cart, etc.)
-* **The constraints on data** (e.g., at max only 30 products can be bought
-together, the user should not be able to use wallet credit if wallet balance
-becomes less than zero, etc.)
+* **The data contained in the database** (e.g., entities: devices, profiles, products, carts, orders, wallets, etc.)
+* **The relationships among data items** (e.g., users can create products, profiles can add these products to their cart, etc.)
+* **The constraints on data** (e.g., at max only 30 products can be bought together, the user should not be able to use wallet credit if wallet balance becomes less than zero, etc.)
 
-Following data modeling guidelines gave me a clear understanding of business
-requirements and teams were able to understand and communicate themselves
-better.
+Following data modeling guidelines gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.
 
 <a name="separate-your-concerns"></a>
 
@@ -85,29 +67,19 @@ better.
 
 ### 2. Separate Your Concerns
 
-When I started backend development in Elanic, the problem we were trying to
-solve seemed natural. *It’s a social community engaged in buying and selling of
-lifestyle items.*
+When I started backend development in Elanic, the problem we were trying to solve seemed natural. *It’s a social community engaged in buying and selling of lifestyle items.*
 
-It took me seven consecutive sleepless nights to keep the servers running during
-our growth phase to understand there is nothing natural or straightforward about
-it.
+It took me seven consecutive sleepless nights to keep the servers running during our growth phase to understand there is nothing natural or straightforward about it.
 
-Once we stabilized the system to sustain the traffic, I realized the whole
-codebase is the unsustainable mesh of **reads** and **writes** operations.
+Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of **reads** and **writes** operations.
 
-Next month went into a rewrite of the critical sections using proper
-abstractions — separating read and write operations.
+Next month went into a rewrite of the critical sections using proper abstractions — separating read and write operations.
 
-Abstractions are the solutions to general problems. Consider + function. It is a
-solution to adding numbers in general. Without input arguments, it is quite
-useless.
+Abstractions are the solutions to general problems. Consider + function. It is a solution to adding numbers in general. Without input arguments, it is quite useless.
 
-Applying these abstractions to a particular set of arguments is a solution to a
-specific problem.
+Applying these abstractions to a particular set of arguments is a solution to a specific problem.
 
-We often think of software as a solution to a particular issue, like accounting
-software is the solution to the problem of accounting. An e-commerce website is
+We often think of software as a solution to a particular issue, like accounting software is the solution to the problem of accounting. An e-commerce website is
 a solution to selling online.
 
 But, **it is a bit like kitchen being a solution to cooking**. It doesn’t tell
