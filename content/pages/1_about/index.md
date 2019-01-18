@@ -49,7 +49,7 @@ Our experiences have made us have some core beliefs as programmers:
 
 I am your host, [Pragyan Tripathi](https://nerds-den.com/about/), responsible for almost everything on this website. I am obsessed with learning to be a better problem solver and teach students, early-stage software developers and my peers about my findings. I welcome you to hop on with me on this journey of self-improvement.
 
-If you're interested, I specialize in topics like *_software architecture_*, *_databases_*, and *_web application development_*.
+If you're interested, I specialize in topics like **_software architecture_**, **_databases_**, and **_web application development_**.
 
 **Before I go, I would like to invite you to join my email list community. By signing up (its free), you'll get access to our latest articles right when they come out.**
 
