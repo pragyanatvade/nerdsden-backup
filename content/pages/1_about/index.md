@@ -1,5 +1,5 @@
 ---
-title: About
+title: About - Nerd's Den
 menuTitle: About
 summary: Software engineering blog for vadelabs. Collection of best resources to learn software design, web development, and programming practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
 cover: the-journey-of-a-software-developer.png
