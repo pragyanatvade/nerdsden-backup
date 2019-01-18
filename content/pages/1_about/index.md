@@ -1,21 +1,21 @@
 ---
-title: About - Nerd's Den
+title: About
 menuTitle: About
 summary: Software engineering blog for vadelabs. Collection of best resources to learn software design, web development, and programming practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.
 cover: the-journey-of-a-software-developer.png
 author: Pragyan Tripathi
 published: 2019-01-01
-modified: 2019-01-17
+modified: 2019-01-18
 ---
 
 Since you have landed here something tells me you are someone who finds happiness in building something useful out of nothing — someone who is curious and passionate about software development.
 
 However, if there is one word to describe your current state of mind, it would be: **frustrated.**
 
+![The Journey Of A Software Developer](./the-journey-of-a-software-developer.png "The Journey Of A Software Developer")
+
 Frustrated by the mess we are in as [software
 developers](https://www.youtube.com/watch?v=lKXe3HUG2l4&t=212s). Frustrated by how hard and slow it is to build a reliable software application. Frustrated by unknowingly inducing bugs in a quest of improving the system. Infuriated by fixing someone else’s mistakes and maintaining the crappy software systems because your manager thinks it is fast and cheap.
-
-![The Journey Of A Software Developer](./the-journey-of-a-software-developer.png "The Journey Of A Software Developer")
 
 Still, you are full of hope, a positive mindset and damn good ideas.
 
