@@ -12,10 +12,10 @@ Since you have landed here something tells me you are someone who finds happines
 
 However, if there is one word to describe your current state of mind, it would be: **frustrated.**
 
-![The Journey Of A Software Developer](./the-journey-of-a-software-developer.png "The Journey Of A Software Developer")
-
 Frustrated by the mess we are in as [software
 developers](https://www.youtube.com/watch?v=lKXe3HUG2l4&t=212s). Frustrated by how hard and slow it is to build a reliable software application. Frustrated by unknowingly inducing bugs in a quest of improving the system. Infuriated by fixing someone else’s mistakes and maintaining the crappy software systems because your manager thinks it is fast and cheap.
+
+![The Journey Of A Software Developer](./the-journey-of-a-software-developer.png "The Journey Of A Software Developer")
 
 Still, you are full of hope, a positive mindset and damn good ideas.
 
