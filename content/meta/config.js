@@ -1,6 +1,6 @@
 module.exports = {
   /* Website */
-  siteTitle: `Nerd's Den | Helping You Succeed Through Software Development`,
+  siteTitle: `Nerd's Den | Helping You Succeed In Software Development`,
   shortSiteTitle: `Nerd's Den`,
   siteDescription: `Software engineering blog for vadelabs. Collection of best resources to learn software design, web development, and programming practices. Check out our free articles, tutorials, courses, and toolkits for more ways to learn about software development.`,
   siteUrl: `https://nerds-den.com`,
