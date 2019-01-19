@@ -104,7 +104,6 @@ module.exports = {
         background_color: config.manifestBackgroundColor,
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay,
-        icon: 'icons/icon-48x48.png',
         icons: [
           {
             src: '/icons/icon-48x48.png',

@@ -59,8 +59,7 @@ There are two kinds of software complexities: **_Essential Complexity_** and **_
 
 > One way to summarize, the flow of complexity is increasing requirements for coordination.
 
-![Software Programming Is A Mess](./software-programming-mess.png 'Software Programming Is A Mess')<a name="what-makes-software-development-complex_essential-complexity"></a>
-
+![Essential Vs Accidental Software Complexity](./essential-vs-accidental-complexity.png 'Essential Vs Accidental Software Complexity')
 
 ### Essential Complexity
 
