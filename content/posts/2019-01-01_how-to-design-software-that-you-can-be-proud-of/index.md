@@ -296,9 +296,17 @@ Object-Oriented Programming facilitates method calls on objects - presumes t
 ### 2. Leverage Business Rule Engines
 
 Have you ever spent sleepless nights debugging code when you modified one of those "if" statements and found that it distorted the next if statement?
+
 Business rule engines are a great way to collect complex decision-making logic and work with the data too large for humans to effectively use.
 
-![Advantages Of Business Rule Engines](./business-rule-engines.jpeg 'Advantages Of Business Rule Engines')
+![Advantages Of Business Rule Engines](./business-rules-engine.png 'Advantages Of Business Rule Engines')
+
+Business rule engines are really helpful from a flexibility standpoint.
+
+* _As compared to the core code, rules are simpler to understand._
+* _Decouples application code and business logic making code easier to maintain and adapt to changes._
+* _Adding, modifying, or removing existing rules is much easier than changing a program._
+* _It helps us create a central knowledge repository and reuse as much code as possible._
 
 ### 3. Always Be Composing
 
@@ -370,7 +378,7 @@ Once we narrate the stories about our vision and users experiences, defining bus
 To shape our problems and maintain the laser focus we enforce the following constraints among ourselves:
 
 1.  _Maximum of three business objectives are allowed for every quarter for every person._
-2.  _Every business objective must be achievable within 30 days of time along with 15 days release or feedback cycle._
+2.  _Every business objective must be achievable within 30 days along with 15 days release or feedback cycle._
 3.  _In an ideal situation, this would be achievable. But we don't live in a perfect world. Therefore we keep one month spare to cover up our tracks in case we fucked up._
 
 ### Map Business Objectives With Tech Objectives
