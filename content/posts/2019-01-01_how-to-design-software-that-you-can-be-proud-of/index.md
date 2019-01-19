@@ -1,7 +1,7 @@
 ---
 title: How To Design Software That You Can Be Proud Of?
 tags: Software Development,Software Design,Best Practices,Gyan
-cover: cover.png
+cover: cover.jpg
 author: Pragyan Tripathi
 metaDescription: Ever wondered why software development is so difficult? Let me tell you the ways you can make your life easier as a software developer. Click Now To Know How!
 summary: Ever wondered why software development is so difficult? In this article we will learn about software development practices that leads to un-manageable and crapy software designs. Also, what can you do to avoid it in your upcoming project.
@@ -303,7 +303,7 @@ Business rule engines are a great way to collect complex decision-making logic a
 
 Business rule engines are really helpful from a flexibility standpoint.
 
-* _As compared to the core code, rules are simpler to understand._
+* _As compared to the core code, rules more straightforward to understand._
 * _Decouples application code and business logic making code easier to maintain and adapt to changes._
 * _Adding, modifying, or removing existing rules is much easier than changing a program._
 * _It helps us create a central knowledge repository and reuse as much code as possible._
