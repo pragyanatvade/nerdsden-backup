@@ -1,6 +1,6 @@
 ---
 title: 9 Software Design Lessons I Learned While Scaling A Startup
-tags: Software Design,Startup,Software Development,Best Practices,Software Architecture,Gyan
+tags: Startup,Software Development,Best Practices,Software Architecture,Gyan
 cover: cover.jpg
 author: Pragyan Tripathi
 metaDescription: Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!
