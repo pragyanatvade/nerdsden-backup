@@ -25,7 +25,6 @@ const Index = ({ data, pageContext }) => {
             const item = { id, excerpt, ...fields, ...frontmatter }
             return <Card key={id} {...item} />
           })}
-          ;
         </CardList>
       </Container>
     </Layout>
