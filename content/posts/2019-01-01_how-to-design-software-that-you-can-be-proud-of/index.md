@@ -81,7 +81,7 @@ This level of complexity is almost impossible for a single human brain even to c
 
 It occurs because developers don't tend to be good at their jobs. They unintentionally make their lives hell as a result of trying to solve a problem.
 
-![Programmer's Dilemma](./programmers-dilemma.png "Programmer's Dilemma")
+![Software Developer's Dilemma ](./programmers-dilemma.png "Software Developer's Dilemma")
 
 The biggest driver of accidental complexity is developers sticking with their first draft of the program, just because it works. I happened to write around 110 drafts of the current article before publishing this one. But while programming that doesn't happen.
 
