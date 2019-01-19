@@ -42,7 +42,7 @@ module.exports = {
   /* manifest.json */
   manifestName: `Nerd's Den - Memoirs Of A Skeptic Nerd`,
   manifestShortName: `Nerd's Den`,
-  manifestStarUrl: `/`,
+  manifestStartUrl: `/`,
   manifestBackgroundColor: 'white',
   manifestThemeColor: '#666',
   manifestDisplay: 'standalone',
