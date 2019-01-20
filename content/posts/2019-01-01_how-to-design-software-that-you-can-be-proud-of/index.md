@@ -7,7 +7,7 @@ metaDescription: Ever wondered why software development is so difficult? Let me 
 summary: Ever wondered why software development is so difficult? In this article we will learn about software development practices that leads to un-manageable and crapy software designs. Also, what can you do to avoid it in your upcoming project.
 slug: how-to-design-software-that-you-can-be-proud-of
 published: 2019-01-01
-modified: 2019-01-17
+modified: 2019-01-20
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
@@ -47,8 +47,7 @@ Further, in the article, we are going to understand what it means for software t
 3. [Step By Step Guide To Complex Software Design](#step-by-step-guide-to-complex-software-design)
 4. [How To Mitigate Complexity In Software Design?](#how-to-mitigate-complexity-in-software-design)
 5. [How to Measure Your Software Development Progress?](#how-to-measure-your-software-development-progress)
-6. [Our Software Design Process](#our-software-design-process)
-7. [Conclusion](#conclusion)
+6. [Conclusion](#conclusion)
 
 <a name="what-makes-software-development-complex"></a>
 ---
@@ -65,7 +64,7 @@ There are two kinds of software complexities: **_Essential Complexity_** and **_
 
 It is inherent to the software development. The primary source of this kind of complexity is the product specifications itself. If your program needs to do ten tasks to attain business objectives, you can't get rid of any to make your application simpler.
 
-Increase in the number of product features along with environmental complexities (CPU, Memory, Network, etc.) increases the number of states a software system can be in, exponentially. It makes understanding, visualizing, describing and testing software even harder.
+Increase in the number of product features along with environmental complexities (CPU, Memory, Network, etc.) increases the number of states of a software system exponentially. It makes understanding, visualizing, describing and testing software harder.
 
 ![Complexity Of A Software Application](./complexity-software-application.png 'Complexity Of A Software Application')
 
@@ -87,9 +86,11 @@ The biggest driver of accidental complexity is developers sticking with their fi
 
 The clean code looks like it was easy to write, when in fact it usually involves several drafts. We write the best way that comes in our head first, notice the complexity introduced, then "look for a better way" and refactor to remove those complexities. Then we keep on "looking for a better move" until we are unable to find one.
 
-It's not just individual developers makes their lives miserable. Organizations help them in that too. When any project is nearing completion, there is always a mad rush to get new features added. The rush is mad indeed because it leads into a trap of added complexities. They tend to focus on how quickly they can write something, how easy is it to replace one developer with another. Considering just the familiarity with the tools used, not the simplicity or complexity of the code the new developer needs to handle.
-<a name="qualities-of-a-good-software-design"></a>
+![Production Level Code Quality](./production-level-code-quality.png 'Production Level Code Quality')
 
+It's not just individual developers makes their lives miserable. Organizations help them in that too. When any project is nearing completion, there is always a mad rush to get new features added. The rush is mad indeed because it leads into a trap of added complexities. They tend to focus on how quickly they can write something, how easy is it to replace one developer with another. Considering just the familiarity with the tools used, not the simplicity or complexity of the code the new developer needs to handle.
+
+<a name="qualities-of-a-good-software-design"></a>
 ---
 
 ## Qualities Of A Good Software Design
@@ -98,7 +99,6 @@ Our goal in this article is to learn how to design and develop good software sys
 
 Different stakeholders differ in their requirements for a good software system.
 
-<a name="qualities-of-a-good-software-design_users"></a>
 ### Users
 
 Questions which a prospective user might ask for qualifying a software as good can be:
@@ -127,11 +127,21 @@ Whereas for developer software quality corresponds to the quality of the source 
 - _It should be simple to modify the software to adapt it to changing requirements._
 - _It should run efficiently on a variety of different computing platforms._
 
-The table below summarizes the expectations of all the stakeholders (users, operators, and developers) into six characteristics which a useful software must have.
 
-![Qualities Of A Good Software System](./qualities-of-good-software-system.png 'Qualities Of A Good Software System')
+To summarize an software application must have a right balance of following features to qualify as a desirable software system.
 
-Designing such software is like playing chess. Rules of playing chess are pretty simple, but it takes years of practice and dedication to be a grandmaster. Even though these software qualities seem simple to achieve, it involves the combination of knowledge, creative vision, and technique. The implementation technique must be flawless to deliver bug-free software with optimal performance and reliability. It takes a lot of practice, iterations and, collaboration to build a good software system.
+| **Quality**        | **What It Means** |
+| ------------- |:-------------:|
+| 1. Delightful User Experience    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
+| 2. Available      | It should be ready to perform the required action when it is needed. |  
+| 3. Performant | When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
+| 4. Scalable | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.|
+| 5. Adaptable | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
+| 6. Secure | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
+| 7. Economical | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
+
+
+Designing such software is like playing chess. Rules of playing chess are pretty simple, but it takes years of practice and dedication to be a grandmaster. Even though these software qualities achievable, it involves the combination of knowledge, creative vision, and technique. The implementation technique must be flawless to deliver bug-free software with optimal performance and reliability. It takes a lot of practice, iterations and, collaboration to build a good software system.
 
 <a name="step-by-step-guide-to-complex-software-design"></a>
 ---
@@ -216,23 +226,21 @@ Every unit test you write is not production code solving someone's problem. Ther
 
 ![World View Of An Object Oriented Programmer](./object-oriented-programmer.png 'World View Of An Object Oriented Programmer')
 
-Information is a simple construct; it comes in few shapes (characters, booleans, numbers, scalars, sequences, arrays, maps, sets, etc.) You must abstract them with objects (Profile, Order, Product, etc.)
+Information is a simple construct; it comes in few shapes (`characters`, `booleans`, `numbers`, `scalars`, `sequences`, `arrays`, `maps`, `sets`, etc.) You must abstract them with objects (`Profile`, `Order`, `Product`, etc.) Encapsulate them using setters and getters.
 
-Encapsulate them using setters and getters.
+Use **setters** to modify the values with an **update-in-place model**. Moreover, restrict their direct access using **getters**. It will enable people around you to deal with unnecessary data abstraction that you have kept in place. It will automatically make their code order of magnitude larger.
 
-Use setters to modify the values with an **update-in-place model**. Moreover, restrict their direct access using getters. It will enable people around you to deal with unnecessary data abstraction that you have kept in place. It will automatically make their code order of magnitude larger.
+### 5. Throw Non-Descriptive Errors Messages
 
-### 5. Throw Non-Descriptive Errors
-
-![Programming Errors](./programming-errors.jpeg 'Programming Errors')
+![Irrelevant Error Messages](./irrelevant-error-messages.png 'Irrelevant Error Messages')
 
 ### 6. Use Static Types
 
-Imagine there is a popular method getX() you wrote.
-It has around 1,000 calls in a software application. Each call assumes that the X is an integer, but now someone else needs to change the return type to long.
+Imagine there is a popular method `getX()` you wrote. It has around 1,000 calls in a software application. Each call assumes that the `X` is an `integer`, but now someone else needs to change the return type to `long`.
 
-You can imagine how hellish his life is going to be.
-It will start with 1,000 compile errors. Another developer might cast X back to an integer, but it won't work either. (The return value might be truncated.) He must modify the code surrounding each of those 1,000 calls to compensate for the change.
+You can imagine how hellish his life is going to be. It will start with 1,000 compile errors.
+
+Another developer might cast `X` back to an `integer`, but it won't work either. _(The return value might be truncated.)_ He must modify the code surrounding each of those 1,000 calls to compensate for the change.
 
 To increase software complexity, you want effects of change ripple out into the entire program.
 
@@ -335,94 +343,6 @@ While understanding source code, programmer builds a mental model of the softwar
 
 3.  [_**Maintainability Index:**_]() _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
 
-<a name="our-software-design-process"></a>
-
----
-
-## Our Software Design Process
-
-> The crux of attaining simplicity is how fast can we adapt to the necessary requirements in a reliable way.
-
-The image below represents the software design process we follow while designing software.
-
-![Software Design Process At Vadelabs](./vadelabs-software-design-process.png 'Software Design Process At Vadelabs')
-
-We follow this process because it gives us the necessary flexibility to iterate and adapt faster.
-
-### What's The Big Idea?
-
-Our design process starts with a birds-eye view of an idea. We briefly try to answer the following set of questions in this step:
-
-1.  _What's our singular long-term vision?_
-2.  _Why are we building this product ourselves?_
-3.  _What problems are we trying to solve?_
-4.  _How is it different from other similar products?_
-
-Just writing it down ends up influencing our further decisions and keeps us on a consistent path.
-
-### Narrate The User Experience
-
-The target of this step is to tell the story from a user's perspective. We decide to get into our user's shoes, and build a story around an ideal user experience we hope to achieve.
-
-Softwares are for people, not the other way around. Therefore, discovering how people are going to use the software effectively is the key driving factor for building an efficient user experience. This step allows anecdotally showcasing our ideas and research.
-
-### Business Objectives
-
-Once we narrate the stories about our vision and users experiences, defining business objectives helps us to crystallize a vague idea into concrete and clear goals we should focus. Template for writing this section is we need to answer the following three questions:
-
-1.  _What do we have to accomplish to be nearer to our vision?_
-2.  _How are we going to get that done?_
-3.  _What should we measure to define the success of our objective?_
-
-To shape our problems and maintain the laser focus we enforce the following constraints among ourselves:
-
-1.  _Maximum of three business objectives are allowed for every quarter for every person._
-2.  _Every business objective must be achievable within 30 days along with 15 days release or feedback cycle._
-3.  _In an ideal situation, this would be achievable. But we don't live in a perfect world. Therefore we keep one month spare to cover up our tracks in case we fucked up._
-
-### Map Business Objectives With Tech Objectives
-
-For every business goals defined, we list down our engineering goals.
-
-### Tech Objectives
-
-I am a big advocate of being a lazy but efficient developer. Whenever any new feature request comes to our engineering team, there has to be an excellent reason for that.
-
-Therefore, we further scrutinize and prioritize our engineering goals.
-
-After finalizing our technical objectives, we get on to discussing and writing about overall architecture.
-
-### Define Interfaces And Document Them
-
-We start defining interfaces for every segment of customers we need to cater.
-There are three customer segments for the engineering team:
-
-1.  _**Developers** are responsible for building the product and ensuring it's reliability, scalability, and performance._
-2.  _**Business Operators** are the mediators between developers and users. They are responsible for understanding the requirements of users, align them with our business goals and help developers to understand the problem we need to solve._
-3.  _**Users** are the people who will use the product._
-
-### Define Specifications And Constraints
-
-After documenting the requirements and writing related interfaces, we write specifications for each of our interfaces.
-
-These specifications take the form of _**property-based tests**_ in our development flow.
-
-To be more productive and come up with efficient solutions we constrain ourselves in three dimensions:
-
-1.  _**Time:** To provide a realistic estimate of development time, we follow the two-week development cycle. At the end of two weeks, we seek feedback from business operators and users._
-2.  _**Budget:** The amount of money the product development should take._
-3.  _**Maintainability Index:** As we focus on writing maintainable and extendable code. Keeping a check on our maintainability index helps us to be creative while programming._
-
-Before diving into writing code these specifications and constraints are communicated to all the stakeholders.
-
-### Show Me The Code
-
-Now we start implementing the interfaces to pass the property-based tests we wrote while declaring product specifications.
-
-### Demo Day
-
-The last step is to demo the product. We usually create a video showcasing the product or library. Write articles about it and publish it at [Nerd's Den](https://nerds-den.com).
-
 <a name="conclusion"></a>
 
 ---
@@ -431,13 +351,13 @@ The last step is to demo the product. We usually create a video showcasing the p
 
 > Either you abandon the product early, or you stick with it long enough to see it become complex.
 
-![Production Level Code Quality](./production-level-code-quality.png 'Production Level Code Quality')
+![Life Of A Software Developer](./life-of-a-software-developer.png 'Life Of A Software Developer')
 
-Any useful software program either evolves with time, or it becomes obsolete. By its nature, the evolution of software is inevitably complicated. It's a common misconception among people concerned with software that the majority of software development is programming. **_It is a combination of interaction, design, and implementation._**
+Any useful software program either evolves with time, or it becomes obsolete. By its nature, the evolution of software is inevitably complicated. It's a common misconception among people concerned with software that the majority of software development is programming. **_It is a combination of people interactions, user centric design, and implementation._**
 
-In this article, I have presented ways to mitigate complexity for as long as possible in a product development cycle.
+In this article, I have presented ways to mitigate complexity for as long as possible in a software development cycle.
 
-Building simple and efficient software is an iterative and collaborative process. At [Nerd's Den](https://nerds-den.com), we aim to catalog our development cycle of building simpler software systems performing complex endeavors. Therefore, I welcome you to embark with us on the journey of designing software that you could be proud of.
+Building an efficient and straightforward application is an **iterative** and **collaborative** process. At [Nerd's Den](https://nerds-den.com), we aim to catalog our journey of designing simpler software systems performing complex endeavors. Therefore, I welcome you to embark with us on the journey of developing software that we could be proud of.
 
 Also, if you have any war stories about dealing with complexity in software development? Share with us in comments!
 

@@ -1,11 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-require("prismjs/themes/prism.css");
+import React from 'react'
+import styled from 'styled-components'
+require('prismjs/themes/prism.css')
 
 const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
-
   h1,
   h2,
   h3 {
@@ -95,10 +94,10 @@ const Body = styled.div`
       background: inherit !important;
     }
   }
-`;
+`
 
 const PageBody = ({ html }) => {
-  return <Body dangerouslySetInnerHTML={{ __html: html }} />;
-};
+  return <Body dangerouslySetInnerHTML={{ __html: html }} />
+}
 
-export default PageBody;
+export default PageBody
