@@ -5,6 +5,33 @@ require('prismjs/themes/prism.css')
 const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
+
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: #def3fd;
+  }
+  tr:hover {
+    background-color: #eeeeee;
+  }
+
+  th {
+    width: 10px;
+    padding-top: 20;
+    height: 50px;
+    text-align: center;
+    font-size: 120%;
+    background-color: #00bcd4;
+    color: white;
+  }
+
   h1,
   h2,
   h3 {
