@@ -29,6 +29,7 @@
 <url> <loc>https://nerds-den.com/404/amp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://nerds-den.com/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://nerds-den.com/contact/amp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://nerds-den.com/HomePage/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://nerds-den.com/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://nerds-den.com/tags/amp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
