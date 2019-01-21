@@ -131,7 +131,7 @@ Whereas for developer software quality corresponds to the quality of the source 
 To summarize an software application must have a right balance of following features to qualify as a desirable software system.
 
 | **Quality**        | **What It Means** |
-| ------------- |:-------------:|
+| :------------- |:-------------|
 | 1. Delightful User Experience    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
 | 2. Available      | It should be ready to perform the required action when it is needed. |  
 | 3. Performant | When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
@@ -139,6 +139,8 @@ To summarize an software application must have a right balance of following feat
 | 5. Adaptable | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
 | 6. Secure | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
 | 7. Economical | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
+
+> Source: [The Seven Qualities Of Wildly Desirable Software](https://go.forrester.com/blogs/11-02-11-the_seven_qualities_of_wildly_desirable_software/)
 
 
 Designing such software is like playing chess. Rules of playing chess are pretty simple, but it takes years of practice and dedication to be a grandmaster. Even though these software qualities achievable, it involves the combination of knowledge, creative vision, and technique. The implementation technique must be flawless to deliver bug-free software with optimal performance and reliability. It takes a lot of practice, iterations and, collaboration to build a good software system.
