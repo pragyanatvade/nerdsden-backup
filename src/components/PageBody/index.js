@@ -6,34 +6,31 @@ const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
 
-  table{
-      width: 100%;
+  table {
+    width: 100%;
   }
-th, td {
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
 
-  padding: 10px;
-  text-align: left;
-}
+  tr:nth-child(even) {
+    background-color: #def3fd;
+  }
+  tr:hover {
+    background-color: #eeeeee;
+  }
 
-tr:nth-child(even) {background-color: #DEF3FD;}
-tr:hover {background-color: #EEEEEE;}
-
-
-th {
+  th {
     width: 10px;
-  padding-top: 20;
-  height: 50px ;
-  text-align: center;
-  font-size: 120%;
-  background-color: #00BCD4;
-  color: white;
-}
-
-table, th, td {
-  border: 3px solid white ;
-
-}
-
+    padding-top: 20;
+    height: 50px;
+    text-align: center;
+    font-size: 120%;
+    background-color: #00bcd4;
+    color: white;
+  }
 
   h1,
   h2,
