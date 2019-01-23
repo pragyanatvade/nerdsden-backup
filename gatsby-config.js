@@ -3,7 +3,7 @@ const config = require('./content/meta/config')
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
+    title: 'Gatsby Default Starter',
     description: config.siteDescription,
     siteUrl: config.siteUrl,
     author: config.authorName,
@@ -11,6 +11,12 @@ module.exports = {
     facebook: config.facebook,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options:{
+        pathToConfigModule:`src/utils/typography`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     {
@@ -20,6 +26,7 @@ module.exports = {
         path: `${__dirname}/content/images/`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
