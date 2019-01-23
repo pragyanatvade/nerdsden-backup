@@ -331,9 +331,7 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 ## How To Measure Your Software Development Progress?
 
-> You cannot manage what you do not measure. - Bill Hewlett
-
-Also, you cannot excel at something you do not measure. So if you want to be good at software design, it's a mandate to measure your progress. Thankfully, we have few frameworks at our disposal we can use to measure the degree of complexity in software.
+You cannot excel at something you do not measure. So if you want to be good at software design, it's a mandate to measure your progress. Thankfully, we have few frameworks at our disposal we can use to measure the degree of complexity in software.
 
 ![Progress In Software Development](./software-development-progress.png 'Progress In Software Development')
 
