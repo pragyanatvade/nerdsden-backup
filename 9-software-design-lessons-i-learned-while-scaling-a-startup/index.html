@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" prefix="og: https://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="amphtml" href="https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/amp/"/><style data-href="/2.7a7fd10b08846091aeed.css">code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.0.79"/><title data-react-helmet="true">9 Software Design Lessons I Learned While Scaling A Startup</title><link data-react-helmet="true" rel="icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAADr2/T/69v0/+vb9P/q2vT/7t72//jo+f/46Pn/9+j5//fo+f/56/r/9uf5/+/f9v/r2vT/69v0/+vb9P/r2/T/7d32/+3d9v/t3PX/8OD3/+LS8f+wnN3/e2TJ/4x30P+3pN//jHHN/4tzzf/fz+//79/3/+3c9v/t3fb/7d32/+/h+P/v4fj/7d73//vs/P+Cacz/JAep/y8Trf8vE63/PSu0/2d70P9TW8T/bVfD//bn+v/u4Pf/7+H4/+/h+P/z5Pn/8uP4//nn+v/U0/D/X2fI/zoasP88H7H/RC61/1dQwv+w8/f/qubz/22A0P/S0e//+ej7//Lj+P/z5Pn/8ub4//Hl+P/36fn/3dnx/1BKv/8xEa3/PyWz/15gxf9QRb3/XV/G/3KF0/9YVML/087u//jq+v/x5fj/8ub4//Xo+v/16Pr/+Or7/+vf9f+FitT/cHjO/05Mv/9MP7v/Pym0/0Avtv8/Mbb/Ry+2/+zd9f/46/v/9ef6//Xo+v/06/v/9Ov7//Tq+//16/v/+/f+/+nh9v9+bsv/bXzQ/2Bfxf+ipN3/0tfw/83P7f/z6Pr/9ev7//Tq+//06/v/9+77//fu+//37vv/9+37//bt+//97/v/29/z/3KM1f+pr+D//vH7//70/v/98/3/+O/7//fu+//37vv/9+77//fy+//38vv/9/H7//fy+//47/r/wNrw/53i8v+t8vn/qvf7/7DT7f/16vj/+fT8//bx+v/38vv/9/L7//fy+//59Pv/+fT7//j0+//8+P3/7ej2/5jL6/+l5/X/nNTu/4245f+i7Pf/t9Tt/+/q9v/79vz/+PT7//n0+//59Pv/+vj+//r4/v/49v3//////8vL7P+JteH/jbjj/4Om3v+Wyur/jbbk/5DH5//W1u////7///n2/f/6+P7/+vj+//z6/f/8+v3/+/r9///+///j5/X/k8Lm/5PD6P+f2vD/hKfc/6Pm9P+Cntz/4NPu///////7+f3//Pr9//z6/f/+/f7//v3+//38/v//////6u74/5/e8f+o7Pb/r/r9/6jt9/+2////a3zP/9fS7f///////Pv9//79/v/+/f7////////////+/v///////+fg8/+hxuf/qPj8/6b0+v+g5fX/mdju/4+r3P/18vn///////7+////////////////////////////////////////9/T4/77K6f+31Oz/oK3e/87U7P+0sOD///79//////////////////////////////////////////////7//////////v///vz+//38/v///////Pz9//39/v//////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="/><link data-react-helmet="true" rel="canonical" href="https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/"/><link data-react-helmet="true" rel="preconnect" href="https://m.facebook.com"/><link data-react-helmet="true" rel="preconnect" href="https://staticxx.facebook.com"/><link data-react-helmet="true" rel="preconnect" href="https://connect.facebook.net"/><meta data-react-helmet="true" charSet="utf-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" name="image"/><meta data-react-helmet="true" name="description" content="Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!"/><meta data-react-helmet="true" name="keywords" content="Startup,Software Development,Best Practices,Software Architecture,Gyan,"/><meta data-react-helmet="true" property="og:title" content="9 Software Design Lessons I Learned While Scaling A Startup"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:url" content="https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/"/><meta data-react-helmet="true" property="og:image" itemProp="image" content="https://nerds-den.com/logos/nerds-den.png"/><meta data-react-helmet="true" property="og:image:width" content="820"/><meta data-react-helmet="true" property="og:image:height" content="312"/><meta data-react-helmet="true" property="og:description" content="Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!"/><meta data-react-helmet="true" property="fb:app_id" content="2232544823425455"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="pntripathi9417"/><meta data-react-helmet="true" name="twitter:title" content="9 Software Design Lessons I Learned While Scaling A Startup"/><meta data-react-helmet="true" name="twitter:image" content="https://nerds-den.com/logos/nerds-den.png"/><meta data-react-helmet="true" name="twitter:description" content="Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","url":"https://nerds-den.com","name":"Nerd's Den","alternateName":"Nerd's Den | Helping You Succeed In Software Development"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nerds-den.com","name":"Nerd's Den | Helping You Succeed In Software Development"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/","name":"9 Software Design Lessons I Learned While Scaling A Startup"}}]},{"@context":"https://schema.org","@type":"BlogPosting","url":"https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/","name":"9 Software Design Lessons I Learned While Scaling A Startup","alternateName":"Nerd's Den | Helping You Succeed In Software Development","headline":"9 Software Design Lessons I Learned While Scaling A Startup","image":{"@type":"ImageObject","url":"https://nerds-den.com/logos/nerds-den.png","width":820,"height":312},"author":{"@type":"Person","name":"Pragyan Tripathi","url":"https://nerds-den.com/about/"},"publisher":{"@type":"Organization","name":"Vadelabs, Inc.","url":"https://vadelabs.com","logo":{"@type":"ImageObject","url":"https://nerds-den.com/logos/nerds-den.png"}},"datePublished":"January 06, 2019","dateModified":"January 06, 2019","mainEntityOfPage":"https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/"}]</script><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#666"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/2-b54901964e9317dc50be.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-5ae1f94e624b4eb46fcc.js"/><link as="script" rel="preload" href="/app-5beb552ae06dd4e1f649.js"/><link as="script" rel="preload" href="/0-21f0e57ff5f2c7d1e6f2.js"/><link as="script" rel="preload" href="/webpack-runtime-e2c81c28ec55e484168e.js"/><link as="fetch" rel="preload" href="/static/d/389/path---9-software-design-lessons-i-learned-while-scaling-a-startup-b-51-c2e-z0O2714YBqtumogRylOjS1HSKg.json" crossOrigin="use-credentials"/></head><body><noscript>Your browser does not support JavaScript!</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="siteRoot"><div class="siteContent"><header class="sc-bdVaJa kEJHCz"><nav class="sc-bwzfXH koGDjd"><ul><li><a href="/">Home</a></li><li><a href="/tags/">Tags</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></nav></header><section class="sc-gZMcBi ewBkYm"><div class="sc-gqjmRU cbolWS gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:45%"></div><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQADBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHluakiP//EABgQAAMBAQAAAAAAAAAAAAAAAAEQEQAi/9oACAEBAAEFAhpyqV//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAADAAAAAAAAAAAAAAAAAAAAESD/2gAIAQEABj8CHP8A/8QAGhABAAIDAQAAAAAAAAAAAAAAAQAxEBEhQf/aAAgBAQABPyGizTp7G8LALwrH/9oADAMBAAIAAwAAABDT3//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAQUAAAAAAAAAAAAAAAEAETEQIUFhcf/aAAgBAQABPxBCpfJUARtS4mxA33BTDGauA8af/9k=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s"/><div style="background-color:#eeeeee;position:absolute;top:0;bottom:0;opacity:1;transition-delay:0.35s;right:0;left:0"></div><noscript><picture><source type='image/webp' srcSet="/static/72caa9828137514ca1f9a52cab270e7f/132d5/cover.webp 200w,
+<!DOCTYPE html><html lang="en" prefix="og: https://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="amphtml" href="https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/amp/"/><style data-href="/2.7a7fd10b08846091aeed.css">code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.0.79"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:118.75%/1.58 'Roboto',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.73);font-family:'Roboto',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;color:hsla(0,0%,0%,0.9);font-family:'Roboto Slab',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;color:hsla(0,0%,0%,0.9);font-family:'Roboto Slab',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;color:hsla(0,0%,0%,0.9);font-family:'Roboto Slab',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;color:hsla(0,0%,0%,0.9);font-family:'Roboto Slab',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;color:hsla(0,0%,0%,0.9);font-family:'Roboto Slab',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;color:hsla(0,0%,0%,0.9);font-family:'Roboto Slab',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}ul{margin-left:1.58rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.58rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;font-size:0.85rem;line-height:1.58rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;font-size:1rem;line-height:1.58rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0.9875rem;padding-right:0;padding-top:0;margin-bottom:1.58rem;font-size:1.1487rem;line-height:1.58rem;border-left:0.5925rem solid #950451;color:hsla(0,0%,0%,0.65);font-style:italic;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.58rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.58rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.58rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.58rem;margin-bottom:calc(1.58rem / 2);margin-top:calc(1.58rem / 2);}li > ul{margin-left:1.58rem;margin-bottom:calc(1.58rem / 2);margin-top:calc(1.58rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.58rem / 2);}code{font-size:0.85rem;line-height:1.58rem;}kbd{font-size:0.85rem;line-height:1.58rem;}samp{font-size:0.85rem;line-height:1.58rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.05333rem;padding-right:1.05333rem;padding-top:0.79rem;padding-bottom:calc(0.79rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:#950451;text-decoration:none;text-shadow:none;background-image:none;}a:hover,a:active{text-shadow:none;background-image:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #950451 1px, #950451 2px, rgba(0, 0, 0, 0) 2px);}h1,h2,h3,h4,h5,h6{margin-top:3.16rem;}li>ol,li>ul{margin-left:20px;margin-bottom:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.58rem;color:hsla(0,0%,0%,0.73);font-style:normal;font-weight:400;}blockquote cite:before{content:"— ";}@media only screen and (max-width:480px){html{font-size:106.25%;line-height:28px;}blockquote{border-left:0.29625rem solid #950451;color:hsla(0,0%,0%,0.59);padding-left:0.88875rem;font-style:italic;margin-left:-1.185rem;margin-right:0;}}</style><link href="//fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,400i,700" rel="stylesheet" type="text/css"/><title data-react-helmet="true">9 Software Design Lessons I Learned While Scaling A Startup</title><link data-react-helmet="true" rel="icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAADr2/T/69v0/+vb9P/q2vT/7t72//jo+f/46Pn/9+j5//fo+f/56/r/9uf5/+/f9v/r2vT/69v0/+vb9P/r2/T/7d32/+3d9v/t3PX/8OD3/+LS8f+wnN3/e2TJ/4x30P+3pN//jHHN/4tzzf/fz+//79/3/+3c9v/t3fb/7d32/+/h+P/v4fj/7d73//vs/P+Cacz/JAep/y8Trf8vE63/PSu0/2d70P9TW8T/bVfD//bn+v/u4Pf/7+H4/+/h+P/z5Pn/8uP4//nn+v/U0/D/X2fI/zoasP88H7H/RC61/1dQwv+w8/f/qubz/22A0P/S0e//+ej7//Lj+P/z5Pn/8ub4//Hl+P/36fn/3dnx/1BKv/8xEa3/PyWz/15gxf9QRb3/XV/G/3KF0/9YVML/087u//jq+v/x5fj/8ub4//Xo+v/16Pr/+Or7/+vf9f+FitT/cHjO/05Mv/9MP7v/Pym0/0Avtv8/Mbb/Ry+2/+zd9f/46/v/9ef6//Xo+v/06/v/9Ov7//Tq+//16/v/+/f+/+nh9v9+bsv/bXzQ/2Bfxf+ipN3/0tfw/83P7f/z6Pr/9ev7//Tq+//06/v/9+77//fu+//37vv/9+37//bt+//97/v/29/z/3KM1f+pr+D//vH7//70/v/98/3/+O/7//fu+//37vv/9+77//fy+//38vv/9/H7//fy+//47/r/wNrw/53i8v+t8vn/qvf7/7DT7f/16vj/+fT8//bx+v/38vv/9/L7//fy+//59Pv/+fT7//j0+//8+P3/7ej2/5jL6/+l5/X/nNTu/4245f+i7Pf/t9Tt/+/q9v/79vz/+PT7//n0+//59Pv/+vj+//r4/v/49v3//////8vL7P+JteH/jbjj/4Om3v+Wyur/jbbk/5DH5//W1u////7///n2/f/6+P7/+vj+//z6/f/8+v3/+/r9///+///j5/X/k8Lm/5PD6P+f2vD/hKfc/6Pm9P+Cntz/4NPu///////7+f3//Pr9//z6/f/+/f7//v3+//38/v//////6u74/5/e8f+o7Pb/r/r9/6jt9/+2////a3zP/9fS7f///////Pv9//79/v/+/f7////////////+/v///////+fg8/+hxuf/qPj8/6b0+v+g5fX/mdju/4+r3P/18vn///////7+////////////////////////////////////////9/T4/77K6f+31Oz/oK3e/87U7P+0sOD///79//////////////////////////////////////////////7//////////v///vz+//38/v///////Pz9//39/v//////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="/><link data-react-helmet="true" rel="canonical" href="https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/"/><link data-react-helmet="true" rel="preconnect" href="https://m.facebook.com"/><link data-react-helmet="true" rel="preconnect" href="https://staticxx.facebook.com"/><link data-react-helmet="true" rel="preconnect" href="https://connect.facebook.net"/><meta data-react-helmet="true" charSet="utf-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" name="image"/><meta data-react-helmet="true" name="description" content="Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!"/><meta data-react-helmet="true" name="keywords" content="Startup,Software Development,Best Practices,Software Architecture,Gyan,"/><meta data-react-helmet="true" property="og:title" content="9 Software Design Lessons I Learned While Scaling A Startup"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:url" content="https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/"/><meta data-react-helmet="true" property="og:image" itemProp="image" content="https://nerds-den.com/logos/nerds-den.png"/><meta data-react-helmet="true" property="og:image:width" content="820"/><meta data-react-helmet="true" property="og:image:height" content="312"/><meta data-react-helmet="true" property="og:description" content="Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!"/><meta data-react-helmet="true" property="fb:app_id" content="2232544823425455"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="pntripathi9417"/><meta data-react-helmet="true" name="twitter:title" content="9 Software Design Lessons I Learned While Scaling A Startup"/><meta data-react-helmet="true" name="twitter:image" content="https://nerds-den.com/logos/nerds-den.png"/><meta data-react-helmet="true" name="twitter:description" content="Are you a software developer in an early stage startup? Wish to learn key lessons in software engineering to design reliable software architecture? Click to find out more!"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","url":"https://nerds-den.com","name":"Nerd's Den","alternateName":"Nerd's Den | Helping You Succeed In Software Development"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nerds-den.com","name":"Nerd's Den | Helping You Succeed In Software Development"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/","name":"9 Software Design Lessons I Learned While Scaling A Startup"}}]},{"@context":"https://schema.org","@type":"BlogPosting","url":"https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/","name":"9 Software Design Lessons I Learned While Scaling A Startup","alternateName":"Nerd's Den | Helping You Succeed In Software Development","headline":"9 Software Design Lessons I Learned While Scaling A Startup","image":{"@type":"ImageObject","url":"https://nerds-den.com/logos/nerds-den.png","width":820,"height":312},"author":{"@type":"Person","name":"Pragyan Tripathi","url":"https://nerds-den.com/about/"},"publisher":{"@type":"Organization","name":"Vadelabs, Inc.","url":"https://vadelabs.com","logo":{"@type":"ImageObject","url":"https://nerds-den.com/logos/nerds-den.png"}},"datePublished":"January 06, 2019","dateModified":"January 06, 2019","mainEntityOfPage":"https://nerds-den.com/9-software-design-lessons-i-learned-while-scaling-a-startup/"}]</script><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#666"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/2-363e78ef1c5f2615dd55.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-2904e113636b0440d058.js"/><link as="script" rel="preload" href="/app-f0cce70a089d4674f343.js"/><link as="script" rel="preload" href="/0-ae8f267db1546334fb90.js"/><link as="script" rel="preload" href="/webpack-runtime-96a203740c73f42848e1.js"/><link as="fetch" rel="preload" href="/static/d/533/path---9-software-design-lessons-i-learned-while-scaling-a-startup-b-51-c2e-3br4wQyMWGoRaktm1OT01IxuVU.json" crossOrigin="use-credentials"/></head><body><noscript>Your browser does not support JavaScript!</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="siteRoot"><div class="siteContent"><header class="sc-bdVaJa kEJHCz"><nav class="sc-bwzfXH koGDjd"><ul><li><a href="/">Home</a></li><li><a href="/tags/">Tags</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></nav></header><section class="sc-gZMcBi ewBkYm"><div class="sc-gqjmRU cbolWS gatsby-image-wrapper" style="position:relative;overflow:hidden"><div style="width:100%;padding-bottom:45%"></div><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQADBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHluakiP//EABgQAAMBAQAAAAAAAAAAAAAAAAEQEQAi/9oACAEBAAEFAhpyqV//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAADAAAAAAAAAAAAAAAAAAAAESD/2gAIAQEABj8CHP8A/8QAGhABAAIDAQAAAAAAAAAAAAAAAQAxEBEhQf/aAAgBAQABPyGizTp7G8LALwrH/9oADAMBAAIAAwAAABDT3//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAQUAAAAAAAAAAAAAAAEAETEQIUFhcf/aAAgBAQABPxBCpfJUARtS4mxA33BTDGauA8af/9k=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s"/><div style="background-color:#eeeeee;position:absolute;top:0;bottom:0;opacity:1;transition-delay:0.35s;right:0;left:0"></div><noscript><picture><source type='image/webp' srcSet="/static/72caa9828137514ca1f9a52cab270e7f/132d5/cover.webp 200w,
 /static/72caa9828137514ca1f9a52cab270e7f/5f2a2/cover.webp 400w,
 /static/72caa9828137514ca1f9a52cab270e7f/ca3ca/cover.webp 800w,
 /static/72caa9828137514ca1f9a52cab270e7f/3c0bf/cover.webp 1200w,
@@ -17,7 +17,6 @@
 <p>Trying to create new, challenging things is good for society, good for the industry and good for my own life. ~Sachio Semmoto</p>
 </blockquote>
 <p>No other experience could have taught me what I know today. In this article, I share my experiences and the software design lessons I learned the hard way.</p>
-<hr>
 <h3>Table Of Contents</h3>
 <ol>
 <li><a href="#start-with-the-data-model">Start With The Data Model</a></li>
@@ -32,8 +31,47 @@
 <li><a href="#conclusion">Conclusion</a></li>
 </ol>
 <p><a name="start-with-the-data-model"></a></p>
-<hr>
 <h3>1. Start With The Data Model</h3>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/e1a1a426a1e044f6a5efe53c93b7320b/ce26c/start-software-development-with-data-model.jpeg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 438px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 64.61187214611871%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHsTewKU//EABgQAQEBAQEAAAAAAAAAAAAAAAERAiIA/9oACAEBAAEFAg7z0ZsSL7JD/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAGREAAwADAAAAAAAAAAAAAAAAAAECERIh/9oACAECAQE/AarVZYun/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAECERAxQaH/2gAIAQEABj8C16SkkzpaKx//xAAbEAEAAwADAQAAAAAAAAAAAAABABExQXGRIf/aAAgBAQABPyGnXuWABtD7s5vpIVIC81M4rqDSV5P/2gAMAwEAAgADAAAAEEgP/8QAFxEBAAMAAAAAAAAAAAAAAAAAARARIf/aAAgBAwEBPxA1qP/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxA6Fgb/xAAcEAEBAAICAwAAAAAAAAAAAAABEQAxIaFBUWH/2gAIAQEAAT8QCpwO1dZQIrLg8l4Mb22+x1hlFR2ZURY5HbCAA+Rn/9k='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/e1a1a426a1e044f6a5efe53c93b7320b/513df/start-software-development-with-data-model.webp 200w,
+/static/e1a1a426a1e044f6a5efe53c93b7320b/f688f/start-software-development-with-data-model.webp 400w,
+/static/e1a1a426a1e044f6a5efe53c93b7320b/3c8e8/start-software-development-with-data-model.webp 438w"
+          sizes="(max-width: 438px) 100vw, 438px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/e1a1a426a1e044f6a5efe53c93b7320b/7066c/start-software-development-with-data-model.jpeg 200w,
+/static/e1a1a426a1e044f6a5efe53c93b7320b/b4549/start-software-development-with-data-model.jpeg 400w,
+/static/e1a1a426a1e044f6a5efe53c93b7320b/ce26c/start-software-development-with-data-model.jpeg 438w"
+          sizes="(max-width: 438px) 100vw, 438px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/e1a1a426a1e044f6a5efe53c93b7320b/ce26c/start-software-development-with-data-model.jpeg"
+          alt="Start Software Development With Data Model"
+          title="Start Software Development With Data Model"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>Business people often care about data and concentrate on how this data can be transformed, combined and separated to meet business requirements.</p>
 <p>Whereas software developers tend to care about the classes, functions, and processes they are writing.</p>
 <p>This mismatch in the thinking process leads to further misunderstanding among business and engineering teams.</p>
@@ -48,11 +86,11 @@
 </ul>
 <p>Following data modeling guidelines gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.</p>
 <p><a name="separate-your-concerns"></a></p>
-<hr>
 <h3>2. Separate Your Concerns</h3>
 <p>When I started backend development in Elanic, the problem we were trying to solve seemed natural. <em>It’s a social community engaged in buying and selling of lifestyle items.</em></p>
 <p>It took me seven consecutive sleepless nights to keep the servers running during our growth phase to understand there is nothing natural or straightforward about it.</p>
 <p>Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of <strong>reads</strong> and <strong>writes</strong> operations.</p>
+<p><img src="./separation-of-concerns.jpeg" alt="Separation Of Concerns" title="Separation Of Concerns"></p>
 <p>Next month went into a rewrite of the critical sections using proper abstractions — separating read and write operations.</p>
 <p>Abstractions are the solutions to general problems. Consider + function. It is a solution to adding numbers in general. Without input arguments, it is quite useless.</p>
 <p>Applying these abstractions to a particular set of arguments is a solution to a specific problem.</p>
@@ -69,7 +107,6 @@ as inventing a cuisine.</strong> Our tools are much more malleable than steel so
 we can iterate faster, but we still need to fill our arsenal with tools and
 develop techniques to select the right one and apply it in the right way.</p>
 <p><a name="leverage-rule-engines"></a></p>
-<hr>
 <h3>3. Leverage Rule Engines</h3>
 <p>Once we decided to introduce voucher support in buy-flow of our application. To
 do it faster I hardcoded the coupon code and validation logic within the
@@ -91,6 +128,46 @@ maintain.</p>
 person to define the new rule sets. He must then understand the existing
 implementation and realize what’s happening to make the required modifications.
 These changes must then be recompiled, tested, and redeployed.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/454fc2e953f9d1e4c64b5637e91e93a9/19fbb/business-rules-engine.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 635px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 39.21259842519685%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABVklEQVQY01VQy06DUBTk/5r4C/6Cn+CaGBf+hDut1ZUxaYw2LvpQomAh5bbQ8rhYuLRcKNACDhCTOoubc4YzhzkjpFkK5HleVVXeIMuy/X5/+EPWADNFjYOmaZIkWZaFecHzvNlshs+YazVgfd+n1HVdh1LaaAqQmMFiFgTr9TrcbGuxIst3vd58TnRCqEsdxw2CIAwZ51Ecx2VZRpzDDmPMtm0wRVniHzZR42gjXIhip3OSJIksK0TXlw1UVVWUb0IIBIZhjMeTqar6flCfdijk4cv09koaPAm9blcULxkLdChNc7WycAX0dbtcoYBJY7EIw00URRBHPH57fR4P+h+TkWAYi9FoAs/IAPdQz+Ocw1gbG6ZhFTWsoUCb7uIfZ5mkqWkaAvqyAVJpg4UGRyLeNuT63e1QtLvShJva1/V9f/j+KbTK6j9a5vg95rHr9Oz85uHxFyC9uOBT1kEoAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/454fc2e953f9d1e4c64b5637e91e93a9/54654/business-rules-engine.webp 200w,
+/static/454fc2e953f9d1e4c64b5637e91e93a9/780aa/business-rules-engine.webp 400w,
+/static/454fc2e953f9d1e4c64b5637e91e93a9/2f506/business-rules-engine.webp 635w"
+          sizes="(max-width: 635px) 100vw, 635px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/454fc2e953f9d1e4c64b5637e91e93a9/28133/business-rules-engine.png 200w,
+/static/454fc2e953f9d1e4c64b5637e91e93a9/5f72d/business-rules-engine.png 400w,
+/static/454fc2e953f9d1e4c64b5637e91e93a9/19fbb/business-rules-engine.png 635w"
+          sizes="(max-width: 635px) 100vw, 635px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/454fc2e953f9d1e4c64b5637e91e93a9/19fbb/business-rules-engine.png"
+          alt="Business Rules Engine"
+          title="Business Rules Engine"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>A business rules engine provides a means to separate the rules or logic of an
 application from the remaining codebase. Separating these rules offer enormous
 benefits.</p>
@@ -107,20 +184,55 @@ each line of code through a strict workflow of recompilation and testing,
 leveraging rule engines can be a huge time saver.</em></li>
 </ul>
 <p><a name="prioritize-software-testing"></a></p>
-<hr>
 <h3>4. Prioritize Software Testing</h3>
 <p>In an early stage startup, feature requests tend to change so often that writing
 automated tests takes a backfoot over manual testing and direct deployments.</p>
 <p>It’s not until too late that you realize that the trade-off has been too
 expensive.</p>
-<p>I won’t suggest you write tests from the start <em>(ideally you should)</em>, but
-at-least write testable code.</p>
+<p>I won’t suggest you write tests from the start <em>(ideally you should)</em>, but at-least write testable code.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/c8a4f362f830afea39578ee9168676bc/dd832/side-effects-of-software-testing.jpeg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 376px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 139.36170212765958%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIBAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAH28oWCcnTokf/EABkQAAIDAQAAAAAAAAAAAAAAAAABEDFBAv/aAAgBAQABBQJ3DndOhWf/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAXEAADAQAAAAAAAAAAAAAAAAAAETBB/9oACAEBAAY/AhbP/8QAHBAAAgIDAQEAAAAAAAAAAAAAAAERMRAhgUFR/9oACAEBAAE/IWiM2S01LahUK3Vnu3jkb4+40fRJZCZ//9oADAMBAAIAAwAAABCwxzz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAeEAEBAAICAgMAAAAAAAAAAAABEQAhEFExQWFxof/aAAgBAQABPxBaCehduLKwKG7/AHKi24GrDwLiIUaBrt4deHa3eaYBXbjUS3T61lAWHziBM//Z'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/c8a4f362f830afea39578ee9168676bc/7ad4d/side-effects-of-software-testing.webp 200w,
+/static/c8a4f362f830afea39578ee9168676bc/79148/side-effects-of-software-testing.webp 376w"
+          sizes="(max-width: 376px) 100vw, 376px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/c8a4f362f830afea39578ee9168676bc/9a1a5/side-effects-of-software-testing.jpeg 200w,
+/static/c8a4f362f830afea39578ee9168676bc/dd832/side-effects-of-software-testing.jpeg 376w"
+          sizes="(max-width: 376px) 100vw, 376px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/c8a4f362f830afea39578ee9168676bc/dd832/side-effects-of-software-testing.jpeg"
+          alt="Side Effects Of Software Testing"
+          title="Side Effects Of Software Testing"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>Some people write code in a way that is hard, or even impossible, to write a
 good unit test for it. <strong>So, what makes the program hard to test?</strong> Let’s review
 some bad-practices and code smells developers must avoid when writing testable
 code.</p>
 <p><a name="uncontrolled-non-determinism-and-side-effects"></a></p>
-<hr>
 <h4>Uncontrolled Non-Determinism and Side Effects</h4>
 <p>Methods with non-deterministic behavior and side-effects lead to deceptive, hard
 to understand, non-reusable, tightly coupled, and untestable code. They tend to
@@ -131,7 +243,6 @@ programs. In functional programming, these methods are called pure functions. To
 test them you just need to pass required input arguments and check the result
 for correctness.</p>
 <p><a name="impurity-is-toxic"></a></p>
-<hr>
 <h4>Impurity is toxic</h4>
 <p>What makes code hard to test is hard-coded context driven values which may
 change anytime. These impurities are hard to replace, override, or abstract away
@@ -142,8 +253,47 @@ Multiply all these problems by the size of a real-life software application, and
 you’ll find yourself entangled with a hard to maintain codebase, full of
 anti-patterns, secret dependencies, and all sorts of ugly and unpleasant things.</p>
 <p><a name="there-will-always-be-bugs"></a></p>
-<hr>
 <h3>5. There Will Always Be Bugs</h3>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/523e5c4fbba2a07ccc2f449f829a46e4/f67d8/there-will-always-be-bugs-in-software-development.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 79.21875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAABkUlEQVQoz3WT23KCQBBE9///yWfQF7xUaUHhjQBShASvUVEhhx2zIRD7AWeHGaa7Z1VxHGdZ9tHApwaByROQMcd3jc1mo9I0rarqS+N2u12v18vlQnw+n4uiOBwOHMuyJOBITJ4jLafT6dns+77neaPRaDKZDIfDfr/vum4Yho7j2LY9nU7JLJfLwWDAkRm0HI/HZzMoNR6Ph4ySjMlXPzBH+CvYE9HD836/k4J5q66Jf5oBZPBAKLWq4cIXCw1TkOd5TZvXREmSIKPqAFLox5EgCBDPdvAMjrvdTuEKbmFvl6FhxAB6+DrFbxoMo0UFGsaeV2A+BamGGIQEtd/v5/M5fIxtXc08mTybzaIoMv0wUtwbflCFEjOh27xer3u9HsrZ9mq1Ilk3y56Zv1gsYPJqMg3j8diyLO4JHjGjviRmVbxGPE9sbPKXZmYgTW4rNRRst9tns1SwTPTz4daVkivBzaVB9koGmYoFiFRWZwaWfyG6gOj6dZvPMFz+dwB6WQO84s+IyVDFM3zBWmICCH4DYLGOunHomG8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/523e5c4fbba2a07ccc2f449f829a46e4/4aa89/there-will-always-be-bugs-in-software-development.webp 200w,
+/static/523e5c4fbba2a07ccc2f449f829a46e4/d4830/there-will-always-be-bugs-in-software-development.webp 400w,
+/static/523e5c4fbba2a07ccc2f449f829a46e4/7bbf2/there-will-always-be-bugs-in-software-development.webp 640w"
+          sizes="(max-width: 640px) 100vw, 640px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/523e5c4fbba2a07ccc2f449f829a46e4/0e6e0/there-will-always-be-bugs-in-software-development.png 200w,
+/static/523e5c4fbba2a07ccc2f449f829a46e4/07b25/there-will-always-be-bugs-in-software-development.png 400w,
+/static/523e5c4fbba2a07ccc2f449f829a46e4/f67d8/there-will-always-be-bugs-in-software-development.png 640w"
+          sizes="(max-width: 640px) 100vw, 640px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/523e5c4fbba2a07ccc2f449f829a46e4/f67d8/there-will-always-be-bugs-in-software-development.png"
+          alt="There Will Always Be Bugs In Software Development"
+          title="There Will Always Be Bugs In Software Development"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>Straight out of college, I was a software developer striving for perfection. Any
 bug in my code frustrated me to the core. I wanted my work to be flawless, like
 a clockwork, yet bugs appeared.</p>
@@ -168,7 +318,6 @@ parameter for software’s success, but not even close to the most important one
 of software depends far more upon the problem it solves than the quality by
 which it does so.</p>
 <p><a name="things-will-break"></a></p>
-<hr>
 <h3>6. Things Will Break</h3>
 <p>Software development is a process. It’s always evolving, never really finished.
 Today your software sucks, my software sucks, we all are writing shitty
@@ -178,6 +327,44 @@ resolved all the issues. Next day you will realize the problem in the <strong>da
 layer</strong> has brought the whole system down. Once that is fixed, your
 <strong>infrastructure layer</strong> will disappoint you.</p>
 <p>The cycle will keep repeating. <strong>Things will always be breaking.</strong></p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/7d5259223dcdb2ace52f42f7ac97c924/e1f51/software-updates.jpeg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 400px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 120.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAYABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe3YNEEoAf/EABcQAQEBAQAAAAAAAAAAAAAAAAEQETH/2gAIAQEAAQUCqa9CM//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABkQAAEFAAAAAAAAAAAAAAAAAAABEBEgIf/aAAgBAQAGPwJ5NSv/xAAbEAEAAwADAQAAAAAAAAAAAAABABExECFRQf/aAAgBAQABPyFG/sb62GdwwRdTP1xgoDyO8DJ//9oADAMBAAIAAwAAABCwyDz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAcEAEBAQEAAgMAAAAAAAAAAAABEQAhMUFRcaH/2gAIAQEAAT8QtThX3kSEAdXWiI60F4vx26vuP0JgEICGQSqWcyAKp31kR393/9k='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/7d5259223dcdb2ace52f42f7ac97c924/245ce/software-updates.webp 200w,
+/static/7d5259223dcdb2ace52f42f7ac97c924/5d676/software-updates.webp 400w"
+          sizes="(max-width: 400px) 100vw, 400px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/7d5259223dcdb2ace52f42f7ac97c924/58834/software-updates.jpeg 200w,
+/static/7d5259223dcdb2ace52f42f7ac97c924/e1f51/software-updates.jpeg 400w"
+          sizes="(max-width: 400px) 100vw, 400px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/7d5259223dcdb2ace52f42f7ac97c924/e1f51/software-updates.jpeg"
+          alt="Software Updates"
+          title="Software Updates"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>The unhappy stakeholders or customers will mock you for this. Validate their
 belief that you’ve let them down. <em>I agree what we wrote isn’t perfect. We won’t
 argue with you on that. Promise to look at their problems, and if possible fix
@@ -192,7 +379,6 @@ confidence. The most direct way to improve as a software developer is to be
 fearless when it comes to changing your code. Software developers who are afraid
 of a broken system are developers who will never mature into professionals.</p>
 <p><a name="setup-logging-and-error-handling-early"></a></p>
-<hr>
 <h3>7. Setup Logging And Error Handling Early</h3>
 <p>When developing a new software system, one of the first things you must do is
 add logging and error handling, because both are useful from the very beginning.</p>
@@ -200,10 +386,47 @@ add logging and error handling, because both are useful from the very beginning.
 need some way of knowing what happens in the program.</p>
 <p>Perhaps not when it is working as expected, but as soon as it doesn’t, you must
 be able to see what’s happening.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/1980b3b972f89d0ab0346f13ccf5e298/faad4/importance-of-logs-in-system-failure.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 315px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.53968253968254%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACK0lEQVQ4y3VTyYoqQRBsvPkdHv0JP23Ag4OiB2960IsKggcPgxvuC+6io6gz7o77hssM7uYj8tGN8+AVVFdVV1ZkRGSV8Hg8aDQaUa/Xo+FwSIPBgOfdbpfn2Pv6+qLr9UpoiEd/nj//E2azGdVqNUomkzxms1lKp9MUi8UolUpRs9nkf9PpVAL5F/h5LWw2G6rX65TP56lcLlMkEmFg9Ewmw4kwrlYr6eD9fpeAqtUqJxSbgA+kdjodlonebreldb/fp5+fn1/s0C6XC729vTEBjDab7S8gDkMOOvyaTCY0n885CRiLYCKr8/nM3oIZgIrFIlksFlKpVOyz4PV6OQCyW60Ws/P5fCwVwWi3243H0+lEwWCQYNNzg+cKhYIOhwMJMB5Bfr+f7HY7GQwGcrlc7Mt2u/0lFTITiQR9fHwwAXgLpqFQiORyOfsuFAoF8ng8zOjz85O9i0aj9P39LUmEFIy4ESAAEFjidDpZUSAQIJlMxomE3W7HUiF9sVhwcKPRYM+wt16vqVKpUDgc5hEscrkcjcdjOh6PTESv15NSqeSkXOX9fs/ZcXWsVqvEDhVGsVDJUqnEieBrPB5nNbDF7XbznYVSBhQNR7BWqyW1Ws2y8B9gkAEQgCMGIGCJNV6UTqdjL7EHzwXxOqAQGo2Gu8lkYgZ4cv9r7+/vZDabWTKqjysECwTxjuGw0Wik19dXqbriHrr4tMQ5QPB6QMThcNDLywstl0v6A/uwmoQ44PpaAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/1980b3b972f89d0ab0346f13ccf5e298/0bf77/importance-of-logs-in-system-failure.webp 200w,
+/static/1980b3b972f89d0ab0346f13ccf5e298/64e60/importance-of-logs-in-system-failure.webp 315w"
+          sizes="(max-width: 315px) 100vw, 315px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/1980b3b972f89d0ab0346f13ccf5e298/34eb0/importance-of-logs-in-system-failure.png 200w,
+/static/1980b3b972f89d0ab0346f13ccf5e298/faad4/importance-of-logs-in-system-failure.png 315w"
+          sizes="(max-width: 315px) 100vw, 315px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/1980b3b972f89d0ab0346f13ccf5e298/faad4/importance-of-logs-in-system-failure.png"
+          alt="Importance Of Logs In System Failure"
+          title="Importance Of Logs In System Failure"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>The same goes for error handling — errors and exceptions happen in the beginning
 too, so the sooner you systematically handle them, the better.</p>
 <p><a name="it-will-take-longer-than-you-think"></a></p>
-<hr>
 <h3>8. It Will Take Longer Than You Think</h3>
 <p><strong>Have you ever made a wrong estimate?</strong></p>
 <p>According to Daniel Kahneman’s research in the book <a href="https://amzn.to/2VVgk7y">Thinking Fast and
@@ -211,6 +434,46 @@ Slow</a>, there is a fair chance you would say yes.</p>
 <p>We are all bad at estimating. The reason why we are worse in estimates is that
 we don’t seem to understand what they are. We don’t know what they are supposed
 to be. We don’t see why we do them. We don’t know how to do them.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/9f268d9e8ed831bbdbb038c06142aa36/78629/estimate-provided-by-software-developer.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 634px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 130.59936908517352%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAIAAAA44esqAAAACXBIWXMAAAsSAAALEgHS3X78AAACmklEQVQ4y42U63KaQBSAff/X6P/2ATrRMZU0JMpFgxC1igoILMt1Ybm6PWrHEqupZ5gzOzt8576nwz7K/ijsPulckP/+8YmtS9i27TRN7+Q751BBiqLo9Xqu68Jl0zSgEUKiKGZZdtXEX891Xed5Pp/PgyA4/7paLrvd7na7vQ4D42E8flNeRwL/OgQNn2FaOaX61lQU5YXnJVmuqqosS0ppdhRIDW4OsIPQUBBFSRYkSZRBj1V1CiS3cvhfxs5xSRzpur5er+M4BowQkiQJ2OpcrYQZEtnL3nMmBeXIjhXDcdFBoCg3C3YqEo7ioUtUypS4kXEu+cWLQzTTjqPQsnbtXnxs1VHrOJ4kjZaxd8reolrCuYBz1XCiMDAtC2N8HT71dIYiJWXjoOB0tzczhnYCsLhx4jB0HMf3/U9hN5xmTHAJkNwaKXGt0YMtFCbn6K7D0JCJmyiEqSmbF2xWsGnKpoS9EbZw8EWvOxcziLD/YvqilwkoezaDHytn5BJIW8SUN/2tjdrO2/BBhySVMVUzpiT7rz+lL98H355lAaVK0oyjemJ5TVXd9OzFqeBR7dinZ8PnzeBpjeSggCyg/hJKUpqfnV/mXBbFZOdDzgCDCUh7UR0y17I9hCOiNM2Lm3BdlnNjx5kRzMbIId337YO2eVDXjwtLCiped+Iout2q4/MyvFB2EkibW9mPS7s/N582noiIhcN2wTu3VkdCiLwLtJzN6CFsxc/8mHy2SS7mFF6QjAiUSo5q3QsvJuQmfHq3TVUud2iS7CXvj9u7YE3TOI4bDoeqqk18OnXDdnv/A8P0bzYbwzBC3xdmq8lilZGE5vldcFtgsYGhwWAAC6S9yeBwo2AtOTXPNE04QCz9fl+SYKnJi8XiN9xlz86s32hqAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/9f268d9e8ed831bbdbb038c06142aa36/43025/estimate-provided-by-software-developer.webp 200w,
+/static/9f268d9e8ed831bbdbb038c06142aa36/b22a8/estimate-provided-by-software-developer.webp 400w,
+/static/9f268d9e8ed831bbdbb038c06142aa36/6c6ae/estimate-provided-by-software-developer.webp 634w"
+          sizes="(max-width: 634px) 100vw, 634px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/9f268d9e8ed831bbdbb038c06142aa36/0a052/estimate-provided-by-software-developer.png 200w,
+/static/9f268d9e8ed831bbdbb038c06142aa36/b182d/estimate-provided-by-software-developer.png 400w,
+/static/9f268d9e8ed831bbdbb038c06142aa36/78629/estimate-provided-by-software-developer.png 634w"
+          sizes="(max-width: 634px) 100vw, 634px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/9f268d9e8ed831bbdbb038c06142aa36/78629/estimate-provided-by-software-developer.png"
+          alt="Estimate Provided By A Software Developer"
+          title="Estimate Provided By A Software Developer"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>The problem with estimates is that they breed mistrust. Once you give an
 estimated deadline, it immediately transforms into a contract and commitment.
 Then you miss it!</p>
@@ -237,12 +500,51 @@ issues without actually deep diving and trying to solve them.</p>
 tough to hit it precisely.</p>
 <p>Even as of today most of my projects take <strong>three times longer</strong> than the time I
 forecast.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/01a10fd5d23f45f18e234e912d571677/4ee88/software-development-estimates-expectation-vs-reality.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 404px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 100.99009900990099%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAACkklEQVQ4y32TV1NiQRCF59/zF3ihoHhAiyIICAgUSUIRBJHokhFJggQtooT9ZMANtWs/zJ3b0+H06W5xOMput6vX69ls9ubm5vb2tlarpVKpRCKRTqdDodDd3V00GvX7/cFgkDvG2+0WL8Hn4+MDa9z0ej3PBoPBZrOFw2Gv1+t0Oo1Go8/nu7q6MplMl5eXPBFxOp3iKEg4Go16vd7T09Pz8/NgMJBns9n0eDy4AaHb7bbbbfTYcOn3+8Ph8OXlRfAAgP1+f/hTlsslbslkslqtHv4jJ+e3t7fNZjObzbisViuUnU6H2g7figADn8lkUqlUFAqF2WzmQojFYgH4f4L65ZzL5SAZB9JSP7GoFsz48wuXAAGUtKZUtVqNgQwqMpnM/f19oVCAXhiCbboyHo/xjEQiFxcXWq1Wp9OhxwE4drsd2k7O8MwNhHRIqVTyhh0dRklLrFYrIeg85JF/vV6j5wTaZ6u+nOkEJMlOYBqLxWghCBmBVqvVaDSKxWK5XP5xFlCIh4cH3DBqnAVTxogS0BOaiPL1dxtpJqCKdpNtcBbu1Aw3brebkaSE7lF4AgtPs6N8NyRUKOGRWWooFSwgj8fjDoeDWCdnWiL95UnzLBYLmUlLFNDBHA64BQIBiKT+z5olYeChsXIrmEcictISFoAM1F8qlSTVf48naSmAN5aGwACjE1QOzzTp8fHxa07RkwY6OBkewbpeX1/D+ftR4AMmudBe2GIlXS4XZc/nc7CwlcwMW6lSqfL5vIADAoPw9fUVDgnJnMv1oCpAfRGBASPEtLH2VEd+IaefG7DhBmtGhyhAQCNDgJaTHJiRDGiyBYLssMI/XaFaKmSqQavRaNDAM8rKUfjliVGRAwdZPwG3HiL45E/QJQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/01a10fd5d23f45f18e234e912d571677/02d3c/software-development-estimates-expectation-vs-reality.webp 200w,
+/static/01a10fd5d23f45f18e234e912d571677/84d31/software-development-estimates-expectation-vs-reality.webp 400w,
+/static/01a10fd5d23f45f18e234e912d571677/df0da/software-development-estimates-expectation-vs-reality.webp 404w"
+          sizes="(max-width: 404px) 100vw, 404px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/01a10fd5d23f45f18e234e912d571677/dc54d/software-development-estimates-expectation-vs-reality.png 200w,
+/static/01a10fd5d23f45f18e234e912d571677/d89ae/software-development-estimates-expectation-vs-reality.png 400w,
+/static/01a10fd5d23f45f18e234e912d571677/4ee88/software-development-estimates-expectation-vs-reality.png 404w"
+          sizes="(max-width: 404px) 100vw, 404px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/01a10fd5d23f45f18e234e912d571677/4ee88/software-development-estimates-expectation-vs-reality.png"
+          alt="Software Development Estimates - Expectation Vs Reality"
+          title="Software Development Estimates Expectation Vs Reality"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>There are so many external factors involved, communicating the requirements
 effectively, a simple merge turns out to be the cause of a catastrophic bug, or
 an API call doesn’t work as promised, etc. It is quite common to run into
 unexpected problems.</p>
 <p><a name="there-are-no-coincidences"></a></p>
-<hr>
 <h3>9. There Are No Coincidences</h3>
 <p>Startups are really good at creating what I call <strong>“Fake Urgencies.”</strong> People
 will come to you and say something like <em>“if we don’t do this by tomorrow, we
@@ -257,14 +559,93 @@ planning and leveraging exceptional programming skills.</strong></p>
 <p>Never believe in coincidences, when you are developing a new feature, or fixing
 bugs. You committed a bug fix, and an independent service becomes unavailable?
 Not an accident.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/dd8da57541e6850024f903ac3ff7a358/0b7c8/there-are-no-coincidences-in-software-development.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 800px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAAB1klEQVQozzWSzU7bUBCF/TDwDHSdl4ANfQO6pwsqwSvQnyUpK0AFUQkDkSIBUkOcyI4TEzvXsWMn/g3QWGpMHZRF+yVVR7Y8vveeOWfOXCmOY9M0XWcRrutaluV5HslgMPD+P+wGwYjvfa1mGJ0wCGwh0jSVFEVpt3XbFm1d73a7Dw9GtVp1Xacofk+nv/LpdFYUvV7Psswvnz+trqxsbKz/fH7mEUJIvL7vjccpDFEUet5AVdUoiiYTDjz9WcZoNHJc5+P+/pu1tVKpxO98PkedBKDZbJydfpNl+Wu5jDCUoyJNkuHQz7LJEjwUogfH281NRamzkuc5fUlJEsvyBXLZ+35+fnd3C7jV0vp9G34UcZQq8NTr9x92dtBDC2ma+L4Pc3R9fXV5KXc67TiO6BawrrdoPwzDx8cxYOpCfnJyvLe7+/o6w4Esy/BVwgxMqlQqtdoPx+nD3Gw0NA1mwobh5SWnYhgG5fLB++3tf13Q7ILZNLtLhSFgbL+9ucF/5nF4iAMHGI6jrCPq+Ojo3dYWYHJMWYBxAm2IAU95holmqDRVJWFgaMYkwzBINE2dzQqMoBy3Q2LWDBlLgCHUtEwmAZjLgx34JJbBJSFnkVa5TjiSJMlfyRvyyjHMMzsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/dd8da57541e6850024f903ac3ff7a358/1092c/there-are-no-coincidences-in-software-development.webp 200w,
+/static/dd8da57541e6850024f903ac3ff7a358/dea5f/there-are-no-coincidences-in-software-development.webp 400w,
+/static/dd8da57541e6850024f903ac3ff7a358/19531/there-are-no-coincidences-in-software-development.webp 800w"
+          sizes="(max-width: 800px) 100vw, 800px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/dd8da57541e6850024f903ac3ff7a358/d9ac9/there-are-no-coincidences-in-software-development.png 200w,
+/static/dd8da57541e6850024f903ac3ff7a358/43775/there-are-no-coincidences-in-software-development.png 400w,
+/static/dd8da57541e6850024f903ac3ff7a358/0b7c8/there-are-no-coincidences-in-software-development.png 800w"
+          sizes="(max-width: 800px) 100vw, 800px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/dd8da57541e6850024f903ac3ff7a358/0b7c8/there-are-no-coincidences-in-software-development.png"
+          alt="There Are No Coincidences In Software Development"
+          title="There Are No Coincidences In Software Development"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>Ignoring such occurrences, and not spending time investigating the issue may
 bring the whole system down. In some cases make you lose your sleep and mental
 sanity.</p>
 <p><a name="conclusion"></a></p>
-<hr>
 <h3>Conclusion</h3>
 <p>If you made it till this section, CONGRATULATIONS!. I thank you for your
 commitment. I hope you feel less anxious after reading my experiences</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/81fecc76382aac13d0b79a66cdb7b826/7e324/step-by-step-guide-to-software-development.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 628px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 63.21656050955414%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACK0lEQVQ4y2VTx4piURB9P+4PuHDh0nZp6IU02IhipEFRMeecwzPHZxzFM55qHIQpuNxrWVadUCqn0wnb7Rba4YDlcol2uy23pmnY7XZYr9eYTqe4XC7yZi3zg8EA1+sVm81Gcvv9HsPhEMrxeMQr7vc7YrEYJpMJ3iORSEiD92i1Wv/lZrMZFKfzG263G+p0/kRxRbFYhNFohF6vx+fnJ3q9HrLZLMxmM3Q6ndxEX6/XYbfb8fHxAZvNJs3IQKn2VPQHfagrDepyg8VigUKhgOYTQTqdxtfXl9Cp1WqIx+OSc7lcwoINUqkUvF4vLBbLL+XD7Reu9ueB1W4velFD0qc2REdq79JwKBG+Bwcmk0kos9kU3W4X4/FYkPSeb9LM5/NoNpuYz+fymTXUjYfoeNNA3mzG73kU/jASiQiVRqMhReVyWYpKpZI07ff7qFarqFQq/3KdTgeZTEYMy+VykhPKLCA6Ck1DKO57cDVWq5W832lTBiIiiFdeXCY6j8cjE6kNNXw8HuI8zWHQDJ/PJwhZw2DdaDSSHCXhblIeJRAIwOFwwOl0imtMMsLhsDjIIGWr1QqDwSBrQ6qqqgpNIqQcZEgmSjQalUK/3y+QX5TpIp2+3W6ChodvOk8QHEhmZBgMBoUhj0L9QqGQrAdF5WQGaTPO57Og5gYw+Bfkm0bw0AP+u0wmkzBSCJ8TOImOUWhSIHKi4EA6zi34+fmR3MtpDicIbgWbc4X+Am4epgOtlM8EAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/81fecc76382aac13d0b79a66cdb7b826/b1333/step-by-step-guide-to-software-development.webp 200w,
+/static/81fecc76382aac13d0b79a66cdb7b826/7f324/step-by-step-guide-to-software-development.webp 400w,
+/static/81fecc76382aac13d0b79a66cdb7b826/80893/step-by-step-guide-to-software-development.webp 628w"
+          sizes="(max-width: 628px) 100vw, 628px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/81fecc76382aac13d0b79a66cdb7b826/1089c/step-by-step-guide-to-software-development.png 200w,
+/static/81fecc76382aac13d0b79a66cdb7b826/19878/step-by-step-guide-to-software-development.png 400w,
+/static/81fecc76382aac13d0b79a66cdb7b826/7e324/step-by-step-guide-to-software-development.png 628w"
+          sizes="(max-width: 628px) 100vw, 628px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px transparent;"
+          src="/static/81fecc76382aac13d0b79a66cdb7b826/7e324/step-by-step-guide-to-software-development.png"
+          alt="Step By Step Guide To Software Development"
+          title="Step By Step Guide To Software Development"
+        />
+      </picture>
+  </span>
+  </a></p>
 <p>If I would like you to take in one lesson from my experiences in the post it’s
 going to be:</p>
 <p><em>Software development is hard work. A clear codebase and flexible software
@@ -293,4 +674,4 @@ Comment Below! You can also share your feedback through
     ga('create', 'UA-55436366-2', 'auto', {});
       
       }
-      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-js","jsonName":"9-software-design-lessons-i-learned-while-scaling-a-startup-b51","path":"/9-software-design-lessons-i-learned-while-scaling-a-startup/"};window.dataPath="389/path---9-software-design-lessons-i-learned-while-scaling-a-startup-b-51-c2e-z0O2714YBqtumogRylOjS1HSKg";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-5beb552ae06dd4e1f649.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-fc6018191be2ea4fa13f.js"],"component---src-templates-index-js":["/component---src-templates-index-js-1a696c68db2432e4df25.js"],"component---src-templates-amp-index-js":["/component---src-templates-amp-index-js-cde37791da26c3b519f5.js"],"component---src-templates-post-js":["/component---src-templates-post-js-5ae1f94e624b4eb46fcc.js"],"component---src-templates-amp-post-js":["/component---src-templates-amp-post-js-6d9e2837754fd7e9ab91.js"],"component---src-templates-tag-js":["/component---src-templates-tag-js-0f5381d96d6cda8abb74.js"],"component---src-templates-amp-tag-js":["/component---src-templates-amp-tag-js-b655ea13de4de2cd795e.js"],"component---src-templates-page-js":["/component---src-templates-page-js.7a7fd10b08846091aeed.css","/component---src-templates-page-js-a492ed2075cf5b09a428.js"],"component---src-templates-amp-page-js":["/component---src-templates-amp-page-js.7a7fd10b08846091aeed.css","/component---src-templates-amp-page-js-4a3d9e2af10c184423c8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-033ea41f84a4d801a539.js"],"component---src-pages-404-amp-js":["/component---src-pages-404-amp-js-fa2ef0619a542b5e9fec.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-b1e856cf3f918de652a1.js"],"component---src-pages-contact-amp-js":["/component---src-pages-contact-amp-js-0a593cbf62605c425d2b.js"],"component---src-pages-home-page-js":["/component---src-pages-home-page-js-4f05753fce7371971215.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-f6fdcd05cf79260a10c5.js"],"component---src-pages-tags-amp-js":["/component---src-pages-tags-amp-js-8d4659ec9ec138b2a0c1.js"],"pages-manifest":["/pages-manifest-92e8f8b3ac31ebb37c39.js"]};/*]]>*/</script><script src="/webpack-runtime-e2c81c28ec55e484168e.js" async=""></script><script src="/0-21f0e57ff5f2c7d1e6f2.js" async=""></script><script src="/app-5beb552ae06dd4e1f649.js" async=""></script><script src="/component---src-templates-post-js-5ae1f94e624b4eb46fcc.js" async=""></script><script src="/2-b54901964e9317dc50be.js" async=""></script></body></html>
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-js","jsonName":"9-software-design-lessons-i-learned-while-scaling-a-startup-b51","path":"/9-software-design-lessons-i-learned-while-scaling-a-startup/"};window.dataPath="533/path---9-software-design-lessons-i-learned-while-scaling-a-startup-b-51-c2e-3br4wQyMWGoRaktm1OT01IxuVU";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-f0cce70a089d4674f343.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9d070225c56df3f5a442.js"],"component---src-templates-index-js":["/component---src-templates-index-js-e68a0bbcc76474a3817a.js"],"component---src-templates-amp-index-js":["/component---src-templates-amp-index-js-a95924da28a1d882cb98.js"],"component---src-templates-post-js":["/component---src-templates-post-js-2904e113636b0440d058.js"],"component---src-templates-amp-post-js":["/component---src-templates-amp-post-js-747bb67567c9888aa590.js"],"component---src-templates-tag-js":["/component---src-templates-tag-js-826871a77338c8f6806c.js"],"component---src-templates-amp-tag-js":["/component---src-templates-amp-tag-js-fb122eafcc8dd977a0c8.js"],"component---src-templates-page-js":["/component---src-templates-page-js.7a7fd10b08846091aeed.css","/component---src-templates-page-js-9a0fcafecdde13f145a9.js"],"component---src-templates-amp-page-js":["/component---src-templates-amp-page-js.7a7fd10b08846091aeed.css","/component---src-templates-amp-page-js-d43d4bf7722a795df22b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-aecfd964a9b1adc35810.js"],"component---src-pages-404-amp-js":["/component---src-pages-404-amp-js-982415d801cfd66f72e3.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-0868dc138219e71d8f82.js"],"component---src-pages-contact-amp-js":["/component---src-pages-contact-amp-js-98de075e1a32c653f20b.js"],"component---src-pages-home-page-js":["/component---src-pages-home-page-js-6aec0a5893fd89834aa8.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-e6fbbc399abbb88c534e.js"],"component---src-pages-tags-amp-js":["/component---src-pages-tags-amp-js-82f5599da90acf524070.js"],"pages-manifest":["/pages-manifest-50b45b38852b7fe86f29.js"]};/*]]>*/</script><script src="/webpack-runtime-96a203740c73f42848e1.js" async=""></script><script src="/0-ae8f267db1546334fb90.js" async=""></script><script src="/app-f0cce70a089d4674f343.js" async=""></script><script src="/component---src-templates-post-js-2904e113636b0440d058.js" async=""></script><script src="/2-363e78ef1c5f2615dd55.js" async=""></script></body></html>

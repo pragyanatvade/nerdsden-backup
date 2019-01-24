@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{153:function(e,t,n){"use strict";n.r(t),n.d(t,"query",function(){return d});n(26);var r=n(0),a=n.n(r),d=(n(173),n(171),n(205),n(206),"2431349207");t.default=function(e){var t=e.data,n=(e.pageContext,t.posts.edges[0].node),r=n.id,d=n.excerpt,i=n.fields,o=n.frontmatter;Object.assign({id:r},i,o,{excerpt:d});return a.a.createElement("div",null," AMP HOME PAGE ")}}}]);
+//# sourceMappingURL=component---src-templates-amp-index-js-a95924da28a1d882cb98.js.map
