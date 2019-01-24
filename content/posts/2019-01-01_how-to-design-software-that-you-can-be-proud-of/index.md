@@ -50,7 +50,6 @@ Further, in the article, we are going to understand what it means for software t
 6. [Conclusion](#conclusion)
 
 <a name="what-makes-software-development-complex"></a>
----
 
 ## What Makes Software Development Complex?
 
@@ -91,7 +90,6 @@ The clean code looks like it was easy to write, when in fact it usually involves
 It's not just individual developers makes their lives miserable. Organizations help them in that too. When any project is nearing completion, there is always a mad rush to get new features added. The rush is mad indeed because it leads into a trap of added complexities. They tend to focus on how quickly they can write something, how easy is it to replace one developer with another. Considering just the familiarity with the tools used, not the simplicity or complexity of the code the new developer needs to handle.
 
 <a name="qualities-of-a-good-software-design"></a>
----
 
 ## Qualities Of A Good Software Design
 
@@ -132,13 +130,13 @@ To summarize an software application must have a right balance of following feat
 
 | **Quality**        | **What It Means** |
 | :------------- |:-------------|
-| 1. Delightful User Experience    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
-| 2. Available      | It should be ready to perform the required action when it is needed. |  
-| 3. Performant | When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
-| 4. Scalable | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.|
-| 5. Adaptable | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
-| 6. Secure | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
-| 7. Economical | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
+| 1. **Delightful User Experience**    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
+| 2. **Available**      | It should be ready to perform the required action when it is needed. |  
+| 3. **Performant** | When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
+| 4. **Scalable** | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.|
+| 5. **Adaptable** | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
+| 6. **Secure** | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
+| 7. **Economical** | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
 
 > Source: [The Seven Qualities Of Wildly Desirable Software](https://go.forrester.com/blogs/11-02-11-the_seven_qualities_of_wildly_desirable_software/)
 
@@ -146,7 +144,6 @@ To summarize an software application must have a right balance of following feat
 Designing such software is like playing chess. Rules of playing chess are pretty simple, but it takes years of practice and dedication to be a grandmaster. Even though these software qualities achievable, it involves the combination of knowledge, creative vision, and technique. The implementation technique must be flawless to deliver bug-free software with optimal performance and reliability. It takes a lot of practice, iterations and, collaboration to build a good software system.
 
 <a name="step-by-step-guide-to-complex-software-design"></a>
----
 
 ## Step By Step Guide To Complex Software Design
 
@@ -276,8 +273,6 @@ Everything about writing software is difficult with transient data types.
 
 <a name="how-to-mitigate-complexity-in-software-design"></a>
 
----
-
 ## How To Mitigate Complexity In Software Design?
 
 > Simplicity is the absence of complexity.
@@ -327,8 +322,6 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 <a name="how-to-measure-your-software-development-progress"></a>
 
----
-
 ## How To Measure Your Software Development Progress?
 
 You cannot excel at something you do not measure. So if you want to be good at software design, it's a mandate to measure your progress. Thankfully, we have few frameworks at our disposal we can use to measure the degree of complexity in software.
@@ -344,8 +337,6 @@ While understanding source code, programmer builds a mental model of the softwar
 3.  [_**Maintainability Index:**_]() _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
 
 <a name="conclusion"></a>
-
----
 
 ## Conclusion
 
