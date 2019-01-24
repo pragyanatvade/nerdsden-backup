@@ -7,7 +7,7 @@ metaDescription: Are you a software developer in an early stage startup? Wish to
 summary: Nine mantras for software developers to survive uncertainity and high frequency changes in a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
-modified: 2019-01-19
+modified: 2019-01-24
 ---
 
 
@@ -20,7 +20,7 @@ I started with no prior experience in building a production-grade software syste
 
 No other experience could have taught me what I know today. In this article, I share my experiences and the software design lessons I learned the hard way.
 
----
+
 
 ### Table Of Contents
 
@@ -37,9 +37,11 @@ No other experience could have taught me what I know today. In this article, I s
 
 <a name="start-with-the-data-model"></a>
 
----
+
 
 ### 1. Start With The Data Model
+
+![Start Software Development With Data Model](./start-software-development-with-data-model.jpeg "Start Software Development With Data Model")
 
 Business people often care about data and concentrate on how this data can be transformed, combined and separated to meet business requirements.
 
@@ -63,7 +65,7 @@ Following data modeling guidelines gave me a clear understanding of business req
 
 <a name="separate-your-concerns"></a>
 
----
+
 
 ### 2. Separate Your Concerns
 
@@ -72,6 +74,8 @@ When I started backend development in Elanic, the problem we were trying to solv
 It took me seven consecutive sleepless nights to keep the servers running during our growth phase to understand there is nothing natural or straightforward about it.
 
 Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of **reads** and **writes** operations.
+
+![Separation Of Concerns](./separation-of-concerns.jpeg "Separation Of Concerns")
 
 Next month went into a rewrite of the critical sections using proper abstractions — separating read and write operations.
 
@@ -97,7 +101,7 @@ develop techniques to select the right one and apply it in the right way.
 
 <a name="leverage-rule-engines"></a>
 
----
+
 
 ### 3. Leverage Rule Engines
 
@@ -126,6 +130,8 @@ person to define the new rule sets. He must then understand the existing
 implementation and realize what’s happening to make the required modifications.
 These changes must then be recompiled, tested, and redeployed.
 
+![Business Rules Engine](./business-rules-engine.png "Business Rules Engine")
+
 A business rules engine provides a means to separate the rules or logic of an
 application from the remaining codebase. Separating these rules offer enormous
 benefits.
@@ -143,8 +149,6 @@ leveraging rule engines can be a huge time saver.*
 
 <a name="prioritize-software-testing"></a>
 
----
-
 ### 4. Prioritize Software Testing
 
 In an early stage startup, feature requests tend to change so often that writing
@@ -153,8 +157,9 @@ automated tests takes a backfoot over manual testing and direct deployments.
 It’s not until too late that you realize that the trade-off has been too
 expensive.
 
-I won’t suggest you write tests from the start *(ideally you should)*, but
-at-least write testable code.
+I won’t suggest you write tests from the start *(ideally you should)*, but at-least write testable code.
+
+![Side Effects Of Software Testing](./side-effects-of-software-testing.jpeg "Side Effects Of Software Testing")
 
 Some people write code in a way that is hard, or even impossible, to write a
 good unit test for it. **So, what makes the program hard to test?** Let’s review
@@ -163,7 +168,7 @@ code.
 
 <a name="uncontrolled-non-determinism-and-side-effects"></a>
 
----
+
 
 #### Uncontrolled Non-Determinism and Side Effects
 
@@ -179,7 +184,7 @@ for correctness.
 
 <a name="impurity-is-toxic"></a>
 
----
+
 
 #### Impurity is toxic
 
@@ -195,9 +200,9 @@ anti-patterns, secret dependencies, and all sorts of ugly and unpleasant things.
 
 <a name="there-will-always-be-bugs"></a>
 
----
-
 ### 5. There Will Always Be Bugs
+
+![There Will Always Be Bugs In Software Development](./there-will-always-be-bugs-in-software-development.png "There Will Always Be Bugs In Software Development")
 
 Straight out of college, I was a software developer striving for perfection. Any
 bug in my code frustrated me to the core. I wanted my work to be flawless, like
@@ -233,8 +238,6 @@ which it does so.
 
 <a name="things-will-break"></a>
 
----
-
 ### 6. Things Will Break
 
 Software development is a process. It’s always evolving, never really finished.
@@ -247,6 +250,8 @@ layer** has brought the whole system down. Once that is fixed, your
 **infrastructure layer** will disappoint you.
 
 The cycle will keep repeating. **Things will always be breaking.**
+
+![Software Updates](./software-updates.jpeg "Software Updates")
 
 The unhappy stakeholders or customers will mock you for this. Validate their
 belief that you’ve let them down. *I agree what we wrote isn’t perfect. We won’t
@@ -267,7 +272,7 @@ of a broken system are developers who will never mature into professionals.
 
 <a name="setup-logging-and-error-handling-early"></a>
 
----
+
 
 ### 7. Setup Logging And Error Handling Early
 
@@ -285,7 +290,7 @@ too, so the sooner you systematically handle them, the better.
 
 <a name="it-will-take-longer-than-you-think"></a>
 
----
+
 
 ### 8. It Will Take Longer Than You Think
 
@@ -297,6 +302,8 @@ Slow](https://amzn.to/2VVgk7y), there is a fair chance you would say yes.
 We are all bad at estimating. The reason why we are worse in estimates is that
 we don’t seem to understand what they are. We don’t know what they are supposed
 to be. We don’t see why we do them. We don’t know how to do them.
+
+![Estimate Provided By A Software Developer](./estimate-provided-by-software-developer.png "Estimate Provided By A Software Developer")
 
 The problem with estimates is that they breed mistrust. Once you give an
 estimated deadline, it immediately transforms into a contract and commitment.
@@ -336,6 +343,8 @@ tough to hit it precisely.
 Even as of today most of my projects take **three times longer** than the time I
 forecast.
 
+![Software Development Estimates - Expectation Vs Reality](./software-development-estimates-expectation-vs-reality.png "Software Development Estimates Expectation Vs Reality")
+
 There are so many external factors involved, communicating the requirements
 effectively, a simple merge turns out to be the cause of a catastrophic bug, or
 an API call doesn’t work as promised, etc. It is quite common to run into
@@ -343,7 +352,7 @@ unexpected problems.
 
 <a name="there-are-no-coincidences"></a>
 
----
+
 
 
 ### 9. There Are No Coincidences
@@ -366,13 +375,15 @@ Never believe in coincidences, when you are developing a new feature, or fixing
 bugs. You committed a bug fix, and an independent service becomes unavailable?
 Not an accident.
 
+![There Are No Coincidences In Software Development](./there-are-no-coincidences-in-software-development.png "There Are No Coincidences In Software Development")
+
 Ignoring such occurrences, and not spending time investigating the issue may
 bring the whole system down. In some cases make you lose your sleep and mental
 sanity.
 
 <a name="conclusion"></a>
 
----
+
 
 
 ### Conclusion
