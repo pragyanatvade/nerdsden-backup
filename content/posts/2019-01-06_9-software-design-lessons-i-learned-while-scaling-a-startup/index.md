@@ -273,7 +273,6 @@ of a broken system are developers who will never mature into professionals.
 <a name="setup-logging-and-error-handling-early"></a>
 
 
-
 ### 7. Setup Logging And Error Handling Early
 
 When developing a new software system, one of the first things you must do is
@@ -284,6 +283,8 @@ need some way of knowing what happens in the program.
 
 Perhaps not when it is working as expected, but as soon as it doesn’t, you must
 be able to see what’s happening.
+
+![Importance Of Logs In System Failure](./importance-of-logs-in-system-failure.png "Importance Of Logs In System Failure")
 
 The same goes for error handling — errors and exceptions happen in the beginning
 too, so the sooner you systematically handle them, the better.
@@ -390,6 +391,9 @@ sanity.
 
 If you made it till this section, CONGRATULATIONS!. I thank you for your
 commitment. I hope you feel less anxious after reading my experiences
+
+
+![Step By Step Guide To Software Development](./step-by-step-guide-to-software-development.png "Step By Step Guide To Software Development")
 
 If I would like you to take in one lesson from my experiences in the post it’s
 going to be:
