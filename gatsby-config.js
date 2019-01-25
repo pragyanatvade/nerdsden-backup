@@ -11,12 +11,6 @@ module.exports = {
     facebook: config.facebook,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-typography`,
-      options:{
-        pathToConfigModule:`src/utils/typography`,
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     {
@@ -148,6 +142,12 @@ module.exports = {
             type: 'image/png',
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     `gatsby-plugin-offline`,

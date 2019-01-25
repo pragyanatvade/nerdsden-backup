@@ -33,7 +33,6 @@ const theme = {
     const vr = verticalRhythm({
       baseFontSize: '19em',
       baseLineHeight: 1,
-
     })
 
     return {
@@ -49,17 +48,18 @@ const theme = {
       //   marginTop: rhythm(1),
       // },
       // children ol, ul
-     header:{...scale(1/3),
-       height: '0.8em',
-     fontSize: '1.3em',
-       padding: 1.5,
-
-     },
-     table:{...scale(1/19),
-       fontWeight: options.bodyWeight,
-       fontSize: '90%',
-     },
-     // Blockquote styles.
+      header: {
+        ...scale(1 / 3),
+        height: '0.8em',
+        fontSize: '1.3em',
+        padding: 1.5,
+      },
+      table: {
+        ...scale(1 / 19),
+        fontWeight: options.bodyWeight,
+        fontSize: '90%',
+      },
+      // Blockquote styles.
 
       blockquote: {
         ...scale(1 / 6),
@@ -70,10 +70,9 @@ const theme = {
         fontStyle: 'italic',
         marginLeft: 0,
         marginRight: 0,
-
       },
       'blockquote > :last-child': {
-        marginBottom:1,
+        marginBottom: 1,
       },
       'blockquote cite': {
         ...adjustFontSizeTo(options.baseFontSize),
