@@ -61,6 +61,8 @@ Data modeling aims to define:
 * **The relationships among data items** (e.g., users can create products, profiles can add these products to their cart, etc.)
 * **The constraints on data** (e.g., at max only 30 products can be bought together, the user should not be able to use wallet credit if wallet balance becomes less than zero, etc.)
 
+![Data Modeling Pipeline](./data-modeling-pipeline.png "Data Modeling Pipeline")
+
 Following data modeling guidelines gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.
 
 <a name="separate-your-concerns"></a>
