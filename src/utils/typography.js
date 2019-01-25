@@ -44,10 +44,10 @@ const theme = {
         textShadow: 'none', // eslint-disable-line
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
       },
-      'h1,h2,h3,h4,h5,h6': {
-        marginTop: rhythm(2),
-        marginBottom: rhythm(2),
-      },
+
+      // 'h1,h2,h3,h4,h5,h6': {
+      //   marginTop: rhythm(1),
+      // },
       // children ol, ul
      header:{...scale(1/3),
        height: '0.8em',

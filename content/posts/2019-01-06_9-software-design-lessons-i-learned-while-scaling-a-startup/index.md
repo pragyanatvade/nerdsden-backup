@@ -49,7 +49,7 @@ Whereas software developers tend to care about the classes, functions, and proce
 
 This mismatch in the thinking process leads to further misunderstanding among business and engineering teams.
 
-To understand the gravity of the problem let’s draw a typical feature request timeline, I went through:
+[//]: # (To understand the gravity of the problem let’s draw a typical feature request timeline, I went through:)
 
 Six months into my job as a backend developer, I realized I need to understand better business requirements and design system flexible enough to adapt that frequency of change.
 
@@ -66,7 +66,6 @@ Following data modeling guidelines gave me a clear understanding of business req
 <a name="separate-your-concerns"></a>
 
 
-
 ### 2. Separate Your Concerns
 
 When I started backend development in Elanic, the problem we were trying to solve seemed natural. *It’s a social community engaged in buying and selling of lifestyle items.*
@@ -75,7 +74,7 @@ It took me seven consecutive sleepless nights to keep the servers running during
 
 Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of **reads** and **writes** operations.
 
-![Separation Of Concerns](./separation-of-concerns.jpeg "Separation Of Concerns")
+![Separation Of Concerns](./separation-of-concerns.jpg "Separation Of Concerns")
 
 Next month went into a rewrite of the critical sections using proper abstractions — separating read and write operations.
 
