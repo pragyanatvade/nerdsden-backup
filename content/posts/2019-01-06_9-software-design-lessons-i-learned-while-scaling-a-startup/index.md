@@ -7,7 +7,7 @@ metaDescription: Are you a software developer in an early stage startup? Wish to
 summary: Nine mantras for software developers to survive uncertainity and high frequency changes in a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
-modified: 2019-01-24
+modified: 2019-01-26
 ---
 
 
