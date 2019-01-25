@@ -43,9 +43,9 @@ const theme = {
         textShadow: 'none', // eslint-disable-line
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
       },
-      'h1,h2,h3,h4,h5,h6': {
-        marginTop: rhythm(2),
-      },
+      // 'h1,h2,h3,h4,h5,h6': {
+      //   marginTop: rhythm(1),
+      // },
       // children ol, ul
       'li>ol,li>ul': {
         marginLeft: '20px',
