@@ -7,8 +7,9 @@ import { name } from '../../package.json'
 
 const theme = {
   title: name,
-  baseFontSize: '19px',
-  baseLineHeight: 1.58,
+
+  baseFontSize: '19em',
+  baseLineHeight: 1,
   googleFonts: [
     {
       name: 'Roboto Slab',
@@ -22,47 +23,57 @@ const theme = {
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
   bodyFontFamily: ['Roboto', 'serif'],
   headerColor: 'hsla(0,0%,0%,0.9)',
-  bodyColor: 'hsla(0,0%,0%,0.73)',
+  bodyColor: '#000000',
   headerWeight: 700,
-  bodyWeight: 400,
+  bodyWeight: 300,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
-    const linkColor = '#950451'
+    const linkColor = '#2F4F4F'
+    const quoteColor = '#E6E6FA'
     const vr = verticalRhythm({
-      baseFontSize: '17px',
-      baseLineHeight: '28px',
+      baseFontSize: '19em',
+      baseLineHeight: 1,
+
     })
+
     return {
       a: {
         color: linkColor,
-        textDecoration: 'none',
-        textShadow: 'none', // eslint-disable-line
-        backgroundImage: `none`, // eslint-disable-line
       },
       'a:hover,a:active': {
         textShadow: 'none', // eslint-disable-line
-        backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
+        backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
       },
+
       // 'h1,h2,h3,h4,h5,h6': {
       //   marginTop: rhythm(1),
       // },
       // children ol, ul
-      'li>ol,li>ul': {
-        marginLeft: '20px',
-        marginBottom: 0,
-      },
-      // Blockquote styles.
+     header:{...scale(1/3),
+       height: '0.8em',
+     fontSize: '1.3em',
+       padding: 1.5,
+
+     },
+     table:{...scale(1/19),
+       fontWeight: options.bodyWeight,
+       fontSize: '90%',
+     },
+     // Blockquote styles.
+
       blockquote: {
-        ...scale(1 / 5),
-        borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
-        color: gray(35),
+        ...scale(1 / 6),
+        borderLeft: `${rhythm(3 / 8)} solid ${quoteColor}`,
+
+        color: options.bodyColor,
         paddingLeft: rhythm(10 / 16),
         fontStyle: 'italic',
         marginLeft: 0,
         marginRight: 0,
+
       },
       'blockquote > :last-child': {
-        marginBottom: 0,
+        marginBottom:1,
       },
       'blockquote cite': {
         ...adjustFontSizeTo(options.baseFontSize),
@@ -79,10 +90,9 @@ const theme = {
         },
         blockquote: {
           borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
-          color: gray(41),
+          color: gray(30),
           paddingLeft: rhythm(9 / 16),
           fontStyle: 'italic',
-          marginLeft: rhythm(-3 / 4),
           marginRight: 0,
         },
       },
