@@ -37,8 +37,9 @@ const theme = {
     })
 
     return {
-      a: {
+      a:{
         color: linkColor,
+       baseLineHeight: '1.7em',
       },
       'a:hover,a:active': {
         textShadow: 'none', // eslint-disable-line
