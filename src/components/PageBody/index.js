@@ -47,6 +47,13 @@ const Body = styled.div`
     margin: 0 0 2em 0;
   }
 
+  a {
+    transition: 0.2s;
+    line-height: 1.6;
+    &:hover {
+      color: ${props => props.theme.colors.highlight};
+    }
+  }
   ul,
   ol {
     margin: 0 0 2em 0;
@@ -54,6 +61,8 @@ const Body = styled.div`
 
   ul {
     li {
+      font-style: italic;
+      font-weight: bold;
       list-style: disc;
       list-style-position: outside;
       line-height: 1.25;
@@ -65,6 +74,8 @@ const Body = styled.div`
 
   ol {
     li {
+      font-weight:bold;
+      font-style: italic;
       list-style: decimal;
       list-style-position: outside;
       line-height: 1.1;
