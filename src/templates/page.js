@@ -6,6 +6,7 @@ import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 import PageBody from '../components/PageBody'
 
+
 const Page = ({ data, pageContext }) => {
   const {
     page: { id, html, fields, frontmatter },
@@ -13,6 +14,7 @@ const Page = ({ data, pageContext }) => {
   const page = { id, html, ...fields, ...frontmatter }
 
   return (
+
     <Layout page={page}>
       <Container>
         <PageTitle>{page.title}</PageTitle>

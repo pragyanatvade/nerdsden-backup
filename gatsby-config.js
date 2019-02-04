@@ -3,7 +3,7 @@ const config = require('./content/meta/config')
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: config.siteTitle,
     description: config.siteDescription,
     siteUrl: config.siteUrl,
     author: config.authorName,

@@ -8,7 +8,6 @@ import PageBody from '../components/PageBody'
 import PostDate from '../components/PostDate'
 import TagList from '../components/TagList'
 import Comments from '../components/Comments'
-import Share from '../components/Share'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -22,7 +21,6 @@ const PostTemplate = ({ data, pageContext }) => {
   return (
     <Layout post={post}>
       <Hero title={post.title} image={post.cover} />
-      <Share />
       <Container>
         {post.tags && <TagList tags={post.tags} />}
         <PostDate date={post.date} />
