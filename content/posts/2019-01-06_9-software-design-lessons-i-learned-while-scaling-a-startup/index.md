@@ -7,7 +7,7 @@ metaDescription: Are you a software developer in an early stage startup? Wish to
 summary: Nine mantras for software developers to survive uncertainity and high frequency changes in a startup without losing their sleep over it.
 slug: 9-software-design-lessons-i-learned-while-scaling-a-startup
 published: 2019-01-06
-modified: 2019-01-24
+modified: 2019-01-26
 ---
 
 
@@ -49,7 +49,7 @@ Whereas software developers tend to care about the classes, functions, and proce
 
 This mismatch in the thinking process leads to further misunderstanding among business and engineering teams.
 
-To understand the gravity of the problem let’s draw a typical feature request timeline, I went through:
+[//]: # (To understand the gravity of the problem let’s draw a typical feature request timeline, I went through:)
 
 Six months into my job as a backend developer, I realized I need to understand better business requirements and design system flexible enough to adapt that frequency of change.
 
@@ -61,10 +61,11 @@ Data modeling aims to define:
 * **The relationships among data items** (e.g., users can create products, profiles can add these products to their cart, etc.)
 * **The constraints on data** (e.g., at max only 30 products can be bought together, the user should not be able to use wallet credit if wallet balance becomes less than zero, etc.)
 
+![Data Modeling Pipeline](./data-modeling-pipeline.png "Data Modeling Pipeline")
+
 Following data modeling guidelines gave me a clear understanding of business requirements and teams were able to understand and communicate themselves better.
 
 <a name="separate-your-concerns"></a>
-
 
 
 ### 2. Separate Your Concerns

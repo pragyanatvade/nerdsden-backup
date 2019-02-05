@@ -7,7 +7,7 @@ metaDescription: Ever wondered why software development is so difficult? Let me 
 summary: Ever wondered why software development is so difficult? In this article we will learn about software development practices that leads to un-manageable and crapy software designs. Also, what can you do to avoid it in your upcoming project.
 slug: how-to-design-software-that-you-can-be-proud-of
 published: 2019-01-01
-modified: 2019-01-24
+modified: 2019-01-30
 ---
 
 It's 2 o'clock in the morning you are happily strolling through your dream world, sipping lemonade across the beach, watching the picturesque view of your imagination, like a millionaire.
@@ -326,17 +326,39 @@ It's better to compose functionality of a module out of smaller building blocks 
 
 ## How To Measure Your Software Development Progress?
 
-You cannot excel at something you do not measure. So if you want to be good at software design, it's a mandate to measure your progress. Thankfully, we have few frameworks at our disposal we can use to measure the degree of complexity in software.
+The conventional wisdom is if you can't measure it, you can't manage it. It loses its glitter in the software development realm.
 
-![Progress In Software Development](./software-development-progress.png 'Progress In Software Development')
+The idea depends on the measurement of metrics.
 
-While understanding source code, programmer builds a mental model of the software which involves an understanding of Control Flow and Data Flow in the program. We would use the following metrics for measuring software complexity:
+The problem with metrics is, if you focus on trying to achieve a number instead of trying to understand the complex system, you can easily find situations where you are achieving your numbers but actually destroying the operations. It happens all the time in business development.
 
-1.  [_**Cyclomatic complexity:**_]() _It measures how much control flow exists in an application. Operations like `IF, ELSE, FOR LOOP, etc.` represent control flow. A program with more conditional logic is more difficult to understand, this metric gives us an assessment of that._
+There is not in much we do that is measurable. You can try to measure: 
+* _Lines of code_
+* _The rate of introducing bugs_
+* _The frequency of fixing bugs_
 
-2.  [_**Halstead volume:**_]() _It is a measurement of how much information exist in the source code. It looks at the number of variables, functions, operations, and frequency of their usage across the source code. A programmer must get himself familiar with this information as they all affect data flow within the running program._
+None of them is a meaningful measure. 
 
-3.  [_**Maintainability Index:**_]() _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
+You can't predict how many lines of code are going to be there in a software application and measure completeness of application by how much lines are there in it. You can try to create an incentive or punishment systems which are tied to these numbers, but they all are going to fail.
+
+![Progress In Software Development](./software-development-progress.png 'Progress Measurement In Software Development')
+
+What we really want to measure is:
+* _The actual number of defects_
+* _Estimate remaining effort to completion_
+* _Maintainability of the source code_
+
+The reason we don't have these metrics is that programming is not a manufacturing process. It is a process of discovery by trial and error.
+
+So instead of trying to have an objective measurement for our progress we can device subjective heuristics to understand if we are making progress relative to what we have done in past. Thankfully, we have few frameworks at our disposal we can use to measure the degree of complexity in software.
+
+While understanding source code, programmer builds a mental model of the software which involves an understanding of *Control Flow* and *Data Flow* in the program. We can use the following heuristic for measuring software complexity:
+
+1.  [_**Cyclomatic complexity:**_](http://www.projectcodemeter.com/cost_estimation/help/GL_cyclomatic.htm) _It measures how much control flow exists in an application. Operations like `IF, ELSE, FOR LOOP, etc.` represent control flow. A program with more conditional logic is more difficult to understand, this metric gives us an assessment of that._
+
+2.  [_**Halstead volume:**_](http://www.projectcodemeter.com/cost_estimation/help/GL_halstead.htm) _It is a measurement of how much information exist in the source code. It looks at the number of variables, functions, operations, and frequency of their usage across the source code. A programmer must get himself familiar with this information as they all affect data flow within the running program._
+
+3.  [_**Maintainability Index:**_](http://www.projectcodemeter.com/cost_estimation/help/GL_maintainability.htm) _It tries to formulate the overall maintainability of the source code with an empirical formula. It makes use of above two measurements along with the number of lines of code and number of lines comment within a software source code._
 
 <a name="conclusion"></a>
 

@@ -13,8 +13,8 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
-      options:{
-        pathToConfigModule:`src/utils/typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -148,6 +148,12 @@ module.exports = {
             type: 'image/png',
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     `gatsby-plugin-offline`,
