@@ -75,7 +75,7 @@ It took me seven consecutive sleepless nights to keep the servers running during
 
 Once we stabilized the system to sustain the traffic, I realized the whole codebase is the unsustainable mesh of **reads** and **writes** operations.
 
-![Separation Of Concerns](./separation-of-concerns.jpeg "Separation Of Concerns")
+![Separation Of Concerns](./separation-of-concerns.jpg "Separation Of Concerns")
 
 Next month went into a rewrite of the critical sections using proper abstractions — separating read and write operations.
 
