@@ -5,18 +5,25 @@ const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
 
+<<<<<<< HEAD
+/*
+=======
 
+>>>>>>> master
   th,
   td {
     padding: 0.3em;
     text-align: left;
+    column-width:3;
   }
 
   tr:nth-child(even) {
     background-color: #def3fd;
+
   }
   tr:hover {
     background-color: #eeeeee;
+
   }
 
   th {
@@ -26,8 +33,37 @@ const Body = styled.div`
     text-align: center;
     font-size: 1.2em;
     background-color: #00bcd4;
-    color: white;
+    color: white; */
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      /*table-layout: fixed;*/
   }
+<<<<<<< HEAD
+
+  table th {
+    text-align: center;
+    padding-top: 20;
+    height: 120%;
+    width: 0.2em;
+    font-size: 1.2em;
+    background: lightblue;
+  }
+  table tr:hover{
+      background-color: #eeeeee;
+  }
+  table tr:nth-child(even) {
+    background-color: #F1F1F1	;
+
+  }
+  table th, table td {
+      border: white 0.2em solid;
+      padding: .2em 0.8em;
+  }
+
+=======
+>>>>>>> master
     h1,
     h2,
     h3 {
@@ -50,21 +86,32 @@ const Body = styled.div`
   a {
     transition: 0.2s;
     line-height: 1.6;
+<<<<<<< HEAD
+    
+=======
     &:hover {
       color: ${props => props.theme.colors.highlight};
     }
+>>>>>>> master
   }
   ul,
   ol {
     margin: 0 0 2em 0;
   }
-
   ul {
+      list-style-position: inside;
+      padding-left: 1em;
     li {
       font-style: italic;
       font-weight: bold;
       list-style: disc;
+<<<<<<< HEAD
+
+      font-style: italic;
+        font-weight: bold;
+=======
       list-style-position: outside;
+>>>>>>> master
       line-height: 1.25;
       &:last-child {
         margin: 0;
@@ -73,16 +120,30 @@ const Body = styled.div`
   }
 
   ol {
+    padding-left: 1em;
+    list-style-position: outside;
     li {
       font-weight:bold;
       font-style: italic;
       list-style: decimal;
+<<<<<<< HEAD
+      line-height: 1.25;
+=======
       list-style-position: outside;
       line-height: 1.1;
+>>>>>>> master
       &:last-child {
         margin: 0;
       }
     }
+  }
+<<<<<<< HEAD
+  em {
+    font-style: bold;
+  }
+  title-text: {
+    fontSize: 20,
+    fontWeight: 'bold',
   }
 `
 
@@ -91,3 +152,95 @@ const PageBody = ({ html }) => {
 }
 
 export default PageBody
+/*h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.4;
+  margin: 0 0 2em 0;
+}
+
+a {
+  transition: 0.2s;
+  color: ${props => props.theme.colors.base};
+  &:hover {
+    color: ${props => props.theme.colors.highlight};
+  }
+}
+
+del {
+  text-decoration: line-through;
+}
+strong {
+  font-weight: 600;
+}
+em {
+  font-style: italic;
+}
+
+ul,
+ol {
+  margin: 0 0 2em 0;
+}
+
+ul {
+  li {
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.25;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+ol {
+  li {
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 1.25;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+=======
+`
+>>>>>>> master
+
+hr {
+  border-style: solid;
+  border-color: ${props => props.theme.colors.secondary};
+  margin: 0 0 2em 0;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid ${props => props.theme.colors.secondary};
+  padding: 0 0 0 0.5em;
+}
+
+pre {
+  margin: 0 0 2em 0;
+  border-radius: 2px;
+  background: ${props => props.theme.colors.secondary} !important;
+  span {
+    background: inherit !important;
+  }
+}*/

@@ -130,13 +130,13 @@ To summarize an software application must have a right balance of following feat
 
 | **Quality**        | **What It Means** |
 | :------------- |:-------------|
-| 1. **Delightful User Experience**    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
-| 2. **Available**      | It should be ready to perform the required action when it is needed. |  
-| 3. **Performant** | When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
-| 4. **Scalable** | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.|
-| 5. **Adaptable** | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
-| 6. **Secure** | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
-| 7. **Economical** | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
+| **Delightful User Experience**    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
+| **Available**      | It should be ready to perform the required action when it is needed. |  
+| **Performant**| When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
+| **Scalable** | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.|
+| **Adaptable** | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
+| **Secure** | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
+| **Economical** | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
 
 > Source: [The Seven Qualities Of Wildly Desirable Software](https://go.forrester.com/blogs/11-02-11-the_seven_qualities_of_wildly_desirable_software/)
 
@@ -288,6 +288,7 @@ Object-Oriented Programming facilitates method calls on objects - presumes t
 **Reasons to use queues:**
 
 1.  _**Decoupling:** It's difficult to predict the state of the project in the future. Message queues provide separation of concerns among processes with a data-based interface to communicate among them. This way each service can be modified, scaled independently, by only adhering to the same interface._
+
 2.  _**Reliability:** Sometimes jobs fail due to process failure. Queues provide us ways to store the information until it executes the tasks successfully._
 
 3.  _**Scalability:** As message queues decouple your services, it's easy to scale up the system to handle the more massive load just by adding new processes._
@@ -295,6 +296,7 @@ Object-Oriented Programming facilitates method calls on objects - presumes t
 4.  _**Debuggability:** Queues give you an excellent insight into the data flow of the application. By measuring the rate of message processing, we can quickly identify the under-performing processes._
 
 5.  _**Resiliency:** When some services in your application breaks, it shouldn't take the whole system down with it. Message queue gives you the ability to accept the request and re-try them later when the service is back up and running._
+
 6.  _**Asynchronous Processing:** Many times you need to defer data processing for later. It allows you to schedule jobs for future execution._
 
 ### 2. Leverage Business Rule Engines
