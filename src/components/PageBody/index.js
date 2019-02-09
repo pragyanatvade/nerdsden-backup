@@ -5,32 +5,6 @@ const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
 
-/*
-  th,
-  td {
-    padding: 0.3em;
-    text-align: left;
-    column-width:3;
-  }
-
-  tr:nth-child(even) {
-    background-color: #def3fd;
-
-  }
-  tr:hover {
-    background-color: #eeeeee;
-
-  }
-
-  th {
-    width: 1em;
-    padding-top: 20;
-    height: 1em;
-    text-align: center;
-    font-size: 1.2em;
-    background-color: #00bcd4;
-    color: white; */
-
     table {
       border-collapse: collapse;
       border-spacing: 0;
@@ -79,7 +53,7 @@ const Body = styled.div`
   a {
     transition: 0.2s;
     line-height: 1.6;
-    
+
   }
   ul,
   ol {

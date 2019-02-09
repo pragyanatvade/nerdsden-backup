@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   position: relative;
-  min-height: 300px;
+  min-height: 10em;
 `;
 
 const BgImg = styled(Img)`
@@ -13,7 +13,7 @@ const BgImg = styled(Img)`
   left: 0;
   width: 100%;
   z-index: -1;
-  min-height: 300px;
+  min-height: 12em;
   height: auto;
   @media (min-width: ${props => props.theme.responsive.small}) {
     height: ${props => props.height || "auto"};
@@ -24,7 +24,7 @@ const BgImg = styled(Img)`
   }
   &::before {
     content: "";
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -37,13 +37,13 @@ const BgImg = styled(Img)`
 `;
 
 const Title = styled.h1`
-  font-size: 3em;
+  font-size: 2.0em;
+  padding-bottom:2.7em;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
-  padding: 0 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -51,7 +51,7 @@ const Title = styled.h1`
   color: white;
 `;
 
-const Hero = ({ title, image, height = "50vh" }) => {
+const Hero = ({ title, image, height = "45vh" }) => {
   const {
     children: [{ fluid }]
   } = image;
