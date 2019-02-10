@@ -10,6 +10,9 @@ const List = styled.ul`
     content: "";
     flex: 0 0 32%;
   }
+  ol, ul, li {
+    list-style: none;
+  }
 `;
 
 const CardList = props => {
