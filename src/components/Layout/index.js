@@ -6,7 +6,6 @@ import Menu from '../Menu'
 import Footer from '../Footer'
 
 import theme from '../../styles/theme'
-import GlobalStyle from '../../styles/global'
 
 const Layout = ({ children, post, page, index }) => (
   <div className="siteRoot">
@@ -20,7 +19,6 @@ const Layout = ({ children, post, page, index }) => (
         <Footer />
       </>
     </ThemeProvider>
-    <GlobalStyle />
   </div>
 )
 
