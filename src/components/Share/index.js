@@ -25,7 +25,7 @@ import {
 const ShareComponent = props => {
   // create object with props for shareBlock
   const shareBlockProps = {
-    url: {siteUrl},
+    url: { siteUrl },
     button: ShareButtonIconOnly,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },

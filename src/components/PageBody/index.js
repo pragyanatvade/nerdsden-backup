@@ -5,42 +5,11 @@ const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
 
-<<<<<<< HEAD
-/*
-=======
-
->>>>>>> master
-  th,
-  td {
-    padding: 0.3em;
-    text-align: left;
-    column-width:3;
-  }
-
-  tr:nth-child(even) {
-    background-color: #def3fd;
-
-  }
-  tr:hover {
-    background-color: #eeeeee;
-
-  }
-
-  th {
-    width: 1em;
-    padding-top: 20;
-    height: 1em;
-    text-align: center;
-    font-size: 1.2em;
-    background-color: #00bcd4;
-    color: white; */
-
     table {
       border-collapse: collapse;
       border-spacing: 0;
       /*table-layout: fixed;*/
   }
-<<<<<<< HEAD
 
   table th {
     text-align: center;
@@ -62,8 +31,6 @@ const Body = styled.div`
       padding: .2em 0.8em;
   }
 
-=======
->>>>>>> master
     h1,
     h2,
     h3 {
@@ -86,13 +53,7 @@ const Body = styled.div`
   a {
     transition: 0.2s;
     line-height: 1.6;
-<<<<<<< HEAD
-    
-=======
-    &:hover {
-      color: ${props => props.theme.colors.highlight};
-    }
->>>>>>> master
+
   }
   ul,
   ol {
@@ -102,16 +63,10 @@ const Body = styled.div`
       list-style-position: inside;
       padding-left: 1em;
     li {
-      font-style: italic;
-      font-weight: bold;
       list-style: disc;
-<<<<<<< HEAD
 
       font-style: italic;
         font-weight: bold;
-=======
-      list-style-position: outside;
->>>>>>> master
       line-height: 1.25;
       &:last-child {
         margin: 0;
@@ -123,21 +78,13 @@ const Body = styled.div`
     padding-left: 1em;
     list-style-position: outside;
     li {
-      font-weight:bold;
-      font-style: italic;
       list-style: decimal;
-<<<<<<< HEAD
       line-height: 1.25;
-=======
-      list-style-position: outside;
-      line-height: 1.1;
->>>>>>> master
       &:last-child {
         margin: 0;
       }
     }
   }
-<<<<<<< HEAD
   em {
     font-style: bold;
   }
@@ -152,7 +99,7 @@ const PageBody = ({ html }) => {
 }
 
 export default PageBody
-/*h1,
+/* h1,
 h2,
 h3 {
   font-weight: 600;
@@ -220,9 +167,6 @@ ol {
     }
   }
 }
-=======
-`
->>>>>>> master
 
 hr {
   border-style: solid;
@@ -243,4 +187,4 @@ pre {
   span {
     background: inherit !important;
   }
-}*/
+} */
