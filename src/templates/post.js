@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Share from '../components/Share'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import Hero from '../components/Hero'
@@ -21,6 +21,7 @@ const PostTemplate = ({ data, pageContext }) => {
   return (
     <Layout post={post}>
       <Hero title={post.title} image={post.cover} />
+      <Share post={post} url={siteUrl}/>
       <Container>
         {post.tags && <TagList tags={post.tags} />}
         <PostDate date={post.date} />

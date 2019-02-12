@@ -37,14 +37,13 @@ const BgImg = styled(Img)`
 `;
 
 const Title = styled.h1`
-  font-size: 3em;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 900;
   position: absolute;
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
   padding: 0 1rem;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

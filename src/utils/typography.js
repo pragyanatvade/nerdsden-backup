@@ -55,17 +55,18 @@ const theme = {
       header: {
         ...scale(0),
         height: '1px',
-        fontSize: '19px',
+        fontSize: '18px',
         padding: 1.5,
       },
-
       table: {
         ...scale(1 / 19),
         fontWeight: options.bodyWeight,
         fontSize: '90%',
       },
+      h1:{
+        fontSize: '3em',
+      },
       // Blockquote styles.
-
       blockquote: {
         ...scale(1 / 6),
         borderLeft: `${rhythm(2 / 8)} solid ${quoteColor}`,
@@ -90,6 +91,10 @@ const theme = {
       [MOBILE_MEDIA_QUERY]: {
         html: {
           ...vr.establishBaseline(),
+        },
+
+        h1:{
+          fontSize: '1.8em',
         },
         table: {
           ...scale(1 / 25),

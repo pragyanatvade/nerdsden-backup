@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components'
 import PropTypes from 'prop-types';
 import { siteUrl, pathPrefix } from '../../../content/meta/config'
 import { css } from 'emotion';
@@ -22,6 +23,21 @@ import {
   ShareBlockStandard,
 } from 'react-custom-share';
 
+const Wrapper = styled.div`
+width: 1em;
+position: fixed;
+display: flex ;
+  @media only screen and (max-width: 60em) {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+}
+`;
+
 const ShareComponent = props => {
   // create object with props for shareBlock
   const shareBlockProps = {
@@ -36,6 +52,6 @@ const ShareComponent = props => {
     text: `Give it a try - https://nerds-den.com/`,
     longtext: `Take a look at this super website I have just found.`,
   };
-  return <ShareBlockStandard {...shareBlockProps} />;
+  return <Wrapper><ShareBlockStandard {...shareBlockProps} /></Wrapper>;
 };
 export default ShareComponent
