@@ -42,12 +42,30 @@ The **_second one_**, however, is the one we are going to talk about in this art
 Further, in the article, we are going to understand what it means for software to be complicated. What can you do to avoid it in your upcoming project?
 
 ## Table Of Contents
-1. [What Makes Software Development Complex](#what-makes-software-development-complex)
-2. [Qualities Of A Good Software Design](#qualities-of-a-good-software-design)
-3. [Step By Step Guide To Complex Software Design](#step-by-step-guide-to-complex-software-design)
-4. [How To Mitigate Complexity In Software Design?](#how-to-mitigate-complexity-in-software-design)
-5. [How to Measure Your Software Development Progress?](#how-to-measure-your-software-development-progress)
-6. [Conclusion](#conclusion)
+- [Table Of Contents](#table-of-contents)
+- [What Makes Software Development Complex?](#what-makes-software-development-complex)
+  - [Essential Complexity](#essential-complexity)
+  - [Accidental Complexity](#accidental-complexity)
+- [Qualities Of A Good Software Design](#qualities-of-a-good-software-design)
+  - [Users](#users)
+  - [Operators](#operators)
+  - [Developers](#developers)
+- [Step By Step Guide To Complex Software Design](#step-by-step-guide-to-complex-software-design)
+  - [1. Use Deep Inheritance](#1-use-deep-inheritance)
+  - [2. Embrace Setters And Getters](#2-embrace-setters-and-getters)
+  - [3. Write Lots Of Unit Tests](#3-write-lots-of-unit-tests)
+  - [4. Abstract Information With Objects](#4-abstract-information-with-objects)
+  - [5. Throw Non-Descriptive Errors Messages](#5-throw-non-descriptive-errors-messages)
+  - [6. Use Static Types](#6-use-static-types)
+  - [7. Update Information In Place](#7-update-information-in-place)
+- [How To Mitigate Complexity In Software Design?](#how-to-mitigate-complexity-in-software-design)
+  - [1. Enqueue](#1-enqueue)
+  - [2. Leverage Business Rule Engines](#2-leverage-business-rule-engines)
+  - [3. Always Be Composing](#3-always-be-composing)
+- [How To Measure Your Software Development Progress?](#how-to-measure-your-software-development-progress)
+- [Conclusion](#conclusion)
+- [We 💚 your feedback](#we-%F0%9F%92%9A-your-feedback)
+- [References and Further Reading](#references-and-further-reading)
 
 <a name="what-makes-software-development-complex"></a>
 
@@ -128,15 +146,15 @@ Whereas for developer software quality corresponds to the quality of the source 
 
 To summarize an software application must have a right balance of following features to qualify as a desirable software system.
 
-| **Quality**        | **What It Means** |
-| :------------- |:-------------|
-| **Delightful User Experience**    | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.|
-| **Available**      | It should be ready to perform the required action when it is needed. |  
-| **Performant**| When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.|
-| **Scalable** | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.|
-| **Adaptable** | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.|
-| **Secure** | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access |
-| **Economical** | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
+| **Quality**                    | **What It Means**                                                                                                                                                                                                                          |
+| :----------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Delightful User Experience** | If you don't get it right, nothing else will matter. An application must be useful, usable and desirable to the user.                                                                                                                      |
+| **Available**                  | It should be ready to perform the required action when it is needed.                                                                                                                                                                       |
+| **Performant**                 | When it comes to speed, your application must always meet or exceed the user's expectations. It should do so consistently even in the event of peak load.                                                                                  |
+| **Scalable**                   | If you fail to design software for scale, you will run into performance or availability problems that in turn leads to a degraded user experience.                                                                                         |
+| **Adaptable**                  | It should be easy for developers to understand and modify or extend the application's functionality as per requirements.                                                                                                                   |
+| **Secure**                     | The goal here is design application that can ensure data confidentiality, integrity, and privacy. It should provide resilience to denial of service attacks and unauthorized user access                                                   |
+| **Economical**                 | Every design decision carries a cost. Whether is a choice of technology, programming language or databases. Your design should minimize the cost of building, operating, and changing application without compromizing the business values |
 
 > Source: [The Seven Qualities Of Wildly Desirable Software](https://go.forrester.com/blogs/11-02-11-the_seven_qualities_of_wildly_desirable_software/)
 
@@ -215,7 +233,7 @@ There are few ways to mitigate such tragedies. You must stay away from any of th
 
 ### 3. Write Lots Of Unit Tests
 
-![Chronicles Of Unit Testing](./unit-testing.jpeg 'Chronicles Of Unit Testing')
+![Ensuring Absence Of Bugs In Software Development](./absence-of-bugs.png 'Ensuring  Absence Of Bugs In Software Development')
 
 > Imagine you have three modules, A, B, and C. You wrote an extensive unit test suite for each component. Later on, you decide to change the implementation so that A and C can split B's functionality among themselves. You now have two new modules with different interfaces. All the unit tests you wrote are of no use anymore. You may use some of the older test code, but now you need to re-write the entire test suite.
 
