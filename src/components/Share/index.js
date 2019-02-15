@@ -5,8 +5,11 @@ import { siteUrl, pathPrefix } from '../../../content/meta/config'
 import { css } from 'emotion';
 import { FaTwitter } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
-import { FaGooglePlus } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { FaReddit } from 'react-icons/fa';
+import { FaHackerNews } from 'react-icons/fa';
+
 import {
   // base components (unstyled)
   ShareButton,
@@ -41,16 +44,18 @@ margin-right: auto;
 const ShareComponent = props => {
   // create object with props for shareBlock
   const shareBlockProps = {
-    url: { siteUrl },
+    url: {siteUrl},
     button: ShareButtonIconOnly,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },
       { network: 'Facebook', icon: FaFacebook },
-      { network: 'GooglePlus', icon: FaGooglePlus },
-      { network: 'Linkedin', icon: FaLinkedin },
+      { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/whatsappphonenumber/?text=urlencodedtext' },
+      { network: 'Reddit', icon: FaReddit, link: '//www.reddit.com/submit?url=https://nerds-den.com'},
+      { network: 'HackerNews', icon: FaHackerNews, link: 'http://news.ycombinator.com/submit'},
+
     ],
     text: `Give it a try - https://nerds-den.com/`,
-    longtext: `Take a look at this super website I have just found.`,
+    longtext: 'conclusion',
   };
   return <Wrapper><ShareBlockStandard {...shareBlockProps} /></Wrapper>;
 };
