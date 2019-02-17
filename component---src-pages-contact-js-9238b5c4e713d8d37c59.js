@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{162:function(e,a,n){"use strict";n.r(a);var t=n(0),l=n.n(t),c=n(171),u=n(179),r=n(272),o=n(173);a.default=function(e){e.data;return l.a.createElement(o.a,null,l.a.createElement(c.a,null,l.a.createElement(u.a,null,"Contact"),l.a.createElement(r.a,null)))}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-9238b5c4e713d8d37c59.js.map
