@@ -44,14 +44,14 @@ margin-right: auto;
 const ShareComponent = props => {
   // create object with props for shareBlock
   const shareBlockProps = {
-    url: {siteUrl},
+    url: siteUrl,
     button: ShareButtonIconOnly,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },
       { network: 'Facebook', icon: FaFacebook },
       { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/whatsappphonenumber/?text=urlencodedtext' },
-      { network: 'Reddit', icon: FaReddit, link: '//www.reddit.com/submit?url=https://nerds-den.com'},
-      { network: 'HackerNews', icon: FaHackerNews, link: 'http://news.ycombinator.com/submit'},
+      { network: 'Reddit', icon: FaReddit, link: '//www.reddit.com/submit?url=https://nerds-den.com' },
+      { network: 'HackerNews', icon: FaHackerNews, link: 'http://news.ycombinator.com/submit' },
 
     ],
     text: `Give it a try - https://nerds-den.com/`,
