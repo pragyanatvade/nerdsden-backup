@@ -1,30 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
-import { siteUrl, pathPrefix } from '../../../content/meta/config'
+import { siteUrl, pathPrefix, siteDescription, siteTitle, siteImage } from '../../../content/meta/config'
 import { css } from 'emotion';
 import { FaTwitter } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaReddit } from 'react-icons/fa';
 import { FaHackerNews } from 'react-icons/fa';
 
-import {
-  // base components (unstyled)
-  ShareButton,
-  ShareBlock,
-
-  // styled button components
-  ShareButtonRoundSquare,
-  ShareButtonRectangle,
-  ShareButtonCircle,
-  ShareButtonIconOnly,
-  ShareButtonOutline,
-
-  // styled block components
-  ShareBlockStandard,
-} from 'react-custom-share';
+import {ShareBlockStandard,} from 'react-custom-share';
 
 const Wrapper = styled.div`
 width: 1em;
@@ -38,25 +22,36 @@ margin-right: auto;
   width: 100%;
   bottom: 0;
   background-color: white;
+  z-index: 1;
 }
 `;
 
-const ShareComponent = props => {
-  // create object with props for shareBlock
+const CustomReactShare = props => {
+  const customStyles = css`
+    margin: 0.5em 0.5em;
+    flex-basis: 1.5em;
+    background:transparent;
+    color: #43464b;
+    border-color: transparent;
+    font-size: 1.3em;
+  `;
+
   const shareBlockProps = {
     url: siteUrl,
-    button: ShareButtonIconOnly,
     buttons: [
-      { network: 'Twitter', icon: FaTwitter },
-      { network: 'Facebook', icon: FaFacebook },
-      { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/whatsappphonenumber/?text=urlencodedtext' },
-      { network: 'Reddit', icon: FaReddit, link: '//www.reddit.com/submit?url=https://nerds-den.com' },
-      { network: 'HackerNews', icon: FaHackerNews, link: 'http://news.ycombinator.com/submit' },
-
-    ],
-    text: `Give it a try - https://nerds-den.com/`,
-    longtext: 'conclusion',
+      { network: "Twitter", icon: FaTwitter },
+      { network: "Facebook", icon: FaFacebook },
+      { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/?text='+siteUrl+' '+siteTitle+siteImage},
+      { network: 'HackerNews', icon: FaHackerNews, link: 'https://news.ycombinator.com/submitlink?u='+siteUrl+'&t='+siteTitle },
+     ],
+    text:  siteTitle,
+    longtext: siteDescription,
+    buttonClassName: customStyles
   };
-  return <Wrapper><ShareBlockStandard {...shareBlockProps} /></Wrapper>;
+
+  return <Wrapper><ShareBlockStandard {...shareBlockProps}/></Wrapper>;
 };
-export default ShareComponent
+
+CustomReactShare.PropTypes = {};
+
+export default CustomReactShare;

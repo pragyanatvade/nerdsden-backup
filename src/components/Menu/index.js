@@ -6,6 +6,7 @@ const Header = styled.header`
   background: ${props => props.theme.colors.base};
   width: 100%;
   height:2.5em;
+
 `
 const Nav = styled.nav`
   width: 100%;
