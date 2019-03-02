@@ -4,7 +4,6 @@ require('prismjs/themes/prism.css')
 const Body = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
-
     table {
       border-collapse: collapse;
       border-spacing: 0;
