@@ -5,8 +5,6 @@ const HomePage = () => {
   return (
 
     <div>
-    <Share/>
-    <SearchBox />
     </div>
   )
 }

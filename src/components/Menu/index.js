@@ -22,7 +22,7 @@ const Nav = styled.nav`
 
   li {
     display: inline-block;
-    margin-left: 0.5em;
+    margin-right: 0.5em;
     &:first-child {
       position: relative;
       margin: 0;
@@ -45,6 +45,14 @@ const Nav = styled.nav`
 const activeLinkStyle = {
   color: '#C0C0C0',
 }
+var buttonStyle = {
+  background: '#FF6347',
+  border: 'transparent',
+  cursor: 'pointer',
+
+
+
+};
 
 const Menu = () => (
   <Header>
@@ -68,6 +76,13 @@ const Menu = () => (
         <li>
           <Link to="/contact/" activeStyle={activeLinkStyle}>
             Contact
+          </Link>
+        </li>
+        <li>
+          <Link to="/subscribe/" activeStyle={activeLinkStyle}>
+          <button style={buttonStyle}
+          className="btn btn-default">Subscribe</button>
+
           </Link>
         </li>
       </ul>

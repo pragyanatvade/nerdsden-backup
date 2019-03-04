@@ -21,7 +21,7 @@ const PostTemplate = ({ data, pageContext }) => {
   return (
     <Layout post={post}>
       <Hero title={post.title} image={post.cover} />
-      <Share post={post} url={siteUrl}/>
+      <Share post={post} sitUrl={siteUrl}/>
       <Container>
         {post.tags && <TagList tags={post.tags} />}
         <PostDate date={post.date} />
