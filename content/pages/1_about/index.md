@@ -53,6 +53,14 @@ If you're interested, I specialize in topics like **_software architecture_**, *
 
 **Before I go, I would like to invite you to join my email list community. By signing up (its free), you'll get access to our latest articles right when they come out.**
 
+<form>
+  <label>
+    <input type="email" name="email" id="email" />
+  </label>
+  <input type="submit" value="Submit"/>
+</form>
+<br /><br />
+
 ---
 
 Also thanks for being here. I genuinely appreciate it.

@@ -7,10 +7,9 @@ const Button = styled.div`
   font-size: 1em;
   display: inline-block;
   margin:  auto;
-
   cursor: pointer;
   color: white;
-  padding: 0.5em;
+  padding: 0.4em;
   border-radius: 0.5em;
   text-decoration: none;
   transition: 0.2s;
@@ -26,6 +25,7 @@ const Submit = styled.input`
   background: #6495ed !important;
   margin: 0 1em ;
   color: white !important;
+  padding: 0.3em;
   cursor: pointer;
   transition: 0.2s;
   &:hover {
@@ -34,8 +34,8 @@ const Submit = styled.input`
 `
 const Modal = styled.div`
   background: #DCDCDC	;
-  padding: 2em;
-  border-radius: 2px;
+  padding: 1.5em;
+  border-radius: 1em;
   position: fixed;
   min-width: 75%;
   top: 50%;
@@ -74,6 +74,7 @@ class SubscribeForm extends React.Component {
   }
 
   handleChange(event) {
+    console.log('email');
     this.setState({value: event.target.value});
   }
 
@@ -113,7 +114,7 @@ class SubscribeForm extends React.Component {
         >
         <label>
           Email:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="email" value={this.state.value} onChange={this.handleChange} />
         </label>
   <Submit name="submit" type="submit" value="Send" />
           <Modal visible={this.state.showModal}>
@@ -123,5 +124,8 @@ class SubscribeForm extends React.Component {
       </form>
     );
   }
+}
+SubscribeForm.propTypes = {
+  data: PropTypes.object,
 }
 export default SubscribeForm

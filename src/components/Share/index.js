@@ -31,7 +31,7 @@ const CustomReactShare = props => {
     margin: 0.5em 0.5em;
     flex-basis: 1.5em;
     background:transparent;
-    color: #43464b;
+    color: #43A5BD;
     border-color: transparent;
     font-size: 1.3em;
   `;
@@ -52,6 +52,5 @@ const CustomReactShare = props => {
   return <Wrapper><ShareBlockStandard {...shareBlockProps}/></Wrapper>;
 };
 
-CustomReactShare.PropTypes = {};
 
 export default CustomReactShare;
