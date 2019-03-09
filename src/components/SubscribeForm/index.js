@@ -58,74 +58,106 @@ const Modal = styled.div`
     margin: 0 0 2em 0;
   }
 `
-
 class SubscribeForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: '',
-    email: '',
-    showModal: false,
-    modalMessage: '',
-  }
+    this.state = {value: '', showModal: true,};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleResponse = this.handleResponse.bind(this);
   }
 
   handleChange(event) {
-    console.log('email');
     this.setState({value: event.target.value});
   }
 
   handleSubmit(event) {
-    const { email } = this.state
-    console.log('email', this.state)
-    addToMailChimp(email).then(
-      this.handleResponse
-    )
+    alert('A email was submitted: ' + this.state.value);
     event.preventDefault();
-  }
-  handleResponse = resp => {
-    const { email } = this.state
-    if (resp.result === 'success') {
-      this.setState({
-        showModal: true,
-        modalMessage: `Subscription Successful`,
-      })
-    } else {
-      this.setState({
-        showModal: true,
-        modalMessage: `Oops! Subscription Was Unsuccessful`,
-      })
-    }
-  }
-  closeModal = () => {
-    this.setState({ showModal: false })
-  }
+    console.log(this.state)
 
+  }
 
   render() {
     return (
-      <form
-      onSubmit={this.handleSubmit}
-      overlay={this.state.showModal}
-        onClick={this.closeModal}
-        >
+      <form onSubmit={this.handleSubmit}>
         <label>
           Email:
           <input type="email" value={this.state.value} onChange={this.handleChange} />
         </label>
-  <Submit name="submit" type="submit" value="Send" />
-          <Modal visible={this.state.showModal}>
-          <p>{this.state.modalMessage}</p>
-          <Button onClick={this.closeModal}>Okay</Button>
-        </Modal>
+        <input type="submit" value="Submit" />
       </form>
     );
   }
 }
-SubscribeForm.propTypes = {
-  data: PropTypes.object,
-}
+
+// class SubscribeForm extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {value: '',
+//     email: '',
+//     showModal: false,
+//     modalMessage: '',
+//   }
+//
+//     this.handleChange = this.handleChange.bind(this);
+//     this.handleSubmit = this.handleSubmit.bind(this);
+//     this.handleResponse = this.handleResponse.bind(this);
+//   }
+//
+//   handleChange(event) {
+//     console.log('email');
+//     this.setState({value: event.target.value});
+//   }
+//
+//   handleSubmit(event) {
+//     const { email } = this.state
+//     console.log('email', this.state)
+//     addToMailChimp(email).then(
+//       this.handleResponse
+//     )
+//     event.preventDefault();
+//   }
+//   handleResponse = resp => {
+//     const { email } = this.state
+//     if (resp.result === 'success') {
+//       this.setState({
+//         showModal: true,
+//         modalMessage: `Subscription Successful`,
+//       })
+//     } else {
+//       this.setState({
+//         showModal: true,
+//         modalMessage: `Oops! Subscription Was Unsuccessful`,
+//       })
+//     }
+//   }
+//   closeModal = () => {
+//     this.setState({ showModal: false })
+//   }
+//
+//
+//   render() {
+//     return (
+//       <form
+//       onSubmit={this.handleSubmit}
+//       overlay={this.state.showModal}
+//         onClick={this.closeModal}
+//         >
+//         <label>
+//           Email:
+//           <input type="email" value={this.state.value} onChange={this.handleChange} />
+//         </label>
+//   <Submit name="submit" type="submit" value="Send" />
+//           <Modal visible={this.state.showModal}>
+//           <p>{this.state.modalMessage}</p>
+//           <Button onClick={this.closeModal}>Okay</Button>
+//         </Modal>
+//       </form>
+//     );
+//   }
+// }
+// SubscribeForm.propTypes = {
+//   data: PropTypes.object,
+// }
 export default SubscribeForm
