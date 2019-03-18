@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Component } from "react";
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Modal from '../Modal'
 import addToMailChimp from 'gatsby-plugin-mailchimp'
+const Checkmark = styled.div`
+display: inline-block;
+`
 const Button = styled.div`
-  background: ${props => props.theme.colors.base};
+  background: #FF7F50;
   font-size: 1em;
-  display: inline-block;
+  display: inline;
   margin:  auto;
   cursor: pointer;
   color: white;
@@ -18,146 +22,109 @@ const Button = styled.div`
     outline: none;
   }
   &:hover {
-    background: ${props => props.theme.colors.highlight};
+    background: #FFA500;
   }
 `
 const Submit = styled.input`
-  background: #6495ed !important;
+  background: #FF7F50 !important;
   margin: 0 1em ;
+  width: 12.3em;
   color: white !important;
   padding: 0.3em;
   cursor: pointer;
   transition: 0.2s;
   &:hover {
-    background: ${props => props.theme.colors.highlight} !important;
-  }
+    background: #FFA500 !important;
+
 `
-const Modal = styled.div`
-  background: #DCDCDC	;
-  padding: 1.5em;
-  border-radius: 1em;
-  position: fixed;
-  min-width: 75%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  z-index: 99;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  transition: 0.2s all;
-  opacity: ${props => (props.visible ? '1' : '0')};
-  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
-  @media screen and (min-width: ${props => props.theme.responsive.small}) {
-    min-width: inherit;
-    max-width: 400px;
-  }
-  p {
-    line-height: 1.6;
-    margin: 0 0 2em 0;
-  }
-`
-class SubscribeForm extends React.Component {
+
+class SubscribeForm extends Component {
+  state = { show: false };
+
   constructor(props) {
     super(props);
-    this.state = {value: '', showModal: true,};
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.state = {
+      email: '',
+                 };
   }
+    showModal = () => {
+        this.setState({
+            show: true
+        });
+    }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
+
+      hideModal = () => {
+          this.setState({
+              show: false
+          });
+      }
+
+
+
+  handleInputChange(event) {
+    const target = event.target
+    const value = target.value
+    this.setState({
+      [email]: value,
+    })
   }
 
   handleSubmit(event) {
-    alert('A email was submitted: ' + this.state.value);
-    event.preventDefault();
-    console.log(this.state)
+const { email} = this.state
+console.log('email', this.state)
+addToMailChimp(email, { FNAME: name, LNAME: message }).then(
+  this.handleResponse
+)
 
+event.preventDefault()
+}
+
+handleResponse = resp => {
+  const { name } = this.state
+  if (resp.result === 'success') {
+    this.setState({
+      showModal: true,
+      modalMessage: `Thanks ${name}!\nWe appreciate that you’ve taken the time to write us. We’ll get back to you very soon. Please come back and see us often.`,
+    })
+  } else {
+    this.setState({
+      showModal: true,
+      modalMessage: `I am really sorry ${name}. \nNerd's Den is in very early stage of development.
+      This may cause you face certain issues while contacting me. Please mail me at <a href="mailto:nerdsden@vadelabs.com?Subject=Contact Form Issue" target="_top">nerdsden@vadelabs.com</a>, I will respond to you promptly.`,
+    })
   }
-
+}
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+  <div>
+      <Modal
+          className="modal"
+          show={this.state.show}
+          handleClose={this.hideModal}>
+      <form
+        name="subscribe"
+        onSubmit={this.handleSubmit}
+        overlay={this.state.showModal}
+        onClick={this.closeModal}>
+  <center>
         <label>
-          Email:
-          <input type="email" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
+      <h2>Like This Article ?<br/><br/>
+      Don't Miss The New Ones:</h2>
+          <input type="email" size="23" value={this.state.value} onChange={this.handleChange} placeholder="Email"/>
+        </label><br/><br/>
+        <Submit type="submit" value="Submit" />
+</center>
       </form>
+      </Modal>
+      <Button  onClick={this.showModal}>
+        Subscribe Us
+      </Button>
+</div>
     );
   }
 }
-
-// class SubscribeForm extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {value: '',
-//     email: '',
-//     showModal: false,
-//     modalMessage: '',
-//   }
-//
-//     this.handleChange = this.handleChange.bind(this);
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//     this.handleResponse = this.handleResponse.bind(this);
-//   }
-//
-//   handleChange(event) {
-//     console.log('email');
-//     this.setState({value: event.target.value});
-//   }
-//
-//   handleSubmit(event) {
-//     const { email } = this.state
-//     console.log('email', this.state)
-//     addToMailChimp(email).then(
-//       this.handleResponse
-//     )
-//     event.preventDefault();
-//   }
-//   handleResponse = resp => {
-//     const { email } = this.state
-//     if (resp.result === 'success') {
-//       this.setState({
-//         showModal: true,
-//         modalMessage: `Subscription Successful`,
-//       })
-//     } else {
-//       this.setState({
-//         showModal: true,
-//         modalMessage: `Oops! Subscription Was Unsuccessful`,
-//       })
-//     }
-//   }
-//   closeModal = () => {
-//     this.setState({ showModal: false })
-//   }
-//
-//
-//   render() {
-//     return (
-//       <form
-//       onSubmit={this.handleSubmit}
-//       overlay={this.state.showModal}
-//         onClick={this.closeModal}
-//         >
-//         <label>
-//           Email:
-//           <input type="email" value={this.state.value} onChange={this.handleChange} />
-//         </label>
-//   <Submit name="submit" type="submit" value="Send" />
-//           <Modal visible={this.state.showModal}>
-//           <p>{this.state.modalMessage}</p>
-//           <Button onClick={this.closeModal}>Okay</Button>
-//         </Modal>
-//       </form>
-//     );
-//   }
-// }
-// SubscribeForm.propTypes = {
-//   data: PropTypes.object,
-// }
+SubscribeForm.propTypes = {
+  data: PropTypes.object,
+}
 export default SubscribeForm

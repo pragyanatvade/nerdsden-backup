@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-
+import SubscribeForm from '../SubscribeForm'
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
   width: 100%;
   height:2.5em;
 
 `
+
 const Nav = styled.nav`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
@@ -22,11 +23,11 @@ const Nav = styled.nav`
 
   li {
     display: inline-block;
-    margin-right: 0.5em;
+    margin-left: 0.8em;
     &:first-child {
       position: relative;
       margin: 0;
-      flex-basis: 100%;
+      flex-basis: 50%;
     }
   }
 
@@ -79,12 +80,9 @@ const Menu = () => (
           </Link>
         </li>
         <li>
-          <Link to="/subscribe/" activeStyle={activeLinkStyle}>
-          <button style={buttonStyle}
-          className="btn btn-default">Subscribe</button>
-
-          </Link>
+          <SubscribeForm/>
         </li>
+
       </ul>
     </Nav>
   </Header>

@@ -1,25 +1,14 @@
-import React from "react";
-import Modal from "../components/Modal/Modal";
-class App extends React.Component {
-    state = {
-      show: false
-    };
-    showModal = e => {
-      this.setState({
-        show: true
-      });
-    };
-    closeModal = () => {
-      this.setState({ showModal: false })
-    }
+import React, { Component } from "react";
+import SubscribeForm from '../components/SubscribeForm'
+import Container from '../components/Container'
+import PageTitle from '../components/PageTitle'
+import ContactForm from '../components/ContactForm'
+import Layout from '../components/Layout'
 
-  render() {
-    return (
-                <Button onClick={this.showModal}>show</Button>
-                        <Modal visible={this.state.showModal}>
-                          <Button onClick={this.closeModal}>Okay</Button>
-                </Modal>      </div>
-    );
-  }
+const Contact = ({ data }) => {
+  return (
+      <SubscribeForm/>
+  )
 }
-export default App;
+
+export default Contact
