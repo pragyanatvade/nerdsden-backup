@@ -92,6 +92,9 @@ const theme = {
         html: {
           ...vr.establishBaseline(),
         },
+        h2:{
+          fontSize:'1em',
+        },
 
         h1:{
           fontSize: '1.8em',
@@ -103,6 +106,7 @@ const theme = {
           paddingLeft: rhythm(18 / 36),
           marginLeft: 0,
         },
+
         blockquote: {
           borderLeft: `${rhythm(3 / 16)} solid ${quoteColor}`,
           paddingLeft: rhythm(9 / 16),

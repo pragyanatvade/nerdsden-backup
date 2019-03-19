@@ -19,17 +19,27 @@ const Nav = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
+
+
   }
 
   li {
     display: inline-block;
-    margin-left: 0.8em;
-    &:first-child {
+    &:nth-child(5) {
       position: relative;
-      margin: 0;
-      flex-basis: 50%;
-    }
+      flex-basis: 70%;
+      &:before {
+   content: " | ";
+font-size: 2em;
+ margin: 1 -0.5em;
+   color: white;
+   position: absolute;
   }
+    }
+    }
+
+  }
+
 
   a {
     text-decoration: none;

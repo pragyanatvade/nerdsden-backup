@@ -24,6 +24,10 @@ const Button = styled.div`
   &:hover {
     background: #FFA500;
   }
+  @media only screen and (max-width: 40em) {
+    font-size: 1em;
+
+}
 `
 const Submit = styled.input`
   background: #FF7F50 !important;
@@ -97,7 +101,7 @@ handleResponse = resp => {
 }
   render() {
     return (
-  <div>
+  <main>
       <Modal
           className="modal"
           show={this.state.show}
@@ -108,10 +112,10 @@ handleResponse = resp => {
         overlay={this.state.showModal}
         onClick={this.closeModal}>
   <center>
-        <label>
+        <label >
       <h2>Like This Article ?<br/><br/>
       Don't Miss The New Ones:</h2>
-          <input type="email" size="23" value={this.state.value} onChange={this.handleChange} placeholder="Email"/>
+          <input type="email" size='23' value={this.state.value} onChange={this.handleChange} placeholder="Email" />
         </label><br/><br/>
         <Submit type="submit" value="Submit" />
 </center>
@@ -120,7 +124,7 @@ handleResponse = resp => {
       <Button  onClick={this.showModal}>
         Subscribe Us
       </Button>
-</div>
+</main>
     );
   }
 }

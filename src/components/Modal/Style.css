@@ -42,3 +42,18 @@ background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
     width: 300%;
 
 }
+@media only screen and (max-width: 60em) {
+  .modal-main {
+    position:fixed;
+    background: linear-gradient(to top right, #00ffff 0%, #3399ff 100%);
+    width: 70%;
+    height: 40%;
+    border-radius: 1em;
+
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+
+  }
+}
