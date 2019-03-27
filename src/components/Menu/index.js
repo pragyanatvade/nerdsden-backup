@@ -5,16 +5,38 @@ import SubscribeForm from '../SubscribeForm'
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
   width: 100%;
-  height:2.5em;
+  height:3em;
 
 `
+const SideNav=styled.nav`
+@media only screen and (max-width: 40em) {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
 
+  a{
+    padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: blue;
+ display: block;
+  }
+
+    }
+    }
+`
 const Nav = styled.nav`
-  width: 100%;
+  width: 98%;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
   padding: 0.6em 0;
-  padding-right:1.5em;
 
   ul {
     display: flex;
@@ -25,16 +47,10 @@ const Nav = styled.nav`
 
   li {
     display: inline-block;
-    &:nth-child(5) {
+    &:nth-child(4) {
       position: relative;
-      flex-basis: 70%;
-      &:before {
-   content: " | ";
-font-size: 2em;
- margin: 1 -0.5em;
-   color: white;
-   position: absolute;
-  }
+      flex-basis: 50%;
+
     }
     }
 
@@ -44,13 +60,23 @@ font-size: 2em;
   a {
     text-decoration: none;
     color: White;
-    font-weight: 600;
     transition: all 0.2s;
     border-bottom: 2px solid ${props => props.theme.colors.base};
     &:hover {
       color: #C0C0C0	;
     }
   }
+  @media only screen and (max-width: 40em) {
+    width: 95%;
+    li {
+      display: inline-block;
+      &:nth-child(4) {
+        position: absolute;
+        flex-basis: 50%;
+
+      }
+      }
+
 `
 
 const activeLinkStyle = {
@@ -67,6 +93,7 @@ var buttonStyle = {
 
 const Menu = () => (
   <Header>
+  <SideNav/>
     <Nav>
       <ul>
         <li>
@@ -97,5 +124,6 @@ const Menu = () => (
     </Nav>
   </Header>
 )
+
 
 export default Menu

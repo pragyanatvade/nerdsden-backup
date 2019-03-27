@@ -7,14 +7,14 @@ const Checkmark = styled.div`
 display: inline-block;
 `
 const Button = styled.div`
-  background: #FF7F50;
-  font-size: 1em;
+  background: #1E90FF;
+  width: 4em;
   display: inline;
   margin:  auto;
   cursor: pointer;
   color: white;
   padding: 0.4em;
-  border-radius: 0.5em;
+  border-radius: 0.1em;
   text-decoration: none;
   transition: 0.2s;
   z-index: 99;
@@ -22,23 +22,25 @@ const Button = styled.div`
     outline: none;
   }
   &:hover {
-    background: #FFA500;
+    background: #00BFFF;
   }
-  @media only screen and (max-width: 40em) {
-    font-size: 1em;
 
-}
 `
 const Submit = styled.input`
-  background: #FF7F50 !important;
+  background: #1E90FF	 !important;
   margin: 0 1em ;
-  width: 12.3em;
+  width: 15.9em;
   color: white !important;
   padding: 0.3em;
   cursor: pointer;
   transition: 0.2s;
   &:hover {
-    background: #FFA500 !important;
+    background: #00BFFF	 !important;
+  }
+    @media only screen and (max-width: 40em) {
+    width: 88%;
+
+  }
 
 `
 
@@ -115,15 +117,15 @@ handleResponse = resp => {
         <label >
       <h2>Like This Article ?<br/><br/>
       Don't Miss The New Ones:</h2>
-          <input type="email" size='23' value={this.state.value} onChange={this.handleChange} placeholder="Email" />
+          <input type="email" size='30' value={this.state.value} onChange={this.handleChange} placeholder="Email" />
         </label><br/><br/>
-        <Submit type="submit" value="Submit" />
+        <Submit type="submit" value="Submit" size='30' />
 </center>
       </form>
       </Modal>
       <Button  onClick={this.showModal}>
-        Subscribe Us
-      </Button>
+Stay Informed
+</Button>
 </main>
     );
   }

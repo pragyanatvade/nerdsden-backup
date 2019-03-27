@@ -7,13 +7,15 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaHackerNews } from 'react-icons/fa';
-
+import { FaBell} from 'react-icons/fa';
 import {ShareBlockStandard,} from 'react-custom-share';
 
 const Wrapper = styled.div`
 width: 1em;
 position: fixed;
 display: flex ;
+margin-top: 2.5em;
+margin-left: 2.5em;
   @media only screen and (max-width: 60em) {
     display: block;
 margin-left: auto;
@@ -31,7 +33,7 @@ const CustomReactShare = props => {
     margin: 0.5em 0.5em;
     flex-basis: 1.5em;
     background:transparent;
-    color: #43A5BD;
+    color: grey;
     border-color: transparent;
     font-size: 1.3em;
   `;
@@ -43,6 +45,7 @@ const CustomReactShare = props => {
       { network: "Facebook", icon: FaFacebook },
       { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/?text='+siteUrl+' '+siteTitle+siteImage},
       { network: 'HackerNews', icon: FaHackerNews, link: 'https://news.ycombinator.com/submitlink?u='+siteUrl+'&t='+siteTitle },
+
      ],
     text:  siteTitle,
     longtext: siteDescription,
