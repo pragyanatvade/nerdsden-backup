@@ -86,21 +86,6 @@ addToMailChimp(email, { FNAME: name, LNAME: message }).then(
 event.preventDefault()
 }
 
-handleResponse = resp => {
-  const { name } = this.state
-  if (resp.result === 'success') {
-    this.setState({
-      showModal: true,
-      modalMessage: `Thanks ${name}!\nWe appreciate that you’ve taken the time to write us. We’ll get back to you very soon. Please come back and see us often.`,
-    })
-  } else {
-    this.setState({
-      showModal: true,
-      modalMessage: `I am really sorry ${name}. \nNerd's Den is in very early stage of development.
-      This may cause you face certain issues while contacting me. Please mail me at <a href="mailto:nerdsden@vadelabs.com?Subject=Contact Form Issue" target="_top">nerdsden@vadelabs.com</a>, I will respond to you promptly.`,
-    })
-  }
-}
   render() {
     return (
   <main>
@@ -116,7 +101,7 @@ handleResponse = resp => {
   <center>
         <label >
       <h2>Like This Article ?<br/><br/>
-      Don't Miss The New Ones:</h2>
+      Your more interesting inbox awaits:</h2>
           <input type="email" size='30' value={this.state.value} onChange={this.handleChange} placeholder="Email" />
         </label><br/><br/>
         <Submit type="submit" value="Submit" size='30' />
@@ -124,7 +109,7 @@ handleResponse = resp => {
       </form>
       </Modal>
       <Button  onClick={this.showModal}>
-Stay Informed
+Subscribe
 </Button>
 </main>
     );

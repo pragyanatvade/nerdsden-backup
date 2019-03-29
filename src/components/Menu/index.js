@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import SubscribeForm from '../SubscribeForm'
+import './Style.css';
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
   width: 100%;
@@ -25,9 +26,12 @@ const SideNav=styled.nav`
     padding: 8px 8px 8px 32px;
  text-decoration: none;
  font-size: 25px;
- color: blue;
+ color: #818181;
  display: block;
-  }
+ transition: 0.3s;
+ &:hover {
+   color: #C0C0C0	;
+ }
 
     }
     }
@@ -41,8 +45,6 @@ const Nav = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
-
-
   }
 
   li {
@@ -93,7 +95,6 @@ var buttonStyle = {
 
 const Menu = () => (
   <Header>
-  <SideNav/>
     <Nav>
       <ul>
         <li>
