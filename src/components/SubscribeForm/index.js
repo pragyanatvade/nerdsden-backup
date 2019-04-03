@@ -109,7 +109,7 @@ event.preventDefault()
       </form>
       </Modal>
       <Button  onClick={this.showModal}>
-Subscribe
+Stay Updated
 </Button>
 </main>
     );

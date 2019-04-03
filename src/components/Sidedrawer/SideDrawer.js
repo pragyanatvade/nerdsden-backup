@@ -2,7 +2,11 @@ import React from 'react'
 
 import './SideDrawer.css'
 
-const sideDrawer = props => {
+const SideDrawer = props => {
+  let drawerClasses = 'side-drawer'
+  if (props.show) {
+    drawerClasses = 'side-drawer open'
+  }
   return (
     <nav className="side-drawer">
       <ul>
@@ -17,4 +21,4 @@ const sideDrawer = props => {
   )
 }
 
-export default sideDrawer
+export default SideDrawer
