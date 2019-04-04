@@ -10,4 +10,4 @@ const DrawerToggleButton = props => (
   </button>
 )
 
-export default DrawerToggleButton
+export default DrawerToggleButton;

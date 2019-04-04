@@ -66,6 +66,14 @@ const theme = {
       h1:{
         fontSize: '3em',
       },
+      html:{
+        height: '100%',
+      },
+      body:{
+        margin: '0',
+        padding: '0',
+height: '100%'      },
+
       // Blockquote styles.
       blockquote: {
         ...scale(1 / 6),
