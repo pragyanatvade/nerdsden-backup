@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Container from '../components/Container'

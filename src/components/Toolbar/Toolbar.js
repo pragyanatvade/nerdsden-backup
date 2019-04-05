@@ -1,24 +1,53 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import './Toolbar.css'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
+import SubscribeForm from '../SubscribeForm'
+const activeLinkStyle = {
+  color: '#C0C0C0',
+}
+var buttonStyle = {
+  background: '#FF6347',
+  border: 'transparent',
+  cursor: 'pointer',
+
+
+
+};
 const Toolbar = props => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
       <div className="toolbar__toggle-button">
             <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
-      <div className="toolbar__logo"><a href="/">THE LOGO</a></div>
-      <div className="spacer" />
       <div className="toolbar_navigation-items">
         <ul>
-          <li>
-            <a href="/">Products</a>
-          </li>
-          <li>
-            <a href="/">Users</a>
-          </li>
+        <li>
+          <Link to="/" activeStyle={activeLinkStyle}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/tags/" activeStyle={activeLinkStyle}>
+            Tags
+          </Link>
+        </li>
+        <li>
+          <Link to="/about/" activeStyle={activeLinkStyle}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact/" activeStyle={activeLinkStyle}>
+            Contact
+          </Link>
+        </li>
         </ul>
+        <div className = "subscribe">
+        <SubscribeForm/></div>
+
       </div>
     </nav>
   </header>

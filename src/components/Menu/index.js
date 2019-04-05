@@ -2,39 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import SubscribeForm from '../SubscribeForm'
-import './Style.css';
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
   width: 100%;
   height:3em;
 
-`
-const SideNav=styled.nav`
-@media only screen and (max-width: 40em) {
-  display: none;
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-
-  a{
-    padding: 8px 8px 8px 32px;
- text-decoration: none;
- font-size: 25px;
- color: #818181;
- display: block;
- transition: 0.3s;
- &:hover {
-   color: #C0C0C0	;
- }
-
-    }
-    }
 `
 const Nav = styled.nav`
   width: 98%;
@@ -49,11 +21,7 @@ const Nav = styled.nav`
 
   li {
     display: inline-block;
-    &:nth-child(4) {
-      position: relative;
-      flex-basis: 50%;
 
-    }
     }
 
   }
