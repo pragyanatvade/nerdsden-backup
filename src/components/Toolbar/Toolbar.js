@@ -44,9 +44,10 @@ const Toolbar = props => (
             Contact
           </Link>
         </li>
+        <li>  <div className = "subscribe">
+          <SubscribeForm/></div></li>
         </ul>
-        <div className = "subscribe">
-        <SubscribeForm/></div>
+
 
       </div>
     </nav>

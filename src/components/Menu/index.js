@@ -9,7 +9,7 @@ const Header = styled.header`
 
 `
 const Nav = styled.nav`
-  width: 98%;
+  width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
   padding: 0.6em 0;
@@ -24,7 +24,15 @@ const Nav = styled.nav`
 
     }
 
-  }
+    li {
+      display: inline-block;
+      margin-left: 1em;
+      &:nth-child(4) {
+        position: relative;
+        flex-basis: 50%;
+
+      }
+      }
 
 
   a {
@@ -36,16 +44,6 @@ const Nav = styled.nav`
       color: #C0C0C0	;
     }
   }
-  @media only screen and (max-width: 40em) {
-    width: 95%;
-    li {
-      display: inline-block;
-      &:nth-child(4) {
-        position: absolute;
-        flex-basis: 50%;
-
-      }
-      }
 
 `
 

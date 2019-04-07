@@ -8,36 +8,38 @@
 }
 
 .toolbar__navigation{
-  display: flex;
+  display: inline;
   height: 100%;
   align-items: center;
   padding: 0 1rem;
 
 }
 
-.subscribe{
-  display: inline-block;}
+
 .toolbar_navigation-items ul {
-    list-style: none;
-    margin: 0;
+list-style-type: none;
+margin: 0;
+
     padding: 0;
-    display: flex;
-    display: inline-block;
+    display: inline;
 
 }
 .toolbar_navigation-items li{
-
-    display: inline-block;
-    padding-left: 1em;
-
-
+  display: inline;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: pink;
+    float: left;
+}
+html {
+  box-sizing: border-box;
 }
 
 .toolbar_navigation-items a {
-  text-decoration: none;
-  color: White;
-  transition: all 0.2s;
-  border-bottom: 2px;
+  display: block;
+   padding: 8px;
+   background-color: #dddddd;
 
 }
  .toolbar_navigation-items a:hover,
