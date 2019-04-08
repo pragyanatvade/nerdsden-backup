@@ -1,5 +1,6 @@
  .toggle-button {
    display: flex;
+   padding-top: 1em;
    flex-direction: column;
    height: 24px;
    width: 30px;
@@ -7,7 +8,6 @@
    background: transparent;
    border: none;
    cursor: pointer;
-   padding: 0;
    box-sizing: border-box;
    color: white;
 
@@ -20,4 +20,6 @@
   width: 30px;
   height:2px;
   background: white;
+  margin-top: 0.6em;
+  margin-left: 1.5em;
 }

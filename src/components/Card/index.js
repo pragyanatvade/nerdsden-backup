@@ -20,6 +20,7 @@ const Post = styled.li`
   &:hover {
     background: ${props => props.theme.colors.tertiary};
   }
+
   a {
     display: flex;
     flex-flow: column;

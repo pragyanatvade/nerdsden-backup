@@ -13,8 +13,6 @@ var buttonStyle = {
   border: 'transparent',
   cursor: 'pointer',
 
-
-
 };
 const Toolbar = props => (
   <header className="toolbar">

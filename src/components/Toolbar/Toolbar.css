@@ -1,49 +1,47 @@
-.toolbar {
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
+.toolbar{
   height: 3em;
-  background: black;
+  background-color: #111;
+  padding: 0;
+  margin: 0
 }
-
-.toolbar__navigation{
-  display: inline;
-  height: 100%;
+.toolbar_navigation{
+  display: flex;
   align-items: center;
-  padding: 0 1rem;
-
 }
-
 
 .toolbar_navigation-items ul {
-list-style-type: none;
-margin: 0;
+   height: 3em;
+   list-style-type: none;
+   margin: 0;
+   padding-left: 5em;
+   overflow: hidden;
+   background-color: #333;
 
-    padding: 0;
-    display: inline;
 
 }
 .toolbar_navigation-items li{
-  display: inline;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    color: pink;
-    float: left;
-}
-html {
-  box-sizing: border-box;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.1em 1em;
+  text-decoration: none;
 }
 
 .toolbar_navigation-items a {
-  display: block;
-   padding: 8px;
-   background-color: #dddddd;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 
 }
- .toolbar_navigation-items a:hover,
- .toolbar_navigation-items a:active {
+.toolbar_navigation-items li a:hover {
+  background-color: #111;
+}
+ .toolbar_navigation-items li a:active {
+   background-color: #111;
+
  }
  @media (max-width:649px) {
    .toolbar_navigation-items{
@@ -54,4 +52,9 @@ html {
   .toolbar__toggle-button {
     display: none;
   }
+}
+.subscribe{
+  margin-left: 30em;
+  margin-top: 0.6em;
+
 }
