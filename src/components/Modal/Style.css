@@ -34,9 +34,8 @@
   top:-400%;
   left:-150%;
   position: absolute;
-background-color: #4169e1		;
+background-color: #111		;
     opacity: 0.7;
-  filter: alpha(opacity=50);
     height: 900%;
     transition: all 1.3s;
     width: 300%;
@@ -49,7 +48,6 @@ background-color: #4169e1		;
     background: white;
     width: 85%;
     height: 40%;
-
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);

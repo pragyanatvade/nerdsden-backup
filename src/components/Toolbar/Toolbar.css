@@ -13,7 +13,7 @@
    height: 3em;
    list-style-type: none;
    margin: 0;
-   padding-left: 5em;
+   padding-left: 7em;
    overflow: hidden;
    background-color: #333;
 
@@ -54,7 +54,7 @@ text-decoration: none;
   }
 }
 .subscribe{
-  margin-left: 30em;
+  margin-left: 25em;
   margin-top: 0.6em;
 
 }

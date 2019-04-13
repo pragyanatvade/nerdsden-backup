@@ -1,12 +1,12 @@
 .side-drawer {
-  height: 100%;
+  height: auto;
   background: #43464b;
   box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 60%;
-  max-width: 400px;
+  top: auto;
+  left: auto;
+  width: 100%;
+  max-width: 20em;
   z-index: 200;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
@@ -15,24 +15,17 @@
   transform: translateX(0) ;
 }
 .side-drawer ul {
-height: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1em;
 }
 .side-drawer li:hover{
-  color:#2864c4;
-
-  background-color:#000000;
-
-  margin-left:-20px;
-
-  padding-left:20px;
-
-  padding-right:20px;
-
-  width:100%;}
+  color: red;
+  background-color: red;
+  left: 2em;
+}
 .side-drawer a{
   color: white;
   text-decoration: none;
@@ -40,4 +33,5 @@ height: 100%;
 }
 .side-drawer li{
   margin: 0.5rem 0;
+  animation: nav-item-fade-in 1s ease-in-out;
 }

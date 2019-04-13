@@ -7,35 +7,36 @@ const Checkmark = styled.div`
 display: inline-block;
 `
 const Button = styled.div`
-  background: #1E90FF;
-  width: 4em;
-  display: inline;
-  margin:  auto;
+  display: inline-block;
+  border-radius: 0.3em;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 4px ;
+  width: 200px;
+  transition: all 0.5s;
   cursor: pointer;
-  color: white;
-  padding: 0.4em;
-  border-radius: 0.1em;
-  text-decoration: none;
-  transition: 0.2s;
+  margin: -0.15em;
   z-index: 99;
-  &:focus {
-    outline: none;
+  &:hover{
+    background-color:#FF7F50;
   }
-  &:hover {
-    background: #00BFFF;
-  }
+
 
 `
 const Submit = styled.input`
-  background: #1E90FF	 !important;
+  background: #f4511e	 !important;
   margin: 0 1em ;
   width: 15.9em;
   color: white !important;
   padding: 0.3em;
   cursor: pointer;
+  border-radius: 0.3em;
   transition: 0.2s;
   &:hover {
-    background: #00BFFF	 !important;
+    background: #FF7F50	 !important;
   }
     @media only screen and (max-width: 40em) {
     width: 88%;
