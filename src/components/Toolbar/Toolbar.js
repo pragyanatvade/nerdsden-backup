@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-
+import SearchBox from '../SearchBox'
 import './Toolbar.css'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
 import SubscribeForm from '../SubscribeForm'
@@ -42,11 +42,10 @@ const Toolbar = props => (
             Contact
           </Link>
         </li>
-        <li>  <div className = "subscribe">
-          <SubscribeForm/></div></li>
+        <SearchBox/>
+        <div className = "subscribe">
+          <SubscribeForm/></div>
         </ul>
-
-
       </div>
     </nav>
   </header>

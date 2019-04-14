@@ -54,7 +54,8 @@ text-decoration: none;
   }
 }
 .subscribe{
-  margin-left: 25em;
+  display: inline-block;
+padding-left: 5em;
   margin-top: 0.6em;
 
 }

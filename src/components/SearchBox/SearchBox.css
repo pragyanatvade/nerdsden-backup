@@ -1,0 +1,13 @@
+.pa2{
+padding-top: 0.65em;
+padding-left: 3em;
+  display: inline-block;
+
+}
+.pa3 {border-top: none;
+  border-radius: 1em;
+  border-color:rgba(255,255,255,0.3);
+  background-color: transparent;
+color: white;
+width: 20em;
+}

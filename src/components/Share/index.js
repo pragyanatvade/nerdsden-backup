@@ -15,7 +15,7 @@ width: 1em;
 position: fixed;
 display: flex ;
 margin-top: 2.5em;
-margin-left: 2.5em;
+margin-left: 6em;
   @media only screen and (max-width: 60em) {
     display: block;
 margin-left: auto;
