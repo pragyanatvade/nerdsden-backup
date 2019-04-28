@@ -40,10 +40,11 @@ const CustomReactShare = props => {
 
   const shareBlockProps = {
     url: siteUrl,
+    image: siteImage,
     buttons: [
       { network: "Twitter", icon: FaTwitter },
       { network: "Facebook", icon: FaFacebook },
-      { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/?text='+siteUrl+' '+siteTitle+siteImage},
+      { network: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/?text='+siteUrl+siteTitle},
       { network: 'HackerNews', icon: FaHackerNews, link: 'https://news.ycombinator.com/submitlink?u='+siteUrl+'&t='+siteTitle },
 
      ],

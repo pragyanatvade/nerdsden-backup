@@ -1,12 +1,11 @@
 .side-drawer {
   height: auto;
-  background: #43464b;
-  box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.5);
+  background: #B3F0FF;
   position: fixed;
   top: auto;
   left: auto;
   width: 100%;
-  max-width: 20em;
+  max-width: 15em;
   z-index: 200;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
@@ -19,18 +18,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1em;
+  text-align:center;
+  margin-right: -1em;
+  margin-left: -1em;
+}
+li:nth-child(even) {
+  background-color: #88E6FD	;
+  height: 2em;
 }
 .side-drawer li:hover{
-  color: red;
-  background-color: red;
-  left: 2em;
+
+  left: 3em;
 }
 .side-drawer a{
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.2rem;
 }
 .side-drawer li{
-  margin: 0.5rem 0;
+  margin: 0.5rem 1em;
 }
